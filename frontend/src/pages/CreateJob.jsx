@@ -56,17 +56,17 @@ const CreateJob = () => {
     try {
       const dataToSubmit = {
         title: formData.title,
-        company: formData.company || 'Company Name', // usually from auth context
         description: formData.description,
-        requirements: {
-          location: formData.location,
-          employmentType: formData.employmentType,
-          salaryRange: formData.salaryMin && formData.salaryMax ? `${formData.salaryMin}-${formData.salaryMax}` : null
-        },
+        location: formData.location,
+        salary_min: formData.salaryMin ? parseInt(formData.salaryMin) : null,
+        salary_max: formData.salaryMax ? parseInt(formData.salaryMax) : null,
+        employment_type: formData.employmentType,
+        experience_required: formData.experience ? parseInt(formData.experience) : 0,
+        education_required: formData.education || null,
         skills: formData.skills.map(s => ({
-          name: s.name,
-          required_proficiency: s.proficiency,
-          weight: s.isRequired ? 1.0 : 0.5
+          skill_name: s.name,
+          min_proficiency: s.proficiency || "basic",
+          is_required: s.isRequired
         }))
       };
       
