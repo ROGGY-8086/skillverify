@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         primary: "#0F172A", // Dark slate
-        accent: "#8B5CF6", // Purple glow
+        accent: "#3B82F6", // Aesthetic Blue
         slate: {
           50: '#F8FAFC',
           100: '#F1F5F9',
