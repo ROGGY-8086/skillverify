@@ -7,8 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#1B2E35",
-        accent: "#14B8A6",
+        primary: "#0B3A36", // Deep teal from Gusto footer
+        accent: "#F25C54", // Coral/Red from hero
+        "teal-dark": "#0A2522",
+        "warm-50": "#FDFBF7",
         slate: {
           50: '#F8FAFC',
           100: '#F1F5F9',
@@ -22,6 +24,7 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        serif: ['"Playfair Display"', 'serif'],
       }
     },
   },

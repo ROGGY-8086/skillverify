@@ -1,240 +1,239 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, Target, Zap, FileText, CheckCircle2 } from 'lucide-react';
-import StepCard from '../components/StepCard';
+import { ShieldCheck, Target, Zap, FileText, CheckCircle2, ChevronRight, Award, Briefcase, BookOpen, Clock, Users, Building, Lock } from 'lucide-react';
 
 const Landing = () => {
   return (
-    <div className="flex flex-col min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-white py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h1 className="text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-6">
-                Verify Skills. <br/>
-                <span className="text-accent">Match Talent.</span> <br/>
-                Build Trust.
-              </h1>
-              <p className="text-xl text-slate-600 mb-10 max-w-lg">
-                The AI-powered platform that extracts, verifies, and matches real skills to perfectly align candidates with employer needs.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/register?role=candidate" className="bg-accent text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-teal-600 transition-colors text-center shadow-lg shadow-teal-500/30">
-                  Get Started
-                </Link>
-                <Link to="/register?role=employer" className="bg-white text-slate-800 px-8 py-4 rounded-xl font-semibold text-lg border-2 border-slate-200 hover:border-slate-800 transition-colors text-center">
-                  For Employers
-                </Link>
-              </div>
-              <div className="mt-10 flex items-center gap-4 text-sm font-medium text-slate-500 uppercase tracking-wider">
-                <p>Trusted By</p>
-                <div className="h-px bg-slate-200 flex-grow max-w-[200px]"></div>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-tr from-accent/20 to-blue-500/20 rounded-3xl blur-3xl"></div>
-              <div className="relative bg-white border border-slate-100 rounded-3xl p-8 shadow-2xl">
-                <div className="flex items-center gap-4 mb-8">
-                  <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center">
-                    <span className="text-2xl font-bold text-slate-400">JD</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2">
-                      Jane Doe
-                      <CheckCircle2 className="h-5 w-5 text-success" />
-                    </h3>
-                    <p className="text-slate-500">Senior Frontend Developer</p>
-                  </div>
-                </div>
-                <div className="space-y-6">
-                  <div>
-                    <p className="text-sm font-semibold text-slate-400 uppercase mb-3">Verified Skills</p>
-                    <div className="flex flex-wrap gap-2">
-                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium border bg-green-100 text-green-800 border-green-200">
-                        <CheckCircle2 className="h-3 w-3 text-success" /> React
-                      </span>
-                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium border bg-green-100 text-green-800 border-green-200">
-                        <CheckCircle2 className="h-3 w-3 text-success" /> TypeScript
-                      </span>
-                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium border bg-blue-100 text-blue-800 border-blue-200">
-                        <CheckCircle2 className="h-3 w-3 text-success" /> Node.js
-                      </span>
-                    </div>
-                  </div>
-                  <div className="bg-slate-50 rounded-xl p-4 border border-slate-100 flex items-center justify-between">
-                    <div>
-                      <p className="font-semibold text-slate-900">Match Score</p>
-                      <p className="text-sm text-slate-500">Sr. Engineer Role</p>
-                    </div>
-                    <div className="w-12 h-12 rounded-full border-4 border-success flex items-center justify-center text-success font-bold text-sm">
-                      94%
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="bg-slate-50 py-16 border-y border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center">
-              <p className="text-4xl font-extrabold text-accent mb-2">10K+</p>
-              <p className="font-medium text-slate-600">Candidates Verified</p>
-            </div>
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center">
-              <p className="text-4xl font-extrabold text-accent mb-2">500+</p>
-              <p className="font-medium text-slate-600">Employers Trust Us</p>
-            </div>
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center">
-              <p className="text-4xl font-extrabold text-accent mb-2">95%</p>
-              <p className="font-medium text-slate-600">Match Accuracy</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How It Works */}
-      <section id="how-it-works" className="bg-white py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <p className="text-accent font-semibold tracking-wider uppercase text-sm mb-3">How It Works</p>
-            <h2 className="text-4xl font-bold text-slate-900">From resume to verified talent in 3 simple steps</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <StepCard 
-              number="1"
-              title="Upload Credentials"
-              description="Candidates upload their resume, certifications, and portfolios. Our system securely stores them."
-              icon={FileText}
-            />
-            <StepCard 
-              number="2"
-              title="AI Verifies & Extracts"
-              description="Our AI extracts skills and cross-references credentials to verify proficiency and assign confidence scores."
-              icon={ShieldCheck}
-            />
-            <StepCard 
-              number="3"
-              title="Get Matched"
-              description="Employers define required skills, and our semantic matching engine instantly finds the perfect fit."
-              icon={Target}
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Features */}
-      <section className="bg-slate-50 py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <p className="text-accent font-semibold tracking-wider uppercase text-sm mb-3">Platform Features</p>
-            <h2 className="text-4xl font-bold text-slate-900">Everything you need for trusted hiring</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex gap-6">
-              <div className="w-12 h-12 bg-teal-50 rounded-lg flex items-center justify-center shrink-0">
-                <Zap className="h-6 w-6 text-accent" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">AI Skill Extraction</h3>
-                <p className="text-slate-600">Automatically map unstructured text from resumes into a structured taxonomy of over 10,000 skills.</p>
-              </div>
-            </div>
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex gap-6">
-              <div className="w-12 h-12 bg-teal-50 rounded-lg flex items-center justify-center shrink-0">
-                <ShieldCheck className="h-6 w-6 text-accent" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Credential Verification</h3>
-                <p className="text-slate-600">Cross-reference badges, certificates, and work history to provide a transparent confidence score.</p>
-              </div>
-            </div>
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex gap-6">
-              <div className="w-12 h-12 bg-teal-50 rounded-lg flex items-center justify-center shrink-0">
-                <Target className="h-6 w-6 text-accent" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Smart Job Matching</h3>
-                <p className="text-slate-600">Go beyond keyword matching with semantic vector search that understands context and proficiency levels.</p>
-              </div>
-            </div>
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex gap-6">
-              <div className="w-12 h-12 bg-teal-50 rounded-lg flex items-center justify-center shrink-0">
-                <FileText className="h-6 w-6 text-accent" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Skill Assessments</h3>
-                <p className="text-slate-600">Provide candidates with technical assessments to instantly verify claimed skills and boost their profile.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* For Employers */}
-      <section className="bg-primary py-24 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-4xl font-bold mb-6">Find genuinely qualified candidates</h2>
-              <p className="text-lg text-slate-300 mb-8 leading-relaxed">
-                Stop wasting time interviewing candidates who look good on paper but lack the actual skills. SkillVerify gives you transparent confidence scores and verified evidence for every candidate you review.
-              </p>
-              <ul className="space-y-4 mb-10">
-                <li className="flex items-center gap-3 text-slate-200">
-                  <CheckCircle2 className="h-5 w-5 text-accent" /> Cut time-to-hire by 40%
-                </li>
-                <li className="flex items-center gap-3 text-slate-200">
-                  <CheckCircle2 className="h-5 w-5 text-accent" /> Eliminate resume fraud
-                </li>
-                <li className="flex items-center gap-3 text-slate-200">
-                  <CheckCircle2 className="h-5 w-5 text-accent" /> Discover hidden talent based on true capability
-                </li>
-              </ul>
-              <Link to="/register?role=employer" className="inline-block bg-accent text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-teal-400 transition-colors">
-                Start Hiring Smarter
-              </Link>
-            </div>
-            <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 shadow-2xl">
-              <h3 className="text-xl font-semibold mb-6">Top Matches for "Full Stack Developer"</h3>
-              <div className="space-y-4">
-                {[
-                  { name: "Alex Chen", score: 98, skills: ["React", "Node.js", "PostgreSQL"] },
-                  { name: "Sarah Jenkins", score: 92, skills: ["Vue", "Express", "MongoDB"] },
-                  { name: "Michael Ross", score: 87, skills: ["React", "Django", "AWS"] }
-                ].map((candidate, i) => (
-                  <div key={i} className="bg-slate-700/50 rounded-xl p-4 flex items-center justify-between border border-slate-600/50">
-                    <div>
-                      <p className="font-semibold text-white">{candidate.name}</p>
-                      <p className="text-sm text-slate-400">{candidate.skills.join(" • ")}</p>
-                    </div>
-                    <div className="text-right">
-                      <p className="text-2xl font-bold text-success">{candidate.score}%</p>
-                      <p className="text-xs text-slate-400 uppercase">Match</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="bg-white py-20 text-center">
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">Ready to prove your skills?</h2>
-          <p className="text-xl text-slate-600 mb-10">
-            Join thousands of professionals who have verified their credentials and found their dream jobs through SkillVerify.
+    <div className="font-sans text-slate-900 bg-[#FDFBF7]">
+      {/* HERO SECTION */}
+      <section className="relative bg-gradient-to-br from-[#F25C54] via-[#F25C54] to-[#f97316] pt-32 pb-48 px-4 overflow-hidden rounded-b-[3rem] shadow-sm">
+        <div className="max-w-4xl mx-auto text-center relative z-10">
+          <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6 tracking-tight leading-tight">
+            Verify, match, and <br/> hire like a pro.
+          </h1>
+          <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto font-medium">
+            SkillVerify is the AI-powered credential platform that helps you find genuinely qualified talent, instantly.
           </p>
-          <Link to="/register?role=candidate" className="inline-block bg-slate-900 text-white px-10 py-4 rounded-xl font-semibold text-lg hover:bg-slate-800 transition-colors shadow-lg">
-            Create Free Account
-          </Link>
+          <div className="flex items-center justify-center gap-4">
+            <Link to="/register" className="bg-white text-[#0B3A36] px-8 py-4 rounded-full font-bold text-lg hover:bg-slate-50 transition-colors shadow-lg shadow-black/10">
+              Get Started
+            </Link>
+            <Link to="/#how-it-works" className="bg-transparent border border-white/30 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-colors">
+              How it works
+            </Link>
+          </div>
+        </div>
+
+        {/* Floating Mockup (Pure CSS) */}
+        <div className="absolute left-1/2 -translate-x-1/2 bottom-0 translate-y-1/2 w-[90%] max-w-4xl bg-white rounded-t-xl md:rounded-xl shadow-2xl border border-slate-200 p-2 z-20 flex gap-4 hidden md:flex">
+          <div className="w-1/4 bg-slate-50 rounded-lg p-4 border border-slate-100 flex flex-col gap-3">
+            <div className="h-4 w-1/2 bg-slate-200 rounded-full mb-4"></div>
+            <div className="h-10 w-full bg-white border border-slate-200 rounded flex items-center px-3"><ShieldCheck className="w-5 h-5 text-accent mr-2" /><div className="h-2 w-1/2 bg-slate-200 rounded"></div></div>
+            <div className="h-10 w-full bg-white border border-slate-200 rounded flex items-center px-3"><Target className="w-5 h-5 text-accent mr-2" /><div className="h-2 w-2/3 bg-slate-200 rounded"></div></div>
+          </div>
+          <div className="flex-1 bg-white rounded-lg p-6 border border-slate-100 relative">
+             <h3 className="text-2xl font-serif font-bold text-[#0B3A36] mb-1">Senior Frontend Developer</h3>
+             <p className="text-slate-500 mb-6 text-sm">New York, NY • Remote</p>
+             <div className="space-y-4">
+               <div className="bg-slate-50 p-4 rounded-lg border border-slate-100 flex items-center justify-between">
+                 <div className="flex items-center gap-3">
+                   <div className="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center"><span className="text-accent font-bold">AS</span></div>
+                   <div><p className="font-bold text-slate-800">Alex Smith</p><p className="text-sm text-slate-500">React • Node.js</p></div>
+                 </div>
+                 <div className="text-right">
+                   <p className="text-success font-bold text-xl">98%</p>
+                   <p className="text-xs text-slate-400 font-medium">MATCH</p>
+                 </div>
+               </div>
+               <div className="bg-slate-50 p-4 rounded-lg border border-slate-100 flex items-center justify-between">
+                 <div className="flex items-center gap-3">
+                   <div className="w-10 h-10 bg-info/20 rounded-full flex items-center justify-center"><span className="text-info font-bold">SJ</span></div>
+                   <div><p className="font-bold text-slate-800">Sarah Jenkins</p><p className="text-sm text-slate-500">Vue • Express</p></div>
+                 </div>
+                 <div className="text-right">
+                   <p className="text-success font-bold text-xl">92%</p>
+                   <p className="text-xs text-slate-400 font-medium">MATCH</p>
+                 </div>
+               </div>
+             </div>
+             
+             {/* Floating Badge */}
+             <div className="absolute -right-6 -top-6 bg-white p-3 rounded-xl shadow-xl border border-slate-100 flex items-center gap-3">
+               <div className="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center"><CheckCircle2 className="w-6 h-6" /></div>
+               <div><p className="text-xs font-bold text-slate-400 uppercase">Status</p><p className="text-sm font-bold text-slate-800">Verified</p></div>
+             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* spacer for mockup */}
+      <div className="h-32 md:h-64"></div>
+
+      {/* TRUST SECTION */}
+      <section className="py-16 px-4 text-center">
+        <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#0B3A36] mb-8">
+          10,000+ businesses <br/> hire on SkillVerify.
+        </h2>
+        <Link to="/insights" className="inline-flex items-center gap-2 text-[#0B3A36] font-bold border-b-2 border-[#0B3A36] pb-1 hover:text-accent hover:border-accent transition-all">
+          See the insights <ChevronRight className="w-4 h-4" />
+        </Link>
+      </section>
+
+      {/* FEATURE 1 */}
+      <section className="py-24 px-4 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-16">
+        <div className="md:w-1/2">
+          <div className="inline-block bg-teal-100 text-teal-800 px-3 py-1 rounded-md text-sm font-bold mb-6">Verification 💨</div>
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#0B3A36] leading-tight mb-6">
+            Verification at the speed of... wait, that's it?
+          </h2>
+          <p className="text-lg text-slate-600 mb-8 font-medium">
+            AI instantly extracts skills, cross-references credentials, and scores candidates. What used to take days of manual background checks now takes seconds.
+          </p>
+          <ul className="space-y-4 mb-8">
+            <li className="flex items-start gap-3"><CheckCircle2 className="w-6 h-6 text-accent shrink-0" /><span className="text-slate-700 font-medium">Zero manual resume reading required.</span></li>
+            <li className="flex items-start gap-3"><CheckCircle2 className="w-6 h-6 text-accent shrink-0" /><span className="text-slate-700 font-medium">Transparent confidence scores on every skill.</span></li>
+          </ul>
+        </div>
+        <div className="md:w-1/2 relative">
+          <div className="bg-gradient-to-tr from-rose-200 to-orange-100 rounded-3xl w-full h-[500px] flex items-center justify-center p-8 relative overflow-hidden">
+            <div className="bg-white rounded-[2rem] shadow-2xl w-full max-w-sm h-full border-[8px] border-slate-900 overflow-hidden relative z-10 flex flex-col">
+              <div className="bg-slate-50 p-4 border-b border-slate-200 text-center"><p className="font-bold text-sm">Skill Profile</p></div>
+              <div className="p-6 flex-1 bg-white">
+                <div className="w-20 h-20 bg-slate-200 rounded-full mx-auto mb-4"></div>
+                <div className="h-4 bg-slate-200 rounded w-1/2 mx-auto mb-8"></div>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center"><div className="h-3 bg-slate-200 rounded w-1/3"></div><div className="w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center"><CheckCircle2 className="w-4 h-4" /></div></div>
+                  <div className="flex justify-between items-center"><div className="h-3 bg-slate-200 rounded w-1/2"></div><div className="w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center"><CheckCircle2 className="w-4 h-4" /></div></div>
+                  <div className="flex justify-between items-center"><div className="h-3 bg-slate-200 rounded w-1/4"></div><div className="w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center"><CheckCircle2 className="w-4 h-4" /></div></div>
+                </div>
+                <div className="mt-8 bg-accent text-white py-3 rounded-full text-center font-bold text-sm">Verified Perfect Match</div>
+              </div>
+            </div>
+            {/* Background decorative blob */}
+            <div className="absolute top-1/4 -right-10 w-48 h-48 bg-accent/20 rounded-full blur-3xl"></div>
+          </div>
+        </div>
+      </section>
+
+      {/* FEATURE 2 FULL WIDTH */}
+      <section className="relative bg-slate-900 py-32 overflow-hidden">
+        <div className="absolute inset-0 opacity-40">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2850&q=80" alt="Team working" className="w-full h-full object-cover" />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
+          <div className="max-w-xl">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white leading-tight mb-6">
+              Hiring in 48 hours.<br/>On your terms.
+            </h2>
+            <p className="text-xl text-white/90 mb-10 font-medium">
+              We verify the talent. You make the offer. Eliminate endless interview rounds and technical screens.
+            </p>
+            <div className="grid grid-cols-2 gap-6">
+              <div>
+                <h4 className="text-accent font-bold text-lg mb-1">Fast</h4>
+                <p className="text-slate-300 text-sm">Semantic matching connects you in minutes.</p>
+              </div>
+              <div>
+                <h4 className="text-accent font-bold text-lg mb-1">Trusted</h4>
+                <p className="text-slate-300 text-sm">Every skill backed by verifiable evidence.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CARDS SECTION */}
+      <section className="py-24 bg-[#FDFBF7]">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#0B3A36] mb-4">
+              Hiring success is no small thing. 🚀
+            </h2>
+            <p className="text-lg text-slate-600 font-medium">Everything you need to build your dream team.</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-[#0B3A36] rounded-3xl p-8 text-white relative overflow-hidden group hover:-translate-y-1 transition-transform">
+              <div className="bg-white/10 w-12 h-12 rounded-xl flex items-center justify-center mb-16">
+                <FileText className="w-6 h-6 text-accent" />
+              </div>
+              <h3 className="text-2xl font-serif font-bold mb-3">AI Resume Parsing</h3>
+              <p className="text-teal-50 font-medium text-sm leading-relaxed mb-6">
+                Upload unstructured resumes. Our engine maps it directly to a standardized 10,000+ skill taxonomy instantly.
+              </p>
+            </div>
+            
+            <div className="bg-[#0B3A36] rounded-3xl p-8 text-white relative overflow-hidden group hover:-translate-y-1 transition-transform">
+              <div className="bg-white/10 w-12 h-12 rounded-xl flex items-center justify-center mb-16">
+                <ShieldCheck className="w-6 h-6 text-accent" />
+              </div>
+              <h3 className="text-2xl font-serif font-bold mb-3">Instant Verification</h3>
+              <p className="text-teal-50 font-medium text-sm leading-relaxed mb-6">
+                We cross-reference certificates, GitHub repos, and portfolios to generate a transparent confidence score.
+              </p>
+            </div>
+            
+            <div className="bg-[#0B3A36] rounded-3xl p-8 text-white relative overflow-hidden group hover:-translate-y-1 transition-transform">
+              <div className="bg-white/10 w-12 h-12 rounded-xl flex items-center justify-center mb-16">
+                <Target className="w-6 h-6 text-accent" />
+              </div>
+              <h3 className="text-2xl font-serif font-bold mb-3">Semantic Matching</h3>
+              <p className="text-teal-50 font-medium text-sm leading-relaxed mb-6">
+                Go beyond simple keyword matching. Find candidates based on contextual capability and proficiency levels.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ICON GRID */}
+      <section className="py-24 border-t border-slate-200 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-center text-3xl font-serif font-bold text-[#0B3A36] mb-16">
+            Your hiring process does a lot. We do, too.
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 text-center">
+            {[
+              { icon: ShieldCheck, label: "Verifications" },
+              { icon: Target, label: "Semantic Search" },
+              { icon: FileText, label: "Resume Parsing" },
+              { icon: Award, label: "Certificates" },
+              { icon: Building, label: "Company Profiles" },
+              { icon: Users, label: "Candidate Portals" },
+              { icon: Briefcase, label: "Job Postings" },
+              { icon: BookOpen, label: "Skill Assessments" },
+              { icon: Clock, label: "Fast Matching" },
+              { icon: Lock, label: "Secure Data" },
+              { icon: Zap, label: "AI Insights" },
+              { icon: CheckCircle2, label: "Automated Hiring" }
+            ].map((item, i) => (
+              <div key={i} className="flex flex-col items-center gap-3 group">
+                <div className="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-accent/10 transition-colors">
+                  <item.icon className="w-5 h-5 text-slate-700 group-hover:text-accent" />
+                </div>
+                <p className="text-sm font-bold text-slate-700">{item.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PRE-FOOTER CTA */}
+      <section className="bg-[#0B3A36] py-20 px-4">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+          <div>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
+              Ready to work with <br/> SkillVerify?
+            </h2>
+          </div>
+          <div className="flex gap-4">
+            <Link to="/register?role=employer" className="bg-white text-[#0B3A36] px-8 py-4 rounded-full font-bold text-lg hover:bg-slate-100 transition-colors">
+              I'm hiring
+            </Link>
+            <Link to="/register?role=candidate" className="bg-accent text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-red-500 transition-colors">
+              I'm a candidate
+            </Link>
+          </div>
         </div>
       </section>
     </div>

@@ -14,13 +14,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+    <nav className="sticky top-0 z-50 bg-white border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+        <div className="flex justify-between h-20 items-center">
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center gap-2">
               <ShieldCheck className="h-8 w-8 text-accent" />
-              <span className="font-bold text-xl text-primary">SkillVerify</span>
+              <span className="font-serif font-bold text-2xl text-primary tracking-tight">SkillVerify</span>
             </Link>
           </div>
           
@@ -30,10 +30,10 @@ const Navbar = () => {
             </Link>
             {!user ? (
               <>
-                <Link to="/#how-it-works" className="text-slate-600 hover:text-primary transition-colors">How It Works</Link>
+                <Link to="/#how-it-works" className="text-slate-600 hover:text-primary transition-colors font-medium">How It Works</Link>
                 <div className="flex items-center space-x-4 ml-4">
-                  <Link to="/login" className="text-primary font-medium hover:text-accent transition-colors">Log In</Link>
-                  <Link to="/register" className="bg-accent text-white px-4 py-2 rounded-lg font-medium hover:bg-teal-600 transition-colors">Sign Up</Link>
+                  <Link to="/login" className="text-primary font-medium hover:opacity-80 transition-opacity">Sign in</Link>
+                  <Link to="/register" className="bg-primary text-white px-5 py-2.5 rounded-full font-medium hover:bg-teal-dark transition-colors shadow-sm">Get Started</Link>
                 </div>
               </>
             ) : (
@@ -44,13 +44,13 @@ const Navbar = () => {
                 >
                   Dashboard
                 </Link>
-                <div className="flex items-center gap-2 text-slate-800">
-                  <User className="h-5 w-5 text-slate-500" />
-                  <span className="font-medium">{user.name}</span>
+                <div className="flex items-center gap-2 text-primary font-medium">
+                  <User className="h-5 w-5 text-accent" />
+                  <span>{user.name}</span>
                 </div>
                 <button 
                   onClick={handleLogout}
-                  className="flex items-center gap-2 text-slate-500 hover:text-error transition-colors"
+                  className="flex items-center gap-2 text-slate-500 hover:text-error transition-colors font-medium"
                 >
                   <LogOut className="h-5 w-5" />
                   <span>Logout</span>
