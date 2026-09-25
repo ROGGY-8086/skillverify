@@ -69,7 +69,7 @@ const SkillAssessment = () => {
   if (isLoading) return <div className="min-h-screen flex justify-center pt-20">Loading...</div>;
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-12">
       {!activeAssessment && !result ? (
         <>
           <div className="mb-8">

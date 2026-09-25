@@ -81,7 +81,7 @@ const CreateJob = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-12">
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-slate-900">Create Job Posting</h1>
         <p className="text-slate-600 mt-1">Define the role and required skills to find the perfect match.</p>

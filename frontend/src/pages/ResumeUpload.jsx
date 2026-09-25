@@ -55,7 +55,7 @@ const ResumeUpload = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-12">
       <div className="mb-8 text-center">
         <h1 className="text-3xl font-bold text-slate-900 mb-2">Upload Resume</h1>
         <p className="text-slate-600">Let our AI extract your skills and experience automatically.</p>

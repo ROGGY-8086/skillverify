@@ -65,7 +65,7 @@ const CandidateProfile = () => {
   if (isLoading) return <div className="min-h-screen flex justify-center pt-20">Loading...</div>;
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-8">
       
       {/* Header / Basic Info */}
       <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden mb-8">

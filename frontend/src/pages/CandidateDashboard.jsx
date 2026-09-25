@@ -50,7 +50,7 @@ const CandidateDashboard = () => {
   const completionPercentage = Math.round((completionSteps.filter(Boolean).length / completionSteps.length) * 100);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-8">
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-slate-900">Welcome back, {user?.name.split(' ')[0]}!</h1>
         <p className="text-slate-600 mt-1">Here's what's happening with your profile today.</p>

@@ -35,7 +35,7 @@ const JobRecommendations = () => {
   if (isLoading) return <div className="min-h-screen flex justify-center pt-20">Loading jobs...</div>;
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-12">
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
         <div>
           <h1 className="text-3xl font-bold text-slate-900 mb-2">Recommended Jobs</h1>
