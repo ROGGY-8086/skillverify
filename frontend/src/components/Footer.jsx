@@ -4,7 +4,7 @@ import { ShieldCheck, Twitter, Linkedin, Github } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#FAFAFA] pt-16 border-t border-slate-200 overflow-hidden relative">
+    <footer className="bg-slate-50 pt-16 border-t border-slate-200 overflow-hidden relative">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6 relative z-10">
         
         {/* Logo Left */}

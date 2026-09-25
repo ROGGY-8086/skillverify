@@ -4,13 +4,13 @@ import { ShieldCheck, Target, Zap, FileText, CheckCircle2, Award, Briefcase, Use
 
 const Landing = () => {
   return (
-    <div className="font-sans text-slate-900 bg-[#FAFAFA] min-h-screen selection:bg-accent/20">
+    <div className="font-sans text-slate-900 bg-slate-50 min-h-screen selection:bg-accent/20">
       
       {/* HERO SECTION */}
       <section className="relative pt-40 pb-20 px-4 overflow-hidden flex flex-col items-center text-center">
         
         {/* Background Glow */}
-        <div className="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] max-w-5xl h-[100px] bg-gradient-to-r from-sky-200 via-blue-300 to-indigo-200 opacity-[0.2] blur-[60px] rounded-full pointer-events-none"></div>
+        <div className="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] max-w-5xl h-[100px] bg-gradient-to-r from-blue-500 via-indigo-600 to-blue-800 opacity-[0.3] blur-[60px] rounded-full pointer-events-none"></div>
 
         <div className="relative z-10 max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-slate-200/60 bg-white/50 text-xs font-medium text-slate-500 mb-6 backdrop-blur-sm">
@@ -158,7 +158,7 @@ const Landing = () => {
         {/* 3 Column Feature Cards */}
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 relative z-20">
           <div className="bg-white rounded-[2rem] p-8 border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.02)] transition-shadow hover:shadow-[0_8px_30px_rgb(0,0,0,0.06)]">
-            <div className="w-10 h-10 bg-sky-50 text-sky-500 rounded-xl flex items-center justify-center mb-6">
+            <div className="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6">
               <FileText className="w-5 h-5" />
             </div>
             <h3 className="text-lg font-bold text-slate-900 mb-2">Resume Parsing</h3>
@@ -166,7 +166,7 @@ const Landing = () => {
               Upload unstructured PDFs. Our engine maps text directly to a standardized 10,000+ skill taxonomy instantly.
             </p>
             <div className="bg-slate-50 border border-slate-100 rounded-xl p-4 relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-300 to-blue-400"></div>
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-indigo-600"></div>
               <p className="text-[10px] text-slate-400 font-bold uppercase mb-2">Parsed Output</p>
               <div className="flex flex-wrap gap-2">
                 <span className="bg-white px-2 py-1 rounded text-xs font-medium border border-slate-200">React</span>
@@ -177,7 +177,7 @@ const Landing = () => {
           </div>
 
           <div className="bg-white rounded-[2rem] p-8 border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.02)] transition-shadow hover:shadow-[0_8px_30px_rgb(0,0,0,0.06)]">
-            <div className="w-10 h-10 bg-blue-50 text-blue-500 rounded-xl flex items-center justify-center mb-6">
+            <div className="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6">
               <ShieldCheck className="w-5 h-5" />
             </div>
             <h3 className="text-lg font-bold text-slate-900 mb-2">Instant Verification</h3>
@@ -185,7 +185,7 @@ const Landing = () => {
               We cross-reference certificates, GitHub repos, and assessments to generate a transparent confidence score.
             </p>
             <div className="bg-slate-50 border border-slate-100 rounded-xl p-4 relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-indigo-400"></div>
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-600 to-blue-800"></div>
               <p className="text-[10px] text-slate-400 font-bold uppercase mb-2">Confidence Score</p>
               <div className="flex items-end gap-2">
                 <span className="text-3xl font-bold text-slate-800">98%</span>
@@ -195,7 +195,7 @@ const Landing = () => {
           </div>
 
           <div className="bg-white rounded-[2rem] p-8 border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.02)] transition-shadow hover:shadow-[0_8px_30px_rgb(0,0,0,0.06)]">
-            <div className="w-10 h-10 bg-slate-50 text-slate-500 rounded-xl flex items-center justify-center mb-6">
+            <div className="w-10 h-10 bg-slate-100 text-blue-700 rounded-xl flex items-center justify-center mb-6">
               <Target className="w-5 h-5" />
             </div>
             <h3 className="text-lg font-bold text-slate-900 mb-2">Semantic Matching</h3>
@@ -203,7 +203,7 @@ const Landing = () => {
               Go beyond simple keyword matching. Find candidates based on contextual capability and proficiency levels.
             </p>
             <div className="bg-slate-50 border border-slate-100 rounded-xl p-4 relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-slate-400 to-slate-500"></div>
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 to-slate-800"></div>
               <p className="text-[10px] text-slate-400 font-bold uppercase mb-2">Requirement Match</p>
               <div className="w-full bg-slate-200 rounded-full h-2 mb-2">
                 <div className="bg-slate-500 h-2 rounded-full w-[85%]"></div>
@@ -257,7 +257,7 @@ const Landing = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
             {/* Bento Card 1 */}
-            <div className="col-span-1 md:col-span-2 bg-gradient-to-br from-sky-50/50 to-blue-50/50 rounded-3xl p-8 border border-blue-100/50 relative overflow-hidden flex flex-col justify-between min-h-[300px]">
+            <div className="col-span-1 md:col-span-2 bg-gradient-to-br from-blue-100/60 to-indigo-100/60 rounded-3xl p-8 border border-blue-100/50 relative overflow-hidden flex flex-col justify-between min-h-[300px]">
               <div>
                 <p className="text-blue-600 font-bold text-sm uppercase tracking-wider mb-2">Automated Assessments</p>
                 <h3 className="text-2xl font-bold text-slate-900 max-w-sm">Provide candidates with instant technical assessments.</h3>
@@ -272,7 +272,7 @@ const Landing = () => {
             </div>
 
             {/* Bento Card 2 */}
-            <div className="col-span-1 bg-gradient-to-br from-slate-50/50 to-gray-50/50 rounded-3xl p-8 border border-slate-200/50 relative overflow-hidden flex flex-col justify-between min-h-[300px]">
+            <div className="col-span-1 bg-gradient-to-br from-slate-100/60 to-blue-50/60 rounded-3xl p-8 border border-slate-200/50 relative overflow-hidden flex flex-col justify-between min-h-[300px]">
               <div>
                 <p className="text-slate-600 font-bold text-sm uppercase tracking-wider mb-2">Skill Gaps</p>
                 <h3 className="text-xl font-bold text-slate-900">Instantly view missing skills</h3>
@@ -284,7 +284,7 @@ const Landing = () => {
             </div>
 
             {/* Bento Card 3 */}
-            <div className="col-span-1 bg-gradient-to-br from-indigo-50/50 to-blue-50/50 rounded-3xl p-8 border border-indigo-100/50 relative overflow-hidden flex flex-col justify-between min-h-[300px]">
+            <div className="col-span-1 bg-gradient-to-br from-indigo-100/60 to-blue-100/60 rounded-3xl p-8 border border-indigo-100/50 relative overflow-hidden flex flex-col justify-between min-h-[300px]">
               <div>
                 <p className="text-indigo-600 font-bold text-sm uppercase tracking-wider mb-2">AI Insights</p>
                 <h3 className="text-xl font-bold text-slate-900">Smart summary for every candidate</h3>
@@ -297,7 +297,7 @@ const Landing = () => {
             </div>
 
             {/* Bento Card 4 */}
-            <div className="col-span-1 md:col-span-2 bg-gradient-to-br from-blue-50/50 to-sky-50/50 rounded-3xl p-8 border border-blue-100/50 relative overflow-hidden flex flex-col justify-between min-h-[300px]">
+            <div className="col-span-1 md:col-span-2 bg-gradient-to-br from-blue-100/60 to-slate-100/60 rounded-3xl p-8 border border-blue-100/50 relative overflow-hidden flex flex-col justify-between min-h-[300px]">
                <div>
                 <p className="text-blue-600 font-bold text-sm uppercase tracking-wider mb-2">Real-time Matching</p>
                 <h3 className="text-2xl font-bold text-slate-900 max-w-sm">Rank candidates instantly based on contextual capability.</h3>
