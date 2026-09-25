@@ -1,110 +1,58 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { ShieldCheck, Menu, X, LogOut, User, BarChart3 } from 'lucide-react';
+import { ShieldCheck } from 'lucide-react';
 
 const Navbar = () => {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const handleLogout = () => {
-    logout();
-    navigate('/');
-  };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white border-b border-slate-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-20 items-center">
-          <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="flex items-center gap-2">
-              <ShieldCheck className="h-8 w-8 text-accent" />
-              <span className="font-serif font-bold text-2xl text-primary tracking-tight">SkillVerify</span>
-            </Link>
-          </div>
-          
-          <div className="hidden md:flex items-center space-x-8">
-            <Link to="/insights" className="text-slate-600 hover:text-accent font-medium px-3 py-2 transition-colors flex items-center gap-1">
-              <BarChart3 className="h-4 w-4" /> Market Insights
-            </Link>
-            {!user ? (
-              <>
-                <Link to="/#how-it-works" className="text-slate-600 hover:text-primary transition-colors font-medium">How It Works</Link>
-                <div className="flex items-center space-x-4 ml-4">
-                  <Link to="/login" className="text-primary font-medium hover:opacity-80 transition-opacity">Sign in</Link>
-                  <Link to="/register" className="bg-primary text-white px-5 py-2.5 rounded-full font-medium hover:bg-teal-dark transition-colors shadow-sm">Get Started</Link>
-                </div>
-              </>
-            ) : (
-              <div className="flex items-center space-x-6">
-                <Link 
-                  to={user.role === 'employer' ? '/employer/dashboard' : '/candidate/dashboard'} 
-                  className="text-slate-600 hover:text-primary transition-colors font-medium"
-                >
-                  Dashboard
-                </Link>
-                <div className="flex items-center gap-2 text-primary font-medium">
-                  <User className="h-5 w-5 text-accent" />
-                  <span>{user.name}</span>
-                </div>
-                <button 
-                  onClick={handleLogout}
-                  className="flex items-center gap-2 text-slate-500 hover:text-error transition-colors font-medium"
-                >
-                  <LogOut className="h-5 w-5" />
-                  <span>Logout</span>
-                </button>
-              </div>
-            )}
-          </div>
+    <div className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
+      <nav className="bg-white/70 backdrop-blur-xl border border-slate-200/50 rounded-full px-4 py-2.5 flex items-center justify-between w-full max-w-5xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] pointer-events-auto transition-all">
+        
+        {/* Logo */}
+        <Link to="/" className="flex items-center gap-2 pl-2">
+          <ShieldCheck className="h-6 w-6 text-slate-900" />
+          <span className="font-bold text-lg text-slate-900 tracking-tight">SkillVerify</span>
+        </Link>
+        
+        {/* Center Links */}
+        <div className="hidden md:flex items-center space-x-8">
+          <Link to="/insights" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Insights</Link>
+          <a href="#features" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Features</a>
+          <a href="#how-it-works" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">How it Works</a>
+        </div>
 
-          <div className="md:hidden flex items-center">
-            <button 
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-slate-600 hover:text-primary focus:outline-none"
-            >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
-          </div>
+        {/* Right CTA */}
+        <div className="flex items-center gap-3">
+          {!user ? (
+            <>
+              <Link to="/login" className="hidden md:block text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors px-2">Log in</Link>
+              <Link to="/register" className="bg-slate-900 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-slate-800 transition-all shadow-[0_0_15px_rgba(15,23,42,0.2)]">
+                Get Started
+              </Link>
+            </>
+          ) : (
+            <div className="flex items-center gap-4">
+              <Link 
+                to={user.role === 'employer' ? '/employer/dashboard' : '/candidate/dashboard'} 
+                className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors"
+              >
+                Dashboard
+              </Link>
+              <button 
+                onClick={() => { logout(); navigate('/'); }}
+                className="bg-slate-900 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-slate-800 transition-all"
+              >
+                Log out
+              </button>
+            </div>
+          )}
         </div>
-      </div>
-      
-      {/* Mobile menu */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-white border-t border-slate-100 py-4 px-4 shadow-lg">
-          <div className="flex flex-col space-y-4">
-            {!user ? (
-              <>
-                <Link to="/#how-it-works" className="text-slate-600 hover:text-primary">How It Works</Link>
-                <Link to="/register?role=candidate" className="text-slate-600 hover:text-primary">For Candidates</Link>
-                <Link to="/register?role=employer" className="text-slate-600 hover:text-primary">For Employers</Link>
-                <hr className="border-slate-100" />
-                <Link to="/login" className="text-primary font-medium">Log In</Link>
-                <Link to="/register" className="bg-accent text-white px-4 py-2 rounded-lg font-medium text-center">Sign Up</Link>
-              </>
-            ) : (
-              <>
-                <Link 
-                  to={user.role === 'employer' ? '/employer/dashboard' : '/candidate/dashboard'} 
-                  className="text-slate-600 hover:text-primary font-medium"
-                >
-                  Dashboard
-                </Link>
-                <hr className="border-slate-100" />
-                <button 
-                  onClick={handleLogout}
-                  className="flex items-center gap-2 text-slate-500 hover:text-error text-left w-full"
-                >
-                  <LogOut className="h-5 w-5" />
-                  <span>Logout</span>
-                </button>
-              </>
-            )}
-          </div>
-        </div>
-      )}
-    </nav>
+
+      </nav>
+    </div>
   );
 };
 
