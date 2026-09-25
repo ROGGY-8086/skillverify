@@ -44,12 +44,12 @@ const MarketInsights = () => {
     );
   }
 
-  if (!stats) {
+  if (!stats || stats.error) {
     return (
       <div className="min-h-[80vh] flex items-center justify-center flex-col gap-4">
         <TrendingUp className="h-16 w-16 text-slate-300" />
         <h2 className="text-xl font-bold text-slate-700">Market Insights Unavailable</h2>
-        <p className="text-slate-500">Failed to load dataset statistics.</p>
+        <p className="text-slate-500">{stats?.error || "Failed to load dataset statistics."}</p>
       </div>
     );
   }

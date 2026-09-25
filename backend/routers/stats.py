@@ -6,7 +6,10 @@ router = APIRouter(prefix="/api/stats", tags=["stats"])
 
 @router.get("/market-insights")
 def get_market_insights():
-    file_path = "data/jobs_dataset.csv"
+    # Get the absolute path to the data directory relative to this file
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    file_path = os.path.join(current_dir, "..", "data", "jobs_dataset.csv")
+    
     if not os.path.exists(file_path):
         return {"error": "Dataset not found"}
 
