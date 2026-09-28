@@ -125,33 +125,55 @@ const Landing = () => {
           <p className="text-slate-500 font-medium">Seamlessly integrates with tools you already know and love.</p>
         </div>
 
-        {/* Hub and Spoke Mock */}
-        <div className="relative max-w-4xl mx-auto h-[300px] flex items-center justify-center mb-16 hidden md:flex">
-          {/* Center */}
-          <div className="relative z-20 bg-slate-900 text-white px-6 py-3 rounded-full flex items-center gap-2 shadow-xl shadow-slate-900/10">
-            <ShieldCheck className="w-5 h-5" /> <span className="font-bold tracking-tight">SkillVerify</span>
+        {/* Hub and Spoke Interactive Diagram */}
+        <div className="relative max-w-4xl mx-auto h-[400px] flex items-center justify-center mb-16 hidden md:flex">
+          <style>{`
+            @keyframes float-1 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+            @keyframes float-2 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-15px); } }
+            @keyframes float-3 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-8px); } }
+            @keyframes float-4 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-12px); } }
+            @keyframes flow-line { from { stroke-dashoffset: 20; } to { stroke-dashoffset: 0; } }
+            .animate-float-1 { animation: float-1 4s ease-in-out infinite; }
+            .animate-float-2 { animation: float-2 5s ease-in-out infinite; }
+            .animate-float-3 { animation: float-3 3.5s ease-in-out infinite; }
+            .animate-float-4 { animation: float-4 4.5s ease-in-out infinite; }
+            .animate-flow { stroke-dasharray: 4 6; animation: flow-line 1s linear infinite; }
+          `}</style>
+          
+          {/* Center Main Node */}
+          <div className="relative z-30 bg-slate-900 text-white px-8 py-4 rounded-full flex items-center gap-3 shadow-[0_0_50px_rgba(59,130,246,0.3)] scale-110">
+            <ShieldCheck className="w-6 h-6 text-blue-400" /> 
+            <span className="font-bold tracking-tight text-lg">SkillVerify</span>
+            <div className="absolute inset-0 border border-blue-500/30 rounded-full animate-ping opacity-20" style={{ animationDuration: '3s' }}></div>
           </div>
 
           {/* SVG connecting lines */}
-          <svg className="absolute inset-0 w-full h-full z-10 pointer-events-none" style={{ filter: 'opacity(0.15)' }}>
-            <path d="M 450 150 C 300 150, 200 80, 150 80" stroke="#000" strokeWidth="2" fill="none" />
-            <path d="M 450 150 C 300 150, 200 220, 150 220" stroke="#000" strokeWidth="2" fill="none" />
-            <path d="M 450 150 C 600 150, 700 80, 750 80" stroke="#000" strokeWidth="2" fill="none" />
-            <path d="M 450 150 C 600 150, 700 220, 750 220" stroke="#000" strokeWidth="2" fill="none" />
+          <svg className="absolute inset-0 w-full h-full z-10 pointer-events-none" viewBox="0 0 896 400">
+            {/* Faint solid paths */}
+            <path d="M 448 200 C 300 200, 200 100, 160 100" stroke="#e2e8f0" strokeWidth="2" fill="none" />
+            <path d="M 448 200 C 300 200, 200 300, 160 300" stroke="#e2e8f0" strokeWidth="2" fill="none" />
+            <path d="M 448 200 C 600 200, 700 100, 736 100" stroke="#e2e8f0" strokeWidth="2" fill="none" />
+            <path d="M 448 200 C 600 200, 700 300, 736 300" stroke="#e2e8f0" strokeWidth="2" fill="none" />
+            
+            {/* Animated flowing paths */}
+            <path d="M 160 100 C 200 100, 300 200, 448 200" stroke="#3B82F6" strokeWidth="2" fill="none" className="animate-flow" opacity="0.5" />
+            <path d="M 160 300 C 200 300, 300 200, 448 200" stroke="#3B82F6" strokeWidth="2" fill="none" className="animate-flow" opacity="0.5" />
+            <path d="M 448 200 C 600 200, 700 100, 736 100" stroke="#3B82F6" strokeWidth="2" fill="none" className="animate-flow" opacity="0.5" />
+            <path d="M 448 200 C 600 200, 700 300, 736 300" stroke="#3B82F6" strokeWidth="2" fill="none" className="animate-flow" opacity="0.5" />
           </svg>
 
           {/* Nodes */}
-          <div className="absolute top-[60px] left-[50px] bg-white border border-slate-200 px-4 py-2 rounded-xl shadow-sm z-20 flex items-center gap-2 font-bold text-slate-700 text-sm">
-            <div className="w-4 h-4 bg-green-500 rounded-sm"></div> Greenhouse
+          <div className="absolute top-[80px] left-[60px] bg-white/90 backdrop-blur-md border border-slate-200/80 px-5 py-3 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] z-20 flex items-center gap-3 font-bold text-slate-800 text-sm animate-float-1">
+            <div className="w-5 h-5 bg-green-500 rounded-md shadow-[0_0_10px_rgba(34,197,94,0.4)]"></div> Greenhouse
           </div>
-          <div className="absolute bottom-[60px] left-[50px] bg-white border border-slate-200 px-4 py-2 rounded-xl shadow-sm z-20 flex items-center gap-2 font-bold text-slate-700 text-sm">
-            <div className="w-4 h-4 bg-blue-500 rounded-sm"></div> LinkedIn
+          <div className="absolute bottom-[80px] left-[60px] bg-white/90 backdrop-blur-md border border-slate-200/80 px-5 py-3 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] z-20 flex items-center gap-3 font-bold text-slate-800 text-sm animate-float-2">
+            <div className="w-5 h-5 bg-blue-500 rounded-md shadow-[0_0_10px_rgba(59,130,246,0.4)]"></div> LinkedIn
           </div>
-          <div className="absolute top-[60px] right-[50px] bg-white border border-slate-200 px-4 py-2 rounded-xl shadow-sm z-20 flex items-center gap-2 font-bold text-slate-700 text-sm">
-            <div className="w-4 h-4 bg-orange-500 rounded-sm"></div> Workday
+          <div className="absolute top-[80px] right-[60px] bg-white/90 backdrop-blur-md border border-slate-200/80 px-5 py-3 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] z-20 flex items-center gap-3 font-bold text-slate-800 text-sm animate-float-3">
+            <div className="w-5 h-5 bg-orange-500 rounded-md shadow-[0_0_10px_rgba(249,115,22,0.4)]"></div> Workday
           </div>
-          <div className="absolute bottom-[60px] right-[50px] bg-white border border-slate-200 px-4 py-2 rounded-xl shadow-sm z-20 flex items-center gap-2 font-bold text-slate-700 text-sm">
-            <div className="w-4 h-4 bg-purple-500 rounded-sm"></div> Lever
+          <div className="absolute bottom-[80px] right-[60px] bg-white/90 backdrop-blur-md border border-slate-200/80 px-5 py-3 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] z-20 flex items-center gap-3 font-bold text-slate-800 text-sm animate-float-4">
+            <div className="w-5 h-5 bg-purple-500 rounded-md shadow-[0_0_10px_rgba(168,85,247,0.4)]"></div> Lever
           </div>
         </div>
 
