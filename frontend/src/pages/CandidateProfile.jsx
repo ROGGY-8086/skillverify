@@ -3,8 +3,10 @@ import { User, MapPin, Briefcase, FileText, Plus, Save } from 'lucide-react';
 import client from '../api/client';
 import SkillBadge from '../components/SkillBadge';
 import CredentialStatus from '../components/CredentialStatus';
+import { useAuth } from '../context/AuthContext';
 
 const CandidateProfile = () => {
+  const { user } = useAuth();
   const [profile, setProfile] = useState(null);
   const [avatar, setAvatar] = useState(null);
 
@@ -22,6 +24,13 @@ const CandidateProfile = () => {
     fetchProfile();
   }, []);
 
+  useEffect(() => {
+    if (user?.id) {
+      setAvatar(localStorage.getItem(`avatar_${user.id}`));
+    }
+  }, [user]);
+
+
 
   const handleAvatarUpload = (e) => {
     const file = e.target.files[0];
@@ -29,8 +38,8 @@ const CandidateProfile = () => {
       const reader = new FileReader();
       reader.onloadend = () => {
         setAvatar(reader.result);
-        if (profile?.user?.id) {
-          localStorage.setItem(`avatar_${profile.user.id}`, reader.result);
+        if (user?.id) {
+          localStorage.setItem(`avatar_${user.id}`, reader.result);
         }
       };
       reader.readAsDataURL(file);
@@ -41,8 +50,8 @@ const CandidateProfile = () => {
     try {
       const res = await client.get('/api/candidates/me');
       setProfile(res.data);
-      if (res.data.user?.id) {
-        setAvatar(localStorage.getItem(`avatar_${res.data.user.id}`));
+      if (true) {
+        // Avatar is now loaded via a separate effect listening to 'user'
       }
       setFormData({
         headline: res.data.headline || '',
@@ -111,7 +120,7 @@ const CandidateProfile = () => {
         <div className="px-8 pb-8 pt-6">
           <div className="flex justify-between items-start">
             <div className="w-full max-w-2xl">
-              {profile?.user?.name && <h1 className="text-2xl font-bold text-slate-900 mb-2">{profile.user.name}</h1>}
+              {user?.name && <h1 className="text-2xl font-bold text-slate-900 mb-2">{user.name}</h1>}
               
               {isEditing ? (
                 <div className="mt-4 space-y-4 max-w-lg">
