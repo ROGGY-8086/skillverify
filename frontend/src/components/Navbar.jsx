@@ -20,6 +20,7 @@ const Navbar = () => {
         {/* Center Links */}
         <div className="hidden md:flex items-center space-x-8">
           <Link to="/insights" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Insights</Link>
+          <a href="/#standout" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Standout</a>
           <a href="/#features" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Features</a>
           <a href="/#how-it-works" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">How it Works</a>
         </div>

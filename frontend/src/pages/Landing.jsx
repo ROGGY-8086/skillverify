@@ -1,8 +1,61 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, Target, Zap, FileText, CheckCircle2, Award, Briefcase, Users, LayoutDashboard, BrainCircuit, Activity } from 'lucide-react';
+import { ShieldCheck, Target, Zap, FileText, CheckCircle2, Award, Briefcase, Users, LayoutDashboard, BrainCircuit, Activity, LineChart, Search, Scale, Clock, ChevronRight } from 'lucide-react';
 
+const STANDOUT_FEATURES = [
+  {
+    id: 'targeted',
+    title: 'Targeted Verification',
+    short: 'Adaptive Assessments',
+    description: 'Most tools test everything or nothing. Our confidence engine generates short, adaptive assessments only for required skills that lack strong evidence (e.g., "React: Resume Only, 55%").',
+    icon: Target
+  },
+  {
+    id: 'explainable',
+    title: 'Explainable AI Matches',
+    short: 'What-If Advice',
+    description: 'Counterfactual explanations show exactly why a candidate scored 78% and actionable "what-if" advice: "Verify your SQL skill and your match rises to 86%." No more black-box rejection.',
+    icon: LineChart
+  },
+  {
+    id: 'forensics',
+    title: 'Deep Document Forensics',
+    short: 'Fraud Detection',
+    description: 'We go beyond simple QR lookups. Our engine cross-references template similarity, PDF metadata, font inconsistencies, and timeline contradictions to catch sophisticated credential fraud.',
+    icon: Search
+  },
+  {
+    id: 'vocational',
+    title: 'Built for the Real Workforce',
+    short: 'ITI & Regional Support',
+    description: 'Existing platforms are degree-centric. We support ITI vocational learners with NSQF-level mapping, regional languages, mobile-first design, and practical photo/video evidence.',
+    icon: Users
+  },
+  {
+    id: 'fairness',
+    title: 'Built-in Fairness Audits',
+    short: 'Unbiased Hiring',
+    description: 'Hiring AI requires trust. Our fairness dashboard tracks adverse-impact ratios (the four-fifths rule) across demographics, paired with a blind-matching mode to ensure unbiased hiring.',
+    icon: Scale
+  },
+  {
+    id: 'twosided',
+    title: 'Two-Sided Trust',
+    short: 'Employer Verification',
+    description: 'Fake job offers target freshers constantly. We verify employers just as rigorously as candidates, using scam-posting detectors to ensure a completely safe ecosystem.',
+    icon: ShieldCheck
+  },
+  {
+    id: 'freshness',
+    title: 'Skill Freshness Decay',
+    short: 'Dynamic Confidence',
+    description: 'Skills aren\'t permanent. Our engine decays confidence scores over time, tying them to certificate expiry dates and last-used metrics to ensure capability is current.',
+    icon: Clock
+  }
+];
 const Landing = () => {
+  const [activeFeature, setActiveFeature] = useState(0);
+
   return (
     <div className="font-sans text-slate-900 bg-slate-50 min-h-screen selection:bg-accent/20">
       
@@ -267,7 +320,7 @@ const Landing = () => {
         </div>
       </section>
 
-      {* BENTO BOX SECTION *}
+      {/* BENTO BOX SECTION */}
       <section id="how-it-works" className="py-24 px-4">
         <div className="max-w-6xl mx-auto bg-slate-100 rounded-[3rem] p-10 md:p-16 border border-slate-200/50 overflow-hidden relative">
           <div className="text-center mb-12">
@@ -339,6 +392,71 @@ const Landing = () => {
       </section>
 
       {/* PRE-FOOTER CTA */}
+      {/* STANDOUT FEATURES SECTION */}
+      <section id="standout" className="py-24 px-4 bg-slate-900 text-white overflow-hidden relative">
+        {/* Glow */}
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/20 blur-[120px] rounded-full pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-indigo-600/20 blur-[120px] rounded-full pointer-events-none"></div>
+        
+        <div className="max-w-6xl mx-auto relative z-10">
+          <div className="mb-16 md:w-2/3">
+            <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white mb-6 leading-tight">
+              The SkillVerify Difference
+            </h2>
+            <p className="text-slate-400 text-lg font-medium">
+              Existing platforms cover only a slice of the pipeline, focusing entirely on degrees or relying on self-declared data. Here is how we bridge the gap.
+            </p>
+          </div>
+
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
+            
+            {/* Left: Interactive Tabs */}
+            <div className="lg:w-1/3 flex flex-col gap-2 relative">
+              <div className="absolute left-[15px] top-4 bottom-4 w-px bg-slate-800"></div>
+              {STANDOUT_FEATURES.map((feature, idx) => {
+                const isActive = activeFeature === idx;
+                return (
+                  <button 
+                    key={feature.id}
+                    onClick={() => setActiveFeature(idx)}
+                    className={`relative text-left flex items-center gap-4 py-4 pr-4 transition-all duration-300 group ${isActive ? 'opacity-100' : 'opacity-50 hover:opacity-80'}`}
+                  >
+                    <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 relative z-10 transition-colors duration-300 ${isActive ? 'bg-blue-500 text-white shadow-[0_0_15px_rgba(59,130,246,0.5)]' : 'bg-slate-800 text-slate-400 group-hover:bg-slate-700'}`}>
+                      <feature.icon className="w-4 h-4" />
+                    </div>
+                    <span className={`font-bold transition-all duration-300 ${isActive ? 'text-white text-lg' : 'text-slate-400 text-base'}`}>
+                      {feature.short}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Right: Feature Details */}
+            <div className="lg:w-2/3">
+              <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden min-h-[320px] flex flex-col justify-center transition-all duration-500">
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-indigo-500"></div>
+                
+                {STANDOUT_FEATURES.map((feature, idx) => {
+                  if (activeFeature !== idx) return null;
+                  return (
+                    <div key={feature.id} className="animate-in fade-in slide-in-from-right-8 duration-500">
+                      <div className="w-16 h-16 bg-blue-500/10 rounded-2xl flex items-center justify-center border border-blue-500/20 mb-8">
+                        <feature.icon className="w-8 h-8 text-blue-400" />
+                      </div>
+                      <h3 className="text-3xl font-bold text-white mb-4 tracking-tight">{feature.title}</h3>
+                      <p className="text-slate-300 text-lg leading-relaxed font-medium">
+                        {feature.description}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
       <section className="py-24 px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 mb-6">
           Offer your candidates a better <br /> experience, scale your team
