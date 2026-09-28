@@ -267,8 +267,8 @@ const Landing = () => {
         </div>
       </section>
 
-      {/* BENTO BOX SECTION */}
-      <section className="py-24 px-4">
+      {* BENTO BOX SECTION *}
+      <section id="how-it-works" className="py-24 px-4">
         <div className="max-w-6xl mx-auto bg-slate-100 rounded-[3rem] p-10 md:p-16 border border-slate-200/50 overflow-hidden relative">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
