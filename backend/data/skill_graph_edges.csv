@@ -1,0 +1,96 @@
+source_skill,target_skill,relation
+Java,Software Development,part_of
+Python,Software Development,part_of
+JavaScript,Software Development,part_of
+TypeScript,JavaScript,part_of
+C++,Software Development,part_of
+C#,Software Development,part_of
+Go,Software Development,part_of
+PHP,Software Development,part_of
+Kotlin,Software Development,part_of
+Spring Boot,Java,requires
+Hibernate,Java,requires
+Django,Python,requires
+FastAPI,Python,requires
+Flask,Python,requires
+Node.js,JavaScript,requires
+Express.js,Node.js,requires
+REST API,Backend Development,part_of
+GraphQL,REST API,part_of
+Microservices,REST API,part_of
+HTML,Frontend Development,part_of
+CSS,Frontend Development,part_of
+React,JavaScript,requires
+Next.js,React,requires
+Angular,TypeScript,requires
+Vue.js,JavaScript,requires
+Tailwind CSS,CSS,requires
+SQL,Software Development,part_of
+MySQL,SQL,requires
+PostgreSQL,SQL,requires
+Oracle DB,SQL,requires
+MongoDB,Software Development,part_of
+Redis,Software Development,part_of
+Machine Learning,Data Science,part_of
+Deep Learning,Machine Learning,requires
+NLP,Machine Learning,requires
+Scikit-learn,Machine Learning,requires
+TensorFlow,Deep Learning,requires
+PyTorch,Deep Learning,requires
+Pandas,Python,requires
+NumPy,Python,requires
+Statistics,Data Science,part_of
+Data Analysis,Data Science,part_of
+Data Visualization,Data Analysis,part_of
+Power BI,Data Visualization,part_of
+Tableau,Data Visualization,part_of
+Excel,Data Analysis,part_of
+Git,Software Development,part_of
+Docker,DevOps,part_of
+Kubernetes,Docker,requires
+AWS,DevOps,part_of
+Azure,DevOps,part_of
+Google Cloud,DevOps,part_of
+CI/CD,DevOps,part_of
+Jenkins,CI/CD,requires
+Linux,DevOps,part_of
+Unit Testing,Software Development,part_of
+JUnit,Unit Testing,requires
+Selenium,Unit Testing,requires
+Android Development,Mobile Development,part_of
+Flutter,Mobile Development,part_of
+Cybersecurity,Cybersecurity Domain,part_of
+Network Security,Cybersecurity,part_of
+Networking,Cybersecurity,part_of
+CNC Machining,Manufacturing & Trades,part_of
+Welding,Manufacturing & Trades,part_of
+Electrical Wiring,Manufacturing & Trades,part_of
+AutoCAD,Manufacturing & Trades,part_of
+PLC Programming,Manufacturing & Trades,part_of
+Backend Development,Software Development,part_of
+Frontend Development,Software Development,part_of
+Full-Stack Development,Software Development,part_of
+DevOps,Software Development,part_of
+Mobile Development,Software Development,part_of
+Power BI,Tableau,related_to
+MySQL,PostgreSQL,related_to
+React,Angular,related_to
+React,Vue.js,related_to
+Django,Flask,related_to
+Django,FastAPI,related_to
+TensorFlow,PyTorch,related_to
+AWS,Azure,related_to
+AWS,Google Cloud,related_to
+Jenkins,CI/CD,related_to
+Selenium,JUnit,related_to
+Java,Kotlin,related_to
+Pandas,NumPy,related_to
+Statistics,Machine Learning,related_to
+Kubernetes,Microservices,related_to
+Excel,Power BI,related_to
+Spring Boot,Microservices,related_to
+Android Development,Kotlin,related_to
+Flutter,Android Development,related_to
+Network Security,Linux,related_to
+CNC Machining,AutoCAD,related_to
+PLC Programming,Electrical Wiring,related_to

@@ -1,0 +1,601 @@
+candidate_id,full_name,gender_audit_only,college_tier_audit_only,city,education_level,education_level_num,degree,branch,graduation_year,experience_years,target_role_family,profile_completion_pct,preferred_employment_type,expected_salary_lpa
+C0001,Aditya Menon,F,Tier-3,Nagpur,Bachelor,3,B.Tech,Computer Science and Engineering,2022,3.4,DevOps,60,Contract,11.6
+C0002,Sneha Kapoor,M,Tier-3,Lucknow,Bachelor,3,B.Sc (CS),Computer Science and Engineering,2024,1.2,Data-Analyst,60,Full-time,6.7
+C0003,Tanvi Shaikh,M,Tier-2,Ahmedabad,Bachelor,3,B.Tech,Computer Science and Engineering,2027,0.0,Backend-Python,85,Full-time,4.1
+C0004,Harpreet Shaikh,M,Tier-2,Lucknow,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2025,1.5,QA,90,Contract,7.9
+C0005,Tanvi Khan,M,Tier-3,Jaipur,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2027,0.0,Backend-Java,80,Full-time,4.7
+C0006,Aditya Rao,M,Tier-2,Bhubaneswar,Bachelor,3,B.E.,Information Technology,2022,4.7,Android,90,Contract,10.6
+C0007,Sneha Iyer,F,Tier-2,Kolkata,Bachelor,3,B.Tech,Computer Science and Engineering,2025,0.0,Frontend,100,Internship,5.2
+C0008,Yash Das,F,Tier-3,Mumbai,Bachelor,3,B.E.,Computer Science and Engineering,2022,4.3,Backend-Python,65,Contract,9.9
+C0009,Ramesh Das,F,Tier-3,Delhi NCR,Diploma,2,Diploma in Engineering,Information Technology,2023,2.3,Frontend,70,Contract,9.4
+C0010,Ritika Menon,M,Tier-1,Chennai,Bachelor,3,B.Sc (CS),Electronics and Communication,2025,1.7,Backend-Java,75,Full-time,8.2
+C0011,Divya Fernandes,M,Tier-2,Ahmedabad,Bachelor,3,B.Sc (CS),Information Technology,2023,2.4,Frontend,60,Full-time,9.7
+C0012,Ritika Menon,M,Tier-2,Bengaluru,Bachelor,3,B.Sc (CS),Computer Science and Engineering,2023,3.5,Backend-Python,80,Contract,8.1
+C0013,Tanvi Pillai,M,Tier-2,Jaipur,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2024,1.9,Vocational,70,Full-time,2.4
+C0014,Kavya Rao,F,Tier-1,Mumbai,Bachelor,3,BCA,Artificial Intelligence and Data Science,2024,0.0,Data-Science-ML,90,Contract,7.4
+C0015,Neha Naidu,M,Tier-2,Chennai,Diploma,2,Diploma in Engineering,Electronics and Communication,2026,0.0,Data-Science-ML,60,Full-time,7.4
+C0016,Jasleen Joshi,M,Tier-1,Jaipur,Bachelor,3,B.Tech,Computer Science and Engineering,2026,0.0,Data-Science-ML,85,Contract,4.9
+C0017,Farhan Reddy,M,Tier-3,Delhi NCR,Bachelor,3,B.Tech,Electronics and Communication,2024,0.0,Frontend,85,Full-time,6.4
+C0018,Vivaan Bose,M,Tier-2,Pune,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2023,2.9,Vocational,55,Full-time,2.7
+C0019,Tanvi Singh,M,Tier-2,Nagpur,Diploma,2,Diploma in Engineering,Information Technology,2026,0.0,Backend-Python,70,Internship,4.4
+C0020,Harpreet Joshi,M,Tier-3,Chennai,Master,4,MCA,Electronics and Communication,2024,0.0,Data-Science-ML,80,Full-time,5.9
+C0021,Divya Bose,M,Tier-3,Delhi NCR,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2027,0.0,QA,75,Contract,7.1
+C0022,Divya Verma,M,Tier-3,Hyderabad,Bachelor,3,B.Tech,Computer Science and Engineering,2026,0.0,Frontend,90,Internship,6.4
+C0023,Ayesha Yadav,M,Tier-2,Chennai,Master,4,M.Sc (Data Science),Computer Science and Engineering,2024,2.1,Cybersecurity,85,Full-time,5.6
+C0024,Yash Menon,F,Tier-3,Bengaluru,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2024,2.1,Data-Science-ML,90,Contract,9.3
+C0025,Arjun Rao,F,Tier-3,Mumbai,Bachelor,3,BCA,Computer Science and Engineering,2024,2.8,Backend-Python,55,Full-time,8.0
+C0026,Anjali Verma,M,Tier-3,Pune,Bachelor,3,B.Sc (CS),Information Technology,2025,0.0,Data-Analyst,85,Internship,5.4
+C0027,Shreya Kulkarni,F,Tier-1,Bengaluru,Bachelor,3,B.Tech,Computer Science and Engineering,2024,2.8,Backend-Java,100,Contract,7.7
+C0028,Harpreet Mishra,M,Tier-2,Mumbai,Bachelor,3,B.Tech,Information Technology,2026,0.0,QA,75,Full-time,6.5
+C0029,Priya Pillai,M,Tier-3,Mumbai,Bachelor,3,B.Tech,Electronics and Communication,2024,0.0,Data-Analyst,100,Contract,3.7
+C0030,Yash Singh,F,Tier-3,Hyderabad,Bachelor,3,B.Tech,Computer Science and Engineering,2025,0.0,Backend-Python,60,Internship,4.5
+C0031,Kavya Fernandes,F,Tier-1,Delhi NCR,Master,4,M.Sc (Data Science),Information Technology,2023,3.0,Full-Stack,95,Internship,9.5
+C0032,Shreya Thakur,F,Tier-3,Hyderabad,Bachelor,3,B.Tech,Electronics and Communication,2015,11.5,QA,75,Internship,17.9
+C0033,Nikhil Rao,M,Tier-3,Bhubaneswar,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2024,1.6,Frontend,65,Full-time,8.9
+C0034,Joseph Patel,F,Tier-2,Kolkata,Bachelor,3,BCA,Artificial Intelligence and Data Science,2026,0.0,Frontend,55,Full-time,6.0
+C0035,Vivaan Reddy,F,Tier-3,Kochi,Bachelor,3,B.Tech,Information Technology,2022,4.0,Backend-Java,65,Contract,11.6
+C0036,Karthik Menon,M,Tier-1,Hyderabad,Bachelor,3,B.E.,Computer Science and Engineering,2024,0.0,Frontend,85,Full-time,6.1
+C0037,Aarav Kapoor,M,Tier-3,Mumbai,Bachelor,3,B.E.,Computer Science and Engineering,2024,1.2,QA,90,Full-time,7.3
+C0038,Pooja Gupta,F,Tier-2,Chennai,Bachelor,3,B.E.,Computer Science and Engineering,2026,0.0,Backend-Java,85,Internship,7.4
+C0039,Priya Rao,M,Tier-1,Bhubaneswar,Diploma,2,Diploma in Engineering,Artificial Intelligence and Data Science,2026,0.0,Backend-Java,95,Internship,6.4
+C0040,Kavya Bose,M,Tier-2,Bengaluru,Diploma,2,Diploma in Engineering,Information Technology,2022,3.3,Backend-Java,90,Internship,6.9
+C0041,Aditya Sharma,M,Tier-1,Kolkata,Master,4,M.Sc (Data Science),Computer Science and Engineering,2026,0.0,QA,85,Full-time,6.3
+C0042,Ananya Iyer,M,Tier-2,Mumbai,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2024,2.8,Data-Science-ML,100,Contract,10.0
+C0043,Meera Singh,M,Tier-2,Mumbai,Bachelor,3,B.Tech,Computer Science and Engineering,2025,0.7,Cybersecurity,85,Contract,7.7
+C0044,Divya Fernandes,M,Tier-3,Delhi NCR,Diploma,2,Diploma in Engineering,Electronics and Communication,2027,0.0,Data-Science-ML,90,Full-time,6.1
+C0045,Deepa Banerjee,M,Tier-2,Bengaluru,Diploma,2,Diploma in Engineering,Electronics and Communication,2020,5.2,Data-Science-ML,55,Full-time,8.7
+C0046,Deepa Reddy,M,Tier-2,Kolkata,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2026,0.0,Data-Science-ML,65,Internship,7.5
+C0047,Shreya Shaikh,M,Tier-3,Delhi NCR,Master,4,M.Tech,Computer Science and Engineering,2025,1.3,Data-Analyst,75,Full-time,7.5
+C0048,Pooja Patel,M,Tier-1,Nagpur,Bachelor,3,B.Tech,Information Technology,2024,0.0,Data-Analyst,95,Contract,7.0
+C0049,Joseph Iyer,M,Tier-1,Bengaluru,Bachelor,3,B.Tech,Electronics and Communication,2027,0.0,Data-Science-ML,65,Contract,5.8
+C0050,Meera Rao,M,Tier-3,Delhi NCR,Bachelor,3,B.Tech,Electronics and Communication,2024,1.4,Data-Analyst,85,Full-time,5.1
+C0051,Meera Singh,M,Tier-2,Delhi NCR,Bachelor,3,B.Tech,Computer Science and Engineering,2023,2.1,Data-Analyst,55,Contract,10.3
+C0052,Ananya Sharma,M,Tier-1,Chennai,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2023,2.1,Backend-Java,85,Full-time,7.4
+C0053,Isha Nair,F,Tier-3,Chennai,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2022,3.2,Backend-Python,95,Internship,9.0
+C0054,Pooja Pillai,F,Tier-1,Bengaluru,Bachelor,3,B.Tech,Electronics and Communication,2020,6.3,Data-Analyst,95,Internship,12.0
+C0055,Maria Mishra,F,Tier-3,Ahmedabad,Master,4,M.Tech,Artificial Intelligence and Data Science,2027,0.0,Data-Science-ML,85,Full-time,4.1
+C0056,Divya Reddy,F,Tier-2,Pune,Bachelor,3,B.Tech,Electronics and Communication,2024,2.1,Data-Science-ML,65,Full-time,5.6
+C0057,Kavya Gupta,M,Tier-2,Chennai,Diploma,2,Diploma in Engineering,Industrial Trade,2022,3.1,Vocational,55,Internship,3.4
+C0058,Shreya Thakur,M,Tier-1,Bengaluru,Bachelor,3,B.E.,Computer Science and Engineering,2022,4.5,Full-Stack,90,Internship,11.5
+C0059,Manish Patel,M,Tier-3,Ahmedabad,Diploma,2,Diploma in Engineering,Computer Science and Engineering,2025,1.1,DevOps,90,Internship,8.4
+C0060,Isha Gupta,M,Tier-1,Chennai,Bachelor,3,BCA,Electronics and Communication,2022,3.1,Backend-Python,100,Internship,6.5
+C0061,Gurpreet Patel,M,Tier-3,Delhi NCR,Bachelor,3,B.E.,Computer Science and Engineering,2021,4.2,Data-Analyst,85,Contract,10.6
+C0062,Vikram Iyer,M,Tier-3,Bhubaneswar,Master,4,MCA,Computer Science and Engineering,2026,0.9,Data-Analyst,60,Full-time,8.4
+C0063,Kavya Shaikh,M,Tier-2,Pune,Bachelor,3,B.Tech,Computer Science and Engineering,2024,0.0,Cybersecurity,65,Internship,3.4
+C0064,Aarav Chatterjee,M,Tier-3,Delhi NCR,Bachelor,3,BCA,Artificial Intelligence and Data Science,2021,4.9,Android,100,Internship,9.7
+C0065,Imran Pillai,Other,Tier-3,Mumbai,Bachelor,3,B.Tech,Information Technology,2020,6.5,Backend-Java,55,Full-time,11.5
+C0066,Rohit Pillai,M,Tier-3,Chennai,Master,4,MCA,Information Technology,2019,6.0,Data-Science-ML,80,Full-time,12.6
+C0067,Vikram Nair,M,Tier-2,Hyderabad,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2026,0.0,Frontend,95,Full-time,4.2
+C0068,Sneha Kulkarni,M,Tier-1,Pune,Bachelor,3,B.Tech,Computer Science and Engineering,2022,4.2,Full-Stack,90,Contract,10.4
+C0069,Ananya Kapoor,M,Tier-1,Bhubaneswar,Bachelor,3,B.E.,Information Technology,2027,0.0,Backend-Java,90,Internship,6.7
+C0070,Imran Chatterjee,M,Tier-2,Chennai,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2020,5.0,Backend-Java,80,Full-time,11.5
+C0071,Harpreet Gupta,M,Tier-3,Delhi NCR,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2024,1.7,Backend-Python,60,Internship,7.3
+C0072,Pooja Fernandes,M,Tier-2,Pune,Bachelor,3,B.Tech,Information Technology,2024,0.0,Data-Science-ML,100,Full-time,4.8
+C0073,Aarav Banerjee,M,Tier-1,Mumbai,Master,4,M.Sc (Data Science),Artificial Intelligence and Data Science,2024,2.0,Backend-Java,60,Contract,8.5
+C0074,Neha Rao,M,Tier-3,Bengaluru,Bachelor,3,B.Tech,Computer Science and Engineering,2020,5.2,Backend-Java,55,Full-time,10.6
+C0075,Meera Fernandes,F,Tier-1,Chennai,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2023,2.0,QA,75,Contract,8.8
+C0076,Rohit Fernandes,F,Tier-2,Pune,Bachelor,3,BCA,Computer Science and Engineering,2026,0.0,Backend-Java,90,Internship,3.6
+C0077,Mohit Verma,F,Tier-3,Kolkata,Bachelor,3,B.Tech,Electronics and Communication,2024,0.0,Data-Analyst,90,Contract,3.7
+C0078,Yash Khan,M,Tier-3,Hyderabad,Bachelor,3,B.Tech,Computer Science and Engineering,2024,0.0,Backend-Python,55,Internship,4.9
+C0079,Farhan Mishra,M,Tier-1,Hyderabad,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2027,0.0,Vocational,65,Full-time,2.2
+C0080,Manish Nair,M,Tier-1,Chennai,Bachelor,3,B.Tech,Electronics and Communication,2024,1.5,Backend-Python,95,Full-time,9.1
+C0081,Thomas Shaikh,M,Tier-1,Delhi NCR,Bachelor,3,B.Tech,Information Technology,2020,5.6,Data-Analyst,90,Contract,13.5
+C0082,Tanvi Das,M,Tier-3,Nagpur,Bachelor,3,BCA,Computer Science and Engineering,2022,3.9,Data-Analyst,95,Internship,11.6
+C0083,Shreya Thakur,M,Tier-3,Lucknow,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2025,0.0,Android,95,Full-time,7.2
+C0084,Ritika Naidu,M,Tier-3,Chennai,Bachelor,3,B.Tech,Computer Science and Engineering,2021,5.6,Backend-Python,100,Internship,9.8
+C0085,Nikhil Patel,F,Tier-2,Ahmedabad,Bachelor,3,BCA,Information Technology,2026,0.8,Data-Analyst,55,Internship,6.8
+C0086,Manish Joshi,F,Tier-2,Bengaluru,Bachelor,3,B.Sc (CS),Information Technology,2026,0.0,Backend-Java,100,Full-time,3.6
+C0087,Nikhil Thakur,F,Tier-3,Hyderabad,Bachelor,3,BCA,Computer Science and Engineering,2026,0.0,Backend-Java,55,Full-time,7.5
+C0088,Rahul Thakur,F,Tier-2,Mumbai,Bachelor,3,B.Tech,Electronics and Communication,2024,2.3,Data-Science-ML,85,Full-time,9.7
+C0089,Priya Khan,F,Tier-1,Bengaluru,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2024,1.3,Backend-Java,95,Internship,6.8
+C0090,Kavya Khan,M,Tier-3,Delhi NCR,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2023,2.4,Frontend,95,Internship,5.8
+C0091,Harpreet Kulkarni,M,Tier-3,Jaipur,Diploma,2,Diploma in Engineering,Artificial Intelligence and Data Science,2025,0.0,QA,85,Internship,7.3
+C0092,Maria Reddy,M,Tier-1,Chennai,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2024,1.2,Full-Stack,80,Full-time,6.6
+C0093,Rahul Kapoor,M,Tier-3,Chennai,Master,4,MCA,Computer Science and Engineering,2024,0.0,Backend-Java,60,Contract,4.0
+C0094,Joseph Bose,M,Tier-2,Jaipur,Bachelor,3,B.Tech,Electronics and Communication,2026,0.0,Data-Science-ML,95,Contract,4.8
+C0095,Manish Singh,M,Tier-2,Jaipur,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2027,0.0,Backend-Java,100,Internship,5.4
+C0096,Harpreet Bose,F,Tier-3,Indore,Bachelor,3,B.Tech,Electronics and Communication,2023,2.2,Frontend,70,Internship,10.2
+C0097,Mohit Iyer,M,Tier-3,Indore,Bachelor,3,B.E.,Computer Science and Engineering,2023,2.4,Data-Science-ML,75,Contract,6.7
+C0098,Divya Kapoor,M,Tier-3,Kolkata,Diploma,2,Diploma in Engineering,Computer Science and Engineering,2027,0.0,Frontend,60,Full-time,4.5
+C0099,Sanjay Nair,F,Tier-3,Hyderabad,Bachelor,3,B.Sc (CS),Electronics and Communication,2024,1.1,Data-Science-ML,95,Contract,6.7
+C0100,Kavya Reddy,F,Tier-1,Hyderabad,Master,4,M.Sc (Data Science),Electronics and Communication,2024,2.5,Frontend,55,Internship,7.0
+C0101,Divya Das,M,Tier-2,Lucknow,Bachelor,3,B.Tech,Information Technology,2021,4.6,Data-Science-ML,60,Full-time,12.6
+C0102,Maria Patel,M,Tier-2,Mumbai,Bachelor,3,B.Tech,Information Technology,2024,2.0,Backend-Java,60,Full-time,7.8
+C0103,Neha Joshi,F,Tier-2,Mumbai,Diploma,2,Diploma in Engineering,Artificial Intelligence and Data Science,2025,0.0,Data-Science-ML,85,Full-time,4.4
+C0104,Gurpreet Kulkarni,F,Tier-3,Hyderabad,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2024,2.4,Vocational,90,Full-time,3.3
+C0105,Mohit Gupta,F,Tier-1,Hyderabad,Diploma,2,Diploma in Engineering,Computer Science and Engineering,2027,0.0,Data-Analyst,70,Full-time,5.8
+C0106,Aditya Nair,F,Tier-2,Hyderabad,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2024,0.0,Full-Stack,60,Full-time,7.8
+C0107,Mohit Fernandes,M,Tier-2,Chennai,Bachelor,3,B.E.,Electronics and Communication,2025,0.0,Frontend,90,Contract,5.2
+C0108,Joseph Shaikh,F,Tier-2,Ahmedabad,Bachelor,3,B.Tech,Computer Science and Engineering,2027,0.0,Data-Science-ML,95,Full-time,7.0
+C0109,Kavya Shaikh,M,Tier-1,Coimbatore,Master,4,M.Tech,Information Technology,2026,0.0,Data-Analyst,95,Full-time,3.5
+C0110,Thomas Nair,M,Tier-2,Pune,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2025,0.0,Full-Stack,85,Full-time,4.3
+C0111,Ananya Kapoor,M,Tier-2,Pune,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2027,0.0,QA,70,Full-time,5.8
+C0112,Aarav Joshi,M,Tier-3,Nagpur,Master,4,M.Sc (Data Science),Electronics and Communication,2025,0.0,Backend-Java,70,Full-time,5.2
+C0113,Priya Khan,M,Tier-2,Bhubaneswar,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2025,1.5,Data-Science-ML,85,Contract,5.9
+C0114,Joseph Thakur,M,Tier-2,Lucknow,Master,4,MCA,Artificial Intelligence and Data Science,2024,2.7,Backend-Python,70,Full-time,9.2
+C0115,Farhan Fernandes,M,Tier-2,Bengaluru,Diploma,2,Diploma in Engineering,Artificial Intelligence and Data Science,2025,0.6,Android,90,Full-time,4.9
+C0116,Meera Shaikh,M,Tier-2,Kolkata,Bachelor,3,B.Tech,Electronics and Communication,2023,2.4,Data-Analyst,100,Internship,6.1
+C0117,Thomas Reddy,F,Tier-1,Pune,Bachelor,3,BCA,Electronics and Communication,2027,0.0,Data-Analyst,70,Full-time,6.5
+C0118,Thomas Shaikh,M,Tier-2,Lucknow,Bachelor,3,B.Sc (CS),Electronics and Communication,2023,3.9,QA,90,Internship,9.4
+C0119,Shreya Pillai,F,Tier-2,Ahmedabad,Bachelor,3,BCA,Artificial Intelligence and Data Science,2024,1.8,Full-Stack,90,Internship,5.5
+C0120,Sanjay Naidu,F,Tier-1,Jaipur,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2024,0.0,Data-Analyst,60,Full-time,3.6
+C0121,Sneha Singh,M,Tier-2,Bengaluru,Bachelor,3,B.Sc (CS),Computer Science and Engineering,2024,1.3,Android,100,Contract,9.4
+C0122,Arjun Khan,M,Tier-3,Mumbai,Bachelor,3,B.Tech,Electronics and Communication,2027,0.0,Data-Science-ML,55,Internship,6.3
+C0123,Divya Mishra,M,Tier-3,Kolkata,Bachelor,3,BCA,Computer Science and Engineering,2024,1.4,Backend-Python,70,Internship,6.5
+C0124,Priya Mishra,M,Tier-3,Pune,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2021,5.6,Data-Science-ML,60,Contract,9.9
+C0125,Ayesha Verma,F,Tier-2,Lucknow,Bachelor,3,B.Tech,Information Technology,2026,0.0,Frontend,100,Internship,4.7
+C0126,Aarav Patel,M,Tier-3,Ahmedabad,Bachelor,3,BCA,Computer Science and Engineering,2025,0.0,Backend-Java,70,Contract,5.9
+C0127,Pooja Thakur,M,Tier-1,Hyderabad,Bachelor,3,B.Tech,Electronics and Communication,2025,0.0,Data-Science-ML,70,Full-time,6.1
+C0128,Isha Reddy,M,Tier-3,Bengaluru,Bachelor,3,B.E.,Electronics and Communication,2027,0.0,Backend-Python,90,Contract,7.4
+C0129,Farhan Joshi,F,Tier-1,Lucknow,Bachelor,3,B.Tech,Information Technology,2024,2.8,Data-Analyst,85,Full-time,9.7
+C0130,Yash Nair,F,Tier-2,Pune,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2024,2.2,Vocational,70,Contract,3.4
+C0131,Neha Banerjee,M,Tier-2,Chennai,Bachelor,3,BCA,Information Technology,2024,2.3,Android,65,Full-time,5.5
+C0132,Meera Pillai,M,Tier-2,Chennai,Diploma,2,Diploma in Engineering,Artificial Intelligence and Data Science,2025,0.0,Backend-Java,65,Full-time,5.8
+C0133,Imran Naidu,F,Tier-1,Kochi,Bachelor,3,B.E.,Information Technology,2027,0.0,Backend-Java,55,Contract,5.3
+C0134,Divya Rao,F,Tier-2,Chennai,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2024,1.6,Data-Analyst,90,Full-time,5.2
+C0135,Ritika Sharma,M,Tier-2,Mumbai,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2022,3.7,Backend-Java,70,Full-time,7.5
+C0136,Anjali Naidu,M,Tier-3,Hyderabad,Bachelor,3,B.Tech,Electronics and Communication,2025,0.0,DevOps,90,Full-time,6.7
+C0137,Zoya Iyer,M,Tier-1,Mumbai,Bachelor,3,B.Sc (CS),Computer Science and Engineering,2024,0.0,Backend-Python,70,Contract,6.4
+C0138,Rohit Sharma,F,Tier-3,Indore,Bachelor,3,B.Tech,Electronics and Communication,2020,5.2,Full-Stack,65,Full-time,10.2
+C0139,Anjali Kulkarni,M,Tier-2,Bengaluru,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2027,0.0,Full-Stack,65,Internship,5.6
+C0140,Priya Chatterjee,M,Tier-1,Delhi NCR,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2024,1.7,Vocational,70,Contract,3.2
+C0141,Lakshmi Joshi,M,Tier-2,Hyderabad,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2020,5.2,Data-Science-ML,70,Internship,12.5
+C0142,Ayesha Rao,M,Tier-3,Delhi NCR,Bachelor,3,B.Tech,Information Technology,2024,0.0,Backend-Python,70,Internship,8.0
+C0143,Kavya Kulkarni,M,Tier-1,Lucknow,Master,4,M.Sc (Data Science),Computer Science and Engineering,2027,0.0,Backend-Python,75,Internship,7.2
+C0144,Isha Joshi,M,Tier-3,Bengaluru,Bachelor,3,BCA,Information Technology,2025,0.0,Backend-Python,75,Full-time,4.5
+C0145,Aditya Bose,M,Tier-2,Delhi NCR,Bachelor,3,BCA,Information Technology,2021,4.5,DevOps,95,Contract,9.3
+C0146,Lakshmi Sharma,F,Tier-2,Coimbatore,Diploma,2,Diploma in Engineering,Industrial Trade,2026,0.0,Vocational,60,Contract,2.8
+C0147,Rahul Nair,F,Tier-2,Nagpur,Bachelor,3,B.E.,Information Technology,2027,0.0,Full-Stack,60,Full-time,7.6
+C0148,Isha Thakur,M,Tier-1,Kochi,Master,4,M.Tech,Computer Science and Engineering,2025,0.0,Data-Science-ML,65,Internship,7.9
+C0149,Divya Bose,M,Tier-1,Mumbai,Bachelor,3,B.Tech,Computer Science and Engineering,2021,4.5,Backend-Python,65,Full-time,10.4
+C0150,Priya Banerjee,M,Tier-2,Mumbai,Diploma,2,Diploma in Engineering,Artificial Intelligence and Data Science,2026,0.0,Data-Analyst,75,Full-time,3.2
+C0151,Lakshmi Kulkarni,F,Tier-2,Kolkata,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2019,6.1,Vocational,75,Contract,2.3
+C0152,Aditya Chatterjee,F,Tier-2,Mumbai,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2024,0.0,Android,100,Internship,7.9
+C0153,Ananya Joshi,F,Tier-2,Lucknow,Master,4,M.Tech,Information Technology,2024,2.1,Full-Stack,85,Full-time,6.9
+C0154,Aarav Verma,F,Tier-3,Delhi NCR,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2022,4.0,Backend-Python,65,Internship,8.4
+C0155,Thomas Shaikh,F,Tier-2,Bhubaneswar,Bachelor,3,B.E.,Computer Science and Engineering,2024,1.7,Frontend,55,Full-time,8.6
+C0156,Anjali Gupta,F,Tier-1,Bengaluru,Bachelor,3,B.E.,Electronics and Communication,2027,0.0,Backend-Java,85,Full-time,3.1
+C0157,Ramesh Kulkarni,F,Tier-2,Chennai,Bachelor,3,B.Tech,Computer Science and Engineering,2024,1.7,QA,75,Full-time,5.8
+C0158,Ayesha Mishra,M,Tier-2,Bengaluru,Bachelor,3,B.Sc (CS),Computer Science and Engineering,2025,1.8,QA,55,Full-time,5.2
+C0159,Isha Chatterjee,F,Tier-3,Ahmedabad,Diploma,2,Diploma in Engineering,Electronics and Communication,2024,1.4,DevOps,70,Full-time,5.6
+C0160,Tanvi Thakur,M,Tier-1,Delhi NCR,Bachelor,3,BCA,Information Technology,2022,3.7,Backend-Python,75,Full-time,11.9
+C0161,Arjun Das,M,Tier-3,Mumbai,Bachelor,3,B.E.,Computer Science and Engineering,2025,0.8,Backend-Python,90,Full-time,7.4
+C0162,Sanjay Gupta,F,Tier-1,Jaipur,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2027,0.0,Frontend,60,Full-time,6.5
+C0163,Aditya Das,M,Tier-2,Hyderabad,Diploma,2,Diploma in Engineering,Electronics and Communication,2025,0.8,Full-Stack,70,Contract,4.8
+C0164,Deepa Reddy,M,Tier-1,Indore,Bachelor,3,B.Tech,Electronics and Communication,2026,0.0,Data-Analyst,70,Internship,5.8
+C0165,Farhan Patel,M,Tier-2,Delhi NCR,Bachelor,3,BCA,Computer Science and Engineering,2026,0.0,Backend-Python,70,Contract,5.3
+C0166,Maria Gupta,M,Tier-3,Chennai,Bachelor,3,B.Tech,Electronics and Communication,2024,0.0,Backend-Python,90,Full-time,7.3
+C0167,Tanvi Verma,F,Tier-3,Bengaluru,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2021,5.3,Data-Science-ML,65,Contract,9.0
+C0168,Joseph Rao,F,Tier-1,Pune,Diploma,2,Diploma in Engineering,Information Technology,2024,2.1,Backend-Java,90,Full-time,7.6
+C0169,Ritika Banerjee,F,Tier-2,Delhi NCR,Bachelor,3,B.E.,Computer Science and Engineering,2021,4.6,Cybersecurity,75,Internship,10.7
+C0170,Harpreet Menon,F,Tier-2,Chennai,Bachelor,3,B.Tech,Information Technology,2025,1.2,QA,85,Full-time,7.9
+C0171,Jasleen Mishra,F,Tier-3,Mumbai,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2027,0.0,Data-Analyst,80,Full-time,7.2
+C0172,Pooja Bose,F,Tier-2,Pune,Bachelor,3,BCA,Artificial Intelligence and Data Science,2023,3.9,Data-Analyst,55,Internship,9.4
+C0173,Harpreet Pillai,M,Tier-1,Coimbatore,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2027,0.0,Data-Science-ML,100,Full-time,6.5
+C0174,Harpreet Reddy,M,Tier-3,Bhubaneswar,Master,4,MCA,Electronics and Communication,2025,1.0,Data-Analyst,75,Full-time,7.5
+C0175,Gurpreet Khan,M,Tier-3,Bengaluru,Bachelor,3,B.Tech,Computer Science and Engineering,2024,0.0,Frontend,90,Full-time,7.4
+C0176,Sneha Patel,M,Tier-2,Bhubaneswar,Bachelor,3,B.Tech,Electronics and Communication,2024,2.6,Backend-Java,90,Full-time,8.8
+C0177,Vivaan Gupta,M,Tier-2,Hyderabad,Bachelor,3,B.Tech,Computer Science and Engineering,2027,0.0,Data-Science-ML,65,Internship,6.4
+C0178,Suresh Das,M,Tier-2,Jaipur,Bachelor,3,B.Tech,Information Technology,2027,0.0,QA,95,Contract,7.7
+C0179,Isha Bose,F,Tier-1,Delhi NCR,Bachelor,3,B.Sc (CS),Electronics and Communication,2025,1.3,Data-Analyst,60,Contract,8.5
+C0180,Ritika Iyer,F,Tier-2,Mumbai,Bachelor,3,B.Sc (CS),Computer Science and Engineering,2025,1.9,QA,80,Full-time,6.0
+C0181,Tanvi Fernandes,M,Tier-3,Chennai,Master,4,MCA,Information Technology,2024,2.5,Backend-Python,65,Internship,7.2
+C0182,Jasleen Thakur,M,Tier-2,Chennai,Master,4,MCA,Electronics and Communication,2025,0.7,QA,60,Internship,7.7
+C0183,Divya Sharma,F,Tier-3,Indore,Bachelor,3,BCA,Information Technology,2022,4.0,Full-Stack,60,Full-time,9.0
+C0184,Ananya Shaikh,Other,Tier-2,Chennai,Bachelor,3,B.Tech,Information Technology,2025,1.0,DevOps,65,Full-time,4.9
+C0185,Nikhil Menon,F,Tier-3,Mumbai,Bachelor,3,B.E.,Computer Science and Engineering,2024,1.0,Backend-Java,65,Full-time,4.3
+C0186,Mohit Menon,F,Tier-2,Mumbai,Bachelor,3,BCA,Electronics and Communication,2022,3.5,Frontend,85,Full-time,7.8
+C0187,Farhan Bose,F,Tier-3,Delhi NCR,Diploma,2,Diploma in Engineering,Industrial Trade,2024,2.0,Vocational,55,Internship,3.5
+C0188,Mohit Bose,M,Tier-2,Delhi NCR,Master,4,M.Tech,Electronics and Communication,2025,1.4,Android,80,Full-time,6.2
+C0189,Gurpreet Kulkarni,M,Tier-3,Pune,Bachelor,3,BCA,Artificial Intelligence and Data Science,2020,5.3,Data-Analyst,55,Full-time,13.6
+C0190,Priya Sharma,M,Tier-3,Kolkata,Bachelor,3,BCA,Computer Science and Engineering,2025,0.0,Data-Science-ML,75,Internship,4.9
+C0191,Yash Iyer,F,Tier-1,Nagpur,Bachelor,3,B.Sc (CS),Information Technology,2027,0.0,Backend-Java,55,Internship,5.2
+C0192,Tanvi Shaikh,F,Tier-1,Hyderabad,Bachelor,3,B.Sc (CS),Electronics and Communication,2022,3.4,Frontend,95,Full-time,8.0
+C0193,Ayesha Kulkarni,F,Tier-1,Bengaluru,Master,4,MCA,Electronics and Communication,2025,0.9,Android,90,Contract,7.0
+C0194,Maria Singh,F,Tier-2,Ahmedabad,Bachelor,3,BCA,Information Technology,2026,0.0,Data-Analyst,70,Internship,7.6
+C0195,Vikram Sharma,M,Tier-3,Hyderabad,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2026,0.0,Vocational,75,Contract,2.0
+C0196,Harpreet Naidu,M,Tier-2,Mumbai,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2022,3.8,Backend-Java,100,Full-time,10.3
+C0197,Ananya Gupta,M,Tier-3,Pune,Bachelor,3,B.Tech,Electronics and Communication,2023,3.5,Backend-Java,95,Contract,9.5
+C0198,Karthik Menon,M,Tier-2,Pune,Bachelor,3,B.E.,Electronics and Communication,2026,0.0,QA,65,Full-time,4.9
+C0199,Ananya Sharma,M,Tier-2,Chennai,Master,4,M.Sc (Data Science),Information Technology,2023,2.7,Full-Stack,70,Full-time,8.9
+C0200,Sanjay Patel,F,Tier-2,Delhi NCR,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2024,2.2,Vocational,90,Full-time,2.6
+C0201,Gurpreet Shaikh,M,Tier-3,Bengaluru,Bachelor,3,B.Sc (CS),Information Technology,2023,3.1,Full-Stack,55,Full-time,11.3
+C0202,Ananya Banerjee,M,Tier-2,Nagpur,Diploma,2,Diploma in Engineering,Computer Science and Engineering,2025,1.7,Data-Analyst,100,Full-time,6.3
+C0203,Rahul Verma,M,Tier-2,Indore,Bachelor,3,BCA,Information Technology,2025,0.0,QA,85,Full-time,3.4
+C0204,Isha Kapoor,M,Tier-1,Bhubaneswar,Bachelor,3,B.E.,Computer Science and Engineering,2022,3.9,Android,90,Full-time,9.0
+C0205,Rahul Shaikh,M,Tier-1,Bengaluru,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2026,0.0,Data-Analyst,80,Full-time,4.4
+C0206,Lakshmi Pillai,M,Tier-1,Mumbai,Bachelor,3,B.E.,Electronics and Communication,2026,0.0,Data-Analyst,90,Internship,4.8
+C0207,Lakshmi Bose,F,Tier-2,Coimbatore,Bachelor,3,B.Tech,Electronics and Communication,2022,3.0,Full-Stack,100,Internship,10.9
+C0208,Ritika Nair,F,Tier-3,Lucknow,Master,4,M.Tech,Electronics and Communication,2025,1.2,Data-Science-ML,75,Full-time,5.2
+C0209,Divya Das,F,Tier-3,Mumbai,Bachelor,3,B.Tech,Electronics and Communication,2024,0.0,Backend-Java,65,Full-time,5.8
+C0210,Sanjay Banerjee,M,Tier-2,Hyderabad,Bachelor,3,B.E.,Computer Science and Engineering,2026,0.0,Backend-Python,65,Full-time,7.9
+C0211,Meera Joshi,M,Tier-1,Indore,Bachelor,3,B.Tech,Information Technology,2024,1.2,Frontend,60,Contract,4.6
+C0212,Mohit Rao,M,Tier-3,Chennai,Bachelor,3,B.Sc (CS),Information Technology,2024,0.0,Data-Analyst,75,Full-time,5.9
+C0213,Arjun Joshi,F,Tier-1,Bhubaneswar,Bachelor,3,BCA,Electronics and Communication,2021,4.8,Full-Stack,55,Internship,11.2
+C0214,Jasleen Khan,M,Tier-3,Hyderabad,Master,4,M.Sc (Data Science),Artificial Intelligence and Data Science,2024,1.8,Backend-Python,70,Internship,6.8
+C0215,Mohit Thakur,M,Tier-2,Hyderabad,Master,4,M.Sc (Data Science),Computer Science and Engineering,2025,0.8,Data-Science-ML,100,Internship,4.6
+C0216,Zoya Kulkarni,M,Tier-1,Delhi NCR,Bachelor,3,B.Sc (CS),Computer Science and Engineering,2026,0.0,Data-Analyst,60,Internship,4.4
+C0217,Arjun Chatterjee,M,Tier-2,Chennai,Bachelor,3,BCA,Electronics and Communication,2024,0.0,Data-Analyst,85,Full-time,4.7
+C0218,Shreya Patel,M,Tier-3,Kolkata,Bachelor,3,B.Tech,Electronics and Communication,2027,0.0,Backend-Java,75,Contract,5.9
+C0219,Jasleen Reddy,F,Tier-1,Bengaluru,Bachelor,3,B.Tech,Information Technology,2019,7.8,Frontend,100,Internship,14.5
+C0220,Lakshmi Gupta,Other,Tier-2,Bengaluru,Master,4,MCA,Information Technology,2020,5.8,Backend-Java,75,Full-time,12.6
+C0221,Ritika Kapoor,F,Tier-2,Hyderabad,Master,4,MCA,Information Technology,2024,2.4,Backend-Python,55,Full-time,7.1
+C0222,Thomas Sharma,F,Tier-3,Mumbai,Master,4,M.Sc (Data Science),Information Technology,2026,0.0,Frontend,65,Internship,4.6
+C0223,Harpreet Khan,M,Tier-3,Pune,Diploma,2,Diploma in Engineering,Information Technology,2027,0.0,Android,60,Internship,5.6
+C0224,Aarav Nair,F,Tier-3,Mumbai,Bachelor,3,B.Tech,Computer Science and Engineering,2025,0.0,Cybersecurity,60,Contract,5.2
+C0225,Tanvi Sharma,F,Tier-2,Delhi NCR,Bachelor,3,BCA,Artificial Intelligence and Data Science,2025,1.2,QA,65,Contract,5.6
+C0226,Divya Kapoor,F,Tier-3,Delhi NCR,Diploma,2,Diploma in Engineering,Artificial Intelligence and Data Science,2027,0.0,Data-Analyst,55,Contract,7.4
+C0227,Maria Naidu,F,Tier-3,Mumbai,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2025,0.9,Data-Analyst,100,Full-time,6.4
+C0228,Ayesha Kapoor,F,Tier-2,Bengaluru,Bachelor,3,B.Tech,Electronics and Communication,2025,1.9,DevOps,55,Contract,9.9
+C0229,Karthik Iyer,M,Tier-2,Kolkata,Bachelor,3,B.Tech,Information Technology,2027,0.0,Frontend,80,Full-time,3.6
+C0230,Rahul Banerjee,M,Tier-3,Chennai,Bachelor,3,B.E.,Electronics and Communication,2025,0.0,Data-Science-ML,95,Full-time,6.7
+C0231,Mohit Mishra,M,Tier-2,Nagpur,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2023,3.4,Android,75,Full-time,8.3
+C0232,Sanjay Verma,M,Tier-1,Mumbai,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2026,0.0,Backend-Java,70,Full-time,5.4
+C0233,Ritika Menon,M,Tier-2,Chennai,Bachelor,3,B.E.,Information Technology,2024,1.8,Backend-Python,80,Internship,9.8
+C0234,Aarav Singh,M,Tier-2,Kolkata,Bachelor,3,B.E.,Computer Science and Engineering,2025,1.8,Cybersecurity,55,Internship,8.0
+C0235,Karthik Gupta,M,Tier-2,Bengaluru,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2026,0.0,Backend-Java,90,Full-time,3.1
+C0236,Lakshmi Bose,M,Tier-1,Chennai,Bachelor,3,BCA,Computer Science and Engineering,2024,0.0,Data-Science-ML,90,Internship,5.8
+C0237,Sneha Menon,M,Tier-3,Pune,Bachelor,3,B.Tech,Information Technology,2022,4.0,Backend-Java,100,Full-time,7.4
+C0238,Karthik Kulkarni,M,Tier-1,Jaipur,Bachelor,3,BCA,Artificial Intelligence and Data Science,2027,0.0,Data-Analyst,65,Full-time,5.8
+C0239,Divya Banerjee,F,Tier-1,Delhi NCR,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2026,0.0,Frontend,60,Contract,5.7
+C0240,Jasleen Kapoor,M,Tier-3,Pune,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2020,6.8,Backend-Python,70,Internship,13.9
+C0241,Harpreet Kulkarni,F,Tier-2,Mumbai,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2021,4.0,QA,60,Contract,10.2
+C0242,Arjun Bose,M,Tier-2,Delhi NCR,Bachelor,3,B.E.,Information Technology,2022,3.9,Backend-Java,60,Contract,11.2
+C0243,Zoya Iyer,M,Tier-1,Delhi NCR,Bachelor,3,B.Tech,Computer Science and Engineering,2027,0.0,Full-Stack,65,Full-time,7.5
+C0244,Aditya Rao,F,Tier-2,Bengaluru,Bachelor,3,B.Tech,Information Technology,2026,0.0,Frontend,70,Contract,7.2
+C0245,Divya Patel,M,Tier-3,Kochi,Bachelor,3,B.Sc (CS),Computer Science and Engineering,2025,0.0,Data-Science-ML,60,Internship,5.0
+C0246,Karthik Kulkarni,M,Tier-3,Coimbatore,Bachelor,3,B.Tech,Computer Science and Engineering,2024,0.0,Data-Analyst,75,Contract,7.2
+C0247,Shreya Bose,M,Tier-2,Pune,Bachelor,3,BCA,Information Technology,2023,2.3,DevOps,85,Internship,6.3
+C0248,Divya Sharma,M,Tier-2,Coimbatore,Bachelor,3,B.Tech,Electronics and Communication,2024,0.0,Android,80,Full-time,6.7
+C0249,Meera Rao,F,Tier-1,Nagpur,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2023,2.4,Vocational,100,Contract,2.1
+C0250,Priya Pillai,F,Tier-3,Hyderabad,Bachelor,3,B.Sc (CS),Information Technology,2024,1.2,Backend-Python,90,Full-time,6.4
+C0251,Aarav Fernandes,F,Tier-1,Indore,Bachelor,3,B.Tech,Computer Science and Engineering,2027,0.0,Full-Stack,55,Internship,7.4
+C0252,Vivaan Verma,M,Tier-2,Hyderabad,Bachelor,3,B.Sc (CS),Computer Science and Engineering,2024,0.0,Data-Science-ML,95,Full-time,3.9
+C0253,Deepa Rao,F,Tier-2,Mumbai,Master,4,M.Sc (Data Science),Computer Science and Engineering,2020,5.1,Full-Stack,75,Internship,11.7
+C0254,Mohit Banerjee,F,Tier-1,Mumbai,Bachelor,3,B.Tech,Computer Science and Engineering,2026,0.0,Full-Stack,100,Contract,3.9
+C0255,Priya Yadav,F,Tier-1,Hyderabad,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2024,0.0,Data-Analyst,90,Full-time,4.4
+C0256,Lakshmi Naidu,F,Tier-1,Pune,Bachelor,3,B.E.,Electronics and Communication,2023,2.0,DevOps,55,Internship,8.7
+C0257,Harpreet Reddy,M,Tier-2,Delhi NCR,Bachelor,3,B.Tech,Information Technology,2020,6.0,Backend-Java,65,Internship,11.4
+C0258,Rahul Menon,F,Tier-2,Pune,Bachelor,3,BCA,Information Technology,2025,0.0,Backend-Python,55,Full-time,5.3
+C0259,Sanjay Thakur,F,Tier-1,Bhubaneswar,Bachelor,3,B.E.,Information Technology,2023,2.4,Backend-Python,80,Full-time,7.0
+C0260,Priya Kulkarni,M,Tier-1,Hyderabad,Bachelor,3,B.E.,Electronics and Communication,2022,3.1,Backend-Python,85,Contract,7.2
+C0261,Nikhil Yadav,F,Tier-2,Bengaluru,Bachelor,3,B.Tech,Computer Science and Engineering,2023,2.1,QA,95,Contract,9.0
+C0262,Pooja Fernandes,M,Tier-2,Hyderabad,Bachelor,3,BCA,Information Technology,2024,2.2,Frontend,65,Contract,9.0
+C0263,Suresh Sharma,F,Tier-2,Lucknow,Bachelor,3,B.Tech,Electronics and Communication,2025,1.8,Backend-Java,100,Full-time,9.5
+C0264,Isha Gupta,M,Tier-2,Bengaluru,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2025,1.2,Data-Analyst,60,Full-time,5.0
+C0265,Gurpreet Kapoor,M,Tier-1,Nagpur,Bachelor,3,BCA,Information Technology,2026,0.0,Full-Stack,75,Full-time,5.1
+C0266,Sneha Gupta,M,Tier-1,Kochi,Bachelor,3,B.Tech,Information Technology,2021,4.1,Frontend,100,Internship,12.0
+C0267,Aditya Khan,F,Tier-2,Kolkata,Bachelor,3,BCA,Computer Science and Engineering,2027,0.0,Data-Analyst,100,Contract,6.2
+C0268,Jasleen Chatterjee,F,Tier-3,Kolkata,Diploma,2,Diploma in Engineering,Electronics and Communication,2022,3.6,Backend-Python,75,Full-time,9.2
+C0269,Thomas Banerjee,M,Tier-3,Delhi NCR,Bachelor,3,BCA,Information Technology,2026,0.0,Data-Analyst,70,Contract,5.9
+C0270,Thomas Verma,F,Tier-2,Kochi,Bachelor,3,B.E.,Electronics and Communication,2026,0.0,Backend-Java,80,Contract,4.3
+C0271,Vivaan Iyer,M,Tier-3,Chennai,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2024,0.0,Vocational,75,Full-time,2.8
+C0272,Zoya Bose,M,Tier-2,Kolkata,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2025,0.0,Backend-Java,100,Internship,6.8
+C0273,Tanvi Menon,M,Tier-3,Bengaluru,Bachelor,3,B.Tech,Information Technology,2025,1.9,Data-Science-ML,60,Full-time,7.8
+C0274,Arjun Yadav,M,Tier-2,Pune,Bachelor,3,BCA,Electronics and Communication,2026,0.0,Data-Analyst,85,Internship,4.1
+C0275,Joseph Gupta,M,Tier-2,Bengaluru,Bachelor,3,B.Sc (CS),Electronics and Communication,2025,0.0,Backend-Python,70,Full-time,7.4
+C0276,Jasleen Gupta,M,Tier-1,Chennai,Diploma,2,Diploma in Engineering,Artificial Intelligence and Data Science,2023,2.8,DevOps,70,Internship,6.2
+C0277,Isha Verma,M,Tier-2,Lucknow,Bachelor,3,B.Tech,Computer Science and Engineering,2024,2.1,DevOps,75,Full-time,9.5
+C0278,Isha Yadav,M,Tier-2,Chennai,Bachelor,3,B.Tech,Electronics and Communication,2021,4.3,Full-Stack,85,Internship,9.6
+C0279,Gurpreet Banerjee,M,Tier-2,Bengaluru,Bachelor,3,B.Tech,Information Technology,2026,0.0,Backend-Java,65,Full-time,3.0
+C0280,Vikram Pillai,F,Tier-2,Mumbai,Bachelor,3,BCA,Electronics and Communication,2025,1.9,Cybersecurity,95,Internship,9.7
+C0281,Arjun Kapoor,M,Tier-2,Nagpur,Bachelor,3,B.Tech,Computer Science and Engineering,2024,2.6,QA,80,Internship,7.3
+C0282,Maria Verma,F,Tier-1,Pune,Diploma,2,Diploma in Engineering,Industrial Trade,2025,0.0,Vocational,80,Full-time,2.1
+C0283,Mohit Verma,M,Tier-2,Delhi NCR,Bachelor,3,B.Tech,Computer Science and Engineering,2027,0.0,Backend-Java,60,Contract,5.1
+C0284,Yash Patel,F,Tier-1,Ahmedabad,Bachelor,3,B.Tech,Information Technology,2025,0.0,Full-Stack,100,Full-time,6.5
+C0285,Nikhil Kapoor,M,Tier-1,Delhi NCR,Bachelor,3,B.Tech,Electronics and Communication,2020,5.9,Backend-Java,60,Full-time,9.8
+C0286,Shreya Mishra,M,Tier-3,Lucknow,Bachelor,3,B.Tech,Information Technology,2027,0.0,Full-Stack,85,Internship,7.3
+C0287,Nikhil Thakur,M,Tier-3,Pune,Diploma,2,Diploma in Engineering,Computer Science and Engineering,2025,0.0,Backend-Python,65,Contract,6.3
+C0288,Joseph Banerjee,M,Tier-2,Bengaluru,Bachelor,3,B.Sc (CS),Computer Science and Engineering,2025,0.9,Full-Stack,65,Internship,6.6
+C0289,Sanjay Nair,M,Tier-3,Lucknow,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2025,1.9,Vocational,80,Contract,2.5
+C0290,Ayesha Reddy,M,Tier-1,Ahmedabad,Bachelor,3,B.Sc (CS),Electronics and Communication,2027,0.0,Frontend,70,Full-time,4.0
+C0291,Nikhil Menon,F,Tier-2,Bengaluru,Diploma,2,Diploma in Engineering,Industrial Trade,2021,4.3,Vocational,55,Internship,3.4
+C0292,Aarav Thakur,M,Tier-3,Lucknow,Diploma,2,Diploma in Engineering,Industrial Trade,2025,0.0,Vocational,75,Full-time,3.3
+C0293,Tanvi Joshi,M,Tier-1,Pune,Bachelor,3,BCA,Information Technology,2024,1.5,Backend-Java,60,Full-time,9.1
+C0294,Yash Mishra,F,Tier-2,Delhi NCR,Diploma,2,Diploma in Engineering,Electronics and Communication,2024,1.8,Backend-Java,95,Full-time,8.8
+C0295,Mohit Rao,F,Tier-1,Bengaluru,Bachelor,3,B.Tech,Electronics and Communication,2025,1.6,QA,80,Internship,8.2
+C0296,Maria Singh,F,Tier-2,Nagpur,Bachelor,3,B.E.,Information Technology,2027,0.0,Data-Science-ML,60,Full-time,5.4
+C0297,Meera Yadav,M,Tier-3,Mumbai,Bachelor,3,BCA,Information Technology,2025,1.8,DevOps,95,Contract,5.2
+C0298,Meera Fernandes,F,Tier-2,Mumbai,Diploma,2,Diploma in Engineering,Electronics and Communication,2022,3.9,Backend-Python,60,Full-time,11.9
+C0299,Priya Gupta,F,Tier-3,Delhi NCR,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2024,0.0,Full-Stack,100,Contract,4.1
+C0300,Divya Kapoor,F,Tier-3,Delhi NCR,Bachelor,3,B.Tech,Electronics and Communication,2027,0.0,Data-Analyst,100,Contract,5.9
+C0301,Jasleen Joshi,M,Tier-3,Hyderabad,Bachelor,3,B.Tech,Information Technology,2025,1.2,Full-Stack,60,Contract,7.0
+C0302,Isha Joshi,M,Tier-3,Hyderabad,Bachelor,3,B.E.,Electronics and Communication,2026,0.0,Frontend,55,Full-time,6.3
+C0303,Arjun Yadav,M,Tier-3,Jaipur,Bachelor,3,B.E.,Information Technology,2026,0.0,Data-Science-ML,70,Contract,4.9
+C0304,Pooja Iyer,F,Tier-2,Hyderabad,Diploma,2,Diploma in Engineering,Artificial Intelligence and Data Science,2024,1.6,Data-Analyst,75,Internship,7.8
+C0305,Ritika Menon,M,Tier-1,Mumbai,Bachelor,3,B.Tech,Information Technology,2024,0.0,Android,80,Contract,4.6
+C0306,Divya Chatterjee,M,Tier-2,Ahmedabad,Diploma,2,Diploma in Engineering,Artificial Intelligence and Data Science,2024,0.0,Android,70,Full-time,3.4
+C0307,Maria Khan,M,Tier-3,Chennai,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2026,0.0,Vocational,55,Full-time,2.7
+C0308,Sneha Das,M,Tier-2,Pune,Bachelor,3,B.Tech,Information Technology,2025,0.0,Data-Analyst,70,Full-time,5.1
+C0309,Ritika Rao,M,Tier-3,Bengaluru,Bachelor,3,B.E.,Computer Science and Engineering,2025,1.9,Backend-Java,65,Full-time,7.5
+C0310,Suresh Das,M,Tier-3,Chennai,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2020,5.3,Backend-Python,80,Internship,13.0
+C0311,Nikhil Rao,F,Tier-1,Lucknow,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2023,3.4,Vocational,100,Full-time,1.8
+C0312,Anjali Fernandes,M,Tier-3,Bengaluru,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2027,0.0,Cybersecurity,75,Internship,6.7
+C0313,Aditya Menon,M,Tier-1,Pune,Bachelor,3,BCA,Computer Science and Engineering,2026,0.0,Backend-Python,70,Internship,6.6
+C0314,Lakshmi Iyer,M,Tier-3,Mumbai,Diploma,2,Diploma in Engineering,Electronics and Communication,2021,5.2,Backend-Python,100,Contract,10.3
+C0315,Arjun Naidu,M,Tier-3,Hyderabad,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2022,3.0,DevOps,65,Contract,9.4
+C0316,Maria Bose,F,Tier-3,Kolkata,Bachelor,3,B.Sc (CS),Electronics and Communication,2024,2.8,DevOps,70,Contract,9.4
+C0317,Arjun Chatterjee,M,Tier-2,Nagpur,Master,4,M.Sc (Data Science),Artificial Intelligence and Data Science,2024,0.0,Backend-Java,60,Internship,5.5
+C0318,Isha Joshi,F,Tier-2,Bhubaneswar,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2023,2.0,Data-Analyst,70,Contract,9.9
+C0319,Sneha Patel,F,Tier-1,Bengaluru,Bachelor,3,B.Tech,Information Technology,2023,3.8,DevOps,70,Full-time,12.1
+C0320,Rahul Pillai,M,Tier-3,Bhubaneswar,Bachelor,3,B.Tech,Information Technology,2024,2.3,Cybersecurity,100,Contract,5.6
+C0321,Farhan Patel,M,Tier-3,Coimbatore,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2027,0.0,Frontend,70,Full-time,5.4
+C0322,Pooja Menon,M,Tier-3,Pune,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2024,1.5,Backend-Python,55,Contract,7.6
+C0323,Suresh Verma,M,Tier-3,Mumbai,Diploma,2,Diploma in Engineering,Electronics and Communication,2023,3.6,Data-Science-ML,65,Full-time,11.8
+C0324,Anjali Fernandes,M,Tier-3,Mumbai,Diploma,2,Diploma in Engineering,Artificial Intelligence and Data Science,2024,1.2,Full-Stack,65,Full-time,5.4
+C0325,Nikhil Menon,F,Tier-2,Hyderabad,Bachelor,3,B.Tech,Electronics and Communication,2022,4.3,Data-Analyst,75,Full-time,8.8
+C0326,Farhan Reddy,F,Tier-1,Delhi NCR,Bachelor,3,BCA,Artificial Intelligence and Data Science,2025,0.0,QA,85,Full-time,6.2
+C0327,Sanjay Kulkarni,M,Tier-2,Kolkata,Bachelor,3,BCA,Information Technology,2023,3.4,Frontend,80,Full-time,9.2
+C0328,Arjun Singh,M,Tier-3,Mumbai,Diploma,2,Diploma in Engineering,Electronics and Communication,2027,0.0,Backend-Java,85,Full-time,6.9
+C0329,Meera Menon,M,Tier-3,Delhi NCR,Bachelor,3,B.E.,Computer Science and Engineering,2026,0.0,Backend-Java,95,Internship,7.7
+C0330,Suresh Reddy,F,Tier-1,Pune,Bachelor,3,B.Tech,Information Technology,2025,1.9,Backend-Java,55,Full-time,7.6
+C0331,Pooja Shaikh,F,Tier-1,Delhi NCR,Bachelor,3,B.Sc (CS),Computer Science and Engineering,2024,1.4,Data-Analyst,55,Full-time,6.0
+C0332,Yash Naidu,M,Tier-2,Bhubaneswar,Bachelor,3,BCA,Computer Science and Engineering,2024,0.0,Frontend,60,Full-time,4.9
+C0333,Karthik Sharma,F,Tier-2,Hyderabad,Bachelor,3,B.Tech,Information Technology,2024,0.0,Full-Stack,85,Internship,7.2
+C0334,Karthik Shaikh,F,Tier-3,Pune,Bachelor,3,B.Sc (CS),Computer Science and Engineering,2025,1.8,Backend-Java,60,Full-time,7.8
+C0335,Zoya Menon,F,Tier-2,Bengaluru,Master,4,M.Sc (Data Science),Computer Science and Engineering,2027,0.0,DevOps,85,Full-time,5.8
+C0336,Sneha Joshi,M,Tier-3,Pune,Master,4,M.Sc (Data Science),Computer Science and Engineering,2025,1.6,Backend-Java,85,Contract,4.8
+C0337,Nikhil Reddy,F,Tier-3,Delhi NCR,Bachelor,3,BCA,Electronics and Communication,2026,0.0,Backend-Python,80,Full-time,6.2
+C0338,Aarav Gupta,M,Tier-2,Hyderabad,Bachelor,3,B.Tech,Electronics and Communication,2024,0.0,Backend-Java,65,Full-time,3.9
+C0339,Sneha Shaikh,F,Tier-3,Bengaluru,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2025,1.5,Data-Science-ML,60,Full-time,8.8
+C0340,Meera Joshi,M,Tier-2,Bhubaneswar,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2024,2.6,DevOps,80,Contract,8.9
+C0341,Manish Mishra,M,Tier-3,Kolkata,Bachelor,3,B.Tech,Electronics and Communication,2023,3.0,Android,100,Full-time,6.5
+C0342,Arjun Mishra,M,Tier-2,Lucknow,Bachelor,3,B.Tech,Information Technology,2022,3.0,QA,70,Internship,6.7
+C0343,Manish Verma,F,Tier-3,Delhi NCR,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2022,3.4,Full-Stack,55,Full-time,10.2
+C0344,Priya Reddy,F,Tier-2,Coimbatore,Bachelor,3,B.Tech,Information Technology,2022,3.6,QA,100,Contract,10.0
+C0345,Thomas Rao,F,Tier-2,Delhi NCR,Master,4,M.Tech,Information Technology,2022,4.2,Backend-Java,85,Full-time,11.4
+C0346,Harpreet Pillai,F,Tier-2,Mumbai,Bachelor,3,B.Tech,Computer Science and Engineering,2027,0.0,Backend-Python,55,Full-time,5.3
+C0347,Suresh Patel,F,Tier-2,Bengaluru,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2027,0.0,QA,95,Full-time,5.9
+C0348,Vivaan Naidu,F,Tier-2,Delhi NCR,Bachelor,3,B.E.,Computer Science and Engineering,2024,2.5,Backend-Java,75,Contract,6.7
+C0349,Deepa Banerjee,M,Tier-3,Chennai,Bachelor,3,B.Tech,Information Technology,2017,8.3,Frontend,80,Full-time,13.0
+C0350,Lakshmi Patel,M,Tier-3,Pune,Bachelor,3,B.Tech,Computer Science and Engineering,2021,4.6,Data-Science-ML,60,Contract,10.8
+C0351,Farhan Kulkarni,M,Tier-2,Hyderabad,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2022,3.7,Android,65,Full-time,9.2
+C0352,Thomas Singh,F,Tier-2,Lucknow,Bachelor,3,B.E.,Information Technology,2025,1.0,Data-Science-ML,75,Internship,7.6
+C0353,Karthik Pillai,M,Tier-1,Mumbai,Diploma,2,Diploma in Engineering,Information Technology,2026,0.7,Data-Analyst,100,Contract,8.2
+C0354,Karthik Kapoor,F,Tier-1,Bengaluru,Bachelor,3,B.Tech,Computer Science and Engineering,2027,0.0,Full-Stack,80,Full-time,6.6
+C0355,Anjali Chatterjee,F,Tier-3,Chennai,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2025,0.0,QA,75,Internship,5.7
+C0356,Manish Banerjee,M,Tier-3,Kolkata,Bachelor,3,B.E.,Computer Science and Engineering,2025,0.0,Data-Analyst,80,Internship,6.2
+C0357,Divya Chatterjee,M,Tier-3,Kochi,Bachelor,3,B.Tech,Computer Science and Engineering,2023,2.5,Full-Stack,60,Contract,9.5
+C0358,Imran Naidu,M,Tier-2,Pune,Diploma,2,Diploma in Engineering,Industrial Trade,2022,3.2,Vocational,60,Contract,3.5
+C0359,Rahul Naidu,M,Tier-2,Hyderabad,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2024,1.4,Data-Analyst,80,Internship,7.5
+C0360,Lakshmi Menon,F,Tier-3,Bengaluru,Bachelor,3,B.E.,Information Technology,2025,0.0,Backend-Python,70,Full-time,4.2
+C0361,Divya Chatterjee,M,Tier-3,Chennai,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2025,1.9,Vocational,65,Internship,3.0
+C0362,Jasleen Naidu,F,Tier-3,Ahmedabad,Bachelor,3,BCA,Information Technology,2021,4.0,Data-Science-ML,90,Contract,7.9
+C0363,Mohit Das,M,Tier-2,Hyderabad,Bachelor,3,B.Tech,Computer Science and Engineering,2024,1.5,Frontend,85,Contract,5.1
+C0364,Tanvi Naidu,M,Tier-2,Chennai,Bachelor,3,B.Tech,Electronics and Communication,2025,1.0,Backend-Java,75,Contract,6.0
+C0365,Sanjay Shaikh,M,Tier-2,Hyderabad,Bachelor,3,B.E.,Computer Science and Engineering,2027,0.0,Backend-Java,95,Contract,5.5
+C0366,Mohit Yadav,M,Tier-3,Bengaluru,Bachelor,3,BCA,Computer Science and Engineering,2020,5.8,Data-Analyst,65,Full-time,11.5
+C0367,Shreya Thakur,F,Tier-2,Delhi NCR,Bachelor,3,B.Tech,Electronics and Communication,2027,0.0,QA,95,Full-time,3.7
+C0368,Zoya Naidu,M,Tier-2,Delhi NCR,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2026,0.0,Vocational,75,Full-time,3.5
+C0369,Rohit Mishra,M,Tier-2,Mumbai,Bachelor,3,B.E.,Information Technology,2025,0.0,Frontend,75,Full-time,3.5
+C0370,Anjali Iyer,M,Tier-2,Delhi NCR,Diploma,2,Diploma in Engineering,Information Technology,2027,0.0,Backend-Java,85,Internship,3.5
+C0371,Pooja Singh,M,Tier-3,Nagpur,Bachelor,3,B.Tech,Electronics and Communication,2027,0.0,QA,95,Contract,6.7
+C0372,Divya Banerjee,M,Tier-2,Chennai,Bachelor,3,B.E.,Information Technology,2025,1.0,Data-Analyst,65,Full-time,8.9
+C0373,Vikram Yadav,M,Tier-3,Chennai,Bachelor,3,B.Tech,Computer Science and Engineering,2024,2.5,QA,95,Internship,9.7
+C0374,Rohit Iyer,F,Tier-3,Bengaluru,Bachelor,3,BCA,Electronics and Communication,2025,0.0,Android,85,Contract,3.2
+C0375,Ritika Das,M,Tier-2,Bhubaneswar,Bachelor,3,BCA,Information Technology,2025,0.0,DevOps,55,Internship,3.0
+C0376,Anjali Khan,F,Tier-3,Jaipur,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2022,4.1,Android,55,Contract,11.7
+C0377,Yash Nair,M,Tier-3,Kolkata,Bachelor,3,B.Tech,Electronics and Communication,2027,0.0,Data-Science-ML,100,Internship,8.0
+C0378,Shreya Thakur,F,Tier-3,Nagpur,Bachelor,3,B.Sc (CS),Electronics and Communication,2023,3.0,Android,80,Full-time,6.8
+C0379,Zoya Nair,F,Tier-2,Chennai,Bachelor,3,BCA,Electronics and Communication,2025,1.3,Android,90,Contract,9.1
+C0380,Ritika Khan,M,Tier-2,Hyderabad,Bachelor,3,B.Tech,Electronics and Communication,2027,0.0,Frontend,55,Internship,6.7
+C0381,Tanvi Menon,M,Tier-3,Bengaluru,Bachelor,3,B.Sc (CS),Electronics and Communication,2027,0.0,Backend-Java,65,Full-time,4.5
+C0382,Vivaan Singh,F,Tier-2,Kolkata,Bachelor,3,B.Tech,Electronics and Communication,2024,2.2,Data-Science-ML,90,Contract,5.4
+C0383,Mohit Singh,M,Tier-2,Chennai,Bachelor,3,B.E.,Computer Science and Engineering,2025,0.0,Android,90,Full-time,3.8
+C0384,Mohit Sharma,F,Tier-3,Mumbai,Bachelor,3,B.Tech,Electronics and Communication,2019,6.4,Data-Science-ML,80,Full-time,10.8
+C0385,Sanjay Sharma,M,Tier-1,Kolkata,Bachelor,3,B.Tech,Computer Science and Engineering,2024,1.2,Full-Stack,80,Internship,4.5
+C0386,Aarav Menon,M,Tier-2,Hyderabad,Bachelor,3,B.Tech,Information Technology,2025,0.0,Frontend,90,Full-time,7.1
+C0387,Vivaan Bose,M,Tier-2,Bengaluru,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2021,5.3,Full-Stack,75,Full-time,9.1
+C0388,Sanjay Chatterjee,M,Tier-2,Hyderabad,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2022,3.6,Frontend,80,Full-time,9.8
+C0389,Ramesh Bose,M,Tier-3,Pune,Bachelor,3,B.E.,Computer Science and Engineering,2026,0.0,Frontend,95,Contract,7.7
+C0390,Deepa Fernandes,M,Tier-2,Bhubaneswar,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2023,2.9,Data-Science-ML,70,Internship,7.5
+C0391,Mohit Menon,M,Tier-1,Pune,Bachelor,3,B.Tech,Electronics and Communication,2024,1.0,DevOps,85,Contract,7.2
+C0392,Mohit Nair,M,Tier-2,Delhi NCR,Bachelor,3,B.Tech,Electronics and Communication,2027,0.0,Data-Analyst,90,Full-time,3.9
+C0393,Divya Naidu,M,Tier-3,Ahmedabad,Master,4,MCA,Electronics and Communication,2024,1.7,Frontend,100,Full-time,6.5
+C0394,Aditya Kapoor,M,Tier-3,Nagpur,Bachelor,3,B.Tech,Computer Science and Engineering,2024,1.6,Backend-Java,95,Full-time,6.8
+C0395,Vivaan Pillai,M,Tier-2,Mumbai,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2027,0.0,Data-Analyst,95,Contract,5.4
+C0396,Divya Thakur,M,Tier-1,Delhi NCR,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2024,2.4,Full-Stack,90,Contract,8.2
+C0397,Aditya Bose,M,Tier-3,Bhubaneswar,Diploma,2,Diploma in Engineering,Information Technology,2019,7.3,Data-Analyst,70,Full-time,14.9
+C0398,Shreya Chatterjee,M,Tier-3,Delhi NCR,Bachelor,3,B.Tech,Electronics and Communication,2023,2.4,Data-Science-ML,65,Internship,6.2
+C0399,Karthik Pillai,M,Tier-1,Hyderabad,Bachelor,3,B.Sc (CS),Electronics and Communication,2022,3.8,QA,65,Internship,10.7
+C0400,Arjun Yadav,M,Tier-2,Bengaluru,Bachelor,3,B.Tech,Computer Science and Engineering,2025,1.7,Data-Analyst,90,Internship,8.3
+C0401,Anjali Singh,M,Tier-2,Hyderabad,Bachelor,3,B.Tech,Electronics and Communication,2024,1.0,QA,60,Full-time,6.0
+C0402,Farhan Naidu,F,Tier-3,Bengaluru,Diploma,2,Diploma in Engineering,Information Technology,2019,7.3,Data-Analyst,100,Contract,15.5
+C0403,Vivaan Banerjee,F,Tier-3,Chennai,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2024,0.0,Frontend,80,Internship,4.7
+C0404,Meera Kulkarni,F,Tier-3,Delhi NCR,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2024,1.3,Vocational,75,Internship,3.0
+C0405,Isha Verma,M,Tier-1,Chennai,Diploma,2,Diploma in Engineering,Industrial Trade,2024,0.0,Vocational,80,Contract,3.3
+C0406,Farhan Fernandes,M,Tier-2,Kochi,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2027,0.0,Data-Science-ML,65,Contract,4.3
+C0407,Ananya Nair,M,Tier-3,Mumbai,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2024,0.0,Data-Analyst,95,Full-time,5.5
+C0408,Ayesha Kapoor,M,Tier-1,Bengaluru,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2027,0.0,Vocational,70,Full-time,3.3
+C0409,Sanjay Thakur,M,Tier-3,Pune,Bachelor,3,B.E.,Computer Science and Engineering,2024,2.9,QA,75,Full-time,9.4
+C0410,Anjali Das,M,Tier-1,Coimbatore,Diploma,2,Diploma in Engineering,Information Technology,2023,2.6,Frontend,100,Full-time,10.5
+C0411,Karthik Das,M,Tier-2,Ahmedabad,Bachelor,3,B.E.,Information Technology,2024,0.0,Data-Science-ML,65,Contract,5.5
+C0412,Nikhil Rao,F,Tier-2,Bengaluru,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2021,4.7,Frontend,80,Contract,12.1
+C0413,Pooja Fernandes,F,Tier-2,Mumbai,Bachelor,3,B.E.,Computer Science and Engineering,2024,2.3,Data-Science-ML,95,Contract,6.6
+C0414,Lakshmi Kulkarni,F,Tier-2,Lucknow,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2024,2.2,Vocational,100,Full-time,2.7
+C0415,Lakshmi Thakur,F,Tier-1,Chennai,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2024,1.2,Data-Science-ML,85,Internship,8.7
+C0416,Suresh Nair,M,Tier-3,Hyderabad,Bachelor,3,B.Tech,Information Technology,2027,0.0,QA,65,Internship,5.7
+C0417,Joseph Mishra,F,Tier-1,Coimbatore,Bachelor,3,B.Tech,Information Technology,2024,2.0,Backend-Java,65,Full-time,5.6
+C0418,Vivaan Patel,F,Tier-2,Bengaluru,Master,4,M.Tech,Information Technology,2025,1.5,Backend-Python,65,Full-time,6.4
+C0419,Ananya Thakur,M,Tier-2,Kolkata,Bachelor,3,BCA,Electronics and Communication,2022,3.2,Data-Analyst,90,Internship,10.6
+C0420,Sanjay Yadav,M,Tier-1,Coimbatore,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2023,3.8,Data-Science-ML,60,Internship,10.3
+C0421,Arjun Fernandes,F,Tier-2,Mumbai,Bachelor,3,B.E.,Information Technology,2020,5.0,Frontend,100,Full-time,10.2
+C0422,Kavya Joshi,M,Tier-1,Chennai,Bachelor,3,B.E.,Electronics and Communication,2020,5.2,QA,85,Contract,12.9
+C0423,Joseph Menon,M,Tier-2,Delhi NCR,Bachelor,3,B.E.,Information Technology,2023,3.2,Backend-Java,60,Full-time,11.2
+C0424,Thomas Kulkarni,F,Tier-3,Chennai,Diploma,2,Diploma in Engineering,Electronics and Communication,2023,2.5,Data-Analyst,95,Full-time,7.0
+C0425,Ananya Joshi,M,Tier-2,Bengaluru,Bachelor,3,B.E.,Electronics and Communication,2024,1.8,Backend-Java,80,Internship,5.0
+C0426,Shreya Shaikh,M,Tier-3,Pune,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2023,2.1,Backend-Java,70,Full-time,9.8
+C0427,Ritika Chatterjee,M,Tier-3,Mumbai,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2023,2.1,Cybersecurity,80,Contract,6.8
+C0428,Ananya Chatterjee,F,Tier-3,Nagpur,Bachelor,3,B.E.,Electronics and Communication,2025,0.0,DevOps,55,Full-time,4.1
+C0429,Farhan Yadav,M,Tier-3,Bengaluru,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2024,1.5,Data-Science-ML,85,Full-time,5.8
+C0430,Karthik Kapoor,M,Tier-3,Kochi,Master,4,M.Tech,Information Technology,2026,0.0,Data-Analyst,85,Contract,4.4
+C0431,Gurpreet Nair,M,Tier-3,Pune,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2025,0.0,Data-Analyst,75,Internship,6.3
+C0432,Maria Kapoor,M,Tier-2,Delhi NCR,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2026,0.0,Backend-Java,60,Full-time,6.9
+C0433,Priya Khan,M,Tier-2,Hyderabad,Bachelor,3,BCA,Electronics and Communication,2020,5.2,QA,85,Full-time,13.0
+C0434,Farhan Bose,F,Tier-2,Chennai,Bachelor,3,B.Tech,Computer Science and Engineering,2022,3.9,QA,95,Internship,9.1
+C0435,Divya Joshi,F,Tier-3,Bengaluru,Bachelor,3,B.Tech,Computer Science and Engineering,2023,3.7,Backend-Java,60,Contract,10.9
+C0436,Farhan Mishra,F,Tier-2,Pune,Diploma,2,Diploma in Engineering,Artificial Intelligence and Data Science,2023,2.6,Full-Stack,65,Internship,7.1
+C0437,Divya Shaikh,F,Tier-2,Chennai,Diploma,2,Diploma in Engineering,Computer Science and Engineering,2013,12.3,Data-Science-ML,70,Full-time,19.1
+C0438,Vivaan Menon,F,Tier-1,Mumbai,Master,4,M.Tech,Artificial Intelligence and Data Science,2024,0.0,Data-Science-ML,70,Contract,4.4
+C0439,Suresh Singh,M,Tier-2,Bengaluru,Bachelor,3,B.Tech,Computer Science and Engineering,2025,0.0,Full-Stack,70,Internship,4.8
+C0440,Meera Das,M,Tier-2,Delhi NCR,Master,4,MCA,Information Technology,2024,2.6,DevOps,90,Internship,6.7
+C0441,Farhan Joshi,Other,Tier-2,Kolkata,Bachelor,3,B.Tech,Electronics and Communication,2026,0.9,Data-Analyst,95,Contract,7.5
+C0442,Sneha Naidu,M,Tier-1,Bengaluru,Diploma,2,Diploma in Engineering,Industrial Trade,2026,0.0,Vocational,75,Contract,2.0
+C0443,Rahul Menon,M,Tier-1,Chennai,Bachelor,3,BCA,Artificial Intelligence and Data Science,2026,0.9,QA,80,Full-time,5.0
+C0444,Farhan Banerjee,F,Tier-3,Hyderabad,Bachelor,3,B.Tech,Computer Science and Engineering,2024,0.0,Android,90,Full-time,3.1
+C0445,Isha Kapoor,F,Tier-2,Mumbai,Bachelor,3,BCA,Computer Science and Engineering,2022,4.4,Android,90,Full-time,12.3
+C0446,Pooja Menon,F,Tier-3,Jaipur,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2024,1.1,Vocational,60,Full-time,3.1
+C0447,Joseph Fernandes,M,Tier-2,Indore,Bachelor,3,B.E.,Computer Science and Engineering,2022,3.3,Backend-Python,75,Contract,10.1
+C0448,Gurpreet Naidu,F,Tier-3,Pune,Bachelor,3,BCA,Computer Science and Engineering,2026,0.0,Data-Science-ML,95,Full-time,4.3
+C0449,Ritika Kulkarni,M,Tier-3,Chennai,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2025,1.7,Vocational,85,Internship,3.5
+C0450,Harpreet Shaikh,M,Tier-2,Delhi NCR,Diploma,2,Diploma in Engineering,Artificial Intelligence and Data Science,2027,0.0,Data-Science-ML,70,Contract,3.8
+C0451,Lakshmi Banerjee,F,Tier-3,Chennai,Master,4,M.Sc (Data Science),Artificial Intelligence and Data Science,2022,3.0,Cybersecurity,75,Contract,8.4
+C0452,Meera Nair,M,Tier-3,Bengaluru,Master,4,MCA,Artificial Intelligence and Data Science,2026,0.0,Data-Science-ML,65,Full-time,3.4
+C0453,Isha Sharma,F,Tier-3,Bengaluru,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2022,3.0,Backend-Java,80,Internship,10.7
+C0454,Imran Naidu,M,Tier-3,Bengaluru,Diploma,2,Diploma in Engineering,Information Technology,2024,0.0,Data-Analyst,90,Full-time,7.7
+C0455,Jasleen Sharma,M,Tier-3,Kolkata,Bachelor,3,BCA,Artificial Intelligence and Data Science,2026,0.0,Backend-Python,55,Internship,3.9
+C0456,Vivaan Patel,M,Tier-2,Pune,Bachelor,3,B.Tech,Computer Science and Engineering,2024,0.0,Backend-Java,65,Internship,7.0
+C0457,Kavya Menon,M,Tier-2,Pune,Bachelor,3,BCA,Computer Science and Engineering,2026,0.0,Data-Analyst,75,Contract,3.8
+C0458,Rohit Chatterjee,M,Tier-2,Mumbai,Bachelor,3,B.Sc (CS),Computer Science and Engineering,2026,0.0,Frontend,75,Full-time,7.7
+C0459,Pooja Das,F,Tier-1,Hyderabad,Master,4,M.Sc (Data Science),Information Technology,2021,4.5,Backend-Java,90,Full-time,9.2
+C0460,Joseph Thakur,M,Tier-3,Chennai,Bachelor,3,B.Tech,Computer Science and Engineering,2027,0.0,Full-Stack,60,Internship,7.4
+C0461,Karthik Sharma,M,Tier-3,Jaipur,Bachelor,3,BCA,Computer Science and Engineering,2027,0.0,Cybersecurity,55,Contract,3.9
+C0462,Harpreet Pillai,F,Tier-2,Mumbai,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2027,0.0,Vocational,85,Full-time,2.5
+C0463,Nikhil Khan,M,Tier-2,Delhi NCR,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2026,0.0,Android,60,Contract,7.0
+C0464,Mohit Kapoor,M,Tier-2,Delhi NCR,Bachelor,3,B.Sc (CS),Electronics and Communication,2024,0.0,Frontend,80,Internship,5.2
+C0465,Aarav Shaikh,F,Tier-3,Nagpur,Bachelor,3,B.Tech,Information Technology,2026,0.0,Backend-Java,65,Full-time,3.3
+C0466,Arjun Khan,F,Tier-3,Bengaluru,Diploma,2,Diploma in Engineering,Computer Science and Engineering,2027,0.0,Full-Stack,75,Full-time,4.6
+C0467,Mohit Chatterjee,M,Tier-2,Hyderabad,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2027,0.0,Android,60,Full-time,7.3
+C0468,Arjun Kulkarni,M,Tier-2,Mumbai,Bachelor,3,B.Sc (CS),Computer Science and Engineering,2025,1.3,Backend-Java,65,Full-time,6.0
+C0469,Neha Banerjee,M,Tier-2,Hyderabad,Master,4,M.Tech,Electronics and Communication,2025,1.9,Backend-Java,80,Full-time,9.7
+C0470,Vikram Bose,M,Tier-2,Mumbai,Bachelor,3,B.Tech,Information Technology,2020,6.1,Data-Analyst,55,Full-time,14.3
+C0471,Joseph Pillai,F,Tier-3,Chennai,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2024,0.0,Data-Analyst,90,Internship,6.0
+C0472,Zoya Bose,M,Tier-1,Indore,Diploma,2,Diploma in Engineering,Artificial Intelligence and Data Science,2024,0.0,Backend-Python,70,Full-time,6.5
+C0473,Gurpreet Nair,F,Tier-1,Chennai,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2026,0.0,Cybersecurity,70,Full-time,4.4
+C0474,Suresh Yadav,M,Tier-3,Chennai,Master,4,MCA,Electronics and Communication,2025,0.0,DevOps,90,Internship,4.9
+C0475,Suresh Kulkarni,M,Tier-3,Pune,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2026,0.0,Data-Science-ML,100,Full-time,5.4
+C0476,Divya Patel,M,Tier-3,Bengaluru,Bachelor,3,B.Tech,Information Technology,2016,10.7,Backend-Java,90,Full-time,17.6
+C0477,Karthik Patel,M,Tier-3,Mumbai,Bachelor,3,BCA,Electronics and Communication,2026,0.0,Full-Stack,80,Contract,4.1
+C0478,Maria Joshi,M,Tier-1,Hyderabad,Master,4,MCA,Artificial Intelligence and Data Science,2020,5.5,Android,55,Full-time,12.1
+C0479,Pooja Banerjee,M,Tier-2,Delhi NCR,Master,4,M.Sc (Data Science),Artificial Intelligence and Data Science,2019,6.6,Backend-Python,95,Contract,14.7
+C0480,Gurpreet Shaikh,M,Tier-3,Indore,Bachelor,3,BCA,Electronics and Communication,2023,3.0,Full-Stack,100,Contract,7.3
+C0481,Neha Das,M,Tier-1,Delhi NCR,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2024,2.6,Vocational,80,Contract,3.5
+C0482,Manish Verma,F,Tier-2,Indore,Diploma,2,Diploma in Engineering,Electronics and Communication,2027,0.0,Full-Stack,85,Full-time,7.1
+C0483,Ayesha Thakur,F,Tier-3,Mumbai,Bachelor,3,B.Tech,Computer Science and Engineering,2023,2.5,Android,80,Full-time,6.3
+C0484,Ritika Thakur,F,Tier-2,Kolkata,Bachelor,3,B.E.,Electronics and Communication,2023,2.8,Backend-Java,100,Full-time,7.6
+C0485,Joseph Joshi,F,Tier-1,Pune,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2025,0.0,Vocational,70,Full-time,3.4
+C0486,Harpreet Reddy,F,Tier-2,Delhi NCR,Bachelor,3,B.Sc (CS),Information Technology,2025,1.3,Full-Stack,75,Full-time,9.0
+C0487,Jasleen Menon,F,Tier-2,Coimbatore,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2023,2.2,Frontend,95,Internship,7.1
+C0488,Priya Naidu,F,Tier-2,Ahmedabad,Master,4,MCA,Artificial Intelligence and Data Science,2025,0.0,Backend-Java,55,Full-time,3.7
+C0489,Mohit Nair,F,Tier-3,Mumbai,Master,4,M.Sc (Data Science),Electronics and Communication,2026,0.8,Full-Stack,65,Full-time,8.8
+C0490,Zoya Verma,M,Tier-2,Bengaluru,Bachelor,3,B.Tech,Computer Science and Engineering,2024,1.3,Cybersecurity,70,Full-time,6.9
+C0491,Anjali Yadav,M,Tier-2,Mumbai,Bachelor,3,B.Sc (CS),Information Technology,2026,0.0,DevOps,100,Internship,4.5
+C0492,Sanjay Reddy,M,Tier-2,Kolkata,Bachelor,3,B.Sc (CS),Information Technology,2025,1.7,Frontend,100,Contract,5.8
+C0493,Deepa Joshi,M,Tier-2,Delhi NCR,Bachelor,3,BCA,Computer Science and Engineering,2027,0.0,Data-Analyst,80,Full-time,7.2
+C0494,Gurpreet Rao,M,Tier-3,Kolkata,Bachelor,3,B.Tech,Information Technology,2016,10.8,Full-Stack,90,Contract,15.3
+C0495,Manish Joshi,M,Tier-3,Bengaluru,Master,4,M.Tech,Computer Science and Engineering,2023,2.5,Frontend,95,Contract,7.9
+C0496,Yash Pillai,M,Tier-2,Mumbai,Bachelor,3,BCA,Information Technology,2024,1.4,Backend-Java,85,Full-time,9.1
+C0497,Rahul Thakur,F,Tier-3,Pune,Bachelor,3,B.Sc (CS),Information Technology,2027,0.0,Data-Science-ML,80,Full-time,3.2
+C0498,Ramesh Kapoor,M,Tier-3,Nagpur,Master,4,M.Sc (Data Science),Information Technology,2025,0.0,Backend-Java,70,Internship,5.1
+C0499,Anjali Kulkarni,M,Tier-3,Bengaluru,Bachelor,3,B.Sc (CS),Electronics and Communication,2022,3.5,Backend-Python,85,Internship,10.8
+C0500,Aditya Bose,M,Tier-3,Bengaluru,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2027,0.0,Backend-Java,65,Full-time,3.9
+C0501,Deepa Verma,M,Tier-1,Ahmedabad,Bachelor,3,BCA,Information Technology,2025,1.3,Android,85,Full-time,7.3
+C0502,Divya Kulkarni,F,Tier-1,Delhi NCR,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2024,0.0,Backend-Java,70,Internship,4.0
+C0503,Gurpreet Chatterjee,F,Tier-1,Mumbai,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2027,0.0,Data-Science-ML,60,Contract,6.3
+C0504,Tanvi Rao,M,Tier-2,Delhi NCR,Master,4,MCA,Information Technology,2024,0.0,Data-Science-ML,85,Full-time,3.6
+C0505,Pooja Bose,F,Tier-3,Kochi,Bachelor,3,B.Tech,Computer Science and Engineering,2025,0.0,Backend-Java,100,Full-time,3.9
+C0506,Nikhil Khan,M,Tier-2,Bhubaneswar,Master,4,M.Sc (Data Science),Artificial Intelligence and Data Science,2022,4.2,Android,85,Internship,9.9
+C0507,Aditya Gupta,F,Tier-2,Hyderabad,Bachelor,3,B.Sc (CS),Electronics and Communication,2026,0.0,Backend-Python,85,Internship,7.7
+C0508,Nikhil Fernandes,F,Tier-2,Hyderabad,Bachelor,3,B.Sc (CS),Information Technology,2023,2.0,Backend-Python,90,Full-time,7.0
+C0509,Arjun Fernandes,F,Tier-2,Bengaluru,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2024,2.6,Cybersecurity,100,Full-time,10.7
+C0510,Ananya Khan,M,Tier-3,Pune,Bachelor,3,BCA,Artificial Intelligence and Data Science,2025,1.3,Backend-Python,70,Internship,8.0
+C0511,Jasleen Kulkarni,F,Tier-2,Mumbai,Bachelor,3,BCA,Computer Science and Engineering,2022,3.7,Full-Stack,55,Contract,7.6
+C0512,Suresh Joshi,F,Tier-2,Hyderabad,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2026,0.6,QA,80,Internship,7.6
+C0513,Lakshmi Thakur,F,Tier-2,Hyderabad,Bachelor,3,B.Sc (CS),Information Technology,2024,0.0,Full-Stack,85,Internship,5.6
+C0514,Gurpreet Chatterjee,M,Tier-2,Hyderabad,Bachelor,3,BCA,Information Technology,2027,0.0,Backend-Python,95,Contract,3.3
+C0515,Vivaan Khan,M,Tier-2,Hyderabad,Bachelor,3,BCA,Information Technology,2021,5.0,Frontend,75,Full-time,13.1
+C0516,Shreya Yadav,M,Tier-2,Pune,Bachelor,3,B.E.,Information Technology,2025,0.0,QA,95,Full-time,6.4
+C0517,Joseph Reddy,M,Tier-2,Hyderabad,Diploma,2,Diploma in Engineering,Computer Science and Engineering,2027,0.0,QA,55,Full-time,6.7
+C0518,Sneha Naidu,F,Tier-3,Hyderabad,Bachelor,3,B.E.,Computer Science and Engineering,2025,0.0,Backend-Python,95,Contract,5.3
+C0519,Aditya Singh,M,Tier-3,Pune,Bachelor,3,BCA,Computer Science and Engineering,2027,0.0,Frontend,85,Full-time,3.3
+C0520,Thomas Patel,F,Tier-2,Hyderabad,Bachelor,3,BCA,Computer Science and Engineering,2024,2.7,Full-Stack,55,Full-time,9.8
+C0521,Anjali Reddy,M,Tier-1,Ahmedabad,Bachelor,3,B.Tech,Information Technology,2021,4.1,Frontend,85,Contract,10.8
+C0522,Rahul Das,M,Tier-3,Hyderabad,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2023,2.6,Backend-Java,70,Full-time,9.1
+C0523,Deepa Rao,F,Tier-2,Delhi NCR,Bachelor,3,B.Tech,Information Technology,2022,3.7,Data-Analyst,70,Full-time,8.0
+C0524,Shreya Mishra,M,Tier-1,Hyderabad,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2021,4.9,Data-Analyst,70,Full-time,12.5
+C0525,Vikram Mishra,M,Tier-3,Bhubaneswar,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2027,0.0,Data-Analyst,65,Full-time,4.2
+C0526,Sanjay Banerjee,M,Tier-2,Pune,Bachelor,3,B.Tech,Information Technology,2024,0.0,Android,75,Contract,6.2
+C0527,Ritika Yadav,M,Tier-1,Pune,Bachelor,3,B.Tech,Computer Science and Engineering,2024,1.2,QA,95,Full-time,8.3
+C0528,Shreya Reddy,F,Tier-2,Pune,Master,4,M.Tech,Artificial Intelligence and Data Science,2026,0.0,Backend-Java,85,Internship,4.8
+C0529,Suresh Banerjee,M,Tier-2,Ahmedabad,Bachelor,3,BCA,Electronics and Communication,2024,1.5,Frontend,60,Contract,9.1
+C0530,Sneha Kulkarni,M,Tier-2,Delhi NCR,Bachelor,3,B.Tech,Electronics and Communication,2026,0.0,DevOps,90,Internship,7.5
+C0531,Rahul Fernandes,M,Tier-2,Chennai,ITI,1,ITI (NCVT) Certificate,Industrial Trade,2018,7.8,Vocational,85,Full-time,2.2
+C0532,Karthik Singh,F,Tier-2,Jaipur,Bachelor,3,BCA,Computer Science and Engineering,2021,5.7,Frontend,85,Internship,11.3
+C0533,Meera Kapoor,F,Tier-2,Bengaluru,Master,4,MCA,Artificial Intelligence and Data Science,2025,1.6,Data-Analyst,90,Internship,5.1
+C0534,Sanjay Bose,M,Tier-1,Pune,Bachelor,3,B.Tech,Electronics and Communication,2024,2.9,Frontend,55,Full-time,7.7
+C0535,Zoya Verma,M,Tier-2,Mumbai,Bachelor,3,B.Tech,Electronics and Communication,2025,1.7,Backend-Python,55,Contract,8.2
+C0536,Pooja Fernandes,M,Tier-2,Delhi NCR,Master,4,M.Sc (Data Science),Information Technology,2023,3.6,Backend-Java,60,Full-time,8.6
+C0537,Priya Patel,F,Tier-3,Hyderabad,Bachelor,3,B.Tech,Computer Science and Engineering,2018,7.8,Android,55,Contract,12.5
+C0538,Rohit Verma,F,Tier-3,Pune,Master,4,M.Tech,Computer Science and Engineering,2023,2.7,Backend-Java,100,Full-time,9.6
+C0539,Anjali Mishra,F,Tier-3,Kolkata,Diploma,2,Diploma in Engineering,Information Technology,2027,0.0,Data-Science-ML,85,Contract,6.4
+C0540,Harpreet Chatterjee,Other,Tier-3,Delhi NCR,Bachelor,3,BCA,Computer Science and Engineering,2022,4.0,Cybersecurity,75,Full-time,9.1
+C0541,Ritika Verma,M,Tier-2,Nagpur,Bachelor,3,B.Tech,Electronics and Communication,2024,2.8,Android,100,Full-time,9.6
+C0542,Ritika Mishra,M,Tier-3,Delhi NCR,Bachelor,3,BCA,Artificial Intelligence and Data Science,2025,0.0,Data-Analyst,55,Full-time,7.7
+C0543,Vikram Rao,F,Tier-3,Kolkata,Bachelor,3,B.E.,Electronics and Communication,2022,4.6,Full-Stack,70,Full-time,9.1
+C0544,Imran Gupta,F,Tier-2,Indore,Bachelor,3,B.Sc (CS),Computer Science and Engineering,2023,2.2,Frontend,75,Internship,6.4
+C0545,Farhan Patel,M,Tier-2,Jaipur,Master,4,M.Sc (Data Science),Computer Science and Engineering,2021,4.0,Frontend,80,Contract,11.8
+C0546,Kavya Iyer,M,Tier-2,Hyderabad,Bachelor,3,B.Tech,Electronics and Communication,2022,3.9,Backend-Python,55,Full-time,8.5
+C0547,Harpreet Mishra,F,Tier-2,Bengaluru,Bachelor,3,B.Sc (CS),Information Technology,2027,0.0,Data-Science-ML,75,Contract,4.1
+C0548,Vikram Nair,M,Tier-3,Mumbai,Bachelor,3,B.Tech,Electronics and Communication,2024,2.1,DevOps,75,Internship,9.0
+C0549,Rohit Chatterjee,F,Tier-1,Delhi NCR,Bachelor,3,B.Tech,Electronics and Communication,2022,4.6,Data-Science-ML,70,Full-time,9.2
+C0550,Rohit Banerjee,F,Tier-3,Delhi NCR,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2024,2.0,Data-Science-ML,55,Full-time,6.6
+C0551,Ritika Das,F,Tier-2,Delhi NCR,Bachelor,3,B.Sc (CS),Electronics and Communication,2019,7.2,QA,60,Internship,12.3
+C0552,Yash Rao,M,Tier-1,Pune,Bachelor,3,BCA,Electronics and Communication,2025,1.3,Cybersecurity,60,Internship,8.0
+C0553,Manish Singh,M,Tier-1,Bengaluru,Bachelor,3,B.Tech,Computer Science and Engineering,2027,0.0,QA,75,Contract,7.7
+C0554,Zoya Sharma,F,Tier-2,Delhi NCR,Bachelor,3,B.E.,Artificial Intelligence and Data Science,2022,3.4,Data-Analyst,65,Full-time,11.3
+C0555,Lakshmi Menon,F,Tier-2,Bengaluru,Bachelor,3,B.Tech,Information Technology,2023,2.2,Data-Analyst,75,Full-time,7.1
+C0556,Lakshmi Reddy,M,Tier-1,Chennai,Bachelor,3,B.Tech,Electronics and Communication,2023,2.5,Data-Science-ML,60,Full-time,5.9
+C0557,Meera Patel,F,Tier-3,Pune,Master,4,M.Tech,Artificial Intelligence and Data Science,2024,2.0,Backend-Java,90,Contract,9.7
+C0558,Kavya Banerjee,M,Tier-3,Pune,Bachelor,3,B.Tech,Electronics and Communication,2027,0.0,DevOps,95,Internship,3.4
+C0559,Sanjay Iyer,M,Tier-2,Hyderabad,Master,4,M.Tech,Information Technology,2027,0.0,Data-Analyst,90,Contract,3.6
+C0560,Suresh Patel,F,Tier-1,Mumbai,Bachelor,3,B.Tech,Computer Science and Engineering,2026,0.0,Backend-Python,70,Full-time,5.1
+C0561,Suresh Iyer,M,Tier-2,Delhi NCR,Diploma,2,Diploma in Engineering,Computer Science and Engineering,2022,4.1,DevOps,70,Internship,8.0
+C0562,Suresh Nair,F,Tier-3,Bengaluru,Bachelor,3,B.Tech,Computer Science and Engineering,2023,2.9,Frontend,90,Internship,9.5
+C0563,Sneha Iyer,F,Tier-2,Hyderabad,Bachelor,3,B.Tech,Computer Science and Engineering,2024,2.3,Full-Stack,70,Full-time,10.5
+C0564,Mohit Mishra,M,Tier-2,Delhi NCR,Bachelor,3,B.E.,Electronics and Communication,2025,0.0,Data-Analyst,90,Internship,3.1
+C0565,Divya Verma,M,Tier-2,Kochi,Bachelor,3,B.Sc (CS),Electronics and Communication,2022,3.6,QA,75,Full-time,10.2
+C0566,Aditya Rao,M,Tier-3,Hyderabad,Master,4,M.Tech,Information Technology,2022,4.7,Data-Analyst,70,Internship,11.8
+C0567,Mohit Reddy,F,Tier-2,Ahmedabad,Bachelor,3,B.Tech,Computer Science and Engineering,2021,4.4,DevOps,55,Contract,10.0
+C0568,Shreya Thakur,M,Tier-2,Chennai,Bachelor,3,B.Tech,Electronics and Communication,2023,3.5,Cybersecurity,90,Contract,8.5
+C0569,Farhan Iyer,F,Tier-2,Ahmedabad,Master,4,M.Sc (Data Science),Artificial Intelligence and Data Science,2025,0.0,Data-Analyst,60,Internship,3.7
+C0570,Farhan Banerjee,M,Tier-2,Hyderabad,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2022,3.6,Data-Science-ML,55,Contract,10.3
+C0571,Ayesha Naidu,M,Tier-2,Pune,Bachelor,3,B.Sc (CS),Computer Science and Engineering,2025,1.2,Data-Analyst,95,Full-time,9.1
+C0572,Imran Nair,M,Tier-3,Mumbai,Bachelor,3,BCA,Artificial Intelligence and Data Science,2024,0.0,Backend-Python,85,Internship,6.2
+C0573,Neha Singh,F,Tier-3,Bengaluru,Bachelor,3,B.Tech,Information Technology,2025,0.7,Data-Science-ML,65,Full-time,8.0
+C0574,Joseph Khan,M,Tier-1,Nagpur,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2025,0.0,Cybersecurity,70,Full-time,4.1
+C0575,Yash Bose,F,Tier-2,Pune,Bachelor,3,B.Sc (CS),Information Technology,2021,5.1,Frontend,100,Contract,9.8
+C0576,Ritika Iyer,F,Tier-3,Indore,Bachelor,3,B.E.,Electronics and Communication,2024,2.5,Frontend,95,Internship,10.7
+C0577,Suresh Singh,M,Tier-2,Pune,Diploma,2,Diploma in Engineering,Computer Science and Engineering,2024,1.5,Data-Science-ML,70,Contract,7.3
+C0578,Rohit Iyer,F,Tier-3,Kolkata,Bachelor,3,B.Sc (CS),Information Technology,2026,0.0,Backend-Java,100,Full-time,7.2
+C0579,Shreya Banerjee,M,Tier-2,Bengaluru,Diploma,2,Diploma in Engineering,Artificial Intelligence and Data Science,2023,3.4,Backend-Java,85,Contract,8.9
+C0580,Aditya Singh,M,Tier-2,Nagpur,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2022,3.0,Data-Analyst,80,Contract,7.8
+C0581,Harpreet Iyer,M,Tier-2,Bengaluru,Bachelor,3,B.Tech,Computer Science and Engineering,2026,0.9,Cybersecurity,55,Contract,8.3
+C0582,Divya Sharma,F,Tier-3,Chennai,Master,4,M.Sc (Data Science),Electronics and Communication,2025,1.8,Data-Analyst,80,Full-time,9.3
+C0583,Lakshmi Joshi,F,Tier-1,Hyderabad,Bachelor,3,B.Tech,Electronics and Communication,2025,0.0,Backend-Python,100,Full-time,6.8
+C0584,Aarav Kapoor,M,Tier-1,Bengaluru,Bachelor,3,B.Sc (CS),Artificial Intelligence and Data Science,2026,0.6,Backend-Java,85,Full-time,4.0
+C0585,Ayesha Kapoor,F,Tier-3,Mumbai,Master,4,M.Tech,Artificial Intelligence and Data Science,2023,2.0,QA,100,Full-time,6.9
+C0586,Maria Shaikh,M,Tier-3,Mumbai,Bachelor,3,B.Tech,Information Technology,2024,2.1,Backend-Java,60,Full-time,9.8
+C0587,Kavya Das,F,Tier-3,Bengaluru,Diploma,2,Diploma in Engineering,Electronics and Communication,2024,1.9,Data-Analyst,95,Contract,9.5
+C0588,Rohit Fernandes,F,Tier-2,Kochi,Bachelor,3,B.Tech,Computer Science and Engineering,2027,0.0,Data-Analyst,70,Internship,4.6
+C0589,Ritika Kapoor,M,Tier-3,Mumbai,Diploma,2,Diploma in Engineering,Artificial Intelligence and Data Science,2018,7.8,DevOps,90,Full-time,16.4
+C0590,Ramesh Fernandes,M,Tier-3,Chennai,Bachelor,3,BCA,Information Technology,2019,7.1,Backend-Java,65,Internship,12.7
+C0591,Imran Joshi,M,Tier-3,Pune,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2024,0.0,Backend-Python,55,Full-time,7.6
+C0592,Joseph Patel,M,Tier-1,Bhubaneswar,Master,4,M.Sc (Data Science),Information Technology,2025,1.2,Backend-Python,75,Internship,6.2
+C0593,Manish Patel,M,Tier-2,Mumbai,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2025,0.0,Frontend,80,Full-time,3.6
+C0594,Karthik Mishra,M,Tier-3,Delhi NCR,Diploma,2,Diploma in Engineering,Computer Science and Engineering,2025,1.1,Frontend,80,Contract,5.3
+C0595,Harpreet Nair,F,Tier-2,Bengaluru,Diploma,2,Diploma in Engineering,Artificial Intelligence and Data Science,2025,0.0,Android,85,Internship,7.5
+C0596,Vikram Khan,M,Tier-2,Bengaluru,Bachelor,3,B.Tech,Artificial Intelligence and Data Science,2025,1.7,QA,60,Internship,7.1
+C0597,Imran Shaikh,F,Tier-2,Pune,Master,4,MCA,Electronics and Communication,2024,0.0,Backend-Java,90,Full-time,5.3
+C0598,Jasleen Pillai,M,Tier-2,Chennai,Bachelor,3,B.Tech,Electronics and Communication,2025,1.2,QA,70,Full-time,9.1
+C0599,Lakshmi Iyer,M,Tier-1,Lucknow,Bachelor,3,B.E.,Electronics and Communication,2027,0.0,Android,80,Full-time,6.3
+C0600,Vivaan Patel,F,Tier-2,Nagpur,Bachelor,3,B.Tech,Computer Science and Engineering,2023,3.9,Full-Stack,85,Full-time,10.5

@@ -1,0 +1,82 @@
+skill_id,canonical_name,category,parent_skill,aliases
+SK001,Java,Programming Language,Software Development,java|Java SE|Core Java|J2SE
+SK002,Python,Programming Language,Software Development,python|Python3|Python 3|py
+SK003,JavaScript,Programming Language,Software Development,js|JS|javascript|ECMAScript|ES6
+SK004,TypeScript,Programming Language,JavaScript,ts|TS|typescript
+SK005,C++,Programming Language,Software Development,cpp|CPP|c plus plus
+SK006,C#,Programming Language,Software Development,c sharp|csharp|.NET C#
+SK007,Go,Programming Language,Software Development,Golang|golang
+SK008,PHP,Programming Language,Software Development,php|PHP7
+SK009,Kotlin,Programming Language,Software Development,kotlin
+SK010,Spring Boot,Backend Framework,Java,SpringBoot|Spring-Boot|Spring Framework|Spring
+SK011,Hibernate,Backend Framework,Java,hibernate|Hibernate ORM|JPA
+SK012,Django,Backend Framework,Python,django|Django REST Framework|DRF
+SK013,FastAPI,Backend Framework,Python,fastapi|Fast API
+SK014,Flask,Backend Framework,Python,flask
+SK015,Node.js,Backend Framework,JavaScript,NodeJS|node js|Node|nodejs
+SK016,Express.js,Backend Framework,Node.js,ExpressJS|Express|express.js
+SK017,REST API,Concept,Backend Development,REST|RESTful API|REST APIs|RESTful services|Web APIs
+SK018,GraphQL,Concept,REST API,graphql|Graph QL
+SK019,Microservices,Concept,REST API,microservice architecture|micro-services|Microservice
+SK020,HTML,Frontend,Frontend Development,html|HTML5
+SK021,CSS,Frontend,Frontend Development,css|CSS3|Cascading Style Sheets
+SK022,React,Frontend,JavaScript,ReactJS|React.js|react js|react
+SK023,Next.js,Frontend,React,NextJS|Next JS|next.js
+SK024,Angular,Frontend,TypeScript,AngularJS|Angular 2+|angular
+SK025,Vue.js,Frontend,JavaScript,VueJS|Vue|vue.js
+SK026,Tailwind CSS,Frontend,CSS,Tailwind|TailwindCSS|tailwind css
+SK027,SQL,Database,Software Development,sql|Structured Query Language|T-SQL|SQL queries
+SK028,MySQL,Database,SQL,mysql|My SQL
+SK029,PostgreSQL,Database,SQL,Postgres|postgres|PostgresQL|psql
+SK030,Oracle DB,Database,SQL,Oracle|Oracle Database|PL/SQL
+SK031,MongoDB,Database,Software Development,Mongo|mongo db|MongoDb
+SK032,Redis,Database,Software Development,redis|Redis cache
+SK033,Machine Learning,Data & ML,Data Science,ML|machine learning|Machine-Learning
+SK034,Deep Learning,Data & ML,Machine Learning,DL|deep learning|neural networks
+SK035,NLP,Data & ML,Machine Learning,Natural Language Processing|natural language processing|nlp
+SK036,Scikit-learn,Data & ML,Machine Learning,sklearn|scikit learn|sci-kit learn
+SK037,TensorFlow,Data & ML,Deep Learning,tensorflow|TF|Tensor Flow
+SK038,PyTorch,Data & ML,Deep Learning,pytorch|torch
+SK039,Pandas,Data & ML,Python,pandas|pd dataframes
+SK040,NumPy,Data & ML,Python,numpy|Numpy
+SK041,Statistics,Data & ML,Data Science,statistics|statistical analysis|Stats
+SK042,Data Analysis,BI & Analytics,Data Science,data analytics|Data Analytics|data analysis|exploratory data analysis|EDA
+SK043,Data Visualization,BI & Analytics,Data Analysis,data viz|Data Visualisation|dashboards|visualization
+SK044,Power BI,BI & Analytics,Data Visualization,PowerBI|power bi|MS Power BI
+SK045,Tableau,BI & Analytics,Data Visualization,tableau|Tableau Desktop
+SK046,Excel,BI & Analytics,Data Analysis,MS Excel|Microsoft Excel|excel|Advanced Excel|spreadsheets
+SK047,Git,DevOps & Cloud,Software Development,git|GitHub|Git/GitHub|version control
+SK048,Docker,DevOps & Cloud,DevOps,docker|Docker containers|containerization
+SK049,Kubernetes,DevOps & Cloud,Docker,k8s|K8s|kubernetes
+SK050,AWS,DevOps & Cloud,DevOps,Amazon Web Services|aws|AWS EC2/S3
+SK051,Azure,DevOps & Cloud,DevOps,Microsoft Azure|azure|MS Azure
+SK052,Google Cloud,DevOps & Cloud,DevOps,GCP|Google Cloud Platform|gcp
+SK053,CI/CD,DevOps & Cloud,DevOps,CICD|CI CD|continuous integration|continuous delivery
+SK054,Jenkins,DevOps & Cloud,CI/CD,jenkins|Jenkins pipelines
+SK055,Linux,DevOps & Cloud,DevOps,linux|Ubuntu/Linux|Unix/Linux|Bash
+SK056,Unit Testing,Testing,Software Development,unit tests|unit testing|Unit tests|TDD
+SK057,JUnit,Testing,Unit Testing,junit|JUnit5|JUnit 5
+SK058,Selenium,Testing,Unit Testing,selenium|Selenium WebDriver|Selenium automation
+SK059,Android Development,Mobile,Mobile Development,Android|Android app development|Android SDK
+SK060,Flutter,Mobile,Mobile Development,flutter|Flutter/Dart|Dart
+SK061,Cybersecurity,Security,Cybersecurity Domain,cyber security|Cyber Security|infosec|information security
+SK062,Network Security,Security,Cybersecurity,network security|firewalls|IDS/IPS
+SK063,Networking,Security,Cybersecurity,computer networks|TCP/IP|networking
+SK064,Communication,Soft Skill,,communication skills|Communication Skills|verbal communication
+SK065,Teamwork,Soft Skill,,team work|Team Work|collaboration
+SK066,Problem Solving,Soft Skill,,problem-solving|analytical thinking|Problem solving
+SK067,Project Management,Soft Skill,,project mgmt|Project Planning|Agile|Scrum
+SK068,CNC Machining,Vocational,Manufacturing & Trades,CNC|CNC machine operation|CNC Operator skills
+SK069,Welding,Vocational,Manufacturing & Trades,arc welding|MIG welding|TIG welding
+SK070,Electrical Wiring,Vocational,Manufacturing & Trades,wiring|electrical installation|House wiring
+SK071,AutoCAD,Vocational,Manufacturing & Trades,Auto CAD|autocad|CAD drafting
+SK072,PLC Programming,Vocational,Manufacturing & Trades,PLC|Siemens PLC|ladder logic
+SK073,Software Development,Domain,,software engineering|Software Engineering|programming
+SK074,Backend Development,Domain,Software Development,backend|back-end development|server-side development|Backend
+SK075,Frontend Development,Domain,Software Development,frontend|front-end development|UI development|Frontend
+SK076,Full-Stack Development,Domain,Software Development,full stack|Full Stack Development|fullstack
+SK077,Data Science,Domain,,data science|DS
+SK078,DevOps,Domain,Software Development,devops|Dev Ops|site reliability
+SK079,Mobile Development,Domain,Software Development,mobile apps|mobile app development
+SK080,Cybersecurity Domain,Domain,,security engineering
+SK081,Manufacturing & Trades,Domain,,manufacturing|industrial trades

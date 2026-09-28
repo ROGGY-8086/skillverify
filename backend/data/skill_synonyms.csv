@@ -1,0 +1,328 @@
+alias,canonical_skill_id,canonical_name
+java,SK001,Java
+Java SE,SK001,Java
+Core Java,SK001,Java
+J2SE,SK001,Java
+Java,SK001,Java
+python,SK002,Python
+Python3,SK002,Python
+Python 3,SK002,Python
+py,SK002,Python
+Python,SK002,Python
+js,SK003,JavaScript
+JS,SK003,JavaScript
+javascript,SK003,JavaScript
+ECMAScript,SK003,JavaScript
+ES6,SK003,JavaScript
+JavaScript,SK003,JavaScript
+ts,SK004,TypeScript
+TS,SK004,TypeScript
+typescript,SK004,TypeScript
+TypeScript,SK004,TypeScript
+cpp,SK005,C++
+CPP,SK005,C++
+c plus plus,SK005,C++
+C++,SK005,C++
+c sharp,SK006,C#
+csharp,SK006,C#
+.NET C#,SK006,C#
+C#,SK006,C#
+Golang,SK007,Go
+golang,SK007,Go
+Go,SK007,Go
+php,SK008,PHP
+PHP7,SK008,PHP
+PHP,SK008,PHP
+kotlin,SK009,Kotlin
+Kotlin,SK009,Kotlin
+SpringBoot,SK010,Spring Boot
+Spring-Boot,SK010,Spring Boot
+Spring Framework,SK010,Spring Boot
+Spring,SK010,Spring Boot
+Spring Boot,SK010,Spring Boot
+hibernate,SK011,Hibernate
+Hibernate ORM,SK011,Hibernate
+JPA,SK011,Hibernate
+Hibernate,SK011,Hibernate
+django,SK012,Django
+Django REST Framework,SK012,Django
+DRF,SK012,Django
+Django,SK012,Django
+fastapi,SK013,FastAPI
+Fast API,SK013,FastAPI
+FastAPI,SK013,FastAPI
+flask,SK014,Flask
+Flask,SK014,Flask
+NodeJS,SK015,Node.js
+node js,SK015,Node.js
+Node,SK015,Node.js
+nodejs,SK015,Node.js
+Node.js,SK015,Node.js
+ExpressJS,SK016,Express.js
+Express,SK016,Express.js
+express.js,SK016,Express.js
+Express.js,SK016,Express.js
+REST,SK017,REST API
+RESTful API,SK017,REST API
+REST APIs,SK017,REST API
+RESTful services,SK017,REST API
+Web APIs,SK017,REST API
+REST API,SK017,REST API
+graphql,SK018,GraphQL
+Graph QL,SK018,GraphQL
+GraphQL,SK018,GraphQL
+microservice architecture,SK019,Microservices
+micro-services,SK019,Microservices
+Microservice,SK019,Microservices
+Microservices,SK019,Microservices
+html,SK020,HTML
+HTML5,SK020,HTML
+HTML,SK020,HTML
+css,SK021,CSS
+CSS3,SK021,CSS
+Cascading Style Sheets,SK021,CSS
+CSS,SK021,CSS
+ReactJS,SK022,React
+React.js,SK022,React
+react js,SK022,React
+react,SK022,React
+React,SK022,React
+NextJS,SK023,Next.js
+Next JS,SK023,Next.js
+next.js,SK023,Next.js
+Next.js,SK023,Next.js
+AngularJS,SK024,Angular
+Angular 2+,SK024,Angular
+angular,SK024,Angular
+Angular,SK024,Angular
+VueJS,SK025,Vue.js
+Vue,SK025,Vue.js
+vue.js,SK025,Vue.js
+Vue.js,SK025,Vue.js
+Tailwind,SK026,Tailwind CSS
+TailwindCSS,SK026,Tailwind CSS
+tailwind css,SK026,Tailwind CSS
+Tailwind CSS,SK026,Tailwind CSS
+sql,SK027,SQL
+Structured Query Language,SK027,SQL
+T-SQL,SK027,SQL
+SQL queries,SK027,SQL
+SQL,SK027,SQL
+mysql,SK028,MySQL
+My SQL,SK028,MySQL
+MySQL,SK028,MySQL
+Postgres,SK029,PostgreSQL
+postgres,SK029,PostgreSQL
+PostgresQL,SK029,PostgreSQL
+psql,SK029,PostgreSQL
+PostgreSQL,SK029,PostgreSQL
+Oracle,SK030,Oracle DB
+Oracle Database,SK030,Oracle DB
+PL/SQL,SK030,Oracle DB
+Oracle DB,SK030,Oracle DB
+Mongo,SK031,MongoDB
+mongo db,SK031,MongoDB
+MongoDb,SK031,MongoDB
+MongoDB,SK031,MongoDB
+redis,SK032,Redis
+Redis cache,SK032,Redis
+Redis,SK032,Redis
+ML,SK033,Machine Learning
+machine learning,SK033,Machine Learning
+Machine-Learning,SK033,Machine Learning
+Machine Learning,SK033,Machine Learning
+DL,SK034,Deep Learning
+deep learning,SK034,Deep Learning
+neural networks,SK034,Deep Learning
+Deep Learning,SK034,Deep Learning
+Natural Language Processing,SK035,NLP
+natural language processing,SK035,NLP
+nlp,SK035,NLP
+NLP,SK035,NLP
+sklearn,SK036,Scikit-learn
+scikit learn,SK036,Scikit-learn
+sci-kit learn,SK036,Scikit-learn
+Scikit-learn,SK036,Scikit-learn
+tensorflow,SK037,TensorFlow
+TF,SK037,TensorFlow
+Tensor Flow,SK037,TensorFlow
+TensorFlow,SK037,TensorFlow
+pytorch,SK038,PyTorch
+torch,SK038,PyTorch
+PyTorch,SK038,PyTorch
+pandas,SK039,Pandas
+pd dataframes,SK039,Pandas
+Pandas,SK039,Pandas
+numpy,SK040,NumPy
+Numpy,SK040,NumPy
+NumPy,SK040,NumPy
+statistics,SK041,Statistics
+statistical analysis,SK041,Statistics
+Stats,SK041,Statistics
+Statistics,SK041,Statistics
+data analytics,SK042,Data Analysis
+Data Analytics,SK042,Data Analysis
+data analysis,SK042,Data Analysis
+exploratory data analysis,SK042,Data Analysis
+EDA,SK042,Data Analysis
+Data Analysis,SK042,Data Analysis
+data viz,SK043,Data Visualization
+Data Visualisation,SK043,Data Visualization
+dashboards,SK043,Data Visualization
+visualization,SK043,Data Visualization
+Data Visualization,SK043,Data Visualization
+PowerBI,SK044,Power BI
+power bi,SK044,Power BI
+MS Power BI,SK044,Power BI
+Power BI,SK044,Power BI
+tableau,SK045,Tableau
+Tableau Desktop,SK045,Tableau
+Tableau,SK045,Tableau
+MS Excel,SK046,Excel
+Microsoft Excel,SK046,Excel
+excel,SK046,Excel
+Advanced Excel,SK046,Excel
+spreadsheets,SK046,Excel
+Excel,SK046,Excel
+git,SK047,Git
+GitHub,SK047,Git
+Git/GitHub,SK047,Git
+version control,SK047,Git
+Git,SK047,Git
+docker,SK048,Docker
+Docker containers,SK048,Docker
+containerization,SK048,Docker
+Docker,SK048,Docker
+k8s,SK049,Kubernetes
+K8s,SK049,Kubernetes
+kubernetes,SK049,Kubernetes
+Kubernetes,SK049,Kubernetes
+Amazon Web Services,SK050,AWS
+aws,SK050,AWS
+AWS EC2/S3,SK050,AWS
+AWS,SK050,AWS
+Microsoft Azure,SK051,Azure
+azure,SK051,Azure
+MS Azure,SK051,Azure
+Azure,SK051,Azure
+GCP,SK052,Google Cloud
+Google Cloud Platform,SK052,Google Cloud
+gcp,SK052,Google Cloud
+Google Cloud,SK052,Google Cloud
+CICD,SK053,CI/CD
+CI CD,SK053,CI/CD
+continuous integration,SK053,CI/CD
+continuous delivery,SK053,CI/CD
+CI/CD,SK053,CI/CD
+jenkins,SK054,Jenkins
+Jenkins pipelines,SK054,Jenkins
+Jenkins,SK054,Jenkins
+linux,SK055,Linux
+Ubuntu/Linux,SK055,Linux
+Unix/Linux,SK055,Linux
+Bash,SK055,Linux
+Linux,SK055,Linux
+unit tests,SK056,Unit Testing
+unit testing,SK056,Unit Testing
+Unit tests,SK056,Unit Testing
+TDD,SK056,Unit Testing
+Unit Testing,SK056,Unit Testing
+junit,SK057,JUnit
+JUnit5,SK057,JUnit
+JUnit 5,SK057,JUnit
+JUnit,SK057,JUnit
+selenium,SK058,Selenium
+Selenium WebDriver,SK058,Selenium
+Selenium automation,SK058,Selenium
+Selenium,SK058,Selenium
+Android,SK059,Android Development
+Android app development,SK059,Android Development
+Android SDK,SK059,Android Development
+Android Development,SK059,Android Development
+flutter,SK060,Flutter
+Flutter/Dart,SK060,Flutter
+Dart,SK060,Flutter
+Flutter,SK060,Flutter
+cyber security,SK061,Cybersecurity
+Cyber Security,SK061,Cybersecurity
+infosec,SK061,Cybersecurity
+information security,SK061,Cybersecurity
+Cybersecurity,SK061,Cybersecurity
+network security,SK062,Network Security
+firewalls,SK062,Network Security
+IDS/IPS,SK062,Network Security
+Network Security,SK062,Network Security
+computer networks,SK063,Networking
+TCP/IP,SK063,Networking
+networking,SK063,Networking
+Networking,SK063,Networking
+communication skills,SK064,Communication
+Communication Skills,SK064,Communication
+verbal communication,SK064,Communication
+Communication,SK064,Communication
+team work,SK065,Teamwork
+Team Work,SK065,Teamwork
+collaboration,SK065,Teamwork
+Teamwork,SK065,Teamwork
+problem-solving,SK066,Problem Solving
+analytical thinking,SK066,Problem Solving
+Problem solving,SK066,Problem Solving
+Problem Solving,SK066,Problem Solving
+project mgmt,SK067,Project Management
+Project Planning,SK067,Project Management
+Agile,SK067,Project Management
+Scrum,SK067,Project Management
+Project Management,SK067,Project Management
+CNC,SK068,CNC Machining
+CNC machine operation,SK068,CNC Machining
+CNC Operator skills,SK068,CNC Machining
+CNC Machining,SK068,CNC Machining
+arc welding,SK069,Welding
+MIG welding,SK069,Welding
+TIG welding,SK069,Welding
+Welding,SK069,Welding
+wiring,SK070,Electrical Wiring
+electrical installation,SK070,Electrical Wiring
+House wiring,SK070,Electrical Wiring
+Electrical Wiring,SK070,Electrical Wiring
+Auto CAD,SK071,AutoCAD
+autocad,SK071,AutoCAD
+CAD drafting,SK071,AutoCAD
+AutoCAD,SK071,AutoCAD
+PLC,SK072,PLC Programming
+Siemens PLC,SK072,PLC Programming
+ladder logic,SK072,PLC Programming
+PLC Programming,SK072,PLC Programming
+software engineering,SK073,Software Development
+Software Engineering,SK073,Software Development
+programming,SK073,Software Development
+Software Development,SK073,Software Development
+backend,SK074,Backend Development
+back-end development,SK074,Backend Development
+server-side development,SK074,Backend Development
+Backend,SK074,Backend Development
+Backend Development,SK074,Backend Development
+frontend,SK075,Frontend Development
+front-end development,SK075,Frontend Development
+UI development,SK075,Frontend Development
+Frontend,SK075,Frontend Development
+Frontend Development,SK075,Frontend Development
+full stack,SK076,Full-Stack Development
+Full Stack Development,SK076,Full-Stack Development
+fullstack,SK076,Full-Stack Development
+Full-Stack Development,SK076,Full-Stack Development
+data science,SK077,Data Science
+DS,SK077,Data Science
+Data Science,SK077,Data Science
+devops,SK078,DevOps
+Dev Ops,SK078,DevOps
+site reliability,SK078,DevOps
+DevOps,SK078,DevOps
+mobile apps,SK079,Mobile Development
+mobile app development,SK079,Mobile Development
+Mobile Development,SK079,Mobile Development
+security engineering,SK080,Cybersecurity Domain
+Cybersecurity Domain,SK080,Cybersecurity Domain
+manufacturing,SK081,Manufacturing & Trades
+industrial trades,SK081,Manufacturing & Trades
+Manufacturing & Trades,SK081,Manufacturing & Trades

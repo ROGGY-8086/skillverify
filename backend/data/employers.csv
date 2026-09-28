@@ -1,0 +1,44 @@
+employer_id,company,industry,size
+E001,Lumen Solutions,Product / SaaS,201-1000
+E002,Apex Systems,E-commerce,51-200
+E003,Mosaic Analytics,Healthcare IT,201-1000
+E004,Nova Systems,FinTech,51-200
+E005,Zenith Systems,IT Services,1000+
+E006,Cobalt Labs,FinTech,51-200
+E007,Onyx Systems,Healthcare IT,1000+
+E008,Juniper Systems,E-commerce,201-1000
+E009,Fluxo Technologies,Product / SaaS,201-1000
+E010,Indigo Solutions,Healthcare IT,51-200
+E011,Indigo Labs,E-commerce,1000+
+E012,Granite Labs,IT Services,51-200
+E013,Kite Analytics,IT Services,1-50
+E015,Bluepeak Solutions,EdTech,1000+
+E016,Granite Solutions,EdTech,201-1000
+E017,Lumen Technologies,FinTech,201-1000
+E018,Lattice Solutions,FinTech,201-1000
+E019,Fluxo Labs,FinTech,51-200
+E020,Onyx Labs,Healthcare IT,51-200
+E023,Vertex Digital,Product / SaaS,201-1000
+E024,Bluepeak Systems,Product / SaaS,1-50
+E025,Granite Technologies,E-commerce,51-200
+E026,Ember Labs,E-commerce,1-50
+E027,Indigo Digital,EdTech,51-200
+E029,Kestrel Systems,E-commerce,1-50
+E030,Nimbus Digital,IT Services,1-50
+E031,Vertex Solutions,IT Services,51-200
+E033,Apex Digital,FinTech,201-1000
+E034,Orbit Solutions,IT Services,1000+
+E035,Onyx Digital,Product / SaaS,51-200
+E036,Apex Solutions,Healthcare IT,201-1000
+E037,Cobalt Technologies,FinTech,51-200
+E038,Lumen Labs,Product / SaaS,51-200
+E039,Indigo Analytics,EdTech,51-200
+E040,Orbit Systems,FinTech,201-1000
+E041,Apex Engineering Works,Manufacturing,51-200
+E042,Fluxo Fabricators,Manufacturing,51-200
+E043,Cobalt Engineering Works,Manufacturing,51-200
+E044,Onyx Engineering Works,Manufacturing,201-1000
+E045,Mosaic Engineering Works,Manufacturing,201-1000
+E046,Mosaic Fabricators,Manufacturing,51-200
+E047,Kite Fabricators,Manufacturing,51-200
+E048,Granite Fabricators,Manufacturing,51-200

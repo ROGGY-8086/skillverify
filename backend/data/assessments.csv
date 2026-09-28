@@ -1,0 +1,709 @@
+assessment_id,candidate_id,skill_id,skill,assessment_type,score_pct,level,duration_min,attempts,taken_on
+AS00001,C0002,SK044,Power BI,Scenario-based,33,Basic,45,1,2025-06-04
+AS00002,C0003,SK002,Python,MCQ,20,Basic,20,1,2026-05-15
+AS00003,C0003,SK012,Django,Coding test,49,Intermediate,60,1,2025-07-15
+AS00004,C0003,SK017,REST API,MCQ,15,Basic,30,1,2025-09-12
+AS00005,C0004,SK047,Git,Technical questions,90,Advanced,60,1,2026-09-25
+AS00006,C0006,SK009,Kotlin,Technical questions,84,Advanced,20,1,2025-10-11
+AS00007,C0006,SK017,REST API,Scenario-based,97,Advanced,20,1,2025-09-20
+AS00008,C0006,SK047,Git,Scenario-based,97,Advanced,30,1,2025-04-09
+AS00009,C0009,SK021,CSS,Scenario-based,15,Basic,20,1,2026-04-21
+AS00010,C0011,SK021,CSS,Technical questions,26,Basic,60,1,2026-08-10
+AS00011,C0011,SK004,TypeScript,Scenario-based,50,Intermediate,20,1,2025-03-24
+AS00012,C0011,SK003,JavaScript,Scenario-based,82,Advanced,30,2,2024-11-24
+AS00013,C0011,SK020,HTML,Scenario-based,60,Intermediate,45,1,2025-09-11
+AS00014,C0012,SK017,REST API,Technical questions,31,Basic,60,1,2025-07-12
+AS00015,C0013,SK070,Electrical Wiring,Scenario-based,63,Intermediate,45,1,2026-03-24
+AS00016,C0013,SK069,Welding,MCQ,59,Intermediate,60,1,2024-12-16
+AS00017,C0014,SK041,Statistics,Coding test,15,Basic,60,1,2025-04-07
+AS00018,C0014,SK036,Scikit-learn,Technical questions,64,Intermediate,30,1,2026-04-06
+AS00019,C0015,SK040,NumPy,Technical questions,16,Basic,45,3,2024-11-16
+AS00020,C0015,SK038,PyTorch,MCQ,31,Basic,45,1,2024-12-06
+AS00021,C0015,SK027,SQL,Coding test,38,Basic,20,1,2025-07-19
+AS00022,C0016,SK038,PyTorch,MCQ,24,Basic,45,1,2025-11-03
+AS00023,C0016,SK002,Python,Technical questions,38,Basic,30,1,2025-12-06
+AS00024,C0016,SK041,Statistics,Coding test,27,Basic,60,1,2026-09-20
+AS00025,C0016,SK034,Deep Learning,Technical questions,12,Basic,30,2,2025-03-13
+AS00026,C0017,SK004,TypeScript,Scenario-based,23,Basic,20,1,2025-09-29
+AS00027,C0017,SK022,React,Technical questions,25,Basic,20,1,2024-12-12
+AS00028,C0019,SK014,Flask,MCQ,45,Intermediate,20,1,2025-08-28
+AS00029,C0020,SK041,Statistics,Coding test,23,Basic,30,1,2025-08-10
+AS00030,C0020,SK034,Deep Learning,MCQ,42,Intermediate,30,1,2025-05-28
+AS00031,C0020,SK033,Machine Learning,Coding test,16,Basic,45,3,2025-11-03
+AS00032,C0021,SK001,Java,Coding test,50,Intermediate,45,2,2026-02-25
+AS00033,C0023,SK002,Python,Scenario-based,73,Advanced,20,1,2026-03-25
+AS00034,C0023,SK061,Cybersecurity,Scenario-based,65,Intermediate,45,3,2025-08-30
+AS00035,C0024,SK033,Machine Learning,MCQ,80,Advanced,30,3,2026-05-28
+AS00036,C0024,SK040,NumPy,Scenario-based,65,Intermediate,30,1,2026-02-28
+AS00037,C0026,SK043,Data Visualization,Technical questions,12,Basic,60,1,2026-07-01
+AS00038,C0027,SK017,REST API,MCQ,50,Intermediate,60,1,2026-05-06
+AS00039,C0028,SK053,CI/CD,Coding test,61,Intermediate,30,1,2025-07-10
+AS00040,C0029,SK043,Data Visualization,MCQ,30,Basic,45,2,2025-09-15
+AS00041,C0029,SK044,Power BI,MCQ,36,Basic,60,1,2025-07-17
+AS00042,C0030,SK002,Python,Coding test,25,Basic,30,2,2025-11-20
+AS00043,C0033,SK021,CSS,Coding test,81,Advanced,20,1,2025-09-26
+AS00044,C0033,SK003,JavaScript,Technical questions,13,Basic,45,2,2026-03-31
+AS00045,C0033,SK024,Angular,Scenario-based,98,Advanced,30,1,2026-06-13
+AS00046,C0034,SK022,React,MCQ,20,Basic,30,1,2025-08-24
+AS00047,C0034,SK025,Vue.js,Coding test,38,Basic,30,1,2025-11-04
+AS00048,C0035,SK019,Microservices,Technical questions,53,Intermediate,45,1,2026-09-24
+AS00049,C0035,SK027,SQL,Scenario-based,89,Advanced,20,1,2025-11-04
+AS00050,C0036,SK004,TypeScript,MCQ,59,Intermediate,30,2,2024-11-11
+AS00051,C0037,SK058,Selenium,MCQ,75,Advanced,30,1,2026-03-04
+AS00052,C0038,SK027,SQL,Technical questions,56,Intermediate,45,2,2024-11-21
+AS00053,C0038,SK011,Hibernate,Technical questions,46,Intermediate,20,1,2026-01-04
+AS00054,C0040,SK019,Microservices,MCQ,62,Intermediate,45,1,2026-05-08
+AS00055,C0040,SK001,Java,MCQ,40,Basic,20,1,2026-06-09
+AS00056,C0041,SK056,Unit Testing,Coding test,13,Basic,20,1,2025-01-29
+AS00057,C0041,SK057,JUnit,Scenario-based,30,Basic,30,1,2025-09-23
+AS00058,C0043,SK063,Networking,MCQ,28,Basic,20,1,2026-08-02
+AS00059,C0043,SK062,Network Security,Technical questions,18,Basic,30,3,2026-01-12
+AS00060,C0045,SK037,TensorFlow,MCQ,75,Advanced,60,1,2026-08-18
+AS00061,C0045,SK041,Statistics,Technical questions,17,Basic,20,1,2026-02-04
+AS00062,C0045,SK033,Machine Learning,Scenario-based,84,Advanced,60,1,2025-07-09
+AS00063,C0047,SK045,Tableau,Coding test,24,Basic,60,1,2025-10-07
+AS00064,C0047,SK027,SQL,MCQ,56,Intermediate,30,1,2026-02-02
+AS00065,C0051,SK045,Tableau,Coding test,61,Intermediate,45,1,2024-11-05
+AS00066,C0051,SK046,Excel,Scenario-based,65,Intermediate,20,1,2025-12-06
+AS00067,C0054,SK042,Data Analysis,MCQ,94,Advanced,45,1,2026-02-16
+AS00068,C0054,SK045,Tableau,MCQ,74,Advanced,30,1,2026-03-15
+AS00069,C0058,SK047,Git,MCQ,97,Advanced,30,1,2025-08-16
+AS00070,C0058,SK003,JavaScript,Scenario-based,42,Intermediate,20,1,2025-07-02
+AS00071,C0059,SK054,Jenkins,Coding test,46,Intermediate,45,1,2025-01-24
+AS00072,C0059,SK050,AWS,Coding test,29,Basic,60,1,2025-09-22
+AS00073,C0059,SK048,Docker,Technical questions,14,Basic,45,1,2025-09-02
+AS00074,C0062,SK002,Python,Coding test,23,Basic,20,1,2026-06-08
+AS00075,C0063,SK062,Network Security,Scenario-based,68,Intermediate,60,1,2025-06-17
+AS00076,C0063,SK061,Cybersecurity,Scenario-based,29,Basic,60,1,2026-03-19
+AS00077,C0064,SK001,Java,Scenario-based,95,Advanced,60,1,2025-07-02
+AS00078,C0065,SK011,Hibernate,Scenario-based,73,Advanced,45,2,2024-11-11
+AS00079,C0065,SK028,MySQL,Technical questions,51,Intermediate,30,2,2025-12-16
+AS00080,C0067,SK022,React,Technical questions,37,Basic,45,1,2025-03-03
+AS00081,C0068,SK015,Node.js,Coding test,58,Intermediate,20,1,2025-04-09
+AS00082,C0068,SK016,Express.js,Scenario-based,77,Advanced,60,1,2025-07-14
+AS00083,C0068,SK022,React,Coding test,78,Advanced,45,1,2026-02-10
+AS00084,C0070,SK011,Hibernate,Technical questions,42,Intermediate,30,1,2025-09-12
+AS00085,C0070,SK010,Spring Boot,Technical questions,62,Intermediate,45,1,2025-06-23
+AS00086,C0071,SK017,REST API,Scenario-based,66,Intermediate,60,1,2025-02-01
+AS00087,C0072,SK033,Machine Learning,Coding test,15,Basic,20,1,2025-11-10
+AS00088,C0072,SK039,Pandas,Scenario-based,16,Basic,45,1,2025-11-18
+AS00089,C0072,SK037,TensorFlow,Coding test,19,Basic,30,1,2025-11-15
+AS00090,C0074,SK017,REST API,Coding test,81,Advanced,45,1,2026-06-19
+AS00091,C0074,SK047,Git,Scenario-based,92,Advanced,60,1,2024-11-17
+AS00092,C0075,SK027,SQL,MCQ,37,Basic,30,1,2026-08-08
+AS00093,C0076,SK001,Java,Scenario-based,40,Basic,45,1,2026-06-25
+AS00094,C0076,SK027,SQL,Coding test,38,Basic,30,1,2025-05-01
+AS00095,C0076,SK011,Hibernate,Technical questions,57,Intermediate,60,2,2026-01-25
+AS00096,C0080,SK048,Docker,Coding test,64,Intermediate,30,2,2024-12-05
+AS00097,C0080,SK029,PostgreSQL,MCQ,96,Advanced,20,1,2025-01-17
+AS00098,C0082,SK041,Statistics,MCQ,80,Advanced,60,1,2026-03-05
+AS00099,C0082,SK027,SQL,Scenario-based,74,Advanced,60,1,2026-02-23
+AS00100,C0083,SK059,Android Development,Technical questions,12,Basic,30,1,2025-06-26
+AS00101,C0083,SK048,Docker,Scenario-based,40,Basic,45,2,2024-11-30
+AS00102,C0083,SK001,Java,Technical questions,18,Basic,20,1,2025-10-18
+AS00103,C0084,SK047,Git,Scenario-based,56,Intermediate,30,3,2025-04-18
+AS00104,C0084,SK032,Redis,Coding test,74,Advanced,60,1,2026-04-18
+AS00105,C0084,SK048,Docker,MCQ,82,Advanced,60,1,2025-09-12
+AS00106,C0084,SK012,Django,Coding test,72,Advanced,20,1,2025-09-07
+AS00107,C0085,SK046,Excel,MCQ,46,Intermediate,20,1,2026-06-16
+AS00108,C0086,SK001,Java,Coding test,70,Intermediate,60,1,2026-09-05
+AS00109,C0086,SK019,Microservices,Technical questions,33,Basic,30,1,2025-01-05
+AS00110,C0088,SK039,Pandas,Coding test,32,Basic,20,1,2024-11-11
+AS00111,C0089,SK017,REST API,Coding test,33,Basic,60,2,2026-07-21
+AS00112,C0090,SK025,Vue.js,Coding test,95,Advanced,60,1,2026-02-23
+AS00113,C0090,SK024,Angular,Scenario-based,57,Intermediate,60,1,2026-06-30
+AS00114,C0091,SK002,Python,Scenario-based,17,Basic,60,1,2024-11-20
+AS00115,C0091,SK058,Selenium,MCQ,24,Basic,30,2,2026-04-17
+AS00116,C0091,SK056,Unit Testing,Technical questions,32,Basic,20,1,2026-02-15
+AS00117,C0092,SK031,MongoDB,MCQ,38,Basic,60,1,2025-06-28
+AS00118,C0096,SK022,React,Scenario-based,50,Intermediate,30,2,2026-05-30
+AS00119,C0098,SK024,Angular,Coding test,16,Basic,30,2,2026-03-09
+AS00120,C0099,SK033,Machine Learning,MCQ,44,Intermediate,30,1,2024-11-26
+AS00121,C0099,SK039,Pandas,MCQ,68,Intermediate,20,3,2025-04-25
+AS00122,C0100,SK003,JavaScript,Scenario-based,33,Basic,20,1,2026-06-26
+AS00123,C0100,SK020,HTML,Technical questions,51,Intermediate,30,2,2026-02-06
+AS00124,C0102,SK048,Docker,Scenario-based,54,Intermediate,45,1,2026-07-03
+AS00125,C0104,SK069,Welding,Scenario-based,41,Intermediate,30,1,2025-12-13
+AS00126,C0104,SK068,CNC Machining,MCQ,29,Basic,20,1,2025-08-30
+AS00127,C0106,SK003,JavaScript,MCQ,52,Intermediate,45,1,2026-07-01
+AS00128,C0109,SK002,Python,Technical questions,76,Advanced,30,1,2025-02-12
+AS00129,C0109,SK045,Tableau,MCQ,43,Intermediate,30,1,2025-06-11
+AS00130,C0110,SK016,Express.js,MCQ,18,Basic,30,2,2025-07-19
+AS00131,C0111,SK001,Java,MCQ,28,Basic,60,1,2025-06-16
+AS00132,C0111,SK047,Git,Technical questions,52,Intermediate,60,1,2025-10-17
+AS00133,C0111,SK056,Unit Testing,Scenario-based,26,Basic,45,1,2025-01-24
+AS00134,C0111,SK058,Selenium,Technical questions,83,Advanced,60,1,2024-12-29
+AS00135,C0112,SK048,Docker,Scenario-based,47,Intermediate,20,2,2025-02-11
+AS00136,C0114,SK032,Redis,Technical questions,37,Basic,60,2,2025-09-24
+AS00137,C0115,SK009,Kotlin,MCQ,67,Intermediate,20,1,2026-08-12
+AS00138,C0115,SK060,Flutter,Technical questions,43,Intermediate,45,1,2025-09-02
+AS00139,C0116,SK002,Python,MCQ,35,Basic,30,1,2025-06-11
+AS00140,C0116,SK045,Tableau,Scenario-based,27,Basic,45,1,2025-03-11
+AS00141,C0117,SK046,Excel,Coding test,39,Basic,30,1,2026-08-25
+AS00142,C0117,SK039,Pandas,Coding test,52,Intermediate,20,1,2025-09-04
+AS00143,C0118,SK056,Unit Testing,Coding test,50,Intermediate,20,1,2026-05-02
+AS00144,C0118,SK058,Selenium,Scenario-based,47,Intermediate,20,1,2026-08-24
+AS00145,C0118,SK002,Python,Coding test,52,Intermediate,60,1,2026-06-17
+AS00146,C0119,SK003,JavaScript,MCQ,64,Intermediate,30,1,2025-02-27
+AS00147,C0119,SK004,TypeScript,Coding test,86,Advanced,30,2,2024-12-09
+AS00148,C0119,SK047,Git,Technical questions,50,Intermediate,20,2,2024-12-26
+AS00149,C0120,SK042,Data Analysis,Scenario-based,14,Basic,60,3,2025-01-13
+AS00150,C0120,SK002,Python,Technical questions,30,Basic,30,1,2025-01-31
+AS00151,C0122,SK038,PyTorch,Technical questions,23,Basic,30,1,2026-07-28
+AS00152,C0123,SK014,Flask,Scenario-based,33,Basic,20,1,2026-08-24
+AS00153,C0127,SK002,Python,MCQ,19,Basic,45,1,2025-10-17
+AS00154,C0128,SK013,FastAPI,Scenario-based,27,Basic,60,1,2026-08-27
+AS00155,C0129,SK027,SQL,Scenario-based,97,Advanced,60,1,2025-12-23
+AS00156,C0129,SK044,Power BI,MCQ,43,Intermediate,60,1,2025-03-20
+AS00157,C0132,SK019,Microservices,MCQ,39,Basic,20,1,2025-01-06
+AS00158,C0132,SK047,Git,Coding test,16,Basic,30,1,2026-05-26
+AS00159,C0132,SK011,Hibernate,MCQ,22,Basic,45,3,2026-03-11
+AS00160,C0132,SK001,Java,MCQ,35,Basic,45,2,2025-11-05
+AS00161,C0133,SK017,REST API,Technical questions,28,Basic,20,1,2026-02-22
+AS00162,C0133,SK027,SQL,Technical questions,26,Basic,20,2,2025-04-14
+AS00163,C0136,SK048,Docker,Scenario-based,13,Basic,30,1,2025-12-20
+AS00164,C0136,SK050,AWS,Scenario-based,12,Basic,30,1,2025-06-09
+AS00165,C0137,SK032,Redis,Technical questions,12,Basic,60,1,2026-06-17
+AS00166,C0137,SK014,Flask,Scenario-based,32,Basic,60,1,2024-12-13
+AS00167,C0137,SK012,Django,MCQ,16,Basic,60,3,2025-10-28
+AS00168,C0138,SK003,JavaScript,Scenario-based,87,Advanced,60,2,2026-06-11
+AS00169,C0138,SK016,Express.js,MCQ,95,Advanced,30,1,2024-11-22
+AS00170,C0138,SK031,MongoDB,Scenario-based,78,Advanced,30,1,2025-10-23
+AS00171,C0139,SK022,React,Technical questions,88,Advanced,20,1,2026-07-22
+AS00172,C0139,SK016,Express.js,Technical questions,45,Intermediate,20,1,2026-01-19
+AS00173,C0139,SK047,Git,Scenario-based,30,Basic,60,1,2026-08-04
+AS00174,C0141,SK037,TensorFlow,Technical questions,46,Intermediate,60,3,2025-01-26
+AS00175,C0141,SK033,Machine Learning,Scenario-based,72,Advanced,60,1,2025-01-12
+AS00176,C0142,SK027,SQL,Scenario-based,55,Intermediate,20,1,2025-11-29
+AS00177,C0142,SK013,FastAPI,MCQ,41,Intermediate,30,1,2026-04-24
+AS00178,C0143,SK012,Django,MCQ,18,Basic,45,1,2025-04-23
+AS00179,C0143,SK017,REST API,MCQ,71,Advanced,60,2,2025-08-12
+AS00180,C0146,SK072,PLC Programming,Practical task,61,Intermediate,45,2,2025-12-17
+AS00181,C0146,SK068,CNC Machining,MCQ,32,Basic,45,1,2026-01-11
+AS00182,C0147,SK027,SQL,Technical questions,27,Basic,45,2,2025-09-20
+AS00183,C0150,SK002,Python,MCQ,66,Intermediate,20,1,2025-11-01
+AS00184,C0151,SK068,CNC Machining,Scenario-based,86,Advanced,20,1,2025-08-17
+AS00185,C0152,SK047,Git,Technical questions,16,Basic,20,1,2026-07-21
+AS00186,C0152,SK060,Flutter,MCQ,29,Basic,30,1,2025-10-31
+AS00187,C0152,SK059,Android Development,MCQ,16,Basic,30,1,2026-09-22
+AS00188,C0153,SK017,REST API,Coding test,83,Advanced,30,1,2026-03-14
+AS00189,C0155,SK002,Python,Technical questions,94,Advanced,30,1,2025-12-26
+AS00190,C0155,SK022,React,MCQ,92,Advanced,45,2,2026-06-01
+AS00191,C0155,SK020,HTML,MCQ,37,Basic,30,1,2025-09-08
+AS00192,C0156,SK001,Java,Technical questions,38,Basic,60,1,2025-05-22
+AS00193,C0156,SK019,Microservices,Scenario-based,21,Basic,45,1,2026-03-15
+AS00194,C0158,SK027,SQL,MCQ,42,Intermediate,30,1,2026-07-18
+AS00195,C0158,SK002,Python,Coding test,28,Basic,30,1,2025-09-22
+AS00196,C0159,SK051,Azure,Scenario-based,28,Basic,30,2,2025-01-11
+AS00197,C0159,SK053,CI/CD,Technical questions,18,Basic,45,1,2024-11-28
+AS00198,C0161,SK027,SQL,MCQ,24,Basic,60,2,2025-04-30
+AS00199,C0161,SK014,Flask,MCQ,28,Basic,20,1,2025-03-11
+AS00200,C0161,SK002,Python,Coding test,17,Basic,45,1,2025-10-27
+AS00201,C0162,SK026,Tailwind CSS,Scenario-based,33,Basic,20,1,2025-05-14
+AS00202,C0163,SK022,React,Scenario-based,26,Basic,45,2,2025-07-12
+AS00203,C0163,SK003,JavaScript,MCQ,61,Intermediate,60,1,2025-12-14
+AS00204,C0163,SK055,Linux,Scenario-based,34,Basic,20,1,2025-12-30
+AS00205,C0164,SK039,Pandas,Scenario-based,34,Basic,45,1,2025-01-02
+AS00206,C0164,SK027,SQL,Technical questions,20,Basic,45,2,2025-01-25
+AS00207,C0164,SK044,Power BI,Technical questions,22,Basic,30,1,2025-10-04
+AS00208,C0165,SK046,Excel,MCQ,20,Basic,60,1,2025-05-12
+AS00209,C0165,SK029,PostgreSQL,Scenario-based,27,Basic,60,1,2026-05-05
+AS00210,C0165,SK027,SQL,MCQ,95,Advanced,20,2,2025-12-15
+AS00211,C0165,SK048,Docker,MCQ,45,Intermediate,60,1,2024-11-18
+AS00212,C0166,SK012,Django,MCQ,37,Basic,60,1,2025-09-22
+AS00213,C0167,SK039,Pandas,Coding test,85,Advanced,20,1,2026-04-13
+AS00214,C0168,SK017,REST API,Technical questions,53,Intermediate,60,1,2024-12-14
+AS00215,C0171,SK044,Power BI,MCQ,65,Intermediate,30,2,2025-08-23
+AS00216,C0171,SK041,Statistics,Coding test,22,Basic,30,1,2025-07-13
+AS00217,C0172,SK027,SQL,Technical questions,43,Intermediate,20,1,2025-11-22
+AS00218,C0172,SK046,Excel,Technical questions,71,Advanced,45,1,2026-06-22
+AS00219,C0172,SK044,Power BI,MCQ,87,Advanced,45,1,2025-12-29
+AS00220,C0173,SK027,SQL,Technical questions,12,Basic,30,1,2026-01-25
+AS00221,C0173,SK002,Python,Scenario-based,31,Basic,30,2,2025-11-30
+AS00222,C0176,SK028,MySQL,Coding test,54,Intermediate,20,2,2026-04-16
+AS00223,C0177,SK037,TensorFlow,Scenario-based,14,Basic,20,1,2025-10-31
+AS00224,C0177,SK036,Scikit-learn,Technical questions,33,Basic,45,1,2026-09-14
+AS00225,C0178,SK027,SQL,Scenario-based,37,Basic,20,1,2026-08-16
+AS00226,C0178,SK053,CI/CD,Scenario-based,13,Basic,30,1,2025-01-17
+AS00227,C0179,SK039,Pandas,Technical questions,17,Basic,30,3,2026-09-02
+AS00228,C0179,SK047,Git,Scenario-based,27,Basic,45,1,2025-12-13
+AS00229,C0181,SK012,Django,MCQ,60,Intermediate,20,1,2025-09-11
+AS00230,C0181,SK017,REST API,MCQ,63,Intermediate,20,1,2025-02-24
+AS00231,C0181,SK002,Python,Technical questions,43,Intermediate,45,1,2026-09-09
+AS00232,C0182,SK002,Python,MCQ,33,Basic,45,2,2025-10-08
+AS00233,C0182,SK053,CI/CD,MCQ,40,Basic,30,2,2025-02-23
+AS00234,C0183,SK016,Express.js,Scenario-based,75,Advanced,60,1,2025-01-23
+AS00235,C0184,SK053,CI/CD,Technical questions,25,Basic,45,3,2026-01-26
+AS00236,C0188,SK055,Linux,Technical questions,20,Basic,30,1,2025-10-15
+AS00237,C0188,SK047,Git,Technical questions,64,Intermediate,45,1,2025-07-20
+AS00238,C0188,SK001,Java,Technical questions,66,Intermediate,45,1,2026-05-17
+AS00239,C0190,SK041,Statistics,Scenario-based,28,Basic,45,1,2025-09-09
+AS00240,C0192,SK047,Git,Technical questions,47,Intermediate,30,2,2025-02-05
+AS00241,C0192,SK022,React,MCQ,71,Advanced,30,3,2026-05-27
+AS00242,C0193,SK009,Kotlin,MCQ,25,Basic,20,1,2024-11-08
+AS00243,C0194,SK042,Data Analysis,MCQ,17,Basic,45,1,2025-04-30
+AS00244,C0194,SK027,SQL,Scenario-based,61,Intermediate,60,2,2025-04-02
+AS00245,C0196,SK047,Git,Scenario-based,85,Advanced,30,1,2026-08-10
+AS00246,C0196,SK010,Spring Boot,Scenario-based,70,Intermediate,45,2,2025-09-05
+AS00247,C0199,SK022,React,Coding test,76,Advanced,20,1,2025-11-28
+AS00248,C0199,SK003,JavaScript,Scenario-based,84,Advanced,60,1,2026-05-11
+AS00249,C0200,SK070,Electrical Wiring,Scenario-based,79,Advanced,45,1,2025-06-04
+AS00250,C0200,SK071,AutoCAD,Practical task,75,Advanced,20,1,2026-03-11
+AS00251,C0201,SK017,REST API,MCQ,15,Basic,45,1,2025-01-23
+AS00252,C0201,SK016,Express.js,Technical questions,87,Advanced,60,2,2025-02-21
+AS00253,C0202,SK042,Data Analysis,MCQ,72,Advanced,60,1,2026-05-24
+AS00254,C0203,SK057,JUnit,Scenario-based,33,Basic,20,1,2025-09-11
+AS00255,C0203,SK056,Unit Testing,Coding test,25,Basic,45,1,2026-07-08
+AS00256,C0203,SK058,Selenium,Scenario-based,40,Basic,20,1,2026-01-26
+AS00257,C0204,SK060,Flutter,Technical questions,16,Basic,60,2,2025-02-14
+AS00258,C0204,SK017,REST API,Scenario-based,14,Basic,30,2,2025-10-10
+AS00259,C0204,SK001,Java,Scenario-based,42,Intermediate,30,1,2026-05-09
+AS00260,C0206,SK039,Pandas,Coding test,26,Basic,30,3,2026-01-11
+AS00261,C0206,SK044,Power BI,Coding test,29,Basic,45,3,2025-11-04
+AS00262,C0206,SK002,Python,Technical questions,24,Basic,60,2,2025-03-21
+AS00263,C0208,SK047,Git,Coding test,42,Intermediate,60,1,2024-10-29
+AS00264,C0209,SK027,SQL,Coding test,80,Advanced,60,1,2026-01-22
+AS00265,C0213,SK017,REST API,Scenario-based,78,Advanced,45,1,2025-12-22
+AS00266,C0213,SK015,Node.js,Scenario-based,94,Advanced,20,1,2025-12-12
+AS00267,C0213,SK022,React,Technical questions,22,Basic,45,1,2026-09-17
+AS00268,C0215,SK037,TensorFlow,Coding test,38,Basic,30,1,2025-05-09
+AS00269,C0216,SK041,Statistics,Technical questions,27,Basic,60,1,2025-12-16
+AS00270,C0217,SK042,Data Analysis,MCQ,15,Basic,45,2,2025-10-03
+AS00271,C0217,SK046,Excel,Technical questions,24,Basic,45,1,2025-06-15
+AS00272,C0217,SK055,Linux,Scenario-based,21,Basic,20,1,2026-09-24
+AS00273,C0217,SK002,Python,Technical questions,53,Intermediate,45,1,2025-07-07
+AS00274,C0218,SK027,SQL,MCQ,19,Basic,45,1,2025-04-06
+AS00275,C0220,SK047,Git,Scenario-based,43,Intermediate,30,3,2024-11-17
+AS00276,C0221,SK029,PostgreSQL,Technical questions,93,Advanced,30,1,2026-06-05
+AS00277,C0222,SK020,HTML,Coding test,54,Intermediate,45,1,2025-05-04
+AS00278,C0224,SK002,Python,Technical questions,18,Basic,30,1,2026-05-04
+AS00279,C0224,SK055,Linux,Coding test,25,Basic,30,1,2026-03-22
+AS00280,C0225,SK027,SQL,Coding test,19,Basic,30,2,2026-02-26
+AS00281,C0226,SK041,Statistics,Coding test,39,Basic,45,1,2025-05-04
+AS00282,C0227,SK045,Tableau,MCQ,37,Basic,45,1,2024-11-12
+AS00283,C0229,SK026,Tailwind CSS,Technical questions,44,Intermediate,45,1,2025-02-18
+AS00284,C0233,SK029,PostgreSQL,MCQ,95,Advanced,30,1,2026-02-24
+AS00285,C0233,SK048,Docker,MCQ,65,Intermediate,60,1,2025-06-01
+AS00286,C0233,SK017,REST API,Technical questions,35,Basic,30,1,2026-02-18
+AS00287,C0233,SK032,Redis,Scenario-based,65,Intermediate,60,1,2026-01-11
+AS00288,C0234,SK048,Docker,Technical questions,56,Intermediate,30,1,2026-09-11
+AS00289,C0234,SK002,Python,Coding test,40,Basic,30,1,2026-06-07
+AS00290,C0234,SK061,Cybersecurity,MCQ,60,Intermediate,20,1,2025-08-30
+AS00291,C0234,SK055,Linux,Scenario-based,44,Intermediate,30,1,2026-09-13
+AS00292,C0236,SK027,SQL,Scenario-based,58,Intermediate,45,1,2025-03-26
+AS00293,C0238,SK045,Tableau,Coding test,53,Intermediate,20,1,2025-01-22
+AS00294,C0238,SK044,Power BI,Technical questions,59,Intermediate,30,1,2026-05-27
+AS00295,C0238,SK039,Pandas,Coding test,35,Basic,60,1,2026-06-19
+AS00296,C0241,SK056,Unit Testing,Scenario-based,57,Intermediate,20,2,2026-01-23
+AS00297,C0241,SK057,JUnit,Scenario-based,44,Intermediate,20,3,2026-03-02
+AS00298,C0242,SK047,Git,Scenario-based,44,Intermediate,30,1,2026-03-02
+AS00299,C0244,SK024,Angular,Coding test,13,Basic,20,1,2025-11-15
+AS00300,C0244,SK021,CSS,MCQ,28,Basic,30,2,2025-11-26
+AS00301,C0244,SK046,Excel,Technical questions,38,Basic,45,1,2024-11-07
+AS00302,C0246,SK039,Pandas,Technical questions,17,Basic,45,1,2025-01-15
+AS00303,C0247,SK053,CI/CD,Coding test,65,Intermediate,30,2,2025-11-28
+AS00304,C0247,SK054,Jenkins,Coding test,24,Basic,60,1,2025-03-24
+AS00305,C0247,SK048,Docker,Coding test,44,Intermediate,45,2,2026-06-25
+AS00306,C0249,SK072,PLC Programming,Practical task,57,Intermediate,30,3,2025-11-01
+AS00307,C0250,SK029,PostgreSQL,MCQ,61,Intermediate,20,1,2025-01-04
+AS00308,C0250,SK017,REST API,Coding test,30,Basic,30,1,2026-03-04
+AS00309,C0250,SK014,Flask,Coding test,17,Basic,30,1,2025-06-08
+AS00310,C0250,SK013,FastAPI,MCQ,24,Basic,20,1,2026-09-04
+AS00311,C0252,SK002,Python,Coding test,70,Intermediate,20,1,2025-04-14
+AS00312,C0252,SK027,SQL,Scenario-based,13,Basic,60,1,2026-01-27
+AS00313,C0253,SK004,TypeScript,Coding test,73,Advanced,60,1,2026-04-21
+AS00314,C0256,SK049,Kubernetes,Coding test,60,Intermediate,20,1,2026-05-19
+AS00315,C0256,SK055,Linux,MCQ,41,Intermediate,20,1,2026-08-06
+AS00316,C0257,SK001,Java,MCQ,82,Advanced,30,1,2025-02-13
+AS00317,C0257,SK017,REST API,MCQ,76,Advanced,30,1,2024-12-28
+AS00318,C0258,SK013,FastAPI,Coding test,41,Intermediate,30,1,2025-03-22
+AS00319,C0258,SK048,Docker,Scenario-based,30,Basic,60,2,2026-08-16
+AS00320,C0259,SK013,FastAPI,Scenario-based,21,Basic,20,2,2025-02-16
+AS00321,C0259,SK032,Redis,Technical questions,48,Intermediate,60,2,2025-05-16
+AS00322,C0259,SK012,Django,Coding test,54,Intermediate,60,1,2025-10-26
+AS00323,C0261,SK001,Java,Scenario-based,25,Basic,20,1,2026-08-01
+AS00324,C0261,SK057,JUnit,MCQ,55,Intermediate,45,1,2026-01-07
+AS00325,C0262,SK047,Git,Scenario-based,69,Intermediate,60,1,2025-01-26
+AS00326,C0262,SK022,React,Coding test,49,Intermediate,60,1,2026-01-26
+AS00327,C0262,SK024,Angular,Coding test,63,Intermediate,30,1,2025-10-14
+AS00328,C0262,SK004,TypeScript,Coding test,13,Basic,30,1,2026-09-03
+AS00329,C0263,SK001,Java,Coding test,25,Basic,20,2,2026-01-18
+AS00330,C0264,SK027,SQL,Technical questions,58,Intermediate,30,1,2026-09-21
+AS00331,C0264,SK002,Python,Scenario-based,17,Basic,60,1,2026-04-11
+AS00332,C0267,SK046,Excel,Technical questions,44,Intermediate,20,1,2025-07-17
+AS00333,C0269,SK043,Data Visualization,MCQ,51,Intermediate,20,1,2025-02-22
+AS00334,C0269,SK041,Statistics,Scenario-based,58,Intermediate,20,1,2026-05-11
+AS00335,C0271,SK068,CNC Machining,MCQ,23,Basic,45,1,2026-02-05
+AS00336,C0272,SK047,Git,Coding test,16,Basic,45,1,2025-03-17
+AS00337,C0272,SK010,Spring Boot,Scenario-based,35,Basic,60,1,2025-07-21
+AS00338,C0272,SK001,Java,MCQ,31,Basic,20,1,2025-06-19
+AS00339,C0273,SK041,Statistics,Technical questions,41,Intermediate,20,1,2025-12-07
+AS00340,C0273,SK035,NLP,Scenario-based,61,Intermediate,60,1,2026-03-11
+AS00341,C0273,SK037,TensorFlow,MCQ,87,Advanced,20,1,2025-03-26
+AS00342,C0274,SK027,SQL,Coding test,45,Intermediate,45,1,2026-06-19
+AS00343,C0274,SK041,Statistics,MCQ,16,Basic,60,1,2026-08-19
+AS00344,C0274,SK002,Python,Technical questions,20,Basic,30,1,2025-08-10
+AS00345,C0276,SK047,Git,Coding test,67,Intermediate,30,1,2025-11-26
+AS00346,C0277,SK002,Python,Scenario-based,68,Intermediate,20,1,2025-03-17
+AS00347,C0277,SK049,Kubernetes,MCQ,64,Intermediate,20,1,2026-05-01
+AS00348,C0277,SK055,Linux,Technical questions,20,Basic,45,1,2026-04-19
+AS00349,C0278,SK017,REST API,Scenario-based,73,Advanced,45,1,2025-09-23
+AS00350,C0279,SK010,Spring Boot,Coding test,33,Basic,30,1,2025-03-09
+AS00351,C0279,SK017,REST API,Coding test,29,Basic,45,1,2025-12-15
+AS00352,C0280,SK063,Networking,Technical questions,95,Advanced,60,3,2025-03-02
+AS00353,C0280,SK062,Network Security,Coding test,12,Basic,60,1,2026-05-30
+AS00354,C0282,SK070,Electrical Wiring,Practical task,38,Basic,60,1,2026-05-19
+AS00355,C0282,SK068,CNC Machining,Practical task,36,Basic,30,1,2026-02-01
+AS00356,C0283,SK010,Spring Boot,Scenario-based,14,Basic,60,1,2025-03-27
+AS00357,C0283,SK057,JUnit,Technical questions,21,Basic,60,1,2025-12-05
+AS00358,C0284,SK048,Docker,Coding test,54,Intermediate,45,1,2026-04-24
+AS00359,C0286,SK031,MongoDB,MCQ,55,Intermediate,60,1,2024-12-19
+AS00360,C0287,SK002,Python,Technical questions,38,Basic,30,1,2024-11-24
+AS00361,C0290,SK003,JavaScript,MCQ,25,Basic,20,1,2026-05-11
+AS00362,C0290,SK026,Tailwind CSS,Coding test,29,Basic,45,2,2025-10-16
+AS00363,C0290,SK047,Git,Coding test,39,Basic,30,1,2025-04-24
+AS00364,C0290,SK020,HTML,Technical questions,18,Basic,60,2,2025-01-19
+AS00365,C0291,SK072,PLC Programming,Scenario-based,78,Advanced,45,1,2025-03-18
+AS00366,C0291,SK068,CNC Machining,Practical task,90,Advanced,20,1,2026-02-02
+AS00367,C0291,SK070,Electrical Wiring,Practical task,93,Advanced,60,1,2026-06-27
+AS00368,C0292,SK071,AutoCAD,MCQ,69,Intermediate,30,1,2025-08-10
+AS00369,C0292,SK069,Welding,Scenario-based,17,Basic,60,1,2025-04-16
+AS00370,C0292,SK068,CNC Machining,Practical task,57,Intermediate,30,1,2025-08-15
+AS00371,C0296,SK040,NumPy,Scenario-based,33,Basic,60,1,2026-06-15
+AS00372,C0296,SK041,Statistics,Coding test,36,Basic,45,2,2025-03-31
+AS00373,C0298,SK032,Redis,Scenario-based,43,Intermediate,20,1,2024-12-12
+AS00374,C0298,SK002,Python,MCQ,54,Intermediate,30,1,2024-11-02
+AS00375,C0299,SK022,React,Technical questions,34,Basic,60,3,2025-11-20
+AS00376,C0299,SK048,Docker,Scenario-based,24,Basic,30,1,2026-02-28
+AS00377,C0299,SK004,TypeScript,Technical questions,41,Intermediate,20,1,2025-06-14
+AS00378,C0299,SK016,Express.js,Technical questions,44,Intermediate,30,1,2026-06-13
+AS00379,C0302,SK026,Tailwind CSS,Technical questions,62,Intermediate,20,1,2025-07-14
+AS00380,C0302,SK023,Next.js,Technical questions,50,Intermediate,60,1,2025-12-15
+AS00381,C0304,SK002,Python,Technical questions,45,Intermediate,45,1,2025-12-24
+AS00382,C0306,SK047,Git,MCQ,22,Basic,30,1,2025-11-28
+AS00383,C0308,SK002,Python,Coding test,16,Basic,45,1,2025-10-09
+AS00384,C0310,SK012,Django,Technical questions,90,Advanced,30,1,2025-05-13
+AS00385,C0314,SK048,Docker,Coding test,52,Intermediate,20,1,2025-04-21
+AS00386,C0314,SK002,Python,Technical questions,84,Advanced,60,1,2025-08-02
+AS00387,C0314,SK029,PostgreSQL,MCQ,87,Advanced,60,1,2025-03-10
+AS00388,C0315,SK055,Linux,MCQ,68,Intermediate,45,1,2026-03-01
+AS00389,C0315,SK047,Git,MCQ,88,Advanced,20,2,2025-10-19
+AS00390,C0317,SK010,Spring Boot,Technical questions,29,Basic,45,1,2026-09-07
+AS00391,C0317,SK057,JUnit,Technical questions,33,Basic,60,1,2025-11-21
+AS00392,C0318,SK041,Statistics,Coding test,26,Basic,30,1,2026-02-18
+AS00393,C0318,SK039,Pandas,Coding test,43,Intermediate,30,2,2026-06-08
+AS00394,C0318,SK027,SQL,MCQ,60,Intermediate,20,1,2026-08-08
+AS00395,C0321,SK021,CSS,MCQ,27,Basic,60,1,2026-03-13
+AS00396,C0321,SK023,Next.js,Scenario-based,87,Advanced,20,2,2025-11-19
+AS00397,C0321,SK026,Tailwind CSS,Scenario-based,93,Advanced,20,1,2025-08-20
+AS00398,C0321,SK003,JavaScript,Coding test,37,Basic,45,1,2025-06-24
+AS00399,C0322,SK002,Python,Coding test,59,Intermediate,45,1,2025-12-25
+AS00400,C0324,SK015,Node.js,MCQ,49,Intermediate,60,1,2025-05-03
+AS00401,C0325,SK043,Data Visualization,Scenario-based,91,Advanced,60,1,2026-01-04
+AS00402,C0325,SK041,Statistics,Technical questions,61,Intermediate,30,1,2025-10-10
+AS00403,C0325,SK002,Python,Scenario-based,60,Intermediate,60,1,2025-09-05
+AS00404,C0326,SK048,Docker,Scenario-based,31,Basic,60,2,2025-05-21
+AS00405,C0326,SK047,Git,MCQ,37,Basic,45,1,2025-01-24
+AS00406,C0328,SK019,Microservices,Coding test,39,Basic,45,2,2025-10-03
+AS00407,C0328,SK047,Git,Technical questions,19,Basic,45,3,2026-07-17
+AS00408,C0328,SK001,Java,Scenario-based,39,Basic,20,1,2025-05-04
+AS00409,C0329,SK010,Spring Boot,Scenario-based,65,Intermediate,20,2,2026-02-16
+AS00410,C0329,SK057,JUnit,MCQ,27,Basic,30,1,2025-08-21
+AS00411,C0331,SK039,Pandas,Scenario-based,30,Basic,60,1,2026-01-26
+AS00412,C0332,SK022,React,Coding test,18,Basic,60,1,2025-11-29
+AS00413,C0333,SK047,Git,Scenario-based,57,Intermediate,30,1,2026-03-07
+AS00414,C0333,SK048,Docker,Scenario-based,95,Advanced,45,1,2026-05-20
+AS00415,C0333,SK003,JavaScript,Scenario-based,45,Intermediate,45,1,2025-05-30
+AS00416,C0333,SK022,React,MCQ,37,Basic,60,1,2026-08-29
+AS00417,C0334,SK028,MySQL,MCQ,44,Intermediate,20,2,2025-06-16
+AS00418,C0335,SK053,CI/CD,MCQ,48,Intermediate,60,1,2025-02-21
+AS00419,C0335,SK047,Git,Scenario-based,36,Basic,30,1,2025-05-06
+AS00420,C0336,SK048,Docker,Coding test,18,Basic,20,1,2024-11-13
+AS00421,C0336,SK001,Java,Scenario-based,74,Advanced,60,3,2026-01-18
+AS00422,C0336,SK047,Git,Technical questions,84,Advanced,45,1,2026-07-16
+AS00423,C0336,SK027,SQL,MCQ,75,Advanced,30,2,2026-09-04
+AS00424,C0337,SK002,Python,Coding test,24,Basic,60,1,2025-01-09
+AS00425,C0337,SK047,Git,MCQ,59,Intermediate,30,1,2025-12-27
+AS00426,C0338,SK017,REST API,Scenario-based,48,Intermediate,45,2,2025-12-02
+AS00427,C0339,SK035,NLP,Technical questions,62,Intermediate,20,1,2026-09-24
+AS00428,C0341,SK060,Flutter,MCQ,87,Advanced,45,2,2025-02-13
+AS00429,C0341,SK046,Excel,Coding test,63,Intermediate,20,1,2025-02-20
+AS00430,C0343,SK004,TypeScript,Technical questions,50,Intermediate,60,1,2025-09-29
+AS00431,C0343,SK016,Express.js,Technical questions,20,Basic,45,1,2025-10-12
+AS00432,C0343,SK047,Git,Coding test,42,Intermediate,60,1,2025-10-20
+AS00433,C0345,SK001,Java,Technical questions,96,Advanced,60,1,2025-06-03
+AS00434,C0349,SK003,JavaScript,MCQ,79,Advanced,45,3,2026-06-13
+AS00435,C0349,SK023,Next.js,Coding test,75,Advanced,60,1,2025-11-23
+AS00436,C0349,SK021,CSS,Scenario-based,47,Intermediate,30,2,2024-11-28
+AS00437,C0350,SK038,PyTorch,Coding test,86,Advanced,45,2,2026-04-01
+AS00438,C0350,SK034,Deep Learning,Scenario-based,39,Basic,60,1,2026-08-19
+AS00439,C0352,SK039,Pandas,Coding test,31,Basic,20,1,2025-09-07
+AS00440,C0354,SK027,SQL,MCQ,47,Intermediate,20,1,2025-01-29
+AS00441,C0354,SK047,Git,Coding test,14,Basic,30,1,2025-02-27
+AS00442,C0355,SK001,Java,Scenario-based,39,Basic,20,1,2025-01-25
+AS00443,C0355,SK058,Selenium,Scenario-based,24,Basic,60,1,2026-01-17
+AS00444,C0357,SK017,REST API,Scenario-based,97,Advanced,20,1,2025-07-22
+AS00445,C0357,SK031,MongoDB,Technical questions,89,Advanced,45,2,2026-05-21
+AS00446,C0358,SK072,PLC Programming,Scenario-based,33,Basic,20,1,2026-08-07
+AS00447,C0358,SK071,AutoCAD,Scenario-based,54,Intermediate,60,1,2025-06-15
+AS00448,C0359,SK043,Data Visualization,Scenario-based,70,Intermediate,30,1,2025-05-03
+AS00449,C0361,SK070,Electrical Wiring,Practical task,49,Intermediate,30,1,2026-09-14
+AS00450,C0364,SK028,MySQL,MCQ,26,Basic,30,3,2025-12-19
+AS00451,C0366,SK046,Excel,MCQ,92,Advanced,60,1,2025-04-09
+AS00452,C0366,SK039,Pandas,Coding test,83,Advanced,60,1,2026-09-18
+AS00453,C0366,SK044,Power BI,MCQ,74,Advanced,30,2,2026-05-14
+AS00454,C0367,SK057,JUnit,MCQ,63,Intermediate,45,1,2025-08-05
+AS00455,C0370,SK057,JUnit,Coding test,35,Basic,30,1,2026-03-02
+AS00456,C0370,SK048,Docker,Scenario-based,14,Basic,30,1,2025-10-21
+AS00457,C0370,SK010,Spring Boot,Technical questions,20,Basic,45,1,2025-04-04
+AS00458,C0370,SK027,SQL,MCQ,46,Intermediate,45,1,2025-05-29
+AS00459,C0371,SK053,CI/CD,Scenario-based,67,Intermediate,20,1,2026-08-10
+AS00460,C0373,SK002,Python,Coding test,63,Intermediate,60,1,2025-04-02
+AS00461,C0373,SK056,Unit Testing,Technical questions,94,Advanced,45,2,2025-03-09
+AS00462,C0377,SK034,Deep Learning,Technical questions,68,Intermediate,45,1,2026-09-18
+AS00463,C0377,SK036,Scikit-learn,Technical questions,40,Basic,30,1,2025-04-17
+AS00464,C0377,SK002,Python,MCQ,18,Basic,60,1,2025-04-25
+AS00465,C0378,SK001,Java,Technical questions,52,Intermediate,45,1,2026-02-15
+AS00466,C0380,SK003,JavaScript,Technical questions,18,Basic,20,1,2024-12-12
+AS00467,C0381,SK017,REST API,Coding test,19,Basic,60,1,2025-02-01
+AS00468,C0381,SK048,Docker,Coding test,33,Basic,60,1,2024-11-24
+AS00469,C0382,SK040,NumPy,MCQ,62,Intermediate,20,1,2025-03-24
+AS00470,C0382,SK037,TensorFlow,Coding test,30,Basic,30,1,2024-11-29
+AS00471,C0382,SK034,Deep Learning,Coding test,69,Intermediate,45,1,2025-05-11
+AS00472,C0383,SK060,Flutter,Technical questions,69,Intermediate,20,1,2024-12-24
+AS00473,C0383,SK001,Java,Coding test,18,Basic,30,1,2025-05-01
+AS00474,C0383,SK009,Kotlin,Scenario-based,27,Basic,60,1,2026-02-28
+AS00475,C0384,SK038,PyTorch,Technical questions,94,Advanced,20,1,2025-07-14
+AS00476,C0384,SK027,SQL,Coding test,69,Intermediate,20,1,2025-02-01
+AS00477,C0384,SK037,TensorFlow,Coding test,81,Advanced,60,1,2025-06-25
+AS00478,C0385,SK022,React,Scenario-based,40,Basic,45,1,2026-06-07
+AS00479,C0386,SK021,CSS,MCQ,56,Intermediate,45,1,2026-08-12
+AS00480,C0387,SK048,Docker,Scenario-based,41,Intermediate,60,1,2025-11-04
+AS00481,C0387,SK016,Express.js,Scenario-based,82,Advanced,20,3,2026-04-07
+AS00482,C0389,SK023,Next.js,MCQ,18,Basic,60,1,2025-06-11
+AS00483,C0390,SK027,SQL,MCQ,83,Advanced,45,2,2026-01-03
+AS00484,C0391,SK055,Linux,Technical questions,15,Basic,30,1,2025-01-11
+AS00485,C0392,SK046,Excel,Scenario-based,13,Basic,60,1,2025-11-11
+AS00486,C0392,SK042,Data Analysis,Coding test,31,Basic,60,1,2025-07-16
+AS00487,C0392,SK044,Power BI,Technical questions,27,Basic,20,3,2025-05-02
+AS00488,C0393,SK025,Vue.js,Coding test,54,Intermediate,20,1,2026-09-14
+AS00489,C0394,SK028,MySQL,MCQ,67,Intermediate,20,2,2025-07-01
+AS00490,C0395,SK044,Power BI,Coding test,65,Intermediate,30,1,2025-01-22
+AS00491,C0401,SK002,Python,MCQ,40,Basic,30,1,2026-03-12
+AS00492,C0401,SK027,SQL,Technical questions,27,Basic,30,1,2026-06-08
+AS00493,C0401,SK001,Java,Coding test,16,Basic,45,2,2026-04-13
+AS00494,C0402,SK027,SQL,Scenario-based,86,Advanced,30,1,2026-03-11
+AS00495,C0402,SK042,Data Analysis,Technical questions,91,Advanced,60,3,2025-02-20
+AS00496,C0402,SK039,Pandas,Technical questions,83,Advanced,30,2,2026-07-18
+AS00497,C0402,SK041,Statistics,Scenario-based,82,Advanced,30,1,2026-08-30
+AS00498,C0404,SK069,Welding,Scenario-based,55,Intermediate,20,1,2024-10-30
+AS00499,C0404,SK068,CNC Machining,MCQ,40,Basic,60,1,2025-09-22
+AS00500,C0404,SK071,AutoCAD,Scenario-based,26,Basic,20,3,2026-06-29
+AS00501,C0406,SK035,NLP,Scenario-based,23,Basic,60,2,2026-09-19
+AS00502,C0406,SK033,Machine Learning,Technical questions,20,Basic,60,1,2025-04-07
+AS00503,C0407,SK045,Tableau,Scenario-based,32,Basic,60,2,2024-11-11
+AS00504,C0408,SK071,AutoCAD,Scenario-based,70,Intermediate,30,1,2025-06-15
+AS00505,C0412,SK047,Git,Scenario-based,95,Advanced,45,3,2026-07-21
+AS00506,C0413,SK036,Scikit-learn,MCQ,45,Intermediate,20,1,2026-03-04
+AS00507,C0413,SK055,Linux,Coding test,65,Intermediate,45,2,2024-11-07
+AS00508,C0417,SK001,Java,Technical questions,55,Intermediate,45,1,2026-01-03
+AS00509,C0417,SK047,Git,Technical questions,17,Basic,60,2,2025-06-25
+AS00510,C0418,SK012,Django,Coding test,30,Basic,20,1,2025-11-16
+AS00511,C0419,SK027,SQL,Coding test,77,Advanced,45,2,2026-05-29
+AS00512,C0419,SK042,Data Analysis,MCQ,75,Advanced,45,1,2026-03-09
+AS00513,C0420,SK040,NumPy,MCQ,80,Advanced,30,2,2026-07-22
+AS00514,C0420,SK033,Machine Learning,MCQ,56,Intermediate,60,1,2025-07-18
+AS00515,C0420,SK039,Pandas,MCQ,85,Advanced,45,1,2026-06-13
+AS00516,C0423,SK001,Java,MCQ,27,Basic,60,1,2026-01-17
+AS00517,C0423,SK028,MySQL,Technical questions,13,Basic,45,1,2025-04-02
+AS00518,C0425,SK028,MySQL,MCQ,52,Intermediate,60,1,2025-10-19
+AS00519,C0426,SK028,MySQL,MCQ,55,Intermediate,45,1,2025-07-27
+AS00520,C0429,SK040,NumPy,Coding test,16,Basic,30,1,2025-08-25
+AS00521,C0433,SK001,Java,Scenario-based,94,Advanced,20,1,2025-04-10
+AS00522,C0433,SK047,Git,MCQ,74,Advanced,20,1,2025-07-09
+AS00523,C0434,SK057,JUnit,Scenario-based,49,Intermediate,60,1,2026-03-25
+AS00524,C0436,SK003,JavaScript,Technical questions,55,Intermediate,45,1,2024-12-15
+AS00525,C0437,SK040,NumPy,Coding test,96,Advanced,30,1,2025-12-11
+AS00526,C0440,SK053,CI/CD,Technical questions,56,Intermediate,60,1,2025-12-15
+AS00527,C0440,SK048,Docker,Scenario-based,72,Advanced,30,2,2025-04-29
+AS00528,C0441,SK041,Statistics,Coding test,21,Basic,60,2,2025-12-26
+AS00529,C0442,SK070,Electrical Wiring,Scenario-based,37,Basic,30,3,2025-06-13
+AS00530,C0442,SK071,AutoCAD,Scenario-based,34,Basic,30,1,2024-12-20
+AS00531,C0443,SK057,JUnit,Technical questions,38,Basic,30,1,2025-11-07
+AS00532,C0445,SK017,REST API,Technical questions,53,Intermediate,60,2,2025-04-19
+AS00533,C0445,SK047,Git,MCQ,77,Advanced,45,3,2024-12-26
+AS00534,C0445,SK009,Kotlin,Technical questions,42,Intermediate,30,2,2025-02-19
+AS00535,C0446,SK071,AutoCAD,MCQ,60,Intermediate,45,3,2024-12-14
+AS00536,C0446,SK070,Electrical Wiring,MCQ,38,Basic,20,1,2026-05-11
+AS00537,C0446,SK072,PLC Programming,Practical task,41,Intermediate,60,1,2024-10-31
+AS00538,C0449,SK072,PLC Programming,Practical task,50,Intermediate,45,1,2025-05-01
+AS00539,C0449,SK068,CNC Machining,MCQ,78,Advanced,20,1,2025-10-04
+AS00540,C0449,SK071,AutoCAD,MCQ,53,Intermediate,45,1,2025-09-19
+AS00541,C0451,SK063,Networking,Coding test,43,Intermediate,20,1,2026-04-02
+AS00542,C0451,SK061,Cybersecurity,Technical questions,91,Advanced,20,1,2025-09-29
+AS00543,C0451,SK062,Network Security,MCQ,95,Advanced,60,1,2025-09-17
+AS00544,C0454,SK002,Python,Technical questions,40,Basic,60,1,2025-02-03
+AS00545,C0455,SK002,Python,Coding test,22,Basic,60,1,2024-12-12
+AS00546,C0457,SK042,Data Analysis,Coding test,33,Basic,60,1,2026-02-15
+AS00547,C0457,SK043,Data Visualization,Coding test,27,Basic,30,1,2025-10-27
+AS00548,C0458,SK004,TypeScript,Coding test,65,Intermediate,45,2,2024-12-10
+AS00549,C0460,SK017,REST API,Coding test,18,Basic,30,1,2024-11-25
+AS00550,C0462,SK069,Welding,Practical task,32,Basic,60,2,2025-09-21
+AS00551,C0464,SK022,React,Technical questions,15,Basic,60,3,2025-04-08
+AS00552,C0464,SK004,TypeScript,MCQ,39,Basic,60,2,2025-03-07
+AS00553,C0464,SK003,JavaScript,Scenario-based,15,Basic,20,1,2026-06-01
+AS00554,C0465,SK010,Spring Boot,Scenario-based,22,Basic,60,1,2025-07-20
+AS00555,C0465,SK047,Git,MCQ,12,Basic,20,1,2024-11-29
+AS00556,C0465,SK027,SQL,Technical questions,22,Basic,30,2,2026-07-29
+AS00557,C0467,SK048,Docker,Scenario-based,29,Basic,45,1,2024-12-29
+AS00558,C0467,SK059,Android Development,MCQ,30,Basic,45,1,2024-11-22
+AS00559,C0468,SK028,MySQL,Technical questions,60,Intermediate,30,1,2024-11-16
+AS00560,C0468,SK001,Java,Coding test,30,Basic,45,1,2024-12-08
+AS00561,C0470,SK027,SQL,Scenario-based,84,Advanced,20,1,2024-11-16
+AS00562,C0471,SK027,SQL,Scenario-based,22,Basic,45,3,2025-06-25
+AS00563,C0472,SK048,Docker,Scenario-based,21,Basic,45,1,2025-08-05
+AS00564,C0472,SK029,PostgreSQL,Technical questions,39,Basic,60,1,2025-11-06
+AS00565,C0474,SK054,Jenkins,Scenario-based,18,Basic,60,1,2025-11-19
+AS00566,C0475,SK040,NumPy,MCQ,42,Intermediate,60,1,2025-08-14
+AS00567,C0476,SK019,Microservices,Coding test,80,Advanced,45,1,2025-05-28
+AS00568,C0477,SK015,Node.js,MCQ,19,Basic,20,1,2025-12-07
+AS00569,C0477,SK017,REST API,MCQ,34,Basic,60,2,2025-02-22
+AS00570,C0478,SK059,Android Development,MCQ,84,Advanced,30,1,2025-10-18
+AS00571,C0478,SK009,Kotlin,Scenario-based,93,Advanced,60,1,2024-11-29
+AS00572,C0479,SK017,REST API,MCQ,88,Advanced,20,1,2024-11-07
+AS00573,C0479,SK002,Python,Technical questions,81,Advanced,60,1,2026-04-04
+AS00574,C0480,SK004,TypeScript,MCQ,44,Intermediate,20,2,2025-05-29
+AS00575,C0480,SK031,MongoDB,Technical questions,76,Advanced,45,1,2025-07-05
+AS00576,C0481,SK068,CNC Machining,MCQ,97,Advanced,20,2,2025-08-08
+AS00577,C0483,SK009,Kotlin,MCQ,82,Advanced,20,1,2026-04-18
+AS00578,C0485,SK071,AutoCAD,Scenario-based,12,Basic,30,2,2025-03-15
+AS00579,C0485,SK072,PLC Programming,Scenario-based,24,Basic,45,1,2025-05-02
+AS00580,C0486,SK004,TypeScript,Technical questions,24,Basic,20,1,2026-07-11
+AS00581,C0487,SK021,CSS,MCQ,32,Basic,30,1,2025-07-02
+AS00582,C0487,SK025,Vue.js,Coding test,21,Basic,20,2,2024-11-10
+AS00583,C0487,SK004,TypeScript,Technical questions,45,Intermediate,60,1,2025-12-17
+AS00584,C0488,SK010,Spring Boot,Technical questions,40,Basic,60,1,2025-07-21
+AS00585,C0490,SK063,Networking,Scenario-based,40,Basic,45,1,2026-03-18
+AS00586,C0491,SK053,CI/CD,Scenario-based,23,Basic,20,3,2026-03-25
+AS00587,C0492,SK023,Next.js,MCQ,26,Basic,45,3,2026-09-05
+AS00588,C0494,SK027,SQL,MCQ,77,Advanced,45,2,2025-11-23
+AS00589,C0494,SK022,React,Technical questions,90,Advanced,20,1,2025-02-24
+AS00590,C0495,SK022,React,Scenario-based,72,Advanced,20,1,2026-07-30
+AS00591,C0495,SK003,JavaScript,MCQ,39,Basic,60,1,2025-08-15
+AS00592,C0496,SK010,Spring Boot,MCQ,14,Basic,45,1,2025-04-09
+AS00593,C0498,SK017,REST API,Coding test,19,Basic,30,1,2026-09-11
+AS00594,C0498,SK019,Microservices,Scenario-based,18,Basic,30,1,2025-11-02
+AS00595,C0499,SK002,Python,Coding test,63,Intermediate,30,3,2025-01-07
+AS00596,C0500,SK011,Hibernate,MCQ,66,Intermediate,60,2,2025-04-06
+AS00597,C0505,SK010,Spring Boot,MCQ,15,Basic,30,1,2024-12-21
+AS00598,C0506,SK059,Android Development,Scenario-based,74,Advanced,20,1,2025-05-17
+AS00599,C0506,SK060,Flutter,Technical questions,70,Intermediate,45,3,2025-12-15
+AS00600,C0506,SK047,Git,MCQ,89,Advanced,45,1,2025-06-17
+AS00601,C0507,SK012,Django,MCQ,25,Basic,45,2,2024-12-22
+AS00602,C0507,SK032,Redis,MCQ,27,Basic,30,1,2026-03-19
+AS00603,C0508,SK013,FastAPI,Scenario-based,42,Intermediate,30,2,2025-07-08
+AS00604,C0509,SK002,Python,Technical questions,60,Intermediate,30,3,2026-07-28
+AS00605,C0511,SK047,Git,Technical questions,49,Intermediate,45,1,2025-10-01
+AS00606,C0511,SK003,JavaScript,Scenario-based,53,Intermediate,20,1,2025-05-23
+AS00607,C0514,SK032,Redis,Scenario-based,28,Basic,60,1,2026-07-07
+AS00608,C0515,SK026,Tailwind CSS,Scenario-based,94,Advanced,60,1,2026-01-30
+AS00609,C0515,SK003,JavaScript,Scenario-based,65,Intermediate,30,2,2026-05-26
+AS00610,C0515,SK004,TypeScript,Scenario-based,45,Intermediate,30,1,2025-01-04
+AS00611,C0515,SK021,CSS,MCQ,80,Advanced,45,1,2025-09-15
+AS00612,C0516,SK056,Unit Testing,Scenario-based,69,Intermediate,30,1,2024-12-11
+AS00613,C0518,SK027,SQL,Technical questions,32,Basic,60,2,2024-12-14
+AS00614,C0519,SK025,Vue.js,Coding test,48,Intermediate,20,1,2025-02-20
+AS00615,C0521,SK021,CSS,MCQ,97,Advanced,60,2,2026-07-07
+AS00616,C0521,SK024,Angular,MCQ,87,Advanced,45,1,2026-01-31
+AS00617,C0522,SK011,Hibernate,Scenario-based,86,Advanced,30,1,2025-02-16
+AS00618,C0523,SK045,Tableau,Technical questions,94,Advanced,30,1,2025-08-05
+AS00619,C0523,SK041,Statistics,Coding test,80,Advanced,30,1,2025-04-03
+AS00620,C0528,SK001,Java,Scenario-based,38,Basic,30,1,2025-06-11
+AS00621,C0528,SK011,Hibernate,MCQ,36,Basic,20,2,2026-05-11
+AS00622,C0529,SK021,CSS,Technical questions,61,Intermediate,45,1,2025-12-06
+AS00623,C0530,SK054,Jenkins,Technical questions,53,Intermediate,45,1,2026-07-30
+AS00624,C0530,SK053,CI/CD,MCQ,18,Basic,60,1,2026-04-12
+AS00625,C0531,SK068,CNC Machining,Practical task,93,Advanced,30,1,2025-06-07
+AS00626,C0531,SK069,Welding,Practical task,69,Intermediate,30,1,2026-07-11
+AS00627,C0532,SK004,TypeScript,Scenario-based,82,Advanced,30,1,2025-01-29
+AS00628,C0535,SK013,FastAPI,Scenario-based,23,Basic,30,1,2024-10-28
+AS00629,C0538,SK001,Java,Coding test,52,Intermediate,20,2,2026-08-20
+AS00630,C0538,SK027,SQL,MCQ,27,Basic,30,1,2025-07-03
+AS00631,C0538,SK028,MySQL,Technical questions,29,Basic,45,2,2026-03-28
+AS00632,C0538,SK011,Hibernate,Scenario-based,41,Intermediate,20,1,2025-07-14
+AS00633,C0540,SK055,Linux,Technical questions,64,Intermediate,30,1,2025-04-09
+AS00634,C0542,SK045,Tableau,Coding test,15,Basic,45,1,2025-02-16
+AS00635,C0542,SK039,Pandas,Coding test,21,Basic,60,1,2025-10-10
+AS00636,C0544,SK022,React,Scenario-based,17,Basic,45,1,2025-05-28
+AS00637,C0545,SK025,Vue.js,MCQ,78,Advanced,30,2,2024-12-30
+AS00638,C0545,SK024,Angular,Coding test,85,Advanced,45,1,2026-03-29
+AS00639,C0545,SK023,Next.js,Coding test,72,Advanced,45,2,2025-03-26
+AS00640,C0547,SK033,Machine Learning,Coding test,37,Basic,60,2,2025-01-03
+AS00641,C0547,SK036,Scikit-learn,Coding test,62,Intermediate,60,1,2026-01-28
+AS00642,C0547,SK038,PyTorch,Technical questions,39,Basic,45,1,2025-02-09
+AS00643,C0548,SK054,Jenkins,Coding test,65,Intermediate,20,2,2025-12-19
+AS00644,C0549,SK040,NumPy,Coding test,80,Advanced,45,1,2026-03-09
+AS00645,C0549,SK038,PyTorch,Scenario-based,90,Advanced,30,1,2026-09-22
+AS00646,C0549,SK027,SQL,MCQ,84,Advanced,20,1,2025-10-18
+AS00647,C0549,SK002,Python,Coding test,52,Intermediate,30,2,2025-10-08
+AS00648,C0555,SK046,Excel,MCQ,48,Intermediate,20,1,2025-05-06
+AS00649,C0559,SK039,Pandas,MCQ,42,Intermediate,20,1,2026-05-02
+AS00650,C0562,SK004,TypeScript,Coding test,74,Advanced,60,1,2025-12-02
+AS00651,C0562,SK022,React,Scenario-based,14,Basic,20,1,2026-09-14
+AS00652,C0564,SK039,Pandas,Scenario-based,31,Basic,30,1,2025-10-27
+AS00653,C0564,SK041,Statistics,MCQ,20,Basic,60,1,2025-01-02
+AS00654,C0566,SK002,Python,Coding test,92,Advanced,30,1,2025-12-31
+AS00655,C0566,SK042,Data Analysis,MCQ,75,Advanced,30,1,2024-12-16
+AS00656,C0567,SK050,AWS,Coding test,71,Advanced,30,1,2025-12-19
+AS00657,C0568,SK062,Network Security,Technical questions,31,Basic,20,1,2025-02-22
+AS00658,C0568,SK002,Python,MCQ,50,Intermediate,45,1,2026-02-24
+AS00659,C0568,SK061,Cybersecurity,Coding test,54,Intermediate,60,2,2026-03-30
+AS00660,C0569,SK027,SQL,Coding test,15,Basic,30,1,2026-03-31
+AS00661,C0569,SK039,Pandas,Technical questions,33,Basic,45,1,2025-08-30
+AS00662,C0570,SK040,NumPy,Scenario-based,90,Advanced,45,2,2026-02-25
+AS00663,C0570,SK002,Python,Technical questions,62,Intermediate,45,1,2025-12-20
+AS00664,C0571,SK046,Excel,Technical questions,30,Basic,20,1,2025-03-21
+AS00665,C0573,SK055,Linux,Technical questions,64,Intermediate,30,1,2025-04-20
+AS00666,C0573,SK036,Scikit-learn,Scenario-based,58,Intermediate,45,1,2026-09-08
+AS00667,C0573,SK041,Statistics,Coding test,60,Intermediate,20,1,2026-07-03
+AS00668,C0575,SK022,React,MCQ,50,Intermediate,30,1,2025-08-22
+AS00669,C0576,SK020,HTML,Scenario-based,52,Intermediate,45,3,2026-04-28
+AS00670,C0576,SK055,Linux,Scenario-based,90,Advanced,20,1,2026-02-03
+AS00671,C0576,SK047,Git,Scenario-based,60,Intermediate,20,1,2026-03-16
+AS00672,C0576,SK022,React,Scenario-based,65,Intermediate,30,1,2025-07-14
+AS00673,C0577,SK039,Pandas,Technical questions,26,Basic,30,1,2026-06-09
+AS00674,C0577,SK033,Machine Learning,Coding test,35,Basic,45,2,2024-12-08
+AS00675,C0577,SK037,TensorFlow,MCQ,51,Intermediate,60,1,2026-07-31
+AS00676,C0578,SK001,Java,Scenario-based,17,Basic,45,1,2026-08-08
+AS00677,C0578,SK011,Hibernate,Scenario-based,24,Basic,60,1,2026-09-24
+AS00678,C0578,SK010,Spring Boot,MCQ,26,Basic,20,1,2026-05-13
+AS00679,C0578,SK019,Microservices,Scenario-based,62,Intermediate,60,1,2026-07-14
+AS00680,C0579,SK027,SQL,Scenario-based,55,Intermediate,20,2,2026-03-11
+AS00681,C0580,SK043,Data Visualization,Technical questions,51,Intermediate,45,1,2025-11-17
+AS00682,C0581,SK062,Network Security,Scenario-based,33,Basic,45,1,2025-12-03
+AS00683,C0582,SK044,Power BI,Coding test,59,Intermediate,30,2,2025-12-05
+AS00684,C0582,SK041,Statistics,Technical questions,63,Intermediate,20,1,2025-12-13
+AS00685,C0586,SK010,Spring Boot,Technical questions,84,Advanced,20,1,2025-04-12
+AS00686,C0586,SK017,REST API,Scenario-based,22,Basic,60,1,2025-10-15
+AS00687,C0586,SK048,Docker,MCQ,31,Basic,60,1,2026-06-20
+AS00688,C0586,SK001,Java,Coding test,49,Intermediate,60,1,2026-06-22
+AS00689,C0587,SK042,Data Analysis,Coding test,95,Advanced,20,2,2025-05-03
+AS00690,C0587,SK039,Pandas,Coding test,68,Intermediate,30,1,2025-09-06
+AS00691,C0587,SK048,Docker,Scenario-based,62,Intermediate,60,1,2026-06-20
+AS00692,C0587,SK044,Power BI,Scenario-based,77,Advanced,20,1,2026-06-03
+AS00693,C0589,SK002,Python,Scenario-based,56,Intermediate,30,1,2026-05-01
+AS00694,C0589,SK047,Git,Technical questions,42,Intermediate,60,2,2024-12-27
+AS00695,C0589,SK048,Docker,Technical questions,63,Intermediate,20,1,2025-08-20
+AS00696,C0590,SK027,SQL,Scenario-based,98,Advanced,60,1,2026-02-26
+AS00697,C0590,SK001,Java,Scenario-based,82,Advanced,45,2,2025-12-06
+AS00698,C0591,SK014,Flask,Coding test,36,Basic,30,1,2026-03-09
+AS00699,C0591,SK047,Git,Scenario-based,38,Basic,30,1,2025-08-13
+AS00700,C0593,SK025,Vue.js,MCQ,19,Basic,45,1,2025-09-24
+AS00701,C0593,SK047,Git,MCQ,61,Intermediate,20,3,2025-04-15
+AS00702,C0593,SK020,HTML,Coding test,14,Basic,20,1,2026-09-19
+AS00703,C0596,SK001,Java,Technical questions,34,Basic,45,2,2026-02-17
+AS00704,C0596,SK002,Python,Scenario-based,22,Basic,45,2,2026-08-02
+AS00705,C0597,SK027,SQL,Coding test,17,Basic,60,1,2025-10-17
+AS00706,C0598,SK057,JUnit,Coding test,43,Intermediate,45,1,2026-05-16
+AS00707,C0599,SK059,Android Development,Technical questions,44,Intermediate,45,1,2026-03-16
+AS00708,C0599,SK046,Excel,Coding test,39,Basic,60,1,2025-06-04

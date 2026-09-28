@@ -1,0 +1,25 @@
+issuer_id,issuer_name,issuer_type,country,supports_verification_api,supports_qr,supports_verifiable_credentials,supports_open_badges,founded_year,verification_portal,id_prefix
+IS001,Northfield University,University,IN,False,True,True,False,1974,https://verify.northfielduniv.example.org,NOR
+IS002,Kaveri Institute of Technology,University,IN,True,True,True,False,1994,https://verify.kaveriinstitut.example.org,KAV
+IS003,Sahyadri University,University,IN,True,True,False,True,1973,https://verify.sahyadriuniver.example.org,SAH
+IS004,Meridian College of Engineering,University,IN,True,True,False,False,2005,https://verify.meridiancolleg.example.org,MER
+IS005,Vindhya State University,University,IN,False,True,False,False,1997,https://verify.vindhyastateun.example.org,VIN
+IS006,Coastal Institute of Technology,University,IN,True,True,False,False,1970,https://verify.coastalinstitu.example.org,COA
+IS007,Aravalli University,University,IN,False,True,False,False,2008,https://verify.aravalliuniver.example.org,ARA
+IS008,Lotus Polytechnic,University,IN,True,True,True,True,1982,https://verify.lotuspolytechn.example.org,LOT
+IS009,Bharat ITI Kaushal Kendra,ITI / Vocational,IN,False,True,False,False,1977,https://verify.bharatitikaush.example.org,BHA
+IS010,Shramik ITI Nagpur,ITI / Vocational,IN,False,True,False,False,1982,https://verify.shramikitinagp.example.org,SHR
+IS011,Udyog ITI Coimbatore,ITI / Vocational,IN,False,True,False,False,1999,https://verify.udyogiticoimba.example.org,UDY
+IS012,Prerna Vocational Institute,ITI / Vocational,IN,True,True,False,False,1993,https://verify.prernavocation.example.org,PRE
+IS013,CloudCrest Academy,Training Provider,IN,True,True,False,True,2017,https://verify.cloudcrestacad.example.org,CLO
+IS014,DataForge Learning,Training Provider,IN,True,True,False,True,2013,https://verify.dataforgelearn.example.org,DAT
+IS015,CodeMint Training,Training Provider,IN,True,True,True,True,2015,https://verify.codeminttraini.example.org,COD
+IS016,SkillSprint Institute,Training Provider,IN,True,True,False,True,2013,https://verify.skillsprintins.example.org,SKI
+IS017,BrightPath Tech Academy,Training Provider,IN,True,True,False,True,2013,https://verify.brightpathtech.example.org,BRI
+IS018,PixelCraft Bootcamp,Training Provider,IN,True,True,True,True,2019,https://verify.pixelcraftboot.example.org,PIX
+IS019,OpenLearn Online,MOOC Platform,IN,True,True,False,True,2016,https://verify.openlearnonlin.example.org,OPE
+IS020,LearnLoop MOOC,MOOC Platform,IN,True,True,True,True,2016,https://verify.learnloopmooc.example.org,LEA
+IS021,EduStream Global,MOOC Platform,IN,True,True,True,True,2015,https://verify.edustreamgloba.example.org,EDU
+IS022,NexaCert Vendor Certification,Vendor Certification,IN,True,True,True,True,2009,https://verify.nexacertvendor.example.org,NEX
+IS023,StackProof Certifications,Vendor Certification,IN,True,True,True,True,2010,https://verify.stackproofcert.example.org,STA
+IS024,InfraBadge Institute,Vendor Certification,IN,True,True,True,True,2016,https://verify.infrabadgeinst.example.org,INF

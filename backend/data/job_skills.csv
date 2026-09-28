@@ -1,0 +1,1792 @@
+job_id,skill_id,skill,requirement_type,min_level_num
+J0001,SK012,Django,required,3
+J0001,SK014,Flask,required,3
+J0001,SK048,Docker,required,1
+J0001,SK067,Project Management,preferred,1
+J0002,SK001,Java,required,3
+J0002,SK059,Android Development,required,3
+J0002,SK017,REST API,required,2
+J0002,SK060,Flutter,required,2
+J0002,SK047,Git,preferred,1
+J0003,SK070,Electrical Wiring,required,2
+J0003,SK072,PLC Programming,required,1
+J0003,SK066,Problem Solving,preferred,1
+J0003,SK069,Welding,preferred,1
+J0003,SK068,CNC Machining,preferred,1
+J0004,SK068,CNC Machining,required,2
+J0004,SK071,AutoCAD,required,3
+J0004,SK069,Welding,preferred,1
+J0004,SK072,PLC Programming,preferred,1
+J0005,SK001,Java,required,3
+J0005,SK027,SQL,required,2
+J0005,SK017,REST API,required,2
+J0005,SK028,MySQL,required,3
+J0005,SK047,Git,required,3
+J0005,SK067,Project Management,preferred,1
+J0005,SK064,Communication,preferred,1
+J0006,SK053,CI/CD,required,2
+J0006,SK047,Git,required,2
+J0006,SK051,Azure,required,3
+J0006,SK002,Python,preferred,1
+J0007,SK069,Welding,required,2
+J0007,SK070,Electrical Wiring,required,3
+J0007,SK067,Project Management,preferred,1
+J0007,SK065,Teamwork,preferred,1
+J0008,SK061,Cybersecurity,required,1
+J0008,SK063,Networking,required,2
+J0008,SK055,Linux,required,2
+J0008,SK062,Network Security,preferred,1
+J0008,SK066,Problem Solving,preferred,1
+J0008,SK067,Project Management,preferred,1
+J0009,SK001,Java,required,2
+J0009,SK010,Spring Boot,required,2
+J0009,SK017,REST API,required,1
+J0009,SK028,MySQL,required,1
+J0009,SK048,Docker,required,1
+J0009,SK057,JUnit,preferred,1
+J0010,SK046,Excel,required,2
+J0010,SK002,Python,required,2
+J0010,SK045,Tableau,required,3
+J0010,SK064,Communication,preferred,1
+J0010,SK027,SQL,preferred,1
+J0010,SK043,Data Visualization,preferred,1
+J0011,SK046,Excel,required,3
+J0011,SK002,Python,required,2
+J0011,SK044,Power BI,required,1
+J0011,SK041,Statistics,required,1
+J0011,SK039,Pandas,required,1
+J0011,SK067,Project Management,preferred,1
+J0012,SK055,Linux,required,1
+J0012,SK050,AWS,required,2
+J0012,SK053,CI/CD,required,3
+J0012,SK048,Docker,preferred,1
+J0013,SK012,Django,required,2
+J0013,SK014,Flask,required,2
+J0013,SK029,PostgreSQL,required,2
+J0013,SK017,REST API,required,1
+J0013,SK027,SQL,required,1
+J0013,SK048,Docker,preferred,1
+J0013,SK067,Project Management,preferred,1
+J0014,SK002,Python,required,1
+J0014,SK012,Django,required,1
+J0014,SK013,FastAPI,required,2
+J0014,SK047,Git,preferred,1
+J0015,SK002,Python,required,2
+J0015,SK013,FastAPI,required,2
+J0015,SK014,Flask,required,1
+J0015,SK029,PostgreSQL,required,3
+J0015,SK027,SQL,required,2
+J0015,SK047,Git,preferred,1
+J0015,SK032,Redis,preferred,1
+J0015,SK017,REST API,preferred,1
+J0016,SK003,JavaScript,required,1
+J0016,SK022,React,required,2
+J0016,SK016,Express.js,required,2
+J0016,SK047,Git,required,2
+J0016,SK017,REST API,preferred,1
+J0016,SK048,Docker,preferred,1
+J0017,SK002,Python,required,2
+J0017,SK036,Scikit-learn,required,2
+J0017,SK039,Pandas,required,3
+J0017,SK034,Deep Learning,required,3
+J0017,SK064,Communication,preferred,1
+J0017,SK067,Project Management,preferred,1
+J0018,SK055,Linux,required,1
+J0018,SK047,Git,required,2
+J0018,SK002,Python,required,3
+J0018,SK054,Jenkins,preferred,1
+J0019,SK039,Pandas,required,2
+J0019,SK041,Statistics,required,3
+J0019,SK035,NLP,required,1
+J0019,SK037,TensorFlow,preferred,1
+J0019,SK036,Scikit-learn,preferred,1
+J0019,SK038,PyTorch,preferred,1
+J0020,SK027,SQL,required,2
+J0020,SK046,Excel,required,3
+J0020,SK041,Statistics,required,3
+J0020,SK039,Pandas,required,3
+J0020,SK042,Data Analysis,preferred,1
+J0020,SK065,Teamwork,preferred,1
+J0020,SK043,Data Visualization,preferred,1
+J0021,SK027,SQL,required,2
+J0021,SK041,Statistics,required,2
+J0021,SK042,Data Analysis,required,3
+J0021,SK064,Communication,preferred,1
+J0022,SK022,React,required,2
+J0022,SK020,HTML,required,1
+J0022,SK026,Tailwind CSS,required,1
+J0022,SK047,Git,preferred,1
+J0022,SK066,Problem Solving,preferred,1
+J0022,SK024,Angular,preferred,1
+J0023,SK061,Cybersecurity,required,2
+J0023,SK062,Network Security,required,2
+J0023,SK063,Networking,required,1
+J0023,SK055,Linux,required,2
+J0023,SK064,Communication,preferred,1
+J0023,SK067,Project Management,preferred,1
+J0023,SK002,Python,preferred,1
+J0024,SK046,Excel,required,3
+J0024,SK039,Pandas,required,1
+J0024,SK043,Data Visualization,required,2
+J0024,SK065,Teamwork,preferred,1
+J0025,SK027,SQL,required,2
+J0025,SK046,Excel,required,2
+J0025,SK039,Pandas,required,2
+J0025,SK043,Data Visualization,required,2
+J0025,SK045,Tableau,preferred,1
+J0026,SK048,Docker,required,3
+J0026,SK053,CI/CD,required,3
+J0026,SK002,Python,required,3
+J0026,SK065,Teamwork,preferred,1
+J0026,SK050,AWS,preferred,1
+J0026,SK067,Project Management,preferred,1
+J0027,SK009,Kotlin,required,1
+J0027,SK001,Java,required,2
+J0027,SK059,Android Development,required,2
+J0027,SK017,REST API,required,1
+J0027,SK064,Communication,preferred,1
+J0027,SK066,Problem Solving,preferred,1
+J0027,SK065,Teamwork,preferred,1
+J0028,SK027,SQL,required,1
+J0028,SK028,MySQL,required,1
+J0028,SK047,Git,required,2
+J0028,SK011,Hibernate,required,3
+J0028,SK019,Microservices,required,2
+J0028,SK048,Docker,preferred,1
+J0028,SK067,Project Management,preferred,1
+J0029,SK022,React,required,2
+J0029,SK020,HTML,required,2
+J0029,SK023,Next.js,required,3
+J0029,SK021,CSS,preferred,1
+J0029,SK066,Problem Solving,preferred,1
+J0030,SK068,CNC Machining,required,1
+J0030,SK071,AutoCAD,required,2
+J0030,SK070,Electrical Wiring,required,3
+J0030,SK067,Project Management,preferred,1
+J0031,SK014,Flask,required,1
+J0031,SK029,PostgreSQL,required,2
+J0031,SK032,Redis,required,2
+J0031,SK048,Docker,required,2
+J0031,SK027,SQL,required,2
+J0031,SK012,Django,preferred,1
+J0031,SK064,Communication,preferred,1
+J0032,SK056,Unit Testing,required,2
+J0032,SK058,Selenium,required,1
+J0032,SK001,Java,required,2
+J0032,SK027,SQL,required,3
+J0032,SK002,Python,required,2
+J0032,SK057,JUnit,preferred,1
+J0032,SK067,Project Management,preferred,1
+J0032,SK066,Problem Solving,preferred,1
+J0033,SK003,JavaScript,required,2
+J0033,SK022,React,required,2
+J0033,SK021,CSS,required,1
+J0033,SK026,Tailwind CSS,required,2
+J0033,SK047,Git,required,2
+J0033,SK067,Project Management,preferred,1
+J0034,SK027,SQL,required,3
+J0034,SK046,Excel,required,1
+J0034,SK002,Python,required,3
+J0034,SK044,Power BI,required,3
+J0034,SK042,Data Analysis,required,2
+J0034,SK067,Project Management,preferred,1
+J0034,SK064,Communication,preferred,1
+J0035,SK012,Django,required,2
+J0035,SK032,Redis,required,2
+J0035,SK027,SQL,required,2
+J0035,SK065,Teamwork,preferred,1
+J0036,SK003,JavaScript,required,3
+J0036,SK022,React,required,3
+J0036,SK015,Node.js,required,2
+J0036,SK027,SQL,required,2
+J0036,SK048,Docker,preferred,1
+J0037,SK001,Java,required,2
+J0037,SK027,SQL,required,3
+J0037,SK011,Hibernate,required,1
+J0037,SK048,Docker,required,2
+J0037,SK057,JUnit,required,2
+J0037,SK017,REST API,preferred,1
+J0037,SK067,Project Management,preferred,1
+J0038,SK001,Java,required,1
+J0038,SK010,Spring Boot,required,1
+J0038,SK027,SQL,required,2
+J0038,SK017,REST API,required,3
+J0038,SK048,Docker,required,1
+J0038,SK066,Problem Solving,preferred,1
+J0038,SK011,Hibernate,preferred,1
+J0038,SK057,JUnit,preferred,1
+J0039,SK049,Kubernetes,required,1
+J0039,SK047,Git,required,3
+J0039,SK051,Azure,required,1
+J0039,SK064,Communication,preferred,1
+J0039,SK053,CI/CD,preferred,1
+J0039,SK067,Project Management,preferred,1
+J0040,SK003,JavaScript,required,3
+J0040,SK015,Node.js,required,3
+J0040,SK016,Express.js,required,3
+J0040,SK017,REST API,required,1
+J0040,SK048,Docker,required,3
+J0040,SK047,Git,preferred,1
+J0040,SK066,Problem Solving,preferred,1
+J0041,SK002,Python,required,2
+J0041,SK014,Flask,required,1
+J0041,SK029,PostgreSQL,required,2
+J0041,SK048,Docker,required,1
+J0041,SK047,Git,preferred,1
+J0041,SK013,FastAPI,preferred,1
+J0042,SK003,JavaScript,required,3
+J0042,SK022,React,required,3
+J0042,SK020,HTML,required,3
+J0042,SK021,CSS,required,2
+J0042,SK067,Project Management,preferred,1
+J0042,SK023,Next.js,preferred,1
+J0043,SK003,JavaScript,required,2
+J0043,SK021,CSS,required,3
+J0043,SK026,Tailwind CSS,required,3
+J0043,SK047,Git,required,2
+J0043,SK066,Problem Solving,preferred,1
+J0044,SK002,Python,required,3
+J0044,SK012,Django,required,3
+J0044,SK014,Flask,required,2
+J0044,SK032,Redis,preferred,1
+J0044,SK067,Project Management,preferred,1
+J0044,SK065,Teamwork,preferred,1
+J0045,SK056,Unit Testing,required,3
+J0045,SK058,Selenium,required,3
+J0045,SK027,SQL,required,2
+J0045,SK053,CI/CD,required,2
+J0045,SK065,Teamwork,preferred,1
+J0045,SK067,Project Management,preferred,1
+J0046,SK002,Python,required,3
+J0046,SK032,Redis,required,2
+J0046,SK048,Docker,required,1
+J0046,SK029,PostgreSQL,preferred,1
+J0046,SK065,Teamwork,preferred,1
+J0046,SK027,SQL,preferred,1
+J0047,SK061,Cybersecurity,required,2
+J0047,SK062,Network Security,required,2
+J0047,SK063,Networking,required,2
+J0047,SK055,Linux,required,2
+J0047,SK002,Python,required,2
+J0047,SK066,Problem Solving,preferred,1
+J0047,SK067,Project Management,preferred,1
+J0048,SK056,Unit Testing,required,1
+J0048,SK058,Selenium,required,1
+J0048,SK057,JUnit,required,2
+J0048,SK002,Python,required,3
+J0048,SK065,Teamwork,preferred,1
+J0049,SK002,Python,required,2
+J0049,SK012,Django,required,1
+J0049,SK017,REST API,required,2
+J0049,SK027,SQL,required,2
+J0049,SK014,Flask,preferred,1
+J0049,SK048,Docker,preferred,1
+J0049,SK029,PostgreSQL,preferred,1
+J0050,SK002,Python,required,1
+J0050,SK012,Django,required,2
+J0050,SK013,FastAPI,required,2
+J0050,SK048,Docker,required,2
+J0050,SK032,Redis,preferred,1
+J0051,SK002,Python,required,3
+J0051,SK029,PostgreSQL,required,2
+J0051,SK017,REST API,required,3
+J0051,SK032,Redis,required,3
+J0051,SK047,Git,required,3
+J0051,SK027,SQL,preferred,1
+J0051,SK065,Teamwork,preferred,1
+J0052,SK009,Kotlin,required,2
+J0052,SK001,Java,required,1
+J0052,SK017,REST API,required,3
+J0052,SK047,Git,required,3
+J0052,SK065,Teamwork,preferred,1
+J0052,SK059,Android Development,preferred,1
+J0053,SK033,Machine Learning,required,2
+J0053,SK036,Scikit-learn,required,2
+J0053,SK039,Pandas,required,2
+J0053,SK038,PyTorch,required,3
+J0053,SK035,NLP,preferred,1
+J0053,SK067,Project Management,preferred,1
+J0053,SK002,Python,preferred,1
+J0054,SK009,Kotlin,required,2
+J0054,SK059,Android Development,required,2
+J0054,SK047,Git,required,3
+J0054,SK060,Flutter,required,2
+J0054,SK066,Problem Solving,preferred,1
+J0054,SK067,Project Management,preferred,1
+J0055,SK002,Python,required,2
+J0055,SK012,Django,required,1
+J0055,SK013,FastAPI,required,1
+J0055,SK014,Flask,required,1
+J0055,SK048,Docker,required,2
+J0055,SK067,Project Management,preferred,1
+J0055,SK047,Git,preferred,1
+J0056,SK027,SQL,required,1
+J0056,SK044,Power BI,required,3
+J0056,SK045,Tableau,required,2
+J0056,SK041,Statistics,required,2
+J0056,SK039,Pandas,required,2
+J0056,SK046,Excel,preferred,1
+J0056,SK042,Data Analysis,preferred,1
+J0056,SK066,Problem Solving,preferred,1
+J0057,SK003,JavaScript,required,1
+J0057,SK021,CSS,required,2
+J0057,SK004,TypeScript,required,3
+J0057,SK026,Tailwind CSS,required,3
+J0057,SK024,Angular,required,2
+J0057,SK064,Communication,preferred,1
+J0057,SK020,HTML,preferred,1
+J0057,SK047,Git,preferred,1
+J0058,SK003,JavaScript,required,2
+J0058,SK016,Express.js,required,2
+J0058,SK031,MongoDB,required,3
+J0058,SK047,Git,required,3
+J0058,SK015,Node.js,preferred,1
+J0058,SK022,React,preferred,1
+J0058,SK017,REST API,preferred,1
+J0059,SK048,Docker,required,2
+J0059,SK049,Kubernetes,required,2
+J0059,SK053,CI/CD,required,2
+J0059,SK054,Jenkins,required,2
+J0059,SK002,Python,required,1
+J0059,SK055,Linux,preferred,1
+J0059,SK065,Teamwork,preferred,1
+J0059,SK047,Git,preferred,1
+J0060,SK009,Kotlin,required,2
+J0060,SK001,Java,required,2
+J0060,SK059,Android Development,required,1
+J0060,SK017,REST API,required,3
+J0060,SK047,Git,required,3
+J0060,SK066,Problem Solving,preferred,1
+J0060,SK060,Flutter,preferred,1
+J0060,SK065,Teamwork,preferred,1
+J0061,SK003,JavaScript,required,3
+J0061,SK022,React,required,1
+J0061,SK020,HTML,required,1
+J0061,SK026,Tailwind CSS,required,2
+J0061,SK023,Next.js,preferred,1
+J0062,SK012,Django,required,3
+J0062,SK013,FastAPI,required,2
+J0062,SK032,Redis,required,2
+J0062,SK014,Flask,preferred,1
+J0062,SK067,Project Management,preferred,1
+J0063,SK002,Python,required,2
+J0063,SK033,Machine Learning,required,2
+J0063,SK037,TensorFlow,required,1
+J0063,SK038,PyTorch,required,2
+J0063,SK035,NLP,required,2
+J0063,SK041,Statistics,preferred,1
+J0063,SK034,Deep Learning,preferred,1
+J0064,SK027,SQL,required,3
+J0064,SK002,Python,required,2
+J0064,SK044,Power BI,required,3
+J0064,SK039,Pandas,required,2
+J0064,SK043,Data Visualization,required,2
+J0064,SK067,Project Management,preferred,1
+J0064,SK045,Tableau,preferred,1
+J0064,SK066,Problem Solving,preferred,1
+J0065,SK071,AutoCAD,required,2
+J0065,SK069,Welding,required,2
+J0065,SK072,PLC Programming,preferred,1
+J0065,SK064,Communication,preferred,1
+J0065,SK065,Teamwork,preferred,1
+J0066,SK061,Cybersecurity,required,2
+J0066,SK062,Network Security,required,3
+J0066,SK063,Networking,required,2
+J0066,SK055,Linux,required,2
+J0066,SK002,Python,required,1
+J0066,SK066,Problem Solving,preferred,1
+J0066,SK064,Communication,preferred,1
+J0066,SK067,Project Management,preferred,1
+J0067,SK022,React,required,1
+J0067,SK015,Node.js,required,1
+J0067,SK017,REST API,required,1
+J0067,SK048,Docker,required,3
+J0067,SK064,Communication,preferred,1
+J0068,SK003,JavaScript,required,2
+J0068,SK022,React,required,2
+J0068,SK015,Node.js,required,2
+J0068,SK016,Express.js,required,1
+J0068,SK004,TypeScript,preferred,1
+J0068,SK047,Git,preferred,1
+J0068,SK017,REST API,preferred,1
+J0069,SK015,Node.js,required,2
+J0069,SK031,MongoDB,required,2
+J0069,SK004,TypeScript,required,3
+J0069,SK047,Git,preferred,1
+J0070,SK002,Python,required,2
+J0070,SK036,Scikit-learn,required,3
+J0070,SK039,Pandas,required,2
+J0070,SK034,Deep Learning,required,2
+J0070,SK065,Teamwork,preferred,1
+J0070,SK066,Problem Solving,preferred,1
+J0070,SK067,Project Management,preferred,1
+J0071,SK048,Docker,required,2
+J0071,SK049,Kubernetes,required,2
+J0071,SK047,Git,required,2
+J0071,SK002,Python,required,1
+J0071,SK064,Communication,preferred,1
+J0071,SK051,Azure,preferred,1
+J0072,SK004,TypeScript,required,3
+J0072,SK047,Git,required,2
+J0072,SK024,Angular,required,1
+J0072,SK025,Vue.js,required,2
+J0072,SK067,Project Management,preferred,1
+J0072,SK064,Communication,preferred,1
+J0073,SK001,Java,required,3
+J0073,SK010,Spring Boot,required,3
+J0073,SK027,SQL,required,2
+J0073,SK019,Microservices,required,2
+J0073,SK047,Git,preferred,1
+J0074,SK022,React,required,2
+J0074,SK031,MongoDB,required,2
+J0074,SK027,SQL,required,1
+J0074,SK047,Git,required,1
+J0074,SK004,TypeScript,required,1
+J0074,SK003,JavaScript,preferred,1
+J0074,SK065,Teamwork,preferred,1
+J0075,SK001,Java,required,1
+J0075,SK011,Hibernate,required,2
+J0075,SK048,Docker,required,2
+J0075,SK010,Spring Boot,preferred,1
+J0076,SK055,Linux,required,2
+J0076,SK053,CI/CD,required,3
+J0076,SK054,Jenkins,required,3
+J0076,SK002,Python,required,3
+J0076,SK065,Teamwork,preferred,1
+J0076,SK049,Kubernetes,preferred,1
+J0077,SK014,Flask,required,1
+J0077,SK029,PostgreSQL,required,3
+J0077,SK017,REST API,required,2
+J0077,SK027,SQL,required,2
+J0077,SK064,Communication,preferred,1
+J0078,SK003,JavaScript,required,2
+J0078,SK022,React,required,2
+J0078,SK023,Next.js,required,2
+J0078,SK064,Communication,preferred,1
+J0079,SK003,JavaScript,required,3
+J0079,SK022,React,required,2
+J0079,SK020,HTML,required,2
+J0079,SK023,Next.js,required,1
+J0079,SK065,Teamwork,preferred,1
+J0079,SK064,Communication,preferred,1
+J0080,SK055,Linux,required,2
+J0080,SK048,Docker,required,1
+J0080,SK049,Kubernetes,required,2
+J0080,SK050,AWS,required,3
+J0080,SK051,Azure,preferred,1
+J0080,SK066,Problem Solving,preferred,1
+J0080,SK064,Communication,preferred,1
+J0081,SK002,Python,required,1
+J0081,SK012,Django,required,2
+J0081,SK013,FastAPI,required,1
+J0081,SK047,Git,preferred,1
+J0082,SK068,CNC Machining,required,3
+J0082,SK071,AutoCAD,required,2
+J0082,SK069,Welding,required,2
+J0082,SK072,PLC Programming,preferred,1
+J0082,SK066,Problem Solving,preferred,1
+J0082,SK067,Project Management,preferred,1
+J0083,SK046,Excel,required,2
+J0083,SK044,Power BI,required,2
+J0083,SK045,Tableau,required,3
+J0083,SK043,Data Visualization,required,1
+J0083,SK066,Problem Solving,preferred,1
+J0083,SK064,Communication,preferred,1
+J0084,SK002,Python,required,1
+J0084,SK036,Scikit-learn,required,3
+J0084,SK041,Statistics,required,2
+J0084,SK027,SQL,required,1
+J0084,SK067,Project Management,preferred,1
+J0084,SK037,TensorFlow,preferred,1
+J0084,SK039,Pandas,preferred,1
+J0085,SK003,JavaScript,required,3
+J0085,SK022,React,required,2
+J0085,SK016,Express.js,required,2
+J0085,SK047,Git,required,3
+J0085,SK067,Project Management,preferred,1
+J0085,SK065,Teamwork,preferred,1
+J0085,SK031,MongoDB,preferred,1
+J0086,SK003,JavaScript,required,2
+J0086,SK015,Node.js,required,2
+J0086,SK016,Express.js,required,2
+J0086,SK048,Docker,required,2
+J0086,SK031,MongoDB,preferred,1
+J0087,SK021,CSS,required,2
+J0087,SK026,Tailwind CSS,required,2
+J0087,SK024,Angular,required,3
+J0087,SK066,Problem Solving,preferred,1
+J0087,SK020,HTML,preferred,1
+J0088,SK002,Python,required,2
+J0088,SK033,Machine Learning,required,2
+J0088,SK037,TensorFlow,required,2
+J0088,SK035,NLP,required,2
+J0088,SK067,Project Management,preferred,1
+J0088,SK040,NumPy,preferred,1
+J0088,SK066,Problem Solving,preferred,1
+J0089,SK056,Unit Testing,required,2
+J0089,SK058,Selenium,required,3
+J0089,SK001,Java,required,3
+J0089,SK027,SQL,required,2
+J0089,SK064,Communication,preferred,1
+J0089,SK067,Project Management,preferred,1
+J0089,SK057,JUnit,preferred,1
+J0090,SK013,FastAPI,required,1
+J0090,SK014,Flask,required,3
+J0090,SK027,SQL,required,3
+J0090,SK012,Django,preferred,1
+J0090,SK065,Teamwork,preferred,1
+J0090,SK067,Project Management,preferred,1
+J0091,SK015,Node.js,required,2
+J0091,SK016,Express.js,required,2
+J0091,SK031,MongoDB,required,1
+J0091,SK047,Git,required,1
+J0091,SK022,React,preferred,1
+J0091,SK065,Teamwork,preferred,1
+J0092,SK058,Selenium,required,2
+J0092,SK001,Java,required,1
+J0092,SK057,JUnit,required,1
+J0092,SK027,SQL,preferred,1
+J0093,SK055,Linux,required,2
+J0093,SK002,Python,required,1
+J0093,SK051,Azure,required,2
+J0093,SK065,Teamwork,preferred,1
+J0093,SK064,Communication,preferred,1
+J0093,SK054,Jenkins,preferred,1
+J0094,SK022,React,required,3
+J0094,SK047,Git,required,2
+J0094,SK024,Angular,required,2
+J0094,SK065,Teamwork,preferred,1
+J0094,SK064,Communication,preferred,1
+J0095,SK046,Excel,required,3
+J0095,SK002,Python,required,3
+J0095,SK045,Tableau,required,2
+J0095,SK064,Communication,preferred,1
+J0095,SK067,Project Management,preferred,1
+J0096,SK022,React,required,2
+J0096,SK016,Express.js,required,3
+J0096,SK031,MongoDB,required,2
+J0096,SK047,Git,required,2
+J0096,SK065,Teamwork,preferred,1
+J0096,SK067,Project Management,preferred,1
+J0096,SK048,Docker,preferred,1
+J0097,SK009,Kotlin,required,3
+J0097,SK001,Java,required,1
+J0097,SK047,Git,required,3
+J0097,SK060,Flutter,required,2
+J0097,SK067,Project Management,preferred,1
+J0097,SK059,Android Development,preferred,1
+J0098,SK001,Java,required,3
+J0098,SK011,Hibernate,required,3
+J0098,SK019,Microservices,required,2
+J0098,SK028,MySQL,preferred,1
+J0099,SK056,Unit Testing,required,3
+J0099,SK058,Selenium,required,1
+J0099,SK047,Git,required,3
+J0099,SK053,CI/CD,required,2
+J0099,SK002,Python,preferred,1
+J0099,SK001,Java,preferred,1
+J0099,SK064,Communication,preferred,1
+J0100,SK022,React,required,2
+J0100,SK020,HTML,required,2
+J0100,SK026,Tailwind CSS,required,3
+J0100,SK024,Angular,required,3
+J0100,SK003,JavaScript,preferred,1
+J0100,SK066,Problem Solving,preferred,1
+J0101,SK009,Kotlin,required,2
+J0101,SK001,Java,required,1
+J0101,SK017,REST API,required,3
+J0101,SK047,Git,required,1
+J0101,SK067,Project Management,preferred,1
+J0102,SK009,Kotlin,required,3
+J0102,SK059,Android Development,required,1
+J0102,SK017,REST API,required,3
+J0102,SK047,Git,required,3
+J0102,SK001,Java,preferred,1
+J0102,SK067,Project Management,preferred,1
+J0103,SK009,Kotlin,required,3
+J0103,SK059,Android Development,required,3
+J0103,SK017,REST API,required,2
+J0103,SK001,Java,preferred,1
+J0104,SK020,HTML,required,2
+J0104,SK004,TypeScript,required,1
+J0104,SK026,Tailwind CSS,required,2
+J0104,SK047,Git,required,1
+J0104,SK024,Angular,required,2
+J0104,SK022,React,preferred,1
+J0104,SK025,Vue.js,preferred,1
+J0105,SK003,JavaScript,required,2
+J0105,SK022,React,required,1
+J0105,SK015,Node.js,required,2
+J0105,SK016,Express.js,required,2
+J0105,SK004,TypeScript,required,2
+J0105,SK064,Communication,preferred,1
+J0105,SK031,MongoDB,preferred,1
+J0106,SK056,Unit Testing,required,3
+J0106,SK058,Selenium,required,2
+J0106,SK001,Java,required,3
+J0106,SK057,JUnit,required,2
+J0106,SK047,Git,required,2
+J0106,SK067,Project Management,preferred,1
+J0107,SK048,Docker,required,2
+J0107,SK049,Kubernetes,required,2
+J0107,SK050,AWS,required,3
+J0107,SK047,Git,required,2
+J0107,SK054,Jenkins,preferred,1
+J0108,SK069,Welding,required,2
+J0108,SK070,Electrical Wiring,required,3
+J0108,SK072,PLC Programming,required,2
+J0108,SK068,CNC Machining,preferred,1
+J0108,SK066,Problem Solving,preferred,1
+J0108,SK067,Project Management,preferred,1
+J0109,SK002,Python,required,1
+J0109,SK045,Tableau,required,1
+J0109,SK043,Data Visualization,required,2
+J0109,SK042,Data Analysis,required,2
+J0109,SK046,Excel,preferred,1
+J0109,SK067,Project Management,preferred,1
+J0109,SK064,Communication,preferred,1
+J0110,SK061,Cybersecurity,required,2
+J0110,SK062,Network Security,required,2
+J0110,SK063,Networking,required,3
+J0110,SK055,Linux,required,1
+J0110,SK002,Python,required,1
+J0110,SK066,Problem Solving,preferred,1
+J0111,SK068,CNC Machining,required,3
+J0111,SK071,AutoCAD,required,1
+J0111,SK069,Welding,required,2
+J0111,SK070,Electrical Wiring,preferred,1
+J0112,SK062,Network Security,required,2
+J0112,SK063,Networking,required,2
+J0112,SK002,Python,required,1
+J0112,SK064,Communication,preferred,1
+J0112,SK061,Cybersecurity,preferred,1
+J0112,SK067,Project Management,preferred,1
+J0113,SK012,Django,required,2
+J0113,SK013,FastAPI,required,2
+J0113,SK032,Redis,required,2
+J0113,SK027,SQL,preferred,1
+J0113,SK048,Docker,preferred,1
+J0113,SK064,Communication,preferred,1
+J0114,SK001,Java,required,2
+J0114,SK027,SQL,required,1
+J0114,SK011,Hibernate,required,1
+J0114,SK048,Docker,required,1
+J0114,SK028,MySQL,preferred,1
+J0114,SK066,Problem Solving,preferred,1
+J0115,SK003,JavaScript,required,2
+J0115,SK015,Node.js,required,3
+J0115,SK016,Express.js,required,3
+J0115,SK004,TypeScript,required,3
+J0115,SK048,Docker,preferred,1
+J0115,SK027,SQL,preferred,1
+J0115,SK067,Project Management,preferred,1
+J0116,SK002,Python,required,2
+J0116,SK036,Scikit-learn,required,1
+J0116,SK039,Pandas,required,1
+J0116,SK035,NLP,required,1
+J0116,SK064,Communication,preferred,1
+J0116,SK041,Statistics,preferred,1
+J0117,SK058,Selenium,required,1
+J0117,SK027,SQL,required,3
+J0117,SK057,JUnit,required,3
+J0117,SK002,Python,required,2
+J0117,SK047,Git,required,1
+J0117,SK065,Teamwork,preferred,1
+J0117,SK064,Communication,preferred,1
+J0118,SK002,Python,required,2
+J0118,SK044,Power BI,required,2
+J0118,SK041,Statistics,required,2
+J0118,SK027,SQL,preferred,1
+J0119,SK002,Python,required,3
+J0119,SK013,FastAPI,required,2
+J0119,SK047,Git,required,2
+J0119,SK066,Problem Solving,preferred,1
+J0119,SK012,Django,preferred,1
+J0119,SK029,PostgreSQL,preferred,1
+J0120,SK027,SQL,required,2
+J0120,SK046,Excel,required,2
+J0120,SK002,Python,required,2
+J0120,SK041,Statistics,required,1
+J0120,SK043,Data Visualization,required,2
+J0120,SK064,Communication,preferred,1
+J0120,SK045,Tableau,preferred,1
+J0120,SK066,Problem Solving,preferred,1
+J0121,SK003,JavaScript,required,1
+J0121,SK022,React,required,1
+J0121,SK020,HTML,required,1
+J0121,SK021,CSS,required,2
+J0121,SK026,Tailwind CSS,required,1
+J0121,SK067,Project Management,preferred,1
+J0121,SK064,Communication,preferred,1
+J0121,SK065,Teamwork,preferred,1
+J0122,SK071,AutoCAD,required,1
+J0122,SK069,Welding,required,2
+J0122,SK072,PLC Programming,required,1
+J0122,SK065,Teamwork,preferred,1
+J0123,SK002,Python,required,2
+J0123,SK012,Django,required,2
+J0123,SK013,FastAPI,required,3
+J0123,SK032,Redis,required,2
+J0123,SK027,SQL,required,1
+J0123,SK065,Teamwork,preferred,1
+J0123,SK066,Problem Solving,preferred,1
+J0123,SK014,Flask,preferred,1
+J0124,SK068,CNC Machining,required,3
+J0124,SK069,Welding,required,3
+J0124,SK070,Electrical Wiring,required,1
+J0124,SK072,PLC Programming,preferred,1
+J0125,SK003,JavaScript,required,3
+J0125,SK022,React,required,3
+J0125,SK021,CSS,required,1
+J0125,SK026,Tailwind CSS,required,3
+J0125,SK004,TypeScript,preferred,1
+J0126,SK027,SQL,required,1
+J0126,SK002,Python,required,1
+J0126,SK041,Statistics,required,1
+J0126,SK039,Pandas,required,2
+J0126,SK043,Data Visualization,required,1
+J0126,SK044,Power BI,preferred,1
+J0126,SK064,Communication,preferred,1
+J0127,SK068,CNC Machining,required,3
+J0127,SK072,PLC Programming,required,3
+J0127,SK071,AutoCAD,preferred,1
+J0128,SK027,SQL,required,1
+J0128,SK046,Excel,required,2
+J0128,SK043,Data Visualization,required,3
+J0128,SK066,Problem Solving,preferred,1
+J0128,SK067,Project Management,preferred,1
+J0128,SK044,Power BI,preferred,1
+J0129,SK001,Java,required,2
+J0129,SK011,Hibernate,required,2
+J0129,SK019,Microservices,required,1
+J0129,SK048,Docker,required,3
+J0129,SK057,JUnit,required,3
+J0129,SK047,Git,preferred,1
+J0129,SK028,MySQL,preferred,1
+J0129,SK010,Spring Boot,preferred,1
+J0130,SK010,Spring Boot,required,2
+J0130,SK017,REST API,required,2
+J0130,SK011,Hibernate,required,2
+J0130,SK057,JUnit,required,2
+J0130,SK019,Microservices,preferred,1
+J0130,SK001,Java,preferred,1
+J0131,SK015,Node.js,required,1
+J0131,SK031,MongoDB,required,2
+J0131,SK027,SQL,required,3
+J0131,SK066,Problem Solving,preferred,1
+J0131,SK016,Express.js,preferred,1
+J0132,SK048,Docker,required,1
+J0132,SK050,AWS,required,2
+J0132,SK054,Jenkins,required,3
+J0132,SK047,Git,required,2
+J0132,SK002,Python,preferred,1
+J0132,SK051,Azure,preferred,1
+J0132,SK067,Project Management,preferred,1
+J0133,SK002,Python,required,2
+J0133,SK039,Pandas,required,2
+J0133,SK043,Data Visualization,required,3
+J0133,SK044,Power BI,preferred,1
+J0134,SK009,Kotlin,required,1
+J0134,SK001,Java,required,1
+J0134,SK059,Android Development,required,1
+J0134,SK017,REST API,required,2
+J0134,SK060,Flutter,required,1
+J0134,SK065,Teamwork,preferred,1
+J0134,SK064,Communication,preferred,1
+J0135,SK068,CNC Machining,required,3
+J0135,SK071,AutoCAD,required,2
+J0135,SK072,PLC Programming,required,3
+J0135,SK064,Communication,preferred,1
+J0136,SK015,Node.js,required,2
+J0136,SK017,REST API,required,3
+J0136,SK004,TypeScript,required,2
+J0136,SK048,Docker,preferred,1
+J0137,SK041,Statistics,required,2
+J0137,SK034,Deep Learning,required,3
+J0137,SK035,NLP,required,3
+J0137,SK033,Machine Learning,preferred,1
+J0138,SK015,Node.js,required,3
+J0138,SK031,MongoDB,required,1
+J0138,SK047,Git,required,2
+J0138,SK066,Problem Solving,preferred,1
+J0138,SK048,Docker,preferred,1
+J0138,SK065,Teamwork,preferred,1
+J0139,SK033,Machine Learning,required,2
+J0139,SK037,TensorFlow,required,2
+J0139,SK027,SQL,required,1
+J0139,SK034,Deep Learning,preferred,1
+J0139,SK067,Project Management,preferred,1
+J0140,SK002,Python,required,2
+J0140,SK039,Pandas,required,2
+J0140,SK040,NumPy,required,2
+J0140,SK038,PyTorch,required,2
+J0140,SK035,NLP,required,1
+J0140,SK033,Machine Learning,preferred,1
+J0141,SK055,Linux,required,2
+J0141,SK047,Git,required,2
+J0141,SK051,Azure,required,2
+J0141,SK064,Communication,preferred,1
+J0141,SK050,AWS,preferred,1
+J0142,SK056,Unit Testing,required,1
+J0142,SK058,Selenium,required,2
+J0142,SK001,Java,required,3
+J0142,SK002,Python,required,1
+J0142,SK047,Git,required,3
+J0142,SK067,Project Management,preferred,1
+J0142,SK027,SQL,preferred,1
+J0143,SK062,Network Security,required,3
+J0143,SK063,Networking,required,2
+J0143,SK055,Linux,required,2
+J0143,SK002,Python,required,3
+J0143,SK061,Cybersecurity,preferred,1
+J0143,SK064,Communication,preferred,1
+J0143,SK066,Problem Solving,preferred,1
+J0144,SK061,Cybersecurity,required,2
+J0144,SK062,Network Security,required,3
+J0144,SK055,Linux,required,1
+J0144,SK002,Python,required,1
+J0144,SK066,Problem Solving,preferred,1
+J0144,SK064,Communication,preferred,1
+J0144,SK067,Project Management,preferred,1
+J0145,SK009,Kotlin,required,3
+J0145,SK017,REST API,required,3
+J0145,SK060,Flutter,required,2
+J0145,SK001,Java,preferred,1
+J0146,SK057,JUnit,required,2
+J0146,SK002,Python,required,2
+J0146,SK047,Git,required,1
+J0146,SK066,Problem Solving,preferred,1
+J0146,SK001,Java,preferred,1
+J0146,SK056,Unit Testing,preferred,1
+J0147,SK033,Machine Learning,required,2
+J0147,SK041,Statistics,required,2
+J0147,SK034,Deep Learning,required,2
+J0147,SK027,SQL,required,3
+J0147,SK040,NumPy,preferred,1
+J0147,SK036,Scikit-learn,preferred,1
+J0147,SK002,Python,preferred,1
+J0148,SK055,Linux,required,2
+J0148,SK048,Docker,required,2
+J0148,SK050,AWS,required,3
+J0148,SK047,Git,required,2
+J0148,SK051,Azure,required,3
+J0148,SK065,Teamwork,preferred,1
+J0148,SK053,CI/CD,preferred,1
+J0148,SK002,Python,preferred,1
+J0149,SK033,Machine Learning,required,2
+J0149,SK039,Pandas,required,1
+J0149,SK040,NumPy,required,2
+J0149,SK037,TensorFlow,required,1
+J0149,SK064,Communication,preferred,1
+J0149,SK027,SQL,preferred,1
+J0150,SK002,Python,required,3
+J0150,SK029,PostgreSQL,required,3
+J0150,SK047,Git,required,2
+J0150,SK065,Teamwork,preferred,1
+J0150,SK032,Redis,preferred,1
+J0150,SK064,Communication,preferred,1
+J0151,SK027,SQL,required,1
+J0151,SK046,Excel,required,2
+J0151,SK002,Python,required,2
+J0151,SK041,Statistics,required,2
+J0151,SK045,Tableau,preferred,1
+J0151,SK042,Data Analysis,preferred,1
+J0152,SK061,Cybersecurity,required,2
+J0152,SK062,Network Security,required,2
+J0152,SK063,Networking,required,3
+J0152,SK055,Linux,required,3
+J0152,SK002,Python,required,1
+J0152,SK064,Communication,preferred,1
+J0152,SK067,Project Management,preferred,1
+J0153,SK002,Python,required,2
+J0153,SK033,Machine Learning,required,2
+J0153,SK036,Scikit-learn,required,2
+J0153,SK039,Pandas,required,2
+J0153,SK035,NLP,required,1
+J0153,SK037,TensorFlow,preferred,1
+J0154,SK061,Cybersecurity,required,1
+J0154,SK062,Network Security,required,2
+J0154,SK063,Networking,required,1
+J0154,SK055,Linux,required,1
+J0154,SK002,Python,required,3
+J0154,SK064,Communication,preferred,1
+J0154,SK066,Problem Solving,preferred,1
+J0154,SK067,Project Management,preferred,1
+J0155,SK004,TypeScript,required,1
+J0155,SK026,Tailwind CSS,required,3
+J0155,SK047,Git,required,2
+J0155,SK064,Communication,preferred,1
+J0156,SK056,Unit Testing,required,1
+J0156,SK058,Selenium,required,1
+J0156,SK001,Java,required,1
+J0156,SK047,Git,required,2
+J0156,SK067,Project Management,preferred,1
+J0156,SK002,Python,preferred,1
+J0156,SK057,JUnit,preferred,1
+J0157,SK002,Python,required,3
+J0157,SK039,Pandas,required,3
+J0157,SK040,NumPy,required,2
+J0157,SK033,Machine Learning,preferred,1
+J0158,SK048,Docker,required,2
+J0158,SK047,Git,required,2
+J0158,SK051,Azure,required,2
+J0158,SK064,Communication,preferred,1
+J0158,SK067,Project Management,preferred,1
+J0159,SK002,Python,required,2
+J0159,SK033,Machine Learning,required,3
+J0159,SK039,Pandas,required,1
+J0159,SK041,Statistics,required,2
+J0159,SK034,Deep Learning,required,2
+J0159,SK065,Teamwork,preferred,1
+J0159,SK038,PyTorch,preferred,1
+J0160,SK002,Python,required,2
+J0160,SK036,Scikit-learn,required,3
+J0160,SK040,NumPy,required,2
+J0160,SK027,SQL,required,3
+J0160,SK066,Problem Solving,preferred,1
+J0160,SK034,Deep Learning,preferred,1
+J0161,SK071,AutoCAD,required,2
+J0161,SK069,Welding,required,2
+J0161,SK072,PLC Programming,required,2
+J0161,SK070,Electrical Wiring,preferred,1
+J0161,SK067,Project Management,preferred,1
+J0162,SK017,REST API,required,2
+J0162,SK028,MySQL,required,1
+J0162,SK047,Git,required,1
+J0162,SK048,Docker,required,3
+J0162,SK027,SQL,preferred,1
+J0163,SK003,JavaScript,required,3
+J0163,SK020,HTML,required,3
+J0163,SK021,CSS,required,3
+J0163,SK047,Git,required,1
+J0163,SK023,Next.js,preferred,1
+J0163,SK022,React,preferred,1
+J0163,SK025,Vue.js,preferred,1
+J0164,SK068,CNC Machining,required,2
+J0164,SK069,Welding,required,3
+J0164,SK065,Teamwork,preferred,1
+J0164,SK067,Project Management,preferred,1
+J0165,SK057,JUnit,required,3
+J0165,SK002,Python,required,3
+J0165,SK053,CI/CD,required,3
+J0165,SK067,Project Management,preferred,1
+J0165,SK066,Problem Solving,preferred,1
+J0166,SK001,Java,required,2
+J0166,SK010,Spring Boot,required,1
+J0166,SK048,Docker,required,3
+J0166,SK017,REST API,preferred,1
+J0166,SK047,Git,preferred,1
+J0166,SK064,Communication,preferred,1
+J0167,SK068,CNC Machining,required,2
+J0167,SK069,Welding,required,1
+J0167,SK070,Electrical Wiring,required,2
+J0167,SK064,Communication,preferred,1
+J0168,SK061,Cybersecurity,required,2
+J0168,SK062,Network Security,required,3
+J0168,SK063,Networking,required,1
+J0168,SK002,Python,required,1
+J0168,SK067,Project Management,preferred,1
+J0168,SK065,Teamwork,preferred,1
+J0169,SK027,SQL,required,3
+J0169,SK046,Excel,required,2
+J0169,SK044,Power BI,required,3
+J0169,SK042,Data Analysis,required,2
+J0169,SK041,Statistics,preferred,1
+J0169,SK064,Communication,preferred,1
+J0169,SK039,Pandas,preferred,1
+J0170,SK001,Java,required,1
+J0170,SK010,Spring Boot,required,2
+J0170,SK027,SQL,required,2
+J0170,SK028,MySQL,required,3
+J0170,SK057,JUnit,required,1
+J0170,SK017,REST API,preferred,1
+J0171,SK027,SQL,required,2
+J0171,SK046,Excel,required,2
+J0171,SK044,Power BI,required,3
+J0171,SK043,Data Visualization,required,2
+J0171,SK067,Project Management,preferred,1
+J0171,SK041,Statistics,preferred,1
+J0172,SK020,HTML,required,2
+J0172,SK021,CSS,required,2
+J0172,SK026,Tailwind CSS,required,3
+J0172,SK066,Problem Solving,preferred,1
+J0172,SK022,React,preferred,1
+J0173,SK002,Python,required,2
+J0173,SK013,FastAPI,required,3
+J0173,SK014,Flask,required,1
+J0173,SK017,REST API,required,2
+J0173,SK032,Redis,required,2
+J0173,SK012,Django,preferred,1
+J0173,SK065,Teamwork,preferred,1
+J0174,SK068,CNC Machining,required,3
+J0174,SK070,Electrical Wiring,required,2
+J0174,SK072,PLC Programming,preferred,1
+J0174,SK067,Project Management,preferred,1
+J0174,SK071,AutoCAD,preferred,1
+J0175,SK020,HTML,required,2
+J0175,SK004,TypeScript,required,1
+J0175,SK023,Next.js,required,2
+J0175,SK024,Angular,required,1
+J0175,SK025,Vue.js,preferred,1
+J0176,SK002,Python,required,3
+J0176,SK033,Machine Learning,required,1
+J0176,SK036,Scikit-learn,required,2
+J0176,SK039,Pandas,required,1
+J0176,SK034,Deep Learning,required,2
+J0176,SK064,Communication,preferred,1
+J0177,SK002,Python,required,1
+J0177,SK013,FastAPI,required,2
+J0177,SK029,PostgreSQL,required,2
+J0177,SK048,Docker,required,1
+J0177,SK047,Git,required,2
+J0177,SK017,REST API,preferred,1
+J0178,SK027,SQL,required,2
+J0178,SK044,Power BI,required,1
+J0178,SK045,Tableau,required,2
+J0178,SK041,Statistics,required,1
+J0178,SK039,Pandas,required,3
+J0178,SK043,Data Visualization,preferred,1
+J0178,SK065,Teamwork,preferred,1
+J0178,SK002,Python,preferred,1
+J0179,SK061,Cybersecurity,required,2
+J0179,SK062,Network Security,required,2
+J0179,SK063,Networking,required,3
+J0179,SK055,Linux,required,3
+J0179,SK002,Python,required,3
+J0179,SK065,Teamwork,preferred,1
+J0179,SK064,Communication,preferred,1
+J0180,SK009,Kotlin,required,2
+J0180,SK059,Android Development,required,2
+J0180,SK047,Git,required,1
+J0180,SK060,Flutter,required,3
+J0180,SK066,Problem Solving,preferred,1
+J0180,SK064,Communication,preferred,1
+J0181,SK046,Excel,required,3
+J0181,SK002,Python,required,2
+J0181,SK044,Power BI,required,2
+J0181,SK041,Statistics,required,3
+J0181,SK067,Project Management,preferred,1
+J0181,SK064,Communication,preferred,1
+J0182,SK069,Welding,required,2
+J0182,SK072,PLC Programming,required,1
+J0182,SK064,Communication,preferred,1
+J0182,SK065,Teamwork,preferred,1
+J0183,SK002,Python,required,2
+J0183,SK040,NumPy,required,1
+J0183,SK035,NLP,required,3
+J0183,SK064,Communication,preferred,1
+J0183,SK033,Machine Learning,preferred,1
+J0184,SK001,Java,required,2
+J0184,SK010,Spring Boot,required,3
+J0184,SK017,REST API,required,1
+J0184,SK047,Git,required,2
+J0184,SK027,SQL,preferred,1
+J0184,SK028,MySQL,preferred,1
+J0184,SK066,Problem Solving,preferred,1
+J0185,SK002,Python,required,2
+J0185,SK034,Deep Learning,required,2
+J0185,SK035,NLP,required,3
+J0185,SK038,PyTorch,preferred,1
+J0185,SK027,SQL,preferred,1
+J0185,SK066,Problem Solving,preferred,1
+J0186,SK027,SQL,required,3
+J0186,SK002,Python,required,2
+J0186,SK044,Power BI,required,3
+J0186,SK045,Tableau,required,2
+J0186,SK042,Data Analysis,required,3
+J0186,SK043,Data Visualization,preferred,1
+J0187,SK001,Java,required,2
+J0187,SK010,Spring Boot,required,3
+J0187,SK017,REST API,required,2
+J0187,SK047,Git,required,3
+J0187,SK048,Docker,required,3
+J0187,SK067,Project Management,preferred,1
+J0187,SK028,MySQL,preferred,1
+J0187,SK065,Teamwork,preferred,1
+J0188,SK009,Kotlin,required,2
+J0188,SK001,Java,required,1
+J0188,SK059,Android Development,required,2
+J0188,SK017,REST API,required,1
+J0188,SK047,Git,required,2
+J0188,SK060,Flutter,preferred,1
+J0189,SK001,Java,required,2
+J0189,SK010,Spring Boot,required,2
+J0189,SK027,SQL,required,1
+J0189,SK028,MySQL,required,2
+J0189,SK047,Git,required,2
+J0189,SK057,JUnit,preferred,1
+J0189,SK067,Project Management,preferred,1
+J0190,SK001,Java,required,3
+J0190,SK028,MySQL,required,2
+J0190,SK047,Git,required,3
+J0190,SK011,Hibernate,required,3
+J0190,SK019,Microservices,required,3
+J0190,SK017,REST API,preferred,1
+J0190,SK048,Docker,preferred,1
+J0191,SK001,Java,required,2
+J0191,SK010,Spring Boot,required,2
+J0191,SK011,Hibernate,required,2
+J0191,SK019,Microservices,preferred,1
+J0191,SK047,Git,preferred,1
+J0191,SK067,Project Management,preferred,1
+J0192,SK046,Excel,required,2
+J0192,SK044,Power BI,required,1
+J0192,SK045,Tableau,required,2
+J0192,SK043,Data Visualization,required,3
+J0192,SK064,Communication,preferred,1
+J0193,SK058,Selenium,required,1
+J0193,SK001,Java,required,3
+J0193,SK057,JUnit,required,1
+J0193,SK047,Git,required,2
+J0193,SK064,Communication,preferred,1
+J0193,SK066,Problem Solving,preferred,1
+J0193,SK053,CI/CD,preferred,1
+J0194,SK002,Python,required,2
+J0194,SK033,Machine Learning,required,3
+J0194,SK036,Scikit-learn,required,2
+J0194,SK039,Pandas,required,3
+J0194,SK038,PyTorch,required,2
+J0194,SK064,Communication,preferred,1
+J0195,SK068,CNC Machining,required,1
+J0195,SK069,Welding,required,3
+J0195,SK070,Electrical Wiring,required,2
+J0195,SK064,Communication,preferred,1
+J0195,SK067,Project Management,preferred,1
+J0195,SK065,Teamwork,preferred,1
+J0196,SK003,JavaScript,required,2
+J0196,SK015,Node.js,required,3
+J0196,SK004,TypeScript,required,2
+J0196,SK048,Docker,preferred,1
+J0196,SK016,Express.js,preferred,1
+J0196,SK027,SQL,preferred,1
+J0197,SK001,Java,required,1
+J0197,SK010,Spring Boot,required,3
+J0197,SK048,Docker,required,1
+J0197,SK017,REST API,preferred,1
+J0197,SK028,MySQL,preferred,1
+J0197,SK067,Project Management,preferred,1
+J0198,SK055,Linux,required,3
+J0198,SK054,Jenkins,required,1
+J0198,SK002,Python,required,2
+J0198,SK051,Azure,preferred,1
+J0199,SK010,Spring Boot,required,2
+J0199,SK028,MySQL,required,2
+J0199,SK047,Git,required,2
+J0199,SK011,Hibernate,required,2
+J0199,SK057,JUnit,required,2
+J0199,SK001,Java,preferred,1
+J0200,SK002,Python,required,2
+J0200,SK029,PostgreSQL,required,2
+J0200,SK047,Git,required,2
+J0200,SK032,Redis,preferred,1
+J0200,SK012,Django,preferred,1
+J0200,SK017,REST API,preferred,1
+J0201,SK046,Excel,required,2
+J0201,SK002,Python,required,3
+J0201,SK041,Statistics,required,3
+J0201,SK045,Tableau,preferred,1
+J0201,SK027,SQL,preferred,1
+J0201,SK043,Data Visualization,preferred,1
+J0202,SK061,Cybersecurity,required,3
+J0202,SK062,Network Security,required,2
+J0202,SK063,Networking,required,3
+J0202,SK065,Teamwork,preferred,1
+J0203,SK039,Pandas,required,2
+J0203,SK034,Deep Learning,required,2
+J0203,SK037,TensorFlow,required,3
+J0203,SK065,Teamwork,preferred,1
+J0203,SK040,NumPy,preferred,1
+J0204,SK033,Machine Learning,required,3
+J0204,SK039,Pandas,required,2
+J0204,SK041,Statistics,required,2
+J0204,SK038,PyTorch,required,2
+J0204,SK027,SQL,required,2
+J0204,SK066,Problem Solving,preferred,1
+J0204,SK040,NumPy,preferred,1
+J0205,SK055,Linux,required,3
+J0205,SK048,Docker,required,2
+J0205,SK053,CI/CD,required,2
+J0205,SK002,Python,required,3
+J0205,SK051,Azure,required,2
+J0205,SK049,Kubernetes,preferred,1
+J0205,SK047,Git,preferred,1
+J0205,SK050,AWS,preferred,1
+J0206,SK010,Spring Boot,required,2
+J0206,SK028,MySQL,required,1
+J0206,SK019,Microservices,required,2
+J0206,SK048,Docker,preferred,1
+J0206,SK065,Teamwork,preferred,1
+J0206,SK011,Hibernate,preferred,1
+J0207,SK001,Java,required,3
+J0207,SK010,Spring Boot,required,2
+J0207,SK027,SQL,required,3
+J0207,SK019,Microservices,required,1
+J0207,SK057,JUnit,required,2
+J0207,SK011,Hibernate,preferred,1
+J0207,SK065,Teamwork,preferred,1
+J0208,SK061,Cybersecurity,required,3
+J0208,SK062,Network Security,required,3
+J0208,SK063,Networking,required,2
+J0208,SK055,Linux,required,2
+J0208,SK002,Python,required,3
+J0208,SK066,Problem Solving,preferred,1
+J0208,SK065,Teamwork,preferred,1
+J0208,SK067,Project Management,preferred,1
+J0209,SK002,Python,required,2
+J0209,SK013,FastAPI,required,2
+J0209,SK014,Flask,required,2
+J0209,SK032,Redis,required,2
+J0209,SK047,Git,required,2
+J0209,SK029,PostgreSQL,preferred,1
+J0209,SK065,Teamwork,preferred,1
+J0209,SK064,Communication,preferred,1
+J0210,SK003,JavaScript,required,2
+J0210,SK022,React,required,2
+J0210,SK004,TypeScript,required,3
+J0210,SK023,Next.js,required,3
+J0210,SK047,Git,required,2
+J0210,SK020,HTML,preferred,1
+J0210,SK065,Teamwork,preferred,1
+J0211,SK003,JavaScript,required,2
+J0211,SK021,CSS,required,3
+J0211,SK026,Tailwind CSS,required,2
+J0211,SK023,Next.js,required,1
+J0211,SK004,TypeScript,preferred,1
+J0211,SK065,Teamwork,preferred,1
+J0212,SK003,JavaScript,required,1
+J0212,SK004,TypeScript,required,2
+J0212,SK025,Vue.js,required,1
+J0212,SK024,Angular,preferred,1
+J0213,SK056,Unit Testing,required,1
+J0213,SK058,Selenium,required,3
+J0213,SK027,SQL,required,2
+J0213,SK047,Git,required,2
+J0213,SK053,CI/CD,required,2
+J0213,SK057,JUnit,preferred,1
+J0214,SK044,Power BI,required,2
+J0214,SK045,Tableau,required,2
+J0214,SK039,Pandas,required,2
+J0214,SK027,SQL,preferred,1
+J0214,SK067,Project Management,preferred,1
+J0214,SK002,Python,preferred,1
+J0215,SK029,PostgreSQL,required,3
+J0215,SK017,REST API,required,1
+J0215,SK047,Git,required,3
+J0215,SK064,Communication,preferred,1
+J0215,SK027,SQL,preferred,1
+J0216,SK020,HTML,required,1
+J0216,SK004,TypeScript,required,2
+J0216,SK024,Angular,required,2
+J0216,SK025,Vue.js,required,2
+J0216,SK021,CSS,preferred,1
+J0216,SK065,Teamwork,preferred,1
+J0216,SK022,React,preferred,1
+J0217,SK002,Python,required,3
+J0217,SK040,NumPy,required,3
+J0217,SK041,Statistics,required,2
+J0217,SK027,SQL,required,3
+J0217,SK033,Machine Learning,preferred,1
+J0217,SK065,Teamwork,preferred,1
+J0218,SK009,Kotlin,required,1
+J0218,SK001,Java,required,2
+J0218,SK047,Git,required,2
+J0218,SK060,Flutter,required,2
+J0218,SK017,REST API,preferred,1
+J0218,SK059,Android Development,preferred,1
+J0219,SK002,Python,required,1
+J0219,SK033,Machine Learning,required,3
+J0219,SK036,Scikit-learn,required,3
+J0219,SK037,TensorFlow,required,3
+J0219,SK027,SQL,required,2
+J0219,SK065,Teamwork,preferred,1
+J0219,SK034,Deep Learning,preferred,1
+J0219,SK041,Statistics,preferred,1
+J0220,SK033,Machine Learning,required,2
+J0220,SK039,Pandas,required,2
+J0220,SK027,SQL,required,1
+J0220,SK065,Teamwork,preferred,1
+J0220,SK037,TensorFlow,preferred,1
+J0221,SK020,HTML,required,3
+J0221,SK004,TypeScript,required,1
+J0221,SK025,Vue.js,required,3
+J0221,SK026,Tailwind CSS,preferred,1
+J0221,SK065,Teamwork,preferred,1
+J0221,SK066,Problem Solving,preferred,1
+J0222,SK027,SQL,required,3
+J0222,SK017,REST API,required,2
+J0222,SK028,MySQL,required,3
+J0222,SK047,Git,required,3
+J0222,SK011,Hibernate,preferred,1
+J0222,SK010,Spring Boot,preferred,1
+J0223,SK036,Scikit-learn,required,1
+J0223,SK039,Pandas,required,3
+J0223,SK038,PyTorch,required,2
+J0223,SK033,Machine Learning,preferred,1
+J0223,SK002,Python,preferred,1
+J0224,SK002,Python,required,2
+J0224,SK013,FastAPI,required,1
+J0224,SK014,Flask,required,1
+J0224,SK065,Teamwork,preferred,1
+J0224,SK032,Redis,preferred,1
+J0225,SK002,Python,required,3
+J0225,SK013,FastAPI,required,2
+J0225,SK029,PostgreSQL,required,3
+J0225,SK032,Redis,required,3
+J0225,SK065,Teamwork,preferred,1
+J0226,SK003,JavaScript,required,2
+J0226,SK022,React,required,3
+J0226,SK023,Next.js,required,3
+J0226,SK065,Teamwork,preferred,1
+J0226,SK026,Tailwind CSS,preferred,1
+J0227,SK012,Django,required,2
+J0227,SK013,FastAPI,required,1
+J0227,SK014,Flask,required,2
+J0227,SK048,Docker,required,3
+J0227,SK047,Git,required,2
+J0227,SK029,PostgreSQL,preferred,1
+J0227,SK064,Communication,preferred,1
+J0228,SK056,Unit Testing,required,1
+J0228,SK058,Selenium,required,2
+J0228,SK001,Java,required,2
+J0228,SK027,SQL,required,2
+J0228,SK057,JUnit,required,1
+J0228,SK066,Problem Solving,preferred,1
+J0228,SK002,Python,preferred,1
+J0229,SK036,Scikit-learn,required,1
+J0229,SK040,NumPy,required,2
+J0229,SK035,NLP,required,1
+J0229,SK039,Pandas,preferred,1
+J0229,SK027,SQL,preferred,1
+J0229,SK066,Problem Solving,preferred,1
+J0230,SK003,JavaScript,required,2
+J0230,SK016,Express.js,required,3
+J0230,SK027,SQL,required,2
+J0230,SK065,Teamwork,preferred,1
+J0231,SK002,Python,required,1
+J0231,SK012,Django,required,2
+J0231,SK029,PostgreSQL,required,2
+J0231,SK048,Docker,required,2
+J0231,SK032,Redis,preferred,1
+J0231,SK066,Problem Solving,preferred,1
+J0231,SK064,Communication,preferred,1
+J0232,SK027,SQL,required,2
+J0232,SK011,Hibernate,required,2
+J0232,SK019,Microservices,required,3
+J0232,SK048,Docker,required,3
+J0232,SK057,JUnit,required,3
+J0232,SK067,Project Management,preferred,1
+J0232,SK017,REST API,preferred,1
+J0233,SK061,Cybersecurity,required,1
+J0233,SK062,Network Security,required,2
+J0233,SK063,Networking,required,3
+J0233,SK055,Linux,required,2
+J0233,SK002,Python,required,2
+J0233,SK066,Problem Solving,preferred,1
+J0233,SK067,Project Management,preferred,1
+J0233,SK064,Communication,preferred,1
+J0234,SK027,SQL,required,1
+J0234,SK011,Hibernate,required,2
+J0234,SK019,Microservices,required,2
+J0234,SK065,Teamwork,preferred,1
+J0234,SK057,JUnit,preferred,1
+J0234,SK066,Problem Solving,preferred,1
+J0235,SK002,Python,required,1
+J0235,SK012,Django,required,1
+J0235,SK013,FastAPI,required,1
+J0235,SK048,Docker,required,1
+J0235,SK047,Git,preferred,1
+J0236,SK022,React,required,3
+J0236,SK015,Node.js,required,2
+J0236,SK016,Express.js,required,3
+J0236,SK017,REST API,required,2
+J0236,SK004,TypeScript,required,1
+J0236,SK066,Problem Solving,preferred,1
+J0236,SK031,MongoDB,preferred,1
+J0237,SK068,CNC Machining,required,1
+J0237,SK070,Electrical Wiring,required,3
+J0237,SK072,PLC Programming,required,3
+J0237,SK067,Project Management,preferred,1
+J0237,SK064,Communication,preferred,1
+J0238,SK055,Linux,required,2
+J0238,SK048,Docker,required,3
+J0238,SK050,AWS,required,2
+J0238,SK053,CI/CD,required,2
+J0238,SK002,Python,required,2
+J0238,SK051,Azure,preferred,1
+J0238,SK047,Git,preferred,1
+J0239,SK001,Java,required,3
+J0239,SK010,Spring Boot,required,2
+J0239,SK027,SQL,required,2
+J0239,SK011,Hibernate,required,2
+J0239,SK017,REST API,preferred,1
+J0239,SK065,Teamwork,preferred,1
+J0240,SK071,AutoCAD,required,2
+J0240,SK070,Electrical Wiring,required,2
+J0240,SK072,PLC Programming,required,2
+J0240,SK068,CNC Machining,preferred,1
+J0241,SK022,React,required,2
+J0241,SK015,Node.js,required,1
+J0241,SK016,Express.js,required,2
+J0241,SK031,MongoDB,required,1
+J0241,SK027,SQL,required,1
+J0241,SK065,Teamwork,preferred,1
+J0242,SK048,Docker,required,3
+J0242,SK049,Kubernetes,required,3
+J0242,SK053,CI/CD,required,3
+J0242,SK064,Communication,preferred,1
+J0243,SK002,Python,required,3
+J0243,SK012,Django,required,3
+J0243,SK014,Flask,required,2
+J0243,SK032,Redis,required,2
+J0243,SK047,Git,preferred,1
+J0244,SK068,CNC Machining,required,2
+J0244,SK072,PLC Programming,required,2
+J0244,SK069,Welding,preferred,1
+J0245,SK056,Unit Testing,required,2
+J0245,SK058,Selenium,required,2
+J0245,SK027,SQL,required,3
+J0245,SK057,JUnit,required,3
+J0245,SK002,Python,required,2
+J0245,SK001,Java,preferred,1
+J0246,SK027,SQL,required,1
+J0246,SK019,Microservices,required,2
+J0246,SK057,JUnit,required,2
+J0246,SK011,Hibernate,preferred,1
+J0247,SK022,React,required,2
+J0247,SK020,HTML,required,2
+J0247,SK021,CSS,required,3
+J0247,SK026,Tailwind CSS,required,2
+J0247,SK025,Vue.js,required,1
+J0247,SK064,Communication,preferred,1
+J0247,SK004,TypeScript,preferred,1
+J0247,SK065,Teamwork,preferred,1
+J0248,SK002,Python,required,1
+J0248,SK041,Statistics,required,2
+J0248,SK037,TensorFlow,required,1
+J0248,SK035,NLP,preferred,1
+J0248,SK067,Project Management,preferred,1
+J0249,SK056,Unit Testing,required,3
+J0249,SK058,Selenium,required,2
+J0249,SK001,Java,required,2
+J0249,SK053,CI/CD,required,2
+J0249,SK064,Communication,preferred,1
+J0249,SK065,Teamwork,preferred,1
+J0249,SK067,Project Management,preferred,1
+J0250,SK048,Docker,required,3
+J0250,SK053,CI/CD,required,2
+J0250,SK054,Jenkins,required,3
+J0250,SK047,Git,required,2
+J0250,SK064,Communication,preferred,1
+J0251,SK055,Linux,required,3
+J0251,SK053,CI/CD,required,2
+J0251,SK047,Git,required,2
+J0251,SK051,Azure,required,2
+J0251,SK065,Teamwork,preferred,1
+J0251,SK048,Docker,preferred,1
+J0252,SK027,SQL,required,3
+J0252,SK046,Excel,required,1
+J0252,SK002,Python,required,3
+J0252,SK045,Tableau,required,3
+J0252,SK039,Pandas,required,3
+J0252,SK043,Data Visualization,preferred,1
+J0252,SK067,Project Management,preferred,1
+J0252,SK065,Teamwork,preferred,1
+J0253,SK027,SQL,required,1
+J0253,SK002,Python,required,3
+J0253,SK045,Tableau,required,2
+J0253,SK042,Data Analysis,required,1
+J0253,SK065,Teamwork,preferred,1
+J0253,SK066,Problem Solving,preferred,1
+J0253,SK044,Power BI,preferred,1
+J0254,SK001,Java,required,2
+J0254,SK028,MySQL,required,1
+J0254,SK047,Git,required,2
+J0254,SK011,Hibernate,required,3
+J0254,SK048,Docker,required,2
+J0254,SK057,JUnit,preferred,1
+J0254,SK010,Spring Boot,preferred,1
+J0255,SK022,React,required,2
+J0255,SK020,HTML,required,2
+J0255,SK021,CSS,required,3
+J0255,SK004,TypeScript,required,2
+J0255,SK047,Git,required,3
+J0255,SK064,Communication,preferred,1
+J0255,SK024,Angular,preferred,1
+J0255,SK067,Project Management,preferred,1
+J0256,SK001,Java,required,2
+J0256,SK017,REST API,required,2
+J0256,SK019,Microservices,required,2
+J0256,SK048,Docker,required,1
+J0256,SK057,JUnit,required,1
+J0256,SK066,Problem Solving,preferred,1
+J0256,SK028,MySQL,preferred,1
+J0256,SK047,Git,preferred,1
+J0257,SK003,JavaScript,required,3
+J0257,SK020,HTML,required,3
+J0257,SK026,Tailwind CSS,required,3
+J0257,SK023,Next.js,required,2
+J0257,SK066,Problem Solving,preferred,1
+J0258,SK071,AutoCAD,required,1
+J0258,SK069,Welding,required,3
+J0258,SK072,PLC Programming,required,1
+J0258,SK064,Communication,preferred,1
+J0259,SK001,Java,required,2
+J0259,SK010,Spring Boot,required,2
+J0259,SK027,SQL,required,2
+J0259,SK047,Git,required,2
+J0259,SK057,JUnit,required,2
+J0259,SK017,REST API,preferred,1
+J0259,SK064,Communication,preferred,1
+J0260,SK002,Python,required,1
+J0260,SK012,Django,required,1
+J0260,SK014,Flask,required,1
+J0260,SK032,Redis,required,1
+J0260,SK013,FastAPI,preferred,1
+J0260,SK029,PostgreSQL,preferred,1
+J0260,SK064,Communication,preferred,1
+J0261,SK003,JavaScript,required,3
+J0261,SK022,React,required,3
+J0261,SK016,Express.js,required,3
+J0261,SK031,MongoDB,required,3
+J0261,SK027,SQL,required,2
+J0261,SK047,Git,preferred,1
+J0262,SK022,React,required,2
+J0262,SK027,SQL,required,1
+J0262,SK047,Git,required,1
+J0262,SK015,Node.js,preferred,1
+J0262,SK064,Communication,preferred,1
+J0263,SK003,JavaScript,required,1
+J0263,SK020,HTML,required,2
+J0263,SK004,TypeScript,required,1
+J0263,SK025,Vue.js,preferred,1
+J0263,SK023,Next.js,preferred,1
+J0263,SK067,Project Management,preferred,1
+J0264,SK012,Django,required,2
+J0264,SK017,REST API,required,2
+J0264,SK048,Docker,required,3
+J0264,SK047,Git,required,3
+J0264,SK027,SQL,required,3
+J0264,SK066,Problem Solving,preferred,1
+J0264,SK029,PostgreSQL,preferred,1
+J0264,SK067,Project Management,preferred,1
+J0265,SK009,Kotlin,required,2
+J0265,SK059,Android Development,required,3
+J0265,SK017,REST API,required,1
+J0265,SK060,Flutter,required,1
+J0265,SK067,Project Management,preferred,1
+J0266,SK014,Flask,required,2
+J0266,SK029,PostgreSQL,required,2
+J0266,SK048,Docker,required,3
+J0266,SK027,SQL,required,3
+J0266,SK064,Communication,preferred,1
+J0266,SK032,Redis,preferred,1
+J0266,SK017,REST API,preferred,1
+J0267,SK015,Node.js,required,3
+J0267,SK017,REST API,required,3
+J0267,SK047,Git,required,2
+J0267,SK048,Docker,required,3
+J0267,SK064,Communication,preferred,1
+J0267,SK022,React,preferred,1
+J0268,SK001,Java,required,3
+J0268,SK057,JUnit,required,1
+J0268,SK002,Python,required,2
+J0268,SK066,Problem Solving,preferred,1
+J0269,SK033,Machine Learning,required,3
+J0269,SK039,Pandas,required,1
+J0269,SK035,NLP,required,3
+J0269,SK040,NumPy,preferred,1
+J0270,SK003,JavaScript,required,1
+J0270,SK022,React,required,2
+J0270,SK021,CSS,required,1
+J0270,SK026,Tailwind CSS,required,1
+J0270,SK025,Vue.js,required,1
+J0270,SK024,Angular,preferred,1
+J0271,SK002,Python,required,1
+J0271,SK039,Pandas,required,2
+J0271,SK041,Statistics,required,3
+J0271,SK037,TensorFlow,required,3
+J0271,SK035,NLP,required,1
+J0271,SK027,SQL,preferred,1
+J0272,SK003,JavaScript,required,2
+J0272,SK022,React,required,3
+J0272,SK026,Tailwind CSS,required,2
+J0272,SK020,HTML,preferred,1
+J0273,SK003,JavaScript,required,1
+J0273,SK022,React,required,3
+J0273,SK016,Express.js,required,2
+J0273,SK017,REST API,required,3
+J0273,SK047,Git,required,3
+J0273,SK066,Problem Solving,preferred,1
+J0273,SK027,SQL,preferred,1
+J0273,SK048,Docker,preferred,1
+J0274,SK014,Flask,required,2
+J0274,SK048,Docker,required,1
+J0274,SK047,Git,required,2
+J0274,SK027,SQL,preferred,1
+J0274,SK065,Teamwork,preferred,1
+J0275,SK003,JavaScript,required,2
+J0275,SK004,TypeScript,required,2
+J0275,SK026,Tailwind CSS,required,3
+J0275,SK023,Next.js,required,3
+J0275,SK025,Vue.js,required,2
+J0275,SK020,HTML,preferred,1
+J0275,SK066,Problem Solving,preferred,1
+J0276,SK002,Python,required,1
+J0276,SK012,Django,required,2
+J0276,SK029,PostgreSQL,required,3
+J0276,SK048,Docker,required,2
+J0276,SK027,SQL,required,2
+J0276,SK017,REST API,preferred,1
+J0277,SK002,Python,required,2
+J0277,SK036,Scikit-learn,required,3
+J0277,SK039,Pandas,required,3
+J0277,SK038,PyTorch,required,3
+J0277,SK035,NLP,required,3
+J0277,SK034,Deep Learning,preferred,1
+J0277,SK041,Statistics,preferred,1
+J0277,SK064,Communication,preferred,1
+J0278,SK014,Flask,required,1
+J0278,SK029,PostgreSQL,required,1
+J0278,SK032,Redis,required,3
+J0278,SK002,Python,preferred,1
+J0279,SK001,Java,required,3
+J0279,SK047,Git,required,2
+J0279,SK011,Hibernate,required,2
+J0279,SK019,Microservices,required,2
+J0279,SK048,Docker,required,3
+J0279,SK010,Spring Boot,preferred,1
+J0279,SK057,JUnit,preferred,1
+J0279,SK066,Problem Solving,preferred,1
+J0280,SK001,Java,required,2
+J0280,SK010,Spring Boot,required,1
+J0280,SK027,SQL,required,2
+J0280,SK011,Hibernate,required,2
+J0280,SK019,Microservices,required,3
+J0280,SK017,REST API,preferred,1
+J0280,SK064,Communication,preferred,1
+J0280,SK028,MySQL,preferred,1
+J0281,SK001,Java,required,2
+J0281,SK028,MySQL,required,1
+J0281,SK019,Microservices,required,2
+J0281,SK027,SQL,preferred,1
+J0282,SK003,JavaScript,required,2
+J0282,SK017,REST API,required,2
+J0282,SK047,Git,required,3
+J0282,SK031,MongoDB,preferred,1
+J0282,SK015,Node.js,preferred,1
+J0282,SK064,Communication,preferred,1
+J0283,SK002,Python,required,3
+J0283,SK013,FastAPI,required,3
+J0283,SK014,Flask,required,1
+J0283,SK029,PostgreSQL,required,2
+J0283,SK027,SQL,required,1
+J0283,SK017,REST API,preferred,1
+J0283,SK032,Redis,preferred,1
+J0284,SK010,Spring Boot,required,2
+J0284,SK047,Git,required,2
+J0284,SK048,Docker,required,3
+J0284,SK065,Teamwork,preferred,1
+J0284,SK066,Problem Solving,preferred,1
+J0284,SK064,Communication,preferred,1
+J0285,SK046,Excel,required,3
+J0285,SK045,Tableau,required,1
+J0285,SK043,Data Visualization,required,1
+J0285,SK041,Statistics,preferred,1
+J0285,SK039,Pandas,preferred,1
+J0286,SK058,Selenium,required,2
+J0286,SK001,Java,required,2
+J0286,SK057,JUnit,required,3
+J0286,SK064,Communication,preferred,1
+J0286,SK047,Git,preferred,1
+J0287,SK061,Cybersecurity,required,2
+J0287,SK063,Networking,required,2
+J0287,SK055,Linux,required,2
+J0287,SK002,Python,required,2
+J0287,SK062,Network Security,preferred,1
+J0287,SK064,Communication,preferred,1
+J0287,SK065,Teamwork,preferred,1
+J0288,SK003,JavaScript,required,2
+J0288,SK022,React,required,3
+J0288,SK047,Git,required,2
+J0288,SK004,TypeScript,required,3
+J0288,SK017,REST API,preferred,1
+J0288,SK067,Project Management,preferred,1
+J0288,SK027,SQL,preferred,1
+J0289,SK010,Spring Boot,required,2
+J0289,SK047,Git,required,3
+J0289,SK011,Hibernate,required,3
+J0289,SK019,Microservices,required,2
+J0289,SK066,Problem Solving,preferred,1
+J0289,SK067,Project Management,preferred,1
+J0289,SK001,Java,preferred,1
+J0290,SK061,Cybersecurity,required,3
+J0290,SK062,Network Security,required,2
+J0290,SK063,Networking,required,2
+J0290,SK055,Linux,required,1
+J0290,SK002,Python,required,2
+J0290,SK065,Teamwork,preferred,1
+J0290,SK064,Communication,preferred,1
+J0291,SK020,HTML,required,3
+J0291,SK004,TypeScript,required,2
+J0291,SK026,Tailwind CSS,required,2
+J0291,SK025,Vue.js,required,2
+J0291,SK003,JavaScript,preferred,1
+J0291,SK021,CSS,preferred,1
+J0291,SK023,Next.js,preferred,1
+J0292,SK002,Python,required,1
+J0292,SK033,Machine Learning,required,2
+J0292,SK039,Pandas,required,2
+J0292,SK041,Statistics,required,2
+J0292,SK034,Deep Learning,required,3
+J0292,SK035,NLP,preferred,1
+J0292,SK067,Project Management,preferred,1
+J0292,SK065,Teamwork,preferred,1
+J0293,SK027,SQL,required,3
+J0293,SK002,Python,required,3
+J0293,SK044,Power BI,required,2
+J0293,SK039,Pandas,required,2
+J0293,SK065,Teamwork,preferred,1
+J0293,SK043,Data Visualization,preferred,1
+J0294,SK002,Python,required,2
+J0294,SK039,Pandas,required,2
+J0294,SK037,TensorFlow,required,3
+J0294,SK035,NLP,required,3
+J0294,SK040,NumPy,preferred,1
+J0294,SK065,Teamwork,preferred,1
+J0295,SK002,Python,required,1
+J0295,SK033,Machine Learning,required,1
+J0295,SK039,Pandas,required,2
+J0295,SK041,Statistics,required,2
+J0295,SK037,TensorFlow,preferred,1
+J0296,SK001,Java,required,2
+J0296,SK017,REST API,required,2
+J0296,SK011,Hibernate,required,2
+J0296,SK019,Microservices,required,2
+J0296,SK066,Problem Solving,preferred,1
+J0297,SK002,Python,required,2
+J0297,SK032,Redis,required,2
+J0297,SK027,SQL,required,3
+J0297,SK029,PostgreSQL,preferred,1
+J0297,SK017,REST API,preferred,1
+J0297,SK012,Django,preferred,1
+J0298,SK004,TypeScript,required,1
+J0298,SK026,Tailwind CSS,required,1
+J0298,SK025,Vue.js,required,2
+J0298,SK047,Git,preferred,1
+J0298,SK023,Next.js,preferred,1
+J0298,SK020,HTML,preferred,1
+J0299,SK002,Python,required,2
+J0299,SK012,Django,required,2
+J0299,SK013,FastAPI,required,1
+J0299,SK017,REST API,required,2
+J0299,SK032,Redis,required,2
+J0299,SK066,Problem Solving,preferred,1
+J0299,SK067,Project Management,preferred,1
+J0299,SK048,Docker,preferred,1
+J0300,SK010,Spring Boot,required,2
+J0300,SK027,SQL,required,3
+J0300,SK047,Git,required,1
+J0300,SK057,JUnit,required,1
+J0300,SK001,Java,preferred,1
+J0300,SK064,Communication,preferred,1
+J0300,SK011,Hibernate,preferred,1
