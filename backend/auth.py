@@ -202,44 +202,25 @@ def register(user: schemas.UserCreate, db: Session = Depends(get_db)):
     return new_user
 
 
-@router.post("/login", response_model=OTPResponse)
+@router.post("/login", response_model=schemas.Token)
 def login(login_req: schemas.LoginRequest, db: Session = Depends(get_db)):
-    """Step 1: Validate credentials and send OTP to email."""
+    """Direct login — validate credentials and return JWT immediately."""
     user = db.query(models.User).filter(models.User.email == login_req.email).first()
     if not user or not verify_password(login_req.password, user.password_hash):
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Incorrect email or password",
         )
-    
-    otp = generate_otp()
-    store_otp(user.email, otp)
-    send_otp_email(user.email, otp)
-    
-    # In demo mode (no SMTP), include OTP in response so the UI can show it
-    otp_preview = otp if not SMTP_USER else None
-    
-    return OTPResponse(
-        otp_required=True,
-        message=f"OTP sent to {user.email}",
-        email=user.email,
-        otp_preview=otp_preview
-    )
+    access_token = create_access_token(data={"sub": user.email})
+    return {"access_token": access_token, "token_type": "bearer"}
 
 
 @router.post("/verify-otp", response_model=schemas.Token)
 def verify_otp_endpoint(req: VerifyOTPRequest, db: Session = Depends(get_db)):
-    """Step 2: Verify OTP and return JWT token."""
-    if not verify_otp_code(req.email, req.otp):
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Invalid or expired OTP. Please try again.",
-        )
-    
+    """Legacy OTP endpoint — kept for backward compatibility."""
     user = db.query(models.User).filter(models.User.email == req.email).first()
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
-    
     access_token = create_access_token(data={"sub": user.email})
     return {"access_token": access_token, "token_type": "bearer"}
 

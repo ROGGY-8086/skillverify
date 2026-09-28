@@ -27,25 +27,24 @@ export const AuthProvider = ({ children }) => {
     initAuth();
   }, []);
 
-  // Step 1: Validate credentials and request OTP
+  // Direct login — credentials → JWT token in one step
   const loginRequestOTP = async (email, password) => {
     const res = await client.post('/api/auth/login', { email, password });
-    // Returns { otp_required, message, email, otp_preview }
-    return res.data;
-  };
-
-  // Step 2: Verify OTP and get token
-  const loginVerifyOTP = async (email, otp) => {
-    const res = await client.post('/api/auth/verify-otp', { email, otp });
+    // Now returns access_token directly
     const accessToken = res.data.access_token;
     setToken(accessToken);
     localStorage.setItem('token', accessToken);
-    
     const userRes = await client.get('/api/auth/me', {
       headers: { Authorization: `Bearer ${accessToken}` }
     });
     setUser(userRes.data);
-    return userRes.data;
+    // Return shape Login.jsx expects for OTP step — skip OTP by passing token directly
+    return { _token: accessToken, _user: userRes.data };
+  };
+
+  // No-op — kept so Login.jsx doesn't crash (OTP step is skipped now)
+  const loginVerifyOTP = async (email, otp) => {
+    return user;
   };
 
   // Resend OTP

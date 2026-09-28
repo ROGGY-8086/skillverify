@@ -37,7 +37,7 @@ const Login = () => {
     }
   }, [step]);
 
-  // Step 1: Submit credentials
+  // Step 1: Submit credentials → now logs in directly
   const handleCredentialSubmit = async (e) => {
     e.preventDefault();
     setError('');
@@ -45,10 +45,13 @@ const Login = () => {
 
     try {
       const data = await loginRequestOTP(email, password);
-      setOtpPreview(data.otp_preview || null);
-      setStep('otp');
-      setCountdown(30);
-      setOtp(['', '', '', '', '', '']);
+      // Direct login — data has _user with role
+      const role = data._user?.role;
+      if (role === 'employer') {
+        navigate('/employer/dashboard');
+      } else {
+        navigate('/candidate/dashboard');
+      }
     } catch (err) {
       setError(err.response?.data?.detail || 'Invalid email or password.');
     } finally {
