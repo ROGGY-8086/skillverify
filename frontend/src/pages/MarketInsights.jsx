@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell, LineChart, Line } from 'recharts';
-import { TrendingUp, Users, MapPin, Code2, Briefcase, Award } from 'lucide-react';
+import { TrendingUp, Users, MapPin, Code2, Briefcase, Award, Activity } from 'lucide-react';
 import client from '../api/client';
 
-const COLORS = ['#14B8A6', '#0ea5e9', '#3b82f6', '#6366f1', '#8b5cf6', '#d946ef'];
+const COLORS = ['#3b82f6', '#6366f1', '#8b5cf6', '#0ea5e9', '#38bdf8', '#818cf8'];
 
 const StatCard = ({ icon: Icon, title, value, subtitle }) => (
-  <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex items-start gap-4">
-    <div className="p-3 bg-teal-50 rounded-lg">
-      <Icon className="h-6 w-6 text-accent" />
+  <div className="bg-white/90 backdrop-blur-sm p-6 rounded-[1.5rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-200/60 flex items-start gap-5 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all cursor-default">
+    <div className="p-3.5 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100/50 shadow-sm">
+      <Icon className="h-6 w-6 text-blue-600" />
     </div>
     <div>
-      <p className="text-sm font-medium text-slate-500 mb-1">{title}</p>
-      <h3 className="text-2xl font-bold text-slate-900">{value}</h3>
-      {subtitle && <p className="text-sm text-slate-500 mt-1">{subtitle}</p>}
+      <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">{title}</p>
+      <h3 className="text-3xl font-black text-slate-800 tracking-tight">{value}</h3>
+      {subtitle && <p className="text-sm font-medium text-slate-500 mt-1">{subtitle}</p>}
     </div>
   </div>
 );
@@ -44,18 +44,18 @@ const MarketInsights = () => {
 
   if (loading) {
     return (
-      <div className="min-h-[80vh] flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-accent"></div>
+      <div className="min-h-[80vh] flex items-center justify-center bg-slate-50">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500"></div>
       </div>
     );
   }
 
   if (errorMsg || !stats) {
     return (
-      <div className="min-h-[80vh] flex items-center justify-center flex-col gap-4">
+      <div className="min-h-[80vh] flex items-center justify-center flex-col gap-4 bg-slate-50">
         <TrendingUp className="h-16 w-16 text-slate-300" />
         <h2 className="text-xl font-bold text-slate-700">Market Insights Unavailable</h2>
-        <p className="text-slate-500">{errorMsg || "Failed to load dataset statistics."}</p>
+        <p className="text-slate-500 font-medium">{errorMsg || "Failed to load dataset statistics."}</p>
       </div>
     );
   }
@@ -66,15 +66,22 @@ const MarketInsights = () => {
   }));
 
   return (
-    <div className="bg-slate-50 min-h-screen pt-32 pb-10 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto space-y-8">
+    <div className="bg-slate-50 min-h-screen pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      
+      {/* Background Subtle Glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-6xl h-[400px] bg-gradient-to-b from-blue-500/10 via-indigo-500/5 to-transparent blur-[80px] pointer-events-none rounded-full"></div>
+
+      <div className="max-w-7xl mx-auto space-y-12 relative z-10">
         
-        <div className="flex items-center justify-between">
+        {/* Header Section */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
-            <h1 className="text-3xl font-bold text-slate-900">AI Job Market Insights</h1>
-            <p className="mt-2 text-slate-600 flex items-center gap-2">
-              <TrendingUp className="h-4 w-4" />
-              Live market trends trained on {stats.total_jobs_analyzed.toLocaleString()}+ global job postings
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-200/60 bg-blue-50/50 text-xs font-bold text-blue-600 mb-4 backdrop-blur-sm uppercase tracking-wider">
+              <Activity className="w-3.5 h-3.5 animate-pulse" /> Live Data
+            </div>
+            <h1 className="text-4xl font-black text-slate-900 tracking-tight">AI Job Market Insights</h1>
+            <p className="mt-3 text-lg font-medium text-slate-500">
+              Real-time analytics trained on <span className="text-slate-800 font-bold">{stats.total_jobs_analyzed.toLocaleString()}+</span> global job postings.
             </p>
           </div>
         </div>
@@ -107,77 +114,97 @@ const MarketInsights = () => {
           />
         </div>
 
+        {/* Charts Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           
-          {/* Job Role Distribution (Bar Chart) */}
-          <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-            <h3 className="text-lg font-bold text-slate-800 mb-6">Top Roles in Demand</h3>
+          {/* Reusable Gradient Defs for Charts */}
+          <svg style={{ height: 0 }}>
+            <defs>
+              <linearGradient id="blueGradient" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stopColor="#3b82f6" />
+                <stop offset="100%" stopColor="#6366f1" />
+              </linearGradient>
+              <linearGradient id="verticalBlue" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#6366f1" />
+                <stop offset="100%" stopColor="#3b82f6" />
+              </linearGradient>
+            </defs>
+          </svg>
+
+          {/* Job Role Distribution */}
+          <div className="bg-white/90 backdrop-blur-sm p-8 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-200/60 relative overflow-hidden transition-all hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 to-blue-500"></div>
+            <h3 className="text-xl font-bold text-slate-800 mb-8 tracking-tight">Top Roles in Demand</h3>
             <div className="h-80">
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={stats.top_roles} layout="vertical" margin={{ top: 5, right: 30, left: 60, bottom: 5 }}>
-                  <CartesianGrid strokeDasharray="3 3" horizontal={true} vertical={false} />
-                  <XAxis type="number" />
-                  <YAxis type="category" dataKey="name" width={100} tick={{fontSize: 12}} />
-                  <Tooltip cursor={{fill: '#f8fafc'}} />
-                  <Bar dataKey="value" fill="#14B8A6" radius={[0, 4, 4, 0]} barSize={32} />
+                  <CartesianGrid strokeDasharray="3 3" horizontal={true} vertical={false} stroke="#e2e8f0" />
+                  <XAxis type="number" tick={{fill: '#64748b', fontSize: 12, fontWeight: 500}} axisLine={false} tickLine={false} />
+                  <YAxis type="category" dataKey="name" width={100} tick={{fill: '#475569', fontSize: 12, fontWeight: 600}} axisLine={false} tickLine={false} />
+                  <Tooltip cursor={{fill: '#f8fafc'}} contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 4px 20px rgba(0,0,0,0.08)', fontWeight: 600 }} />
+                  <Bar dataKey="value" fill="url(#blueGradient)" radius={[0, 6, 6, 0]} barSize={24} />
                 </BarChart>
               </ResponsiveContainer>
             </div>
           </div>
 
-          {/* Work Model Distribution (Pie Chart) */}
-          <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-            <h3 className="text-lg font-bold text-slate-800 mb-6">Work Model Preference</h3>
+          {/* Work Model Distribution */}
+          <div className="bg-white/90 backdrop-blur-sm p-8 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-200/60 relative overflow-hidden transition-all hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-indigo-500"></div>
+            <h3 className="text-xl font-bold text-slate-800 mb-8 tracking-tight">Work Model Preference</h3>
             <div className="h-80">
               <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
                   <Pie
                     data={stats.remote_distribution}
                     cx="50%"
-                    cy="50%"
+                    cy="45%"
                     innerRadius={80}
                     outerRadius={120}
                     paddingAngle={5}
                     dataKey="value"
+                    stroke="none"
                   >
                     {stats.remote_distribution.map((entry, index) => (
                       <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                     ))}
                   </Pie>
-                  <Tooltip />
-                  <Legend verticalAlign="bottom" height={36}/>
+                  <Tooltip contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 4px 20px rgba(0,0,0,0.08)', fontWeight: 600 }} />
+                  <Legend verticalAlign="bottom" height={36} iconType="circle" wrapperStyle={{ fontWeight: 600, color: '#475569', fontSize: '13px' }}/>
                 </PieChart>
               </ResponsiveContainer>
             </div>
           </div>
 
           {/* Top Industries */}
-          <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-            <h3 className="text-lg font-bold text-slate-800 mb-6">Hiring by Industry</h3>
+          <div className="bg-white/90 backdrop-blur-sm p-8 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-200/60 relative overflow-hidden transition-all hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-400 to-purple-500"></div>
+            <h3 className="text-xl font-bold text-slate-800 mb-8 tracking-tight">Hiring by Industry</h3>
             <div className="h-80">
               <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={stats.top_industries}>
-                  <CartesianGrid strokeDasharray="3 3" vertical={false} />
-                  <XAxis dataKey="name" />
-                  <YAxis />
-                  <Tooltip cursor={{fill: '#f8fafc'}} />
-                  <Bar dataKey="value" fill="#3b82f6" radius={[4, 4, 0, 0]} barSize={40} />
+                <BarChart data={stats.top_industries} margin={{ top: 20, right: 10, left: -20, bottom: 5 }}>
+                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e2e8f0" />
+                  <XAxis dataKey="name" tick={{fill: '#475569', fontSize: 12, fontWeight: 600}} axisLine={false} tickLine={false} dy={10} />
+                  <YAxis tick={{fill: '#64748b', fontSize: 12, fontWeight: 500}} axisLine={false} tickLine={false} />
+                  <Tooltip cursor={{fill: '#f8fafc'}} contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 4px 20px rgba(0,0,0,0.08)', fontWeight: 600 }} />
+                  <Bar dataKey="value" fill="url(#verticalBlue)" radius={[6, 6, 0, 0]} barSize={40} />
                 </BarChart>
               </ResponsiveContainer>
             </div>
           </div>
 
           {/* Average Experience by Level */}
-          <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-            <h3 className="text-lg font-bold text-slate-800 mb-6">Average Years of Experience Required</h3>
+          <div className="bg-white/90 backdrop-blur-sm p-8 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-200/60 relative overflow-hidden transition-all hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 to-cyan-500"></div>
+            <h3 className="text-xl font-bold text-slate-800 mb-8 tracking-tight">Average Experience Required</h3>
             <div className="h-80">
               <ResponsiveContainer width="100%" height="100%">
-                <LineChart data={expData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
-                  <CartesianGrid strokeDasharray="3 3" vertical={false} />
-                  <XAxis dataKey="name" />
-                  <YAxis />
-                  <Tooltip />
-                  <Line type="monotone" dataKey="years" stroke="#d946ef" strokeWidth={3} dot={{r: 6}} activeDot={{r: 8}} />
+                <LineChart data={expData} margin={{ top: 20, right: 30, left: -20, bottom: 5 }}>
+                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e2e8f0" />
+                  <XAxis dataKey="name" tick={{fill: '#475569', fontSize: 12, fontWeight: 600}} axisLine={false} tickLine={false} dy={10} />
+                  <YAxis tick={{fill: '#64748b', fontSize: 12, fontWeight: 500}} axisLine={false} tickLine={false} />
+                  <Tooltip contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 4px 20px rgba(0,0,0,0.08)', fontWeight: 600 }} />
+                  <Line type="monotone" dataKey="years" stroke="#3b82f6" strokeWidth={4} dot={{r: 6, fill: '#fff', stroke: '#3b82f6', strokeWidth: 2}} activeDot={{r: 8, fill: '#3b82f6', stroke: '#fff', strokeWidth: 2}} />
                 </LineChart>
               </ResponsiveContainer>
             </div>
