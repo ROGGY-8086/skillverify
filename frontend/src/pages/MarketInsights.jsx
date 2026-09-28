@@ -21,14 +21,20 @@ const StatCard = ({ icon: Icon, title, value, subtitle }) => (
 const MarketInsights = () => {
   const [stats, setStats] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [errorMsg, setErrorMsg] = useState(null);
 
   useEffect(() => {
     const fetchStats = async () => {
       try {
         const res = await client.get('/api/stats/market-insights');
-        setStats(res.data);
+        if (res.data.error) {
+          setErrorMsg(res.data.error);
+        } else {
+          setStats(res.data);
+        }
       } catch (err) {
         console.error("Failed to load market insights", err);
+        setErrorMsg(err.message || "Network Error: Could not connect to API");
       } finally {
         setLoading(false);
       }
@@ -44,12 +50,12 @@ const MarketInsights = () => {
     );
   }
 
-  if (!stats || stats.error) {
+  if (errorMsg || !stats) {
     return (
       <div className="min-h-[80vh] flex items-center justify-center flex-col gap-4">
         <TrendingUp className="h-16 w-16 text-slate-300" />
         <h2 className="text-xl font-bold text-slate-700">Market Insights Unavailable</h2>
-        <p className="text-slate-500">{stats?.error || "Failed to load dataset statistics."}</p>
+        <p className="text-slate-500">{errorMsg || "Failed to load dataset statistics."}</p>
       </div>
     );
   }
