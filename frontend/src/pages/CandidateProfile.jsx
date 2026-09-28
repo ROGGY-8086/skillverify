@@ -6,6 +6,8 @@ import CredentialStatus from '../components/CredentialStatus';
 
 const CandidateProfile = () => {
   const [profile, setProfile] = useState(null);
+  const [avatar, setAvatar] = useState(null);
+
   const [isEditing, setIsEditing] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [isSaving, setIsSaving] = useState(false);
@@ -20,10 +22,28 @@ const CandidateProfile = () => {
     fetchProfile();
   }, []);
 
+
+  const handleAvatarUpload = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setAvatar(reader.result);
+        if (profile?.user?.id) {
+          localStorage.setItem(`avatar_${profile.user.id}`, reader.result);
+        }
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
   const fetchProfile = async () => {
     try {
       const res = await client.get('/api/candidates/me');
       setProfile(res.data);
+      if (res.data.user?.id) {
+        setAvatar(localStorage.getItem(`avatar_${res.data.user.id}`));
+      }
       setFormData({
         headline: res.data.headline || '',
         location: res.data.location || '',
@@ -71,13 +91,21 @@ const CandidateProfile = () => {
       <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden mb-8">
         <div className="h-32 bg-primary"></div>
         <div className="px-8 pb-8 relative">
-          <div className="absolute -top-16 left-8 bg-white p-1.5 rounded-full">
-            <div className="w-24 h-24 bg-slate-100 rounded-full flex items-center justify-center border-4 border-white shadow-sm">
-              <User className="h-12 w-12 text-slate-400" />
+          <div className="absolute -top-20 left-8 bg-white p-1.5 rounded-full z-10">
+            <div className="w-28 h-28 bg-slate-100 rounded-full flex items-center justify-center border-4 border-white shadow-sm overflow-hidden relative group cursor-pointer">
+              {avatar ? (
+                <img src={avatar} alt="Profile" className="w-full h-full object-cover" />
+              ) : (
+                <User className="h-12 w-12 text-slate-400" />
+              )}
+              <label className="absolute inset-0 bg-slate-900/40 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer">
+                <span className="text-white text-xs font-medium">Upload</span>
+                <input type="file" accept="image/*" className="hidden" onChange={handleAvatarUpload} />
+              </label>
             </div>
           </div>
           
-          <div className="mt-12 flex justify-between items-start">
+          <div className="mt-20 flex justify-between items-start">
             <div>
               <h1 className="text-2xl font-bold text-slate-900">{profile?.user?.name}</h1>
               
