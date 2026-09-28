@@ -89,10 +89,11 @@ const CandidateProfile = () => {
       
       {/* Header / Basic Info */}
       <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden mb-8">
-        <div className="h-32 bg-primary"></div>
-        <div className="px-8 pb-8 relative">
-          <div className="absolute -top-20 left-8 bg-white p-1.5 rounded-full z-10">
-            <div className="w-28 h-28 bg-slate-100 rounded-full flex items-center justify-center border-4 border-white shadow-sm overflow-hidden relative group cursor-pointer">
+        
+        {/* Dark Blue Cover Box with Avatar */}
+        <div className="bg-primary pt-12 pb-6 px-8 flex items-end">
+          <div className="bg-white p-1.5 rounded-full inline-block">
+            <div className="w-28 h-28 bg-slate-100 rounded-full flex items-center justify-center border-4 border-white shadow-sm overflow-hidden relative group cursor-pointer shrink-0">
               {avatar ? (
                 <img src={avatar} alt="Profile" className="w-full h-full object-cover" />
               ) : (
@@ -104,10 +105,13 @@ const CandidateProfile = () => {
               </label>
             </div>
           </div>
-          
-          <div className="mt-20 flex justify-between items-start">
-            <div>
-              <h1 className="text-2xl font-bold text-slate-900">{profile?.user?.name}</h1>
+        </div>
+        
+        {/* Content Area */}
+        <div className="px-8 pb-8 pt-6">
+          <div className="flex justify-between items-start">
+            <div className="w-full max-w-2xl">
+              {profile?.user?.name && <h1 className="text-2xl font-bold text-slate-900 mb-2">{profile.user.name}</h1>}
               
               {isEditing ? (
                 <div className="mt-4 space-y-4 max-w-lg">
