@@ -114,11 +114,11 @@ const MarketInsights = () => {
           />
         </div>
 
-        {/* Charts Grid */}
+        {/* Charts Grid — 2x2 symmetric */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           
-          {/* Reusable Gradient Defs for Charts */}
-          <svg style={{ height: 0 }}>
+          {/* Reusable Gradient Defs */}
+          <svg style={{ height: 0, position: 'absolute' }}>
             <defs>
               <linearGradient id="blueGradient" x1="0" y1="0" x2="1" y2="0">
                 <stop offset="0%" stopColor="#3b82f6" />
@@ -131,86 +131,76 @@ const MarketInsights = () => {
             </defs>
           </svg>
 
-          {/* Job Role Distribution */}
-          <div className="bg-white/90 backdrop-blur-sm p-8 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-200/60 relative overflow-hidden transition-all hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 to-blue-500"></div>
-            <h3 className="text-xl font-bold text-slate-800 mb-8 tracking-tight">Top Roles in Demand</h3>
-            <div className="h-80">
-              <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={stats.top_roles} layout="vertical" margin={{ top: 5, right: 30, left: 60, bottom: 5 }}>
+          {/* Card helper styles applied uniformly to all 4 */}
+          {[
+            {
+              title: 'Top Roles in Demand',
+              gradient: 'from-sky-400 to-blue-500',
+              chart: (
+                <BarChart data={stats.top_roles} layout="vertical" margin={{ top: 4, right: 16, left: 80, bottom: 4 }}>
                   <CartesianGrid strokeDasharray="3 3" horizontal={true} vertical={false} stroke="#e2e8f0" />
-                  <XAxis type="number" tick={{fill: '#64748b', fontSize: 12, fontWeight: 500}} axisLine={false} tickLine={false} />
-                  <YAxis type="category" dataKey="name" width={100} tick={{fill: '#475569', fontSize: 12, fontWeight: 600}} axisLine={false} tickLine={false} />
-                  <Tooltip cursor={{fill: '#f8fafc'}} contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 4px 20px rgba(0,0,0,0.08)', fontWeight: 600 }} />
-                  <Bar dataKey="value" fill="url(#blueGradient)" radius={[0, 6, 6, 0]} barSize={24} />
+                  <XAxis type="number" tick={{ fill: '#64748b', fontSize: 11, fontWeight: 500 }} axisLine={false} tickLine={false} />
+                  <YAxis type="category" dataKey="name" width={75} tick={{ fill: '#475569', fontSize: 11, fontWeight: 600 }} axisLine={false} tickLine={false} />
+                  <Tooltip cursor={{ fill: '#f8fafc' }} contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 4px 20px rgba(0,0,0,0.08)', fontWeight: 600 }} />
+                  <Bar dataKey="value" fill="url(#blueGradient)" radius={[0, 6, 6, 0]} barSize={20} />
                 </BarChart>
-              </ResponsiveContainer>
-            </div>
-          </div>
-
-          {/* Work Model Distribution */}
-          <div className="bg-white/90 backdrop-blur-sm p-8 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-200/60 relative overflow-hidden transition-all hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-indigo-500"></div>
-            <h3 className="text-xl font-bold text-slate-800 mb-8 tracking-tight">Work Model Preference</h3>
-            <div className="h-80">
-              <ResponsiveContainer width="100%" height="100%">
-                <PieChart>
-                  <Pie
-                    data={stats.remote_distribution}
-                    cx="50%"
-                    cy="45%"
-                    innerRadius={80}
-                    outerRadius={120}
-                    paddingAngle={5}
-                    dataKey="value"
-                    stroke="none"
-                  >
+              )
+            },
+            {
+              title: 'Work Model Preference',
+              gradient: 'from-blue-400 to-indigo-500',
+              chart: (
+                <PieChart margin={{ top: 4, right: 4, left: 4, bottom: 4 }}>
+                  <Pie data={stats.remote_distribution} cx="50%" cy="44%" innerRadius={70} outerRadius={110} paddingAngle={5} dataKey="value" stroke="none">
                     {stats.remote_distribution.map((entry, index) => (
                       <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                     ))}
                   </Pie>
                   <Tooltip contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 4px 20px rgba(0,0,0,0.08)', fontWeight: 600 }} />
-                  <Legend verticalAlign="bottom" height={36} iconType="circle" wrapperStyle={{ fontWeight: 600, color: '#475569', fontSize: '13px' }}/>
+                  <Legend verticalAlign="bottom" height={36} iconType="circle" wrapperStyle={{ fontWeight: 600, color: '#475569', fontSize: '12px' }} />
                 </PieChart>
-              </ResponsiveContainer>
-            </div>
-          </div>
-
-          {/* Top Industries */}
-          <div className="bg-white/90 backdrop-blur-sm p-8 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-200/60 relative overflow-hidden transition-all hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-400 to-purple-500"></div>
-            <h3 className="text-xl font-bold text-slate-800 mb-8 tracking-tight">Hiring by Industry</h3>
-            <div className="h-80">
-              <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={stats.top_industries} margin={{ top: 20, right: 10, left: -20, bottom: 5 }}>
+              )
+            },
+            {
+              title: 'Hiring by Industry',
+              gradient: 'from-indigo-400 to-purple-500',
+              chart: (
+                <BarChart data={stats.top_industries} margin={{ top: 4, right: 16, left: 4, bottom: 4 }}>
                   <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e2e8f0" />
-                  <XAxis dataKey="name" tick={{fill: '#475569', fontSize: 12, fontWeight: 600}} axisLine={false} tickLine={false} dy={10} />
-                  <YAxis tick={{fill: '#64748b', fontSize: 12, fontWeight: 500}} axisLine={false} tickLine={false} />
-                  <Tooltip cursor={{fill: '#f8fafc'}} contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 4px 20px rgba(0,0,0,0.08)', fontWeight: 600 }} />
-                  <Bar dataKey="value" fill="url(#verticalBlue)" radius={[6, 6, 0, 0]} barSize={40} />
+                  <XAxis dataKey="name" tick={{ fill: '#475569', fontSize: 11, fontWeight: 600 }} axisLine={false} tickLine={false} dy={8} />
+                  <YAxis tick={{ fill: '#64748b', fontSize: 11, fontWeight: 500 }} axisLine={false} tickLine={false} />
+                  <Tooltip cursor={{ fill: '#f8fafc' }} contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 4px 20px rgba(0,0,0,0.08)', fontWeight: 600 }} />
+                  <Bar dataKey="value" fill="url(#verticalBlue)" radius={[6, 6, 0, 0]} barSize={36} />
                 </BarChart>
-              </ResponsiveContainer>
-            </div>
-          </div>
-
-          {/* Average Experience by Level */}
-          <div className="bg-white/90 backdrop-blur-sm p-8 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-200/60 relative overflow-hidden transition-all hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 to-cyan-500"></div>
-            <h3 className="text-xl font-bold text-slate-800 mb-8 tracking-tight">Average Experience Required</h3>
-            <div className="h-80">
-              <ResponsiveContainer width="100%" height="100%">
-                <LineChart data={expData} margin={{ top: 20, right: 30, left: -20, bottom: 5 }}>
+              )
+            },
+            {
+              title: 'Average Experience Required',
+              gradient: 'from-sky-400 to-cyan-500',
+              chart: (
+                <LineChart data={expData} margin={{ top: 4, right: 16, left: 4, bottom: 4 }}>
                   <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e2e8f0" />
-                  <XAxis dataKey="name" tick={{fill: '#475569', fontSize: 12, fontWeight: 600}} axisLine={false} tickLine={false} dy={10} />
-                  <YAxis tick={{fill: '#64748b', fontSize: 12, fontWeight: 500}} axisLine={false} tickLine={false} />
+                  <XAxis dataKey="name" tick={{ fill: '#475569', fontSize: 11, fontWeight: 600 }} axisLine={false} tickLine={false} dy={8} />
+                  <YAxis tick={{ fill: '#64748b', fontSize: 11, fontWeight: 500 }} axisLine={false} tickLine={false} />
                   <Tooltip contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 4px 20px rgba(0,0,0,0.08)', fontWeight: 600 }} />
-                  <Line type="monotone" dataKey="years" stroke="#3b82f6" strokeWidth={4} dot={{r: 6, fill: '#fff', stroke: '#3b82f6', strokeWidth: 2}} activeDot={{r: 8, fill: '#3b82f6', stroke: '#fff', strokeWidth: 2}} />
+                  <Line type="monotone" dataKey="years" stroke="#3b82f6" strokeWidth={4} dot={{ r: 5, fill: '#fff', stroke: '#3b82f6', strokeWidth: 2 }} activeDot={{ r: 7, fill: '#3b82f6', stroke: '#fff', strokeWidth: 2 }} />
                 </LineChart>
-              </ResponsiveContainer>
+              )
+            }
+          ].map(({ title, gradient, chart }) => (
+            <div key={title} className="bg-white/90 backdrop-blur-sm p-8 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-200/60 relative overflow-hidden transition-all hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] flex flex-col">
+              <div className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${gradient}`}></div>
+              <h3 className="text-xl font-bold text-slate-800 mb-6 tracking-tight">{title}</h3>
+              <div className="flex-1" style={{ minHeight: '280px' }}>
+                <ResponsiveContainer width="100%" height="100%">
+                  {chart}
+                </ResponsiveContainer>
+              </div>
             </div>
-          </div>
+          ))}
 
         </div>
+
       </div>
     </div>
   );
