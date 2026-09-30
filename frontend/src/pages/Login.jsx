@@ -53,7 +53,11 @@ const Login = () => {
         navigate('/candidate/dashboard');
       }
     } catch (err) {
-      setError(err.response?.data?.detail || 'Invalid email or password.');
+      if (!err.response) {
+        setError('Cannot reach the server. Please check your connection or try again shortly.');
+      } else {
+        setError(err.response?.data?.detail || 'Invalid email or password.');
+      }
     } finally {
       setIsLoading(false);
     }
