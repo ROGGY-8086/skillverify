@@ -47,8 +47,12 @@ const Login = () => {
       const data = await loginRequestOTP(email, password);
       // Direct login — data has _user with role
       const role = data._user?.role;
+      const searchParams = new URLSearchParams(window.location.search);
+      const isOnboarding = searchParams.get('onboarding') === '1';
       if (role === 'employer') {
         navigate('/employer/dashboard');
+      } else if (isOnboarding) {
+        navigate('/candidate/onboarding');
       } else {
         navigate('/candidate/dashboard');
       }
@@ -77,8 +81,12 @@ const Login = () => {
 
     try {
       const userData = await loginVerifyOTP(email, otpString);
+      const searchParams = new URLSearchParams(window.location.search);
+      const isOnboarding = searchParams.get('onboarding') === '1';
       if (userData?.role === 'employer') {
         navigate('/employer/dashboard');
+      } else if (isOnboarding) {
+        navigate('/candidate/onboarding');
       } else {
         navigate('/candidate/dashboard');
       }
@@ -152,7 +160,7 @@ const Login = () => {
     } catch (err) {
       setError('Failed to resend OTP.');
     } finally {
-      setResending(false);
+      setIsResending(false);
     }
   };
 

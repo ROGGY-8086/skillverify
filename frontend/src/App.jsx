@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Landing from './pages/Landing';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import CandidateOnboarding from './pages/CandidateOnboarding';
 import CandidateDashboard from './pages/CandidateDashboard';
 import CandidateProfile from './pages/CandidateProfile';
 import ResumeUpload from './pages/ResumeUpload';
@@ -41,6 +42,9 @@ const AppRoutes = () => {
           <Route path="/insights" element={<MarketInsights />} />
           
           {/* Candidate Routes */}
+          <Route path="/candidate/onboarding" element={
+            <ProtectedRoute role="candidate"><CandidateOnboarding /></ProtectedRoute>
+          } />
           <Route path="/candidate/dashboard" element={
             <ProtectedRoute role="candidate"><CandidateDashboard /></ProtectedRoute>
           } />

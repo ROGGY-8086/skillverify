@@ -39,7 +39,11 @@ const Register = () => {
         ...(role === 'employer' && { company_name: companyName })
       };
       await register(data);
-      navigate('/login', { state: { message: 'Account created successfully! Please sign in to verify your email.' } });
+      if (role === 'candidate') {
+        navigate('/login?onboarding=1', { state: { onboarding: true } });
+      } else {
+        navigate('/login', { state: { message: 'Account created successfully! Please sign in to verify your email.' } });
+      }
     } catch (err) {
       setError(err.response?.data?.detail || 'Failed to create account. Please try again.');
     } finally {
