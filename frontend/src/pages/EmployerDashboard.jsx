@@ -12,10 +12,19 @@ const EmployerDashboard = () => {
   useEffect(() => {
     const fetchDashboardData = async () => {
       try {
-        const res = await client.get('/api/jobs');
-        // In a real app, this would filter by the employer's ID.
-        // For demo, we just show whatever jobs come back.
-        setJobs(res.data);
+        let employerId = null;
+        try {
+          const empRes = await client.get('/api/employers/me');
+          if (empRes.data?.id) {
+            employerId = empRes.data.id;
+          }
+        } catch (e) {
+          console.warn("Could not fetch employer profile", e);
+        }
+
+        const res = await client.get(employerId ? `/api/jobs?employer_id=${employerId}` : '/api/jobs');
+        const list = Array.isArray(res.data) ? res.data : (res.data?.jobs || res.data?.items || []);
+        setJobs(list);
       } catch (err) {
         console.error("Could not fetch jobs", err);
       } finally {
@@ -89,9 +98,16 @@ const EmployerDashboard = () => {
                     <div className="flex flex-wrap gap-3 text-sm text-slate-500">
                       <span>{job.location || 'Remote'}</span>
                       <span>•</span>
-                      <span>{job.employmentType || 'Full-time'}</span>
+                      <span className="capitalize">{job.employmentType || job.employment_type || 'Full-time'}</span>
                       <span>•</span>
-                      <span className="text-slate-400">Posted {new Date().toLocaleDateString()}</span>
+                      <span className="text-slate-400">Posted {job.created_at ? new Date(job.created_at).toLocaleDateString() : 'Recently'}</span>
+                    </div>
+                    <div className="flex flex-wrap gap-1.5 mt-2.5">
+                      {(job.skills || job.job_skills || []).slice(0, 5).map((s, idx) => (
+                        <span key={idx} className="bg-slate-100 text-slate-700 text-xs px-2.5 py-0.5 rounded-full font-medium">
+                          {typeof s === 'string' ? s : (s.name || s.skill_name)}
+                        </span>
+                      ))}
                     </div>
                   </div>
                   

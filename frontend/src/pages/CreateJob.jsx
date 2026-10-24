@@ -54,19 +54,34 @@ const CreateJob = () => {
     setIsSubmitting(true);
     
     try {
+      let finalSkills = [...formData.skills];
+      if (skillInput.trim() && !finalSkills.some(s => s.name.toLowerCase() === skillInput.trim().toLowerCase())) {
+        finalSkills.push({
+          name: skillInput.trim(),
+          proficiency: 'intermediate',
+          isRequired: true
+        });
+      }
+
+      if (finalSkills.length === 0) {
+        alert('Please add at least one required skill for the job.');
+        setIsSubmitting(false);
+        return;
+      }
+
       const dataToSubmit = {
-        title: formData.title,
-        description: formData.description,
-        location: formData.location,
+        title: formData.title.trim(),
+        description: formData.description.trim(),
+        location: formData.location.trim() || 'Remote',
         salary_min: formData.salaryMin ? parseInt(formData.salaryMin) : null,
         salary_max: formData.salaryMax ? parseInt(formData.salaryMax) : null,
-        employment_type: formData.employmentType,
+        employment_type: formData.employmentType || 'Full-time',
         experience_required: formData.experience ? parseInt(formData.experience) : 0,
         education_required: formData.education || null,
-        skills: formData.skills.map(s => ({
+        skills: finalSkills.map(s => ({
           skill_name: s.name,
           min_proficiency: s.proficiency || "basic",
-          is_required: s.isRequired
+          is_required: s.isRequired !== undefined ? s.isRequired : true
         }))
       };
       
@@ -74,7 +89,7 @@ const CreateJob = () => {
       navigate('/employer/dashboard');
     } catch (err) {
       console.error(err);
-      alert('Failed to create job posting');
+      alert('Failed to create job posting: ' + (err.response?.data?.detail || err.message || 'Please try again.'));
     } finally {
       setIsSubmitting(false);
     }
@@ -315,7 +330,7 @@ const CreateJob = () => {
           </button>
           <button 
             type="submit"
-            disabled={isSubmitting || formData.skills.length === 0}
+            disabled={isSubmitting || (formData.skills.length === 0 && !skillInput.trim())}
             className="px-8 py-3 bg-accent text-white rounded-lg text-sm font-medium hover:bg-teal-600 disabled:opacity-50 transition-colors flex items-center gap-2"
           >
             {isSubmitting ? 'Posting...' : 'Publish Job Post'}

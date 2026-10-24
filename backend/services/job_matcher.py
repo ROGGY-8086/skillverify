@@ -23,19 +23,29 @@ def calculate_match_score(
     matched_skills = []
     missing_skills = []
     
-    cand_skills_map = {s.get('normalized_skill', s.get('skill_name', '')): s for s in candidate_skills}
+    cand_skills_map = {}
+    for s in candidate_skills:
+        norm = (s.get('normalized_skill') or s.get('skill_name') or '').lower().strip()
+        raw = (s.get('skill_name') or '').lower().strip()
+        if norm:
+            cand_skills_map[norm] = s
+        if raw:
+            cand_skills_map[raw] = s
     
     skills_score = 0.0
     proficiency_score = 0.0
     
     if job_skills:
         for req_skill in job_skills:
-            skill_name = req_skill.get('normalized_skill', req_skill.get('skill_name', ''))
+            norm_key = (req_skill.get('normalized_skill') or req_skill.get('skill_name') or '').lower().strip()
+            raw_key = (req_skill.get('skill_name') or '').lower().strip()
+            display_name = req_skill.get('skill_name') or req_skill.get('normalized_skill') or 'Skill'
+            
             req_level_str = req_skill.get('min_proficiency', req_skill.get('required_level', 'basic'))
             req_level = PROFICIENCY_LEVELS.get(req_level_str.lower(), 1)
             
-            if skill_name in cand_skills_map:
-                cand_skill = cand_skills_map[skill_name]
+            cand_skill = cand_skills_map.get(norm_key) or cand_skills_map.get(raw_key)
+            if cand_skill:
                 cand_level_str = cand_skill.get('proficiency_level', 'basic')
                 cand_level = PROFICIENCY_LEVELS.get(cand_level_str.lower(), 1)
                 
@@ -46,9 +56,9 @@ def calculate_match_score(
                 else:
                     proficiency_score += (cand_level / req_level)
                     
-                matched_skills.append(skill_name)
+                matched_skills.append(display_name)
             else:
-                missing_skills.append(skill_name)
+                missing_skills.append(display_name)
                 
         skills_score = (skills_score / len(job_skills)) * 40
         proficiency_score = (proficiency_score / len(job_skills)) * 20
@@ -179,7 +189,7 @@ def rank_candidates_for_job(job_id: int, db) -> List[Dict[str, Any]]:
     return results
 
 
-def recommend_jobs_for_candidate(candidate_id: int, db, limit: int = 10) -> List[Dict[str, Any]]:
+def recommend_jobs_for_candidate(candidate_id: int, db, limit: int = 100) -> List[Dict[str, Any]]:
     """Get recommended jobs for a candidate ranked by match score."""
     import models
     
@@ -237,6 +247,19 @@ def recommend_jobs_for_candidate(candidate_id: int, db, limit: int = 10) -> List
         employer = db.query(models.EmployerProfile).filter(
             models.EmployerProfile.id == job.employer_id
         ).first()
+
+        skills_summary = [
+            {
+                'id': js.id,
+                'skill_name': js.skill_name,
+                'name': js.skill_name,
+                'normalized_skill': js.normalized_skill,
+                'is_required': js.is_required,
+                'min_proficiency': js.min_proficiency,
+                'proficiency': js.min_proficiency
+            }
+            for js in job_skills_objs
+        ]
         
         results.append({
             'job_id': job.id,
@@ -245,7 +268,31 @@ def recommend_jobs_for_candidate(candidate_id: int, db, limit: int = 10) -> List
             'missing_skills': match_result['missing_skills'],
             'explanation': match_result['explanation'],
             'job_title': job.title,
-            'company_name': employer.company_name if employer else 'Unknown',
+            'title': job.title,
+            'company_name': employer.company_name if employer else 'TechCorp Solutions',
+            'company': employer.company_name if employer else 'TechCorp Solutions',
+            'location': job.location or 'Remote',
+            'employment_type': job.employment_type or 'Full-time',
+            'salary_min': job.salary_min,
+            'salary_max': job.salary_max,
+            'skills': skills_summary,
+            'job': {
+                'id': job.id,
+                'employer_id': job.employer_id,
+                'title': job.title,
+                'description': job.description,
+                'location': job.location or 'Remote',
+                'salary_min': job.salary_min,
+                'salary_max': job.salary_max,
+                'employment_type': job.employment_type or 'Full-time',
+                'employmentType': job.employment_type or 'Full-time',
+                'experience_required': job.experience_required,
+                'education_required': job.education_required,
+                'company': employer.company_name if employer else 'TechCorp Solutions',
+                'company_name': employer.company_name if employer else 'TechCorp Solutions',
+                'skills': skills_summary,
+                'job_skills': skills_summary
+            }
         })
     
     results.sort(key=lambda x: x['match_score'], reverse=True)

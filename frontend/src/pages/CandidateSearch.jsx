@@ -19,7 +19,8 @@ const CandidateSearch = () => {
     const fetchJobs = async () => {
       try {
         const res = await client.get('/api/jobs');
-        setEmployerJobs(res.data);
+        const list = Array.isArray(res.data) ? res.data : (res.data?.jobs || res.data?.items || []);
+        setEmployerJobs(list);
       } catch (err) {
         console.error(err);
       }

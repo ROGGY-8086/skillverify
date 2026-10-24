@@ -21,7 +21,8 @@ const CandidateDashboard = () => {
         
         try {
           const jobsRes = await client.get('/api/matching/jobs');
-          setJobs(jobsRes.data.slice(0, 3));
+          const list = Array.isArray(jobsRes.data) ? jobsRes.data : (jobsRes.data?.jobs || []);
+          setJobs(list.slice(0, 3));
         } catch (jobErr) {
           console.error("Could not fetch jobs", jobErr);
         }
@@ -99,7 +100,7 @@ const CandidateDashboard = () => {
             <div className="p-6 space-y-4 bg-slate-50">
               {jobs.length > 0 ? (
                 jobs.map(job => (
-                  <JobCard key={job.id} job={job.job || job} matchScore={job.match_score} />
+                  <JobCard key={job.id || job.job_id || job.job?.id} job={job.job || job} matchScore={job.match_score} />
                 ))
               ) : (
                 <div className="text-center py-8">

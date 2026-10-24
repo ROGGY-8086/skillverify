@@ -1,5 +1,5 @@
-from pydantic import BaseModel, ConfigDict
-from typing import Optional, List, Dict
+from pydantic import BaseModel, ConfigDict, model_validator
+from typing import Optional, List, Dict, Any
 from datetime import datetime
 
 class UserCreate(BaseModel):
@@ -7,6 +7,7 @@ class UserCreate(BaseModel):
     password: str
     role: str
     name: str
+    company_name: Optional[str] = None
 
 class UserResponse(BaseModel):
     id: int
@@ -81,7 +82,17 @@ class JobSkillCreate(BaseModel):
 class JobSkillResponse(JobSkillCreate):
     id: int
     normalized_skill: str
+    name: Optional[str] = None
+    proficiency: Optional[str] = None
     model_config = ConfigDict(from_attributes=True)
+
+    @model_validator(mode="after")
+    def populate_skill_aliases(self):
+        if not self.name:
+            self.name = self.skill_name
+        if not self.proficiency:
+            self.proficiency = self.min_proficiency
+        return self
 
 class JobCreate(BaseModel):
     title: str
@@ -102,18 +113,42 @@ class JobResponse(BaseModel):
     location: Optional[str] = None
     salary_min: Optional[int] = None
     salary_max: Optional[int] = None
-    employment_type: str
-    experience_required: int
+    employment_type: str = "full-time"
+    experience_required: int = 0
     education_required: Optional[str] = None
-    is_active: bool
+    is_active: bool = True
     created_at: datetime
     job_skills: List[JobSkillResponse] = []
-    employer: EmployerProfileResponse
+    skills: List[JobSkillResponse] = []
+    employer: Optional[EmployerProfileResponse] = None
+    company: Optional[str] = None
+    company_name: Optional[str] = None
     model_config = ConfigDict(from_attributes=True)
 
+    @model_validator(mode="after")
+    def populate_aliases(self):
+        if not self.skills and self.job_skills:
+            self.skills = self.job_skills
+        elif not self.job_skills and self.skills:
+            self.job_skills = self.skills
+        if not self.company and self.employer:
+            self.company = self.employer.company_name
+            self.company_name = self.employer.company_name
+        return self
+
 class JobListResponse(BaseModel):
-    jobs: List[JobResponse]
-    total: int
+    jobs: List[JobResponse] = []
+    items: List[JobResponse] = []
+    total: int = 0
+    model_config = ConfigDict(from_attributes=True)
+
+    @model_validator(mode="after")
+    def sync_items(self):
+        if not self.jobs and self.items:
+            self.jobs = self.items
+        elif not self.items and self.jobs:
+            self.items = self.jobs
+        return self
 
 class AssessmentQuestionResponse(BaseModel):
     id: int
@@ -136,9 +171,21 @@ class MatchScoreResponse(BaseModel):
     job_id: Optional[int] = None
     candidate_id: Optional[int] = None
     match_score: float
-    skill_matches: List[str]
-    missing_skills: List[str]
-    explanation: str
+    skill_matches: List[str] = []
+    missing_skills: List[str] = []
+    explanation: str = ""
+    job_title: Optional[str] = None
+    title: Optional[str] = None
+    company_name: Optional[str] = None
+    company: Optional[str] = None
+    location: Optional[str] = None
+    employment_type: Optional[str] = None
+    salary_min: Optional[int] = None
+    salary_max: Optional[int] = None
+    skills: List[Dict[str, Any]] = []
+    job: Optional[Dict[str, Any]] = None
+    candidate_name: Optional[str] = None
+    candidate_headline: Optional[str] = None
     model_config = ConfigDict(from_attributes=True)
 
 class SkillGapResponse(BaseModel):

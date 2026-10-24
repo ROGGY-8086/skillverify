@@ -16,7 +16,10 @@ def create_job(job_create: schemas.JobCreate, db: Session = Depends(get_db), cur
         
     employer = db.query(models.EmployerProfile).filter(models.EmployerProfile.user_id == current_user.id).first()
     if not employer:
-        raise HTTPException(status_code=404, detail="Employer profile not found")
+        employer = models.EmployerProfile(user_id=current_user.id, company_name=current_user.name)
+        db.add(employer)
+        db.commit()
+        db.refresh(employer)
         
     job_data = job_create.model_dump(exclude={"skills"})
     job = models.Job(**job_data, employer_id=employer.id)
@@ -24,10 +27,9 @@ def create_job(job_create: schemas.JobCreate, db: Session = Depends(get_db), cur
     db.commit()
     db.refresh(job)
     
-    job_skills = []
     if job_create.skills:
         for sk in job_create.skills:
-            normalized = skill_taxonomy.normalize_skill(sk.skill_name)
+            normalized = skill_taxonomy.normalize_skill(sk.skill_name) or sk.skill_name
             js = models.JobSkill(
                 job_id=job.id,
                 skill_name=sk.skill_name,
@@ -36,14 +38,10 @@ def create_job(job_create: schemas.JobCreate, db: Session = Depends(get_db), cur
                 min_proficiency=sk.min_proficiency
             )
             db.add(js)
-            job_skills.append(js)
         db.commit()
+        db.refresh(job)
         
-    return {
-        **job.__dict__,
-        "employer": employer,
-        "skills": job_skills
-    }
+    return job
 
 @router.get("", response_model=schemas.JobListResponse)
 def list_jobs(
@@ -51,41 +49,39 @@ def list_jobs(
     location: Optional[str] = None,
     employment_type: Optional[str] = None,
     skill: Optional[str] = None,
+    employer_id: Optional[int] = None,
     skip: int = 0,
-    limit: int = 10,
+    limit: int = 100,
     db: Session = Depends(get_db)
 ):
     query = db.query(models.Job).filter(models.Job.is_active == True)
     
+    if employer_id:
+        query = query.filter(models.Job.employer_id == employer_id)
     if q:
         query = query.filter(models.Job.title.ilike(f"%{q}%") | models.Job.description.ilike(f"%{q}%"))
     if location:
         query = query.filter(models.Job.location.ilike(f"%{location}%"))
     if employment_type:
-        query = query.filter(models.Job.employment_type == employment_type)
+        query = query.filter(models.Job.employment_type.ilike(f"%{employment_type}%"))
     if skill:
-        normalized = skill_taxonomy.normalize_skill(skill)
-        query = query.join(models.JobSkill).filter(models.JobSkill.normalized_skill == normalized)
+        normalized = skill_taxonomy.normalize_skill(skill) or skill
+        query = query.join(models.JobSkill).filter(
+            (models.JobSkill.normalized_skill.ilike(f"%{normalized}%")) |
+            (models.JobSkill.skill_name.ilike(f"%{skill}%"))
+        )
         
     total = query.count()
-    jobs = query.offset(skip).limit(limit).all()
+    jobs = query.order_by(models.Job.id.desc()).offset(skip).limit(limit).all()
     
-    return {"total": total, "items": jobs}
+    return {"total": total, "jobs": jobs, "items": jobs}
 
 @router.get("/{job_id}", response_model=schemas.JobResponse)
 def get_job(job_id: int, db: Session = Depends(get_db)):
     job = db.query(models.Job).filter(models.Job.id == job_id).first()
     if not job:
         raise HTTPException(status_code=404, detail="Job not found")
-        
-    skills = db.query(models.JobSkill).filter(models.JobSkill.job_id == job.id).all()
-    employer = db.query(models.EmployerProfile).filter(models.EmployerProfile.id == job.employer_id).first()
-    
-    return {
-        **job.__dict__,
-        "employer": employer,
-        "skills": skills
-    }
+    return job
 
 @router.put("/{job_id}", response_model=schemas.JobResponse)
 def update_job(job_id: int, job_update: schemas.JobCreate, db: Session = Depends(get_db), current_user: models.User = Depends(get_current_user)):
@@ -104,7 +100,7 @@ def update_job(job_id: int, job_update: schemas.JobCreate, db: Session = Depends
     if job_update.skills is not None:
         db.query(models.JobSkill).filter(models.JobSkill.job_id == job.id).delete()
         for sk in job_update.skills:
-            normalized = skill_taxonomy.normalize_skill(sk.skill_name)
+            normalized = skill_taxonomy.normalize_skill(sk.skill_name) or sk.skill_name
             js = models.JobSkill(
                 job_id=job.id,
                 skill_name=sk.skill_name,
@@ -116,14 +112,7 @@ def update_job(job_id: int, job_update: schemas.JobCreate, db: Session = Depends
             
     db.commit()
     db.refresh(job)
-    
-    skills = db.query(models.JobSkill).filter(models.JobSkill.job_id == job.id).all()
-    
-    return {
-        **job.__dict__,
-        "employer": employer,
-        "skills": skills
-    }
+    return job
 
 @router.delete("/{job_id}")
 def delete_job(job_id: int, db: Session = Depends(get_db), current_user: models.User = Depends(get_current_user)):

@@ -196,7 +196,8 @@ def register(user: schemas.UserCreate, db: Session = Depends(get_db)):
         candidate_profile = models.CandidateProfile(user_id=new_user.id)
         db.add(candidate_profile)
     elif user.role == "employer":
-        employer_profile = models.EmployerProfile(user_id=new_user.id, company_name=user.name)
+        company = getattr(user, "company_name", None) or user.name
+        employer_profile = models.EmployerProfile(user_id=new_user.id, company_name=company)
         db.add(employer_profile)
     db.commit()
     return new_user
