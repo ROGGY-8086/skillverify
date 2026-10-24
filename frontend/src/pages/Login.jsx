@@ -17,10 +17,21 @@ const Login = () => {
   const [resending, setResending] = useState(false);
   const otpRefs = useRef([]);
 
-  const { loginRequestOTP, loginVerifyOTP, resendOTP } = useAuth();
+  const { user, loginRequestOTP, loginVerifyOTP, resendOTP } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
   const successMessage = location.state?.message;
+
+  // If already logged in, automatically redirect
+  useEffect(() => {
+    if (user) {
+      if (user.role === 'employer') {
+        navigate('/employer/dashboard', { replace: true });
+      } else {
+        navigate('/candidate/dashboard', { replace: true });
+      }
+    }
+  }, [user, navigate]);
 
   // Countdown timer for resend
   useEffect(() => {

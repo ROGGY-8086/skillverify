@@ -25,6 +25,69 @@ def seed():
     
     password = hash_password('password123')
 
+    # Seed primary demo candidate: rahul@example.com
+    print("Seeding demo candidate (rahul@example.com)...")
+    rahul = User(
+        email="rahul@example.com",
+        password_hash=password,
+        role="candidate",
+        name="Rahul Sharma",
+        created_at=datetime.utcnow()
+    )
+    db.add(rahul)
+    db.commit()
+    db.refresh(rahul)
+    rahul_profile = CandidateProfile(
+        user_id=rahul.id,
+        headline="Full Stack & Backend Developer",
+        education="B.Tech in Computer Science",
+        experience_years=3,
+        location="Mumbai, India",
+        bio="Experienced software engineer with expertise in Java, Spring Boot, Python, SQL, and React."
+    )
+    db.add(rahul_profile)
+    db.commit()
+    db.refresh(rahul_profile)
+
+    for s_name, prof, conf in [
+        ("Java", "advanced", 0.95),
+        ("Spring Boot", "advanced", 0.90),
+        ("SQL", "intermediate", 0.85),
+        ("Python", "intermediate", 0.80),
+        ("React", "intermediate", 0.75)
+    ]:
+        db.add(CandidateSkill(
+            candidate_id=rahul_profile.id,
+            skill_name=s_name,
+            normalized_skill=normalize_skill(s_name) or s_name,
+            proficiency_level=prof,
+            confidence_score=conf,
+            evidence_type="credential",
+            verified=True
+        ))
+    db.commit()
+
+    # Seed primary demo employer: hr@techcorp.com
+    print("Seeding demo employer (hr@techcorp.com)...")
+    techcorp_hr = User(
+        email="hr@techcorp.com",
+        password_hash=password,
+        role="employer",
+        name="TechCorp HR",
+        created_at=datetime.utcnow()
+    )
+    db.add(techcorp_hr)
+    db.commit()
+    db.refresh(techcorp_hr)
+    db.add(EmployerProfile(
+        user_id=techcorp_hr.id,
+        company_name="TechCorp Solutions",
+        industry="Technology & Services",
+        company_size="500-1000",
+        description="Global enterprise software and cloud consultancy solutions."
+    ))
+    db.commit()
+
     # Load Candidates
     print("Loading Candidates...")
     candidates_df = pd.read_csv(os.path.join(data_dir, 'candidates.csv'))
