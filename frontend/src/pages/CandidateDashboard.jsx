@@ -45,6 +45,7 @@ const CandidateDashboard = () => {
   const { user } = useAuth();
   const [profile, setProfile] = useState(null);
   const [jobs, setJobs] = useState([]);
+  const [totalJobsCount, setTotalJobsCount] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [skillFilter, setSkillFilter] = useState('all'); // 'all' | 'programming' | 'soft'
 
@@ -57,7 +58,8 @@ const CandidateDashboard = () => {
         try {
           const jobsRes = await client.get('/api/matching/jobs');
           const list = Array.isArray(jobsRes.data) ? jobsRes.data : (jobsRes.data?.jobs || []);
-          setJobs(list.slice(0, 3));
+          setTotalJobsCount(list.length);
+          setJobs(list.slice(0, 5));
         } catch (jobErr) {
           console.error("Could not fetch jobs", jobErr);
         }
@@ -158,15 +160,22 @@ const CandidateDashboard = () => {
           {/* Recommended Jobs */}
           <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
             <div className="px-6 py-5 border-b border-slate-100 flex justify-between items-center">
-              <h2 className="text-lg font-bold text-slate-900">Recommended Jobs</h2>
+              <div>
+                <h2 className="text-lg font-bold text-slate-900">Recommended Jobs</h2>
+                <p className="text-xs text-slate-500 mt-0.5">Top roles matching your verified skills</p>
+              </div>
               <Link to="/candidate/jobs" className="text-sm font-medium text-accent hover:text-teal-600 flex items-center">
-                View all <ChevronRight className="h-4 w-4 ml-1" />
+                View all {totalJobsCount > 0 ? `(${totalJobsCount})` : ''} <ChevronRight className="h-4 w-4 ml-1" />
               </Link>
             </div>
             <div className="p-6 space-y-4 bg-slate-50">
               {jobs.length > 0 ? (
                 jobs.map(job => (
-                  <JobCard key={job.id || job.job_id || job.job?.id} job={job.job || job} matchScore={job.match_score} />
+                  <JobCard 
+                    key={job.id || job.job_id || job.job?.id} 
+                    job={{ ...(job.job || job), skill_matches: job.skill_matches, match_score: job.match_score }} 
+                    matchScore={job.match_score} 
+                  />
                 ))
               ) : (
                 <div className="text-center py-8">

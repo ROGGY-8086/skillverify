@@ -23,8 +23,9 @@ def auto_seed_if_empty():
     db = SessionLocal()
     try:
         user_count = db.query(models.User).count()
-        if user_count == 0:
-            print("Database empty. Auto-seeding initial dataset...")
+        job_count = db.query(models.Job).count()
+        if user_count == 0 or job_count < 5:
+            print(f"Database needs seeding (users={user_count}, jobs={job_count}). Auto-seeding initial dataset...")
             try:
                 from seed import seed
                 seed()
