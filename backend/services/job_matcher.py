@@ -1,10 +1,62 @@
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Set
+import re
 
 PROFICIENCY_LEVELS = {
     "basic": 1,
     "intermediate": 2,
     "advanced": 3
 }
+
+def get_skill_keys(skill_name: Optional[str], normalized_skill: Optional[str] = None) -> Set[str]:
+    """
+    Generate normalized match keys for a skill to handle case-insensitivity,
+    whitespace differences, and minor formatting variations (hyphens, dots, slashes, etc.).
+    """
+    keys = set()
+    for name in [skill_name, normalized_skill]:
+        if not name:
+            continue
+        raw = str(name).strip().lower()
+        if not raw:
+            continue
+        keys.add(raw)
+        
+        # Replace common symbol notations: 'c++' -> 'cpp', 'c#' -> 'csharp'
+        trans = raw.replace('c++', 'cpp').replace('c#', 'csharp')
+        keys.add(trans)
+        
+        # Alphanumeric only (strips dots, hyphens, spaces, underscores, slashes)
+        # e.g., "node.js" -> "nodejs", "spring-boot" -> "springboot", "front-end" -> "frontend"
+        alnum = re.sub(r'[^a-z0-9]', '', trans)
+        if alnum:
+            keys.add(alnum)
+            
+            # Framework variations:
+            # reactjs -> react, vuejs -> vue, angularjs -> angular
+            if len(alnum) > 2 and alnum.endswith('js') and alnum not in ('nodejs', 'nextjs'):
+                keys.add(alnum[:-2])
+            elif alnum == 'nodejs':
+                keys.add('node')
+            elif alnum == 'nextjs':
+                keys.add('next')
+                
+            # Common abbreviations and aliases
+            if alnum in ('javascript', 'js'):
+                keys.add('javascript')
+                keys.add('js')
+            if alnum in ('typescript', 'ts'):
+                keys.add('typescript')
+                keys.add('ts')
+            if 'postgres' in alnum:
+                keys.add('postgres')
+                keys.add('postgresql')
+                
+        # Spaced version (replace non-alphanumeric with a single space)
+        spaced = re.sub(r'[^a-z0-9]+', ' ', trans).strip()
+        if spaced:
+            keys.add(spaced)
+            
+    return keys
 
 def calculate_match_score(
     candidate_skills: List[Dict[str, Any]], 
@@ -17,6 +69,7 @@ def calculate_match_score(
 ) -> Dict[str, Any]:
     """
     Calculate weighted match score between candidate and job.
+    Uses case-insensitive and format-tolerant skill key matching.
     """
     score = 0.0
     
@@ -25,29 +78,31 @@ def calculate_match_score(
     
     cand_skills_map = {}
     for s in candidate_skills:
-        norm = (s.get('normalized_skill') or s.get('skill_name') or '').lower().strip()
-        raw = (s.get('skill_name') or '').lower().strip()
-        if norm:
-            cand_skills_map[norm] = s
-        if raw:
-            cand_skills_map[raw] = s
+        keys = get_skill_keys(s.get('skill_name'), s.get('normalized_skill'))
+        for k in keys:
+            if k not in cand_skills_map:
+                cand_skills_map[k] = s
     
     skills_score = 0.0
     proficiency_score = 0.0
     
     if job_skills:
         for req_skill in job_skills:
-            norm_key = (req_skill.get('normalized_skill') or req_skill.get('skill_name') or '').lower().strip()
-            raw_key = (req_skill.get('skill_name') or '').lower().strip()
+            req_keys = get_skill_keys(req_skill.get('skill_name'), req_skill.get('normalized_skill'))
             display_name = req_skill.get('skill_name') or req_skill.get('normalized_skill') or 'Skill'
             
             req_level_str = req_skill.get('min_proficiency', req_skill.get('required_level', 'basic'))
-            req_level = PROFICIENCY_LEVELS.get(req_level_str.lower(), 1)
+            req_level = PROFICIENCY_LEVELS.get(str(req_level_str).lower(), 1)
             
-            cand_skill = cand_skills_map.get(norm_key) or cand_skills_map.get(raw_key)
+            cand_skill = None
+            for k in req_keys:
+                if k in cand_skills_map:
+                    cand_skill = cand_skills_map[k]
+                    break
+                    
             if cand_skill:
                 cand_level_str = cand_skill.get('proficiency_level', 'basic')
-                cand_level = PROFICIENCY_LEVELS.get(cand_level_str.lower(), 1)
+                cand_level = PROFICIENCY_LEVELS.get(str(cand_level_str).lower(), 1)
                 
                 skills_score += 1.0
                 
@@ -190,7 +245,11 @@ def rank_candidates_for_job(job_id: int, db) -> List[Dict[str, Any]]:
 
 
 def recommend_jobs_for_candidate(candidate_id: int, db, limit: int = 100) -> List[Dict[str, Any]]:
-    """Get recommended jobs for a candidate ranked by match score."""
+    """Get recommended jobs for a candidate ranked by match score.
+    
+    Only jobs with at least one matching skill with candidate's skills are returned.
+    Jobs with zero matching skills are strictly excluded.
+    """
     import models
     
     candidate = db.query(models.CandidateProfile).filter(
@@ -199,9 +258,15 @@ def recommend_jobs_for_candidate(candidate_id: int, db, limit: int = 100) -> Lis
     if not candidate:
         return []
     
+    # 1. Fetch candidate's skills from their profile record
     cand_skills = db.query(models.CandidateSkill).filter(
         models.CandidateSkill.candidate_id == candidate_id
     ).all()
+    
+    # Do not display jobs if candidate has missing or empty skill information
+    if not cand_skills:
+        return []
+    
     cand_skills_list = [
         {
             'normalized_skill': cs.normalized_skill,
@@ -223,7 +288,12 @@ def recommend_jobs_for_candidate(candidate_id: int, db, limit: int = 100) -> Lis
     results = []
     
     for job in jobs:
+        # 2. Fetch required skills associated with this job posting
         job_skills_objs = db.query(models.JobSkill).filter(models.JobSkill.job_id == job.id).all()
+        if not job_skills_objs:
+            # Job has no required skills listed, cannot establish valid matching skills
+            continue
+            
         job_skills = [
             {
                 'normalized_skill': js.normalized_skill,
@@ -234,6 +304,7 @@ def recommend_jobs_for_candidate(candidate_id: int, db, limit: int = 100) -> Lis
             for js in job_skills_objs
         ]
         
+        # 3. Compare candidate's skills with job's required skills (case-insensitive & formatting-tolerant)
         match_result = calculate_match_score(
             candidate_skills=cand_skills_list,
             job_skills=job_skills,
@@ -243,6 +314,12 @@ def recommend_jobs_for_candidate(candidate_id: int, db, limit: int = 100) -> Lis
             job_education=job.education_required,
             assessment_results=ass_list if ass_list else None
         )
+        
+        # 4 & 5. Display a job ONLY if candidate has at least one matching skill.
+        # If candidate has zero matching skills with this job, completely exclude it.
+        matched_skills = match_result.get('skill_matches') or []
+        if len(matched_skills) == 0:
+            continue
         
         employer = db.query(models.EmployerProfile).filter(
             models.EmployerProfile.id == job.employer_id
@@ -264,7 +341,7 @@ def recommend_jobs_for_candidate(candidate_id: int, db, limit: int = 100) -> Lis
         results.append({
             'job_id': job.id,
             'match_score': match_result['match_score'],
-            'skill_matches': match_result['skill_matches'],
+            'skill_matches': matched_skills,
             'missing_skills': match_result['missing_skills'],
             'explanation': match_result['explanation'],
             'job_title': job.title,
@@ -291,7 +368,10 @@ def recommend_jobs_for_candidate(candidate_id: int, db, limit: int = 100) -> Lis
                 'company': employer.company_name if employer else 'TechCorp Solutions',
                 'company_name': employer.company_name if employer else 'TechCorp Solutions',
                 'skills': skills_summary,
-                'job_skills': skills_summary
+                'job_skills': skills_summary,
+                'skill_matches': matched_skills,
+                'missing_skills': match_result['missing_skills'],
+                'match_score': match_result['match_score']
             }
         })
     
@@ -302,6 +382,7 @@ def recommend_jobs_for_candidate(candidate_id: int, db, limit: int = 100) -> Lis
 def analyze_skill_gap(candidate_id: int, job_id: int, db) -> Dict[str, Any]:
     """
     Analyze skill gap between candidate and target job.
+    Uses case-insensitive and format-tolerant skill key matching.
     """
     import models
     
@@ -322,7 +403,12 @@ def analyze_skill_gap(candidate_id: int, job_id: int, db) -> Dict[str, Any]:
     cand_skills = db.query(models.CandidateSkill).filter(
         models.CandidateSkill.candidate_id == candidate_id
     ).all()
-    cand_skills_map = {cs.normalized_skill: cs for cs in cand_skills}
+    cand_skills_map = {}
+    for cs in cand_skills:
+        keys = get_skill_keys(cs.skill_name, cs.normalized_skill)
+        for k in keys:
+            if k not in cand_skills_map:
+                cand_skills_map[k] = cs
     
     job_skills = db.query(models.JobSkill).filter(models.JobSkill.job_id == job_id).all()
     
@@ -331,19 +417,25 @@ def analyze_skill_gap(candidate_id: int, job_id: int, db) -> Dict[str, Any]:
     recommendations = []
     
     for js in job_skills:
-        skill_name = js.normalized_skill
+        req_keys = get_skill_keys(js.skill_name, js.normalized_skill)
+        display_name = js.skill_name or js.normalized_skill or 'Skill'
         req_level = js.min_proficiency or 'basic'
         
-        if skill_name in cand_skills_map:
-            matched.append(skill_name)
-            cs = cand_skills_map[skill_name]
-            c_lvl = PROFICIENCY_LEVELS.get(cs.proficiency_level or 'basic', 1)
-            r_lvl = PROFICIENCY_LEVELS.get(req_level, 1)
+        cs = None
+        for k in req_keys:
+            if k in cand_skills_map:
+                cs = cand_skills_map[k]
+                break
+                
+        if cs:
+            matched.append(display_name)
+            c_lvl = PROFICIENCY_LEVELS.get(str(cs.proficiency_level or 'basic').lower(), 1)
+            r_lvl = PROFICIENCY_LEVELS.get(str(req_level).lower(), 1)
             if c_lvl < r_lvl:
-                recommendations.append(f"Improve {skill_name} proficiency to {req_level}")
+                recommendations.append(f"Improve {display_name} proficiency to {req_level}")
         else:
-            missing.append(skill_name)
-            recommendations.append(f"Learn {skill_name}")
+            missing.append(display_name)
+            recommendations.append(f"Learn {display_name}")
     
     match_percentage = 0.0
     if job_skills:

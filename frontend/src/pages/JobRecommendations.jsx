@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Filter, Search, Target, Sparkles, Briefcase } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Filter, Search, Target, Sparkles, Briefcase, PlusCircle, Upload } from 'lucide-react';
 import client from '../api/client';
 import JobCard from '../components/JobCard';
 
@@ -163,25 +164,44 @@ const JobRecommendations = () => {
           filteredJobs.map((job) => (
             <JobCard 
               key={job.job?.id || job.job_id || job.id} 
-              job={job.job || job} 
+              job={{ ...(job.job || job), skill_matches: job.skill_matches, match_score: job.match_score }} 
               matchScore={job.match_score} 
               onApply={handleApply}
             />
           ))
         ) : (
-          <div className="col-span-full py-16 text-center bg-white rounded-xl border border-slate-200 border-dashed">
+          <div className="col-span-full py-16 text-center bg-white rounded-xl border border-slate-200 border-dashed px-4">
             <Target className="h-12 w-12 text-slate-300 mx-auto mb-3" />
-            <h3 className="text-lg font-medium text-slate-900 mb-1">No jobs match your search</h3>
-            <p className="text-slate-500 max-w-md mx-auto text-sm">
-              {searchQuery 
-                ? `No roles found matching "${searchQuery}". Try searching for another skill like React, Python, or Java.`
-                : "Try adjusting your filters or complete your profile skills to get higher match scores."
+            <h3 className="text-lg font-medium text-slate-900 mb-1">
+              {jobs.length === 0 ? "No Matching Jobs Found" : "No jobs match your search"}
+            </h3>
+            <p className="text-slate-500 max-w-md mx-auto text-sm mb-4">
+              {jobs.length === 0
+                ? "No job openings currently match your registered skills. Only jobs with at least one skill matching your profile appear here. Add skills to your profile or upload your resume to discover matching opportunities."
+                : searchQuery 
+                  ? `No roles found matching "${searchQuery}". Try searching for another skill, role, or company.`
+                  : "Try adjusting your filters or complete more skill assessments to view higher match scores."
               }
             </p>
-            {searchQuery && (
+            {jobs.length === 0 ? (
+              <div className="flex flex-wrap items-center justify-center gap-3">
+                <Link
+                  to="/candidate/profile"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-slate-900 text-white rounded-lg text-xs font-semibold hover:bg-slate-800 transition-colors shadow-sm"
+                >
+                  <PlusCircle className="w-3.5 h-3.5" /> Manage Profile Skills
+                </Link>
+                <Link
+                  to="/candidate/upload"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-white border border-slate-300 text-slate-700 rounded-lg text-xs font-semibold hover:bg-slate-50 transition-colors shadow-xs"
+                >
+                  <Upload className="w-3.5 h-3.5" /> Upload Resume
+                </Link>
+              </div>
+            ) : searchQuery && (
               <button 
                 onClick={() => setSearchQuery('')}
-                className="mt-4 px-4 py-2 bg-slate-900 text-white rounded-lg text-xs font-semibold hover:bg-slate-800"
+                className="px-4 py-2 bg-slate-900 text-white rounded-lg text-xs font-semibold hover:bg-slate-800 transition-colors"
               >
                 Clear Search
               </button>
