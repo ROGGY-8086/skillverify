@@ -188,6 +188,210 @@ def seed():
         ))
     db.commit()
 
+    # Seed Multi-Skill Demo Jobs
+    print("Seeding multi-skill demo jobs...")
+    multi_skill_jobs = [
+        {
+            'employer_id': 2,
+            'title': 'Computer Vision & AI Research Engineer',
+            'description': 'Develop state-of-the-art vision models, OpenCV image processing pipelines, and production machine learning architectures.',
+            'location': 'Bangalore (Hybrid)',
+            'salary_min': 1400000,
+            'salary_max': 2400000,
+            'employment_type': 'full-time',
+            'experience_required': 2,
+            'education_required': 'B.Tech or M.Tech in CS/AI',
+            'skills': [
+                ('Python', 'advanced', True),
+                ('OpenCV', 'advanced', True),
+                ('Machine Learning', 'advanced', True),
+                ('TensorFlow', 'intermediate', True),
+                ('Data Analysis', 'intermediate', False)
+            ]
+        },
+        {
+            'employer_id': 2,
+            'title': 'Senior Data & BI Analytics Consultant',
+            'description': 'Lead enterprise dashboarding, statistical modeling, and data warehouse queries using SQL, Power BI, Python, and Pandas.',
+            'location': 'Mumbai (Remote)',
+            'salary_min': 1200000,
+            'salary_max': 2000000,
+            'employment_type': 'full-time',
+            'experience_required': 2,
+            'education_required': 'Bachelor in Engineering/Statistics',
+            'skills': [
+                ('SQL', 'advanced', True),
+                ('Power BI', 'advanced', True),
+                ('Python', 'intermediate', True),
+                ('Pandas', 'intermediate', True),
+                ('Data Analysis', 'advanced', True),
+                ('MySQL', 'intermediate', False)
+            ]
+        },
+        {
+            'employer_id': 1,
+            'title': 'High-Performance C++ Systems Engineer',
+            'description': 'Design ultra-low latency backend systems and embedded data engines in C++ and C with optimized database storage.',
+            'location': 'Pune (On-site)',
+            'salary_min': 1500000,
+            'salary_max': 2600000,
+            'employment_type': 'full-time',
+            'experience_required': 3,
+            'education_required': 'B.Tech in Computer Science or ECE',
+            'skills': [
+                ('C++', 'advanced', True),
+                ('C', 'advanced', True),
+                ('SQL', 'intermediate', True),
+                ('Problem Solving', 'advanced', True),
+                ('SQLite', 'basic', False)
+            ]
+        },
+        {
+            'employer_id': 1,
+            'title': 'Full Stack MERN Lead Engineer',
+            'description': 'Architect enterprise cloud web applications leveraging React, Node.js, MongoDB, JavaScript, and modern microservices.',
+            'location': 'Bangalore (Remote)',
+            'salary_min': 1600000,
+            'salary_max': 2800000,
+            'employment_type': 'full-time',
+            'experience_required': 3,
+            'education_required': 'Bachelor in Computer Science',
+            'skills': [
+                ('React', 'advanced', True),
+                ('Node.js', 'advanced', True),
+                ('MongoDB', 'advanced', True),
+                ('JavaScript', 'advanced', True),
+                ('Problem Solving', 'intermediate', False)
+            ]
+        },
+        {
+            'employer_id': 3,
+            'title': 'Cloud DevOps & Infrastructure Specialist',
+            'description': 'Automate cloud deployment pipelines, multi-cluster Kubernetes orchestration, AWS cloud infrastructure, and Dockerized microservices.',
+            'location': 'Hyderabad (Hybrid)',
+            'salary_min': 1800000,
+            'salary_max': 3000000,
+            'employment_type': 'full-time',
+            'experience_required': 3,
+            'education_required': 'Bachelor in CS/IT',
+            'skills': [
+                ('Docker', 'advanced', True),
+                ('Kubernetes', 'advanced', True),
+                ('AWS', 'advanced', True),
+                ('Python', 'intermediate', True),
+                ('Communication', 'intermediate', False)
+            ]
+        },
+        {
+            'employer_id': 1,
+            'title': 'Senior Java & Microservices Developer',
+            'description': 'Build high-throughput backend APIs and banking microservices with Java, Spring Boot, MySQL, and Docker.',
+            'location': 'Gurgaon (Hybrid)',
+            'salary_min': 1400000,
+            'salary_max': 2500000,
+            'employment_type': 'full-time',
+            'experience_required': 3,
+            'education_required': 'B.E. / B.Tech in Computer Science',
+            'skills': [
+                ('Java', 'advanced', True),
+                ('Spring Boot', 'advanced', True),
+                ('MySQL', 'intermediate', True),
+                ('SQL', 'advanced', True),
+                ('Docker', 'intermediate', False)
+            ]
+        },
+        {
+            'employer_id': 2,
+            'title': 'Lead Data Pipeline & ETL Engineer',
+            'description': 'Create large-scale data ingestion and transformation pipelines using Python, SQL, Pandas, MySQL, and MongoDB.',
+            'location': 'Pune (Hybrid)',
+            'salary_min': 1300000,
+            'salary_max': 2200000,
+            'employment_type': 'full-time',
+            'experience_required': 2,
+            'education_required': 'Bachelor in Computer Science or Data Science',
+            'skills': [
+                ('Python', 'advanced', True),
+                ('SQL', 'advanced', True),
+                ('Pandas', 'advanced', True),
+                ('MySQL', 'intermediate', True),
+                ('MongoDB', 'intermediate', True),
+                ('Data Analysis', 'advanced', False)
+            ]
+        },
+        {
+            'employer_id': 1,
+            'title': 'Engineering Team Lead',
+            'description': 'Drive cross-functional engineering pods, architectural reviews, and mentorship across Java and Python web services.',
+            'location': 'Bangalore (On-site)',
+            'salary_min': 2200000,
+            'salary_max': 3500000,
+            'employment_type': 'full-time',
+            'experience_required': 4,
+            'education_required': 'Bachelor in CS / IT',
+            'skills': [
+                ('Leadership', 'advanced', True),
+                ('Communication', 'advanced', True),
+                ('Problem Solving', 'advanced', True),
+                ('Teamwork', 'advanced', True),
+                ('Java', 'intermediate', True),
+                ('Python', 'intermediate', False)
+            ]
+        },
+        {
+            'employer_id': 3,
+            'title': 'Frontend UI/UX Specialist',
+            'description': 'Craft pixel-perfect user interfaces, high-fidelity components, and interactive dashboards with React, TypeScript, and modern JavaScript.',
+            'location': 'Remote',
+            'salary_min': 1100000,
+            'salary_max': 1900000,
+            'employment_type': 'full-time',
+            'experience_required': 2,
+            'education_required': 'Bachelor Degree',
+            'skills': [
+                ('React', 'advanced', True),
+                ('JavaScript', 'advanced', True),
+                ('TypeScript', 'intermediate', True),
+                ('Communication', 'intermediate', False),
+                ('Problem Solving', 'intermediate', False)
+            ]
+        },
+        {
+            'employer_id': 3,
+            'title': 'Mobile Full Stack Engineer',
+            'description': 'Lead cross-platform mobile app development with Flutter, Dart, Firebase, and backend REST APIs.',
+            'location': 'Hyderabad (Remote)',
+            'salary_min': 1300000,
+            'salary_max': 2100000,
+            'employment_type': 'full-time',
+            'experience_required': 2,
+            'education_required': 'Bachelor in Computer Science',
+            'skills': [
+                ('Flutter', 'advanced', True),
+                ('Dart', 'advanced', True),
+                ('Firebase', 'intermediate', True),
+                ('JavaScript', 'intermediate', False)
+            ]
+        }
+    ]
+
+    for job_info in multi_skill_jobs:
+        job_skills = job_info.pop('skills')
+        job = Job(**job_info, is_active=True)
+        db.add(job)
+        db.commit()
+        db.refresh(job)
+        for s_name, prof, is_req in job_skills:
+            norm = normalize_skill(s_name) or s_name
+            db.add(JobSkill(
+                job_id=job.id,
+                skill_name=s_name,
+                normalized_skill=norm,
+                is_required=is_req,
+                min_proficiency=prof
+            ))
+        db.commit()
+
     # Load Candidate Skills
     print("Loading Candidate Skills...")
     if os.path.exists(os.path.join(data_dir, 'candidate_skills.csv')):
