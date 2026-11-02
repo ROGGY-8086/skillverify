@@ -33,7 +33,24 @@ class SkillResponse(BaseModel):
     confidence_score: float
     evidence_type: str
     verified: bool
+    name: Optional[str] = None
+    proficiency: Optional[str] = None
+    is_verified: Optional[bool] = None
+    category: Optional[str] = None
     model_config = ConfigDict(from_attributes=True)
+
+    @model_validator(mode="after")
+    def populate_aliases(self):
+        if not self.name:
+            self.name = self.skill_name
+        if not self.proficiency:
+            self.proficiency = self.proficiency_level
+        if self.is_verified is None:
+            self.is_verified = self.verified
+        if not self.category:
+            from services.skill_taxonomy import get_skill_category
+            self.category = get_skill_category(self.normalized_skill or self.skill_name) or "Other Technical"
+        return self
 
 class CredentialResponse(BaseModel):
     id: int

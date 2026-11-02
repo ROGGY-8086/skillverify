@@ -12,10 +12,28 @@ SKILL_CATEGORIES = {
     "Tools & Practices": ["Git", "GitHub", "GitLab", "Jira", "Agile", "Scrum", "TDD", "Unit Testing", "Integration Testing", "Microservices", "System Design", "Design Patterns"],
     "Security": ["Cybersecurity", "Penetration Testing", "Encryption", "OWASP", "Network Security", "Security Auditing"],
     "Other Technical": ["Blockchain", "IoT", "Embedded Systems", "AR/VR", "Game Development", "Unity", "Unreal Engine", "3D Modeling"],
-    "Soft Skills": ["Leadership", "Communication", "Teamwork", "Problem Solving", "Critical Thinking", "Project Management", "Time Management", "Presentation"]
+    "Soft Skills": [
+        "Leadership", "Communication", "Teamwork", "Problem Solving", "Critical Thinking", 
+        "Project Management", "Time Management", "Presentation", "Adaptability", "Collaboration",
+        "Work Ethic", "Creativity", "Emotional Intelligence", "Decision Making", "Negotiation",
+        "Interpersonal Skills", "Analytical Thinking", "Organization", "Mentoring", "Conflict Resolution",
+        "Active Listening", "Attention to Detail", "Public Speaking", "Customer Service"
+    ]
 }
 
 ALIAS_MAP = {
+    "Interpersonal": "Interpersonal Skills", "Interpersonal Skills": "Interpersonal Skills",
+    "Analytical Skills": "Analytical Thinking", "Analytical Thinking": "Analytical Thinking",
+    "Problem-Solving": "Problem Solving", "Problem Solving": "Problem Solving",
+    "Time-Management": "Time Management", "Time Management": "Time Management",
+    "Critical-Thinking": "Critical Thinking", "Critical Thinking": "Critical Thinking",
+    "Team Player": "Teamwork", "Teamwork": "Teamwork",
+    "Verbal Communication": "Communication", "Written Communication": "Communication",
+    "Collaboration": "Collaboration", "Collaborative": "Collaboration",
+    "Detail-Oriented": "Attention to Detail", "Detail Oriented": "Attention to Detail",
+    "Multi-tasking": "Time Management", "Multitasking": "Time Management",
+    "Decision-Making": "Decision Making", "Decision Making": "Decision Making",
+    "Work Ethic": "Work Ethic", "Adaptability": "Adaptability", "Creativity": "Creativity",
     "JS": "JavaScript", "TS": "TypeScript", "Py": "Python", "C++": "C++", "Cpp": "C++",
     "C#": "C#", "C-Sharp": "C#", "Csharp": "C#", "Golang": "Go", "Ruby": "Ruby",
     "PHP": "PHP", "Swift": "Swift", "Kotlin": "Kotlin", "Scala": "Scala", "R": "R",

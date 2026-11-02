@@ -48,11 +48,22 @@ def upload_resume(file: UploadFile = File(...), db: Session = Depends(get_db), c
         
     # parse_resume returns {'raw_text': ..., 'sections': ..., 'extracted_skills': [...]}
     parsed_data = resume_parser.parse_resume(file_path)
-    extracted_skills = parsed_data.get("extracted_skills", [])
+    extracted_from_sections = parsed_data.get("extracted_skills", [])
+    raw_text = parsed_data.get("raw_text", "")
     
-    # If no skills extracted from sections, try full text extraction
-    if not extracted_skills and parsed_data.get("raw_text"):
-        extracted_skills = skill_extractor.extract_skills(parsed_data["raw_text"], evidence_type="resume")
+    # Combine section skills and full-text skills for maximum recall of both technical & soft skills
+    extracted_from_text = skill_extractor.extract_skills(raw_text, evidence_type="resume") if raw_text else []
+    
+    # Deduplicate keeping highest confidence
+    merged_skills = {}
+    for sk in extracted_from_sections + extracted_from_text:
+        norm = sk.get("normalized_skill") or skill_taxonomy.normalize_skill(sk.get("skill_name", ""))
+        if not norm:
+            continue
+        if norm not in merged_skills or sk.get("confidence_score", 0) > merged_skills[norm].get("confidence_score", 0):
+            merged_skills[norm] = sk
+            
+    extracted_skills = list(merged_skills.values())
     
     profile = db.query(models.CandidateProfile).filter(models.CandidateProfile.user_id == current_user.id).first()
     if not profile:

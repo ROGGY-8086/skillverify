@@ -51,9 +51,14 @@ def seed():
 
     for s_name, prof, conf in [
         ("Java", "advanced", 0.95),
+        ("Python", "intermediate", 0.85),
+        ("JavaScript", "advanced", 0.85),
+        ("Communication", "intermediate", 0.85),
+        ("Problem Solving", "advanced", 0.90),
+        ("Teamwork", "advanced", 0.90),
+        ("Leadership", "intermediate", 0.80),
         ("Spring Boot", "advanced", 0.90),
         ("SQL", "intermediate", 0.85),
-        ("Python", "intermediate", 0.80),
         ("React", "intermediate", 0.75)
     ]:
         db.add(CandidateSkill(
