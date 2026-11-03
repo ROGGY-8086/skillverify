@@ -1,6 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException, status, Query
 from sqlalchemy.orm import Session
 from typing import List, Optional
+import os
+import json
 from database import get_db
 from auth import get_current_user
 import models
@@ -8,6 +10,44 @@ import schemas
 from services import skill_taxonomy, job_matcher
 
 router = APIRouter(prefix="/api/jobs", tags=["Jobs"])
+
+def _backup_posted_job(job_obj, skills_list):
+    try:
+        custom_file = os.path.join(os.path.dirname(__file__), "..", "data", "custom_posted_jobs.json")
+        os.makedirs(os.path.dirname(custom_file), exist_ok=True)
+        jobs_list = []
+        if os.path.exists(custom_file):
+            try:
+                with open(custom_file, "r") as f:
+                    jobs_list = json.load(f)
+            except Exception:
+                jobs_list = []
+        
+        # Check if already present
+        if not any(j.get("title") == job_obj.title and j.get("employer_id") == job_obj.employer_id for j in jobs_list):
+            jobs_list.append({
+                "employer_id": job_obj.employer_id,
+                "title": job_obj.title,
+                "description": job_obj.description,
+                "location": job_obj.location,
+                "salary_min": job_obj.salary_min,
+                "salary_max": job_obj.salary_max,
+                "employment_type": job_obj.employment_type,
+                "experience_required": job_obj.experience_required,
+                "education_required": job_obj.education_required,
+                "skills": [
+                    {
+                        "skill_name": s.skill_name,
+                        "min_proficiency": s.min_proficiency,
+                        "is_required": s.is_required
+                    }
+                    for s in (skills_list or [])
+                ]
+            })
+            with open(custom_file, "w") as f:
+                json.dump(jobs_list, f, indent=2)
+    except Exception as e:
+        print("Could not backup posted job:", e)
 
 @router.post("", response_model=schemas.JobResponse)
 def create_job(job_create: schemas.JobCreate, db: Session = Depends(get_db), current_user: models.User = Depends(get_current_user)):
@@ -40,6 +80,9 @@ def create_job(job_create: schemas.JobCreate, db: Session = Depends(get_db), cur
             db.add(js)
         db.commit()
         db.refresh(job)
+        
+    # Backup custom job so it persists across container rebuilds/reboots
+    _backup_posted_job(job, job_create.skills)
         
     return job
 

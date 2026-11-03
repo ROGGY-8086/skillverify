@@ -43,9 +43,9 @@ env.bak/
 venv.bak/
 
 # FastAPI/SQLite
-*.db
-skillverify.db
-backend/skillverify.db
+*.db-journal
+*.db-wal
+!backend/skillverify.db
 uploads/
 backend/uploads/
 
