@@ -24,7 +24,7 @@ def auto_seed_if_empty():
     try:
         user_count = db.query(models.User).count()
         job_count = db.query(models.Job).count()
-        if user_count == 0 or job_count < 5:
+        if user_count == 0 or job_count < 15:
             print(f"Database needs seeding (users={user_count}, jobs={job_count}). Auto-seeding initial dataset...")
             try:
                 from seed import seed
@@ -46,6 +46,24 @@ app = FastAPI(
     title="SkillVerify API",
     version="1.0.0"
 )
+
+@app.on_event("startup")
+def on_startup():
+    auto_seed_if_empty()
+
+@app.api_route("/api/admin/seed", methods=["GET", "POST"])
+def trigger_seed():
+    from seed import seed
+    from database import SessionLocal
+    import models
+    seed()
+    db = SessionLocal()
+    try:
+        j_count = db.query(models.Job).count()
+        u_count = db.query(models.User).count()
+        return {"status": "success", "jobs": j_count, "users": u_count}
+    finally:
+        db.close()
 
 # CORS setup - allow all origins for development
 app.add_middleware(
